@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      azguro
+HostName                       vlsicad.ecs.umass.edu
+ProcessIdentifier              1448917
+ProcessCreationTime_UTC        1758140806
+ProcessCreationTime_Readable   Wed Sep 17 16:26:46 2025 EDT
+AppIdentifier                  /opt/cadence/ic251_hotfix/install/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /home/ece558_658_2025/azguro/lab1/logs_azguro/logs0/Job0.log
+TimeEditLocked                 Wed Sep 17 16:26:46 2025 EDT

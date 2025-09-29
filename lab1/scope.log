@@ -1,0 +1,64 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/lab1/NAND-schematic.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr._PF:1 231x319+650+406
+wm geometry .sigmgr._PF:1 232x242+768+480
+pf:read PF:1 i(vsupply)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:ArrangeIcons
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Graph:DSel
+Graph:Select Graph0
+Mdi:ArrangeIcons
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-149.08651057366u -209.39691854653u} {219.25p 374.84p}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw0_text @166.0,265.0
+Graph itemcreate text 166.0 265.0 -tags draw0_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw0_text
+Graph:ManipulateItem insert GrDraw0_text insert {}
+Graph:ManipulateItem insert GrDraw0_text insert P
+Graph:ManipulateItem insert GrDraw0_text insert e
+Graph:ManipulateItem insert GrDraw0_text insert a
+Graph:ManipulateItem insert GrDraw0_text insert k
+Graph:ManipulateItem insert GrDraw0_text insert { }
+Graph:ManipulateItem insert GrDraw0_text insert {}
+Graph:DSel
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw0_text
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph itemcreate oval 195.0 203.0 277.0 241.0 -tags draw1_oval -fill {} -outline pink -width 0 -linestyle - -dashlen 10
+# GrDraw1_oval
+Mdi:ArrangeIcons
+Graph:DSel
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw0_text
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons

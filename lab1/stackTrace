@@ -1,0 +1,48 @@
+bad window path name ".sigmgr._PF:1"
+    while executing
+"winfo reqwidth $rootname"
+    (procedure "ScopeSigMgr:CreatePlotList" line 323)
+    invoked from within
+"ScopeSigMgr:CreatePlotList .sigmgr $pf $show"
+    (procedure "ScopeSigMgr:LoadP1OpenOnly" line 7)
+    invoked from within
+"ScopeSigMgr:LoadP1OpenOnly $pfcp $show"
+    ("openonly" arm line 2)
+    invoked from within
+"switch $plaction {
+        openonly {
+            ScopeSigMgr:LoadP1OpenOnly $pfcp $show
+        }
+        append {
+            if {[isvalid plotfile ..."
+    (procedure "ScopeSigMgr:LoadP1File" line 63)
+    invoked from within
+"ScopeSigMgr:LoadP1File [list $p1file] $show $plaction  $fformat $noErrMsg 0 $winName $force"
+    (procedure "ScopeSigMgr:loadpffileDOIT" line 23)
+    invoked from within
+"ScopeSigMgr:loadpffileDOIT /home/ece558_658_2025/azguro/lab1/NAND-schematic.tr0 1 openonly 0  0"
+    ("eval" body line 1)
+    invoked from within
+"eval {ScopeSigMgr:loadpffileDOIT /home/ece558_658_2025/azguro/lab1/NAND-schematic.tr0 1 openonly 0  0}"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel eval [list $cmds]"
+    invoked from within
+"AimBusy $cmd $wins watch"
+    (procedure "ScopeSigMgr:loadpffile" line 11)
+    invoked from within
+"ScopeSigMgr:loadpffile $fullnames 1 $plaction"
+    (procedure "ScopeSigMgr:BrowseOpenPlotfiles" line 108)
+    invoked from within
+"ScopeSigMgr:BrowseOpenPlotfiles $fileobj"
+    ("uplevel" body line 16)
+    invoked from within
+"uplevel #0 $AimBarItem($w,command)"
+    (procedure "AimBarItem:invoke" line 5)
+    invoked from within
+"AimBarItem:invoke .ibar.biw5"
+    invoked from within
+"if { $AimBarItem(window) == ".ibar.biw5" } {
+            if {[lindex [.ibar.biw5 config -state] 4] != "disabled" } {
+	        AimBarItem:invoke .ibar...."
+    (command bound to event)

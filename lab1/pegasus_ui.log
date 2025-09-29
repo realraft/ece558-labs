@@ -1,0 +1,36 @@
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_UI' version 24.1
+INFO:    License checkout successful ... 2025-09-26 14:52:06
+WARNING: In technology 'gpdk045', the rule set 'ERC_RCX' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'LVS_Hier' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'antenna' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+Checking in SoftShare license Pegasus_UI ... succeeded (1s).
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_UI' version 24.1
+INFO:    License checkout successful ... 2025-09-26 15:08:54
+WARNING: In technology 'gpdk045', the rule set 'ERC_RCX' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'LVS_Hier' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'antenna' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+Checking in SoftShare license Pegasus_UI ... succeeded (1s).
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_UI' version 24.1
+INFO:    License checkout successful ... 2025-09-26 15:17:25
+WARNING: In technology 'gpdk045', the rule set 'ERC_RCX' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'LVS_Hier' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'antenna' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+Checking in SoftShare license Pegasus_UI ... succeeded (1s).

@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** generated for: hspiced'
+ tpdr             tpdf             tr_y             tf_y            
+ istat            ipeak            temper           alter#          
+  3.736e-11        1.398e-10        4.570e-11        4.802e-11      
+ -1.753e-06       -1.948e-04        2.500e+01       1               

@@ -1,0 +1,54 @@
+****** PrimeSim HSPICE -- T-2022.06-3 linux64 (Aug 04 2022 7739753) ******
+Input File: inverter.sp
+lic:
+lic: FLEXlm: SDK_12.10
+lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu
+lic: HOSTID: 13ac8554             PID:      1323061
+lic: Using FLEXlm license file:
+lic: 27020@vlsicad.ecs.umass.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 09-sep-2027/2025.06
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 4.60E-02
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option list
+       option node
+       option post
+ init: end read circuit files, cpu clock= 4.72E-02 peak memory=     512 mb
+ init: begin check errors, cpu clock= 4.72E-02
+ init: end check errors, cpu clock= 5.30E-02 peak memory=     512 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.30E-02
+       establish matrix -- done, cpu clock= 5.31E-02 peak memory=     512 mb
+       re-order matrix -- done, cpu clock= 5.32E-02 peak memory=     512 mb
+ init: end setup matrix, cpu clock= 5.34E-02 peak memory=     512 mb
+ dcop: begin dcop, cpu clock= 5.35E-02
+ dcop: end dcop, cpu clock= 5.39E-02 peak memory=     512 mb tot_iter=       8
+ output: inverter.mt0
+ sweep: tran tran0    begin, stop_t=  8.00E-10 #sweeps= 801 cpu clock= 5.41E-02
+ tran: time= 8.8208E-11 tot_iter=      10 conv_iter=       5 cpu clock= 5.43E-02
+ tran: time= 1.6821E-10 tot_iter=      14 conv_iter=       7 cpu clock= 5.43E-02
+ tran: time= 2.4234E-10 tot_iter=      40 conv_iter=      19 cpu clock= 5.45E-02
+ tran: time= 3.2000E-10 tot_iter=      80 conv_iter=      35 cpu clock= 5.50E-02
+ tran: time= 4.0000E-10 tot_iter=      94 conv_iter=      42 cpu clock= 5.51E-02
+ tran: time= 4.8197E-10 tot_iter=     145 conv_iter=      62 cpu clock= 5.56E-02
+ tran: time= 5.8303E-10 tot_iter=     169 conv_iter=      74 cpu clock= 5.58E-02
+ tran: time= 6.4112E-10 tot_iter=     194 conv_iter=      86 cpu clock= 5.60E-02
+ tran: time= 7.2000E-10 tot_iter=     238 conv_iter=     104 cpu clock= 5.64E-02
+ tran: time= 8.0000E-10 tot_iter=     252 conv_iter=     111 cpu clock= 5.65E-02
+ sweep: tran tran0    end, cpu clock= 5.70E-02 peak memory=     512 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

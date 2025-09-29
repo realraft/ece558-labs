@@ -1,0 +1,6 @@
+SOFTINCLUDE /opt/cadence/ic251_hotfix/install/share/cdssetup/cds.lib
+DEFINE NCSU_TechLib_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_TechLib_FreePDK45
+DEFINE NCSU_Devices_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_Devices_FreePDK45
+DEFINE gpdk045 /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045
+DEFINE avTech /opt/cadence/assura/tools.lnx86/assura/etc/avtech/avTech
+DEFINE NAND_X1 ./NAND_X1

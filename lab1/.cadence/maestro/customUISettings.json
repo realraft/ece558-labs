@@ -1,0 +1,40 @@
+{
+    "NAND_X1_NAND_X1_maestro_outputs": {
+        "columns": {
+            "Details": {
+                "visible": true,
+                "width": 125
+            },
+            "Name": {
+                "visible": true,
+                "width": 125
+            },
+            "Plot": {
+                "visible": true,
+                "width": 125
+            },
+            "Plot Target": {
+                "visible": true,
+                "width": 125
+            },
+            "Save": {
+                "visible": true,
+                "width": 125
+            },
+            "Spec": {
+                "visible": true,
+                "width": 125
+            },
+            "Type": {
+                "visible": true,
+                "width": 125
+            }
+        },
+        "outputsMenu": {
+            "Formatting Properties": {
+                "visible": false
+            }
+        },
+        "outputsTestFilterMenu": null
+    }
+}

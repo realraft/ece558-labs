@@ -1,0 +1,19 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "T-2022.06-3 linux64"
+* "format" "HSP"
+* "rundate" "16:23:50 09/22/2025 "
+* "netlist" "NAND-schematic.spice "
+* "runtitle" "** generated for: hspiced"
+* time =  0.000e+00       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ a = 0.000e+00       
++ b = 0.000e+00       
++ net13 = 1.172e-01       
++ vdd = 1.100e+00       
++ vdd_internal = 0.000e+00       
++ y = 1.100e+00       
+***   END: Saved Operating Point ***                     
