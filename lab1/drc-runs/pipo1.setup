@@ -4,13 +4,12 @@ convertPin	"geometry"
 hierDepth	32
 labelCase	"preserve"
 labelDepth	32
-layerMap	"/opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap"
 library	"NAND_X1"
-logFile	"/home/ece558_658_2025/azguro/lab1/drc-runs/PIPO1.LOG"
+logFile	"/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/PIPO1.LOG"
 maxVertices	2048
 pinAttNum	0
-runDir	"/home/ece558_658_2025/azguro/lab1/drc-runs"
-strmFile	"/home/ece558_658_2025/azguro/lab1/drc-runs/NAND_X1.gds.gz"
+runDir	"/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs"
+strmFile	"/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.gds.gz"
 strmVersion	5
 techLib	"gpdk045"
 topCell	"NAND_X1"

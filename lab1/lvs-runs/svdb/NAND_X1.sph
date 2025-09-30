@@ -1,0 +1,9 @@
+# Placement Hierarchy File (sph)
+# 
+# 
+# 
+% NAND_X1 5
+MPM1 M 4
+MPM0 M 4
+MNM1 M 4
+MNM0 M 4

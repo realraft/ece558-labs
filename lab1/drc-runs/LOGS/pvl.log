@@ -11,7 +11,7 @@ ENV VAR: PEGASUS_LVS_DEVICE_DFM_LIBRARY = /opt/cadence/pegasus/tools.lnx86/pegas
 
 
 ########################################################################
-Parsing Control File /home/ece558_658_2025/azguro/lab1/drc-runs/pegasusdrcctl ...
+Parsing Control File /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/pegasusdrcctl ...
 ########################################################################
 TEXT_DEPTH -primary;
 VIRTUAL_CONNECT -colon no;
@@ -20,13 +20,13 @@ VIRTUAL_CONNECT -report no;
 VIRTUAL_CONNECT -depth -primary;
 REPORT_SUMMARY -drc "NAND_X1.sum" -replace;
 MAX_RESULTS -drc 1000;
-RESULTS_DB -drc "/home/ece558_658_2025/azguro/lab1/drc-runs/NAND_X1.drc_errors.ascii" -ascii;
+RESULTS_DB -drc "/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.drc_errors.ascii" -ascii;
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/ece558_658_2025/azguro/lab1/drc-runs/NAND_X1.gds.gz";
+LAYOUT_PATH "/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.gds.gz";
 
 ########################################################################
-Parsing Rule File /home/ece558_658_2025/azguro/lab1/drc-runs/.technology.rul ...
+Parsing Rule File /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/.technology.rul ...
 ########################################################################
 TECHNOLOGY gpdk045 -ruleSet default -techLib /ece558_658/pdk/verification/pvtech.lib;
 WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.

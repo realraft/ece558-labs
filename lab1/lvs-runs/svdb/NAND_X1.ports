@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary NAND_X1
+Y 3 Y 4500 7400 metal1_conn
+GND 1 GND 3290 4640 metal1_conn
+A 4 A 560 6540 metal1_conn
+B 5 B 450 7940 metal1_conn
+VDD 2 VDD 2830 10000 metal1_conn

@@ -1,0 +1,7 @@
+# XXXX: Instance Cross Reference (ixf) (File format 1)
+# XXXX: Layout Primary NAND_X1
+# XXXX: End of header.
+% M 4 M 4
+% NAND_X1 5 NAND_X1 5
+0 M2 0 MPM1  
+0 M3 0 MPM0 X
