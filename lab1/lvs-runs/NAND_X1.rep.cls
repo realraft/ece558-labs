@@ -3,7 +3,7 @@
 #####                                       Pegasus LVS COMPARISON
 #####  
 #####  Version                       :   24.13-s018
-#####  NVN Run Start                 :   Tue Sep 30 09:20:55 2025
+#####  NVN Run Start                 :   Tue Sep 30 10:27:14 2025
 #####  ERC Summary File              :   NAND_X1.sum
 #####  Extraction Report File        :   NAND_X1.rep
 #####  Comparison Report File        :   NAND_X1.rep.cls
@@ -30,10 +30,10 @@
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   31.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
 #####  NVN Peak Memory Usage         :   265.05MB
 #####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
-#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
 #####  LVS Total Peak Memory Usage   :   265.05MB
 #####  
 ##############################################################################################################
@@ -331,8 +331,8 @@ Layout Model:                           | Schematic Model: M(G45N1SVT)
 ========================================+==================================(mi 2)
                                                                                  
                                                                                  
-Layout Insts: M0 @(0.680,2.720)         | Schematic Insts: ** missing inst **
-            : M1 @(1.660,2.730)         |                : ** missing inst **
+Layout Insts: M0 @(0.315,0.525)         | Schematic Insts: ** missing inst **
+            : M1 @(1.160,0.525)         |                : ** missing inst **
 Layout Model: M:SerMos2#1(G45N1SVT)     | Schematic Model: 
 ========================================+==================================(mi 3)
 

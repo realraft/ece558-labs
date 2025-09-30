@@ -3,7 +3,7 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : NAND_X1_3931058.db
+EDB Library dir : NAND_X1_3949247.db
 ECDB dir        : ./
 Top Cell        : NAND_X1
 CDL netlist     : /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.net
@@ -14,4 +14,4 @@ Lvs file        : /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/
 Float net file  : .NAND_X1.info.softchk
 threads         : 32
 debug           : 0
-Source Library  : NAND_X1_3931058
+Source Library  : NAND_X1_3949247

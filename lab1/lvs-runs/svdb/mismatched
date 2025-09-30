@@ -3,7 +3,7 @@
 #####                                       Pegasus LVS COMPARISON
 #####  
 #####  Version                       :   24.13-s018
-#####  NVN Run Start                 :   Tue Sep 30 09:20:55 2025
+#####  NVN Run Start                 :   Tue Sep 30 10:27:14 2025
 #####  ERC Summary File              :   NAND_X1.sum
 #####  Extraction Report File        :   NAND_X1.rep
 #####  Comparison Report File        :   NAND_X1.rep.cls
@@ -30,10 +30,10 @@
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   31.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
 #####  NVN Peak Memory Usage         :   265.05MB
 #####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
-#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
 #####  LVS Total Peak Memory Usage   :   265.05MB
 #####  
 ##############################################################################################################

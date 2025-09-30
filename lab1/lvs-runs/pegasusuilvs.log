@@ -38,7 +38,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version IC25.1-64b 08/12/2025 20:22 (cpgbld31) $
           : sub-version  IC25.1-64b.ISR1.30 
-Started at: 30-Sep-2025  09:20:47
+Started at: 30-Sep-2025  10:27:05
 User Name : oraftery
 Host Name : vlsicad.ecs.umass.edu
 Directory : /home/ece558_658_2025/oraftery/ece558-labs/lab1
@@ -46,6 +46,7 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
+WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz' already exists. It will be overwritten.
 Loading gpdk045/libInit.il ...
 	Loading gpdk045/loadCxt.ile ... done!
 	Loading context 'gpdk045' from library 'gpdk045' ... done!
@@ -91,13 +92,13 @@ case                                    Preserve
 convertDot                              node
 
 INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
-INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_759238447000.
-INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759238447001.
-INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_759238447002.
-INFO (XSTRM-223): 4. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_759238447003.
-INFO (XSTRM-223): 5. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759238447004.
-INFO (XSTRM-223): 6. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_759238447000.
-INFO (XSTRM-223): 7. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_759238447001.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_759242425310.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_759242425311.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_759242425312.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759242425313.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759242425314.
+INFO (XSTRM-223): 6. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_759242425310.
+INFO (XSTRM-223): 7. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_759242425311.
 INFO (XSTRM-223): 8. Translating cellview NAND_X1/NAND_X1/layout as STRUCTURE NAND_X1.
 
 Summary of Objects Translated:
@@ -121,13 +122,13 @@ Summary of Objects Translated:
 	Standard Vias                           17
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               14
+	Pathsegs:                               13
 	Text:                                   5
 	TextDisplay:                            0
 	Cells:                                  8
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 33768KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 33748KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
 
 Creation of CDL for NAND_X1/NAND_X1/schematic is started
  si -batch /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/ >/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/SI.OUT 2>/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/SI.LOG 
@@ -159,7 +160,7 @@ done!
 Loaded gpdk045/libInit.il successfully!
 Loading hnlInit.cxt 
 Running Artist Hierarchical Netlisting ...
-End netlisting Sep 30 09:20:47 2025
+End netlisting Sep 30 10:27:05 2025
 
 Running simin
 
@@ -167,19 +168,19 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Sep 30 09:20:47 2025
+Begin simulation:    Sep 30 10:27:05 2025
 
 auCdl netlisting completed
-End simulation:      Sep 30 09:20:47 2025
+End simulation:      Sep 30 10:27:05 2025
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.
 
-Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-09-30 09:20:50 3931058 vlsicad.ecs.umass.edu
+Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-09-30 10:27:08 3949247 vlsicad.ecs.umass.edu
 Copyright 2025 Cadence Design Systems, Inc.
 All rights reserved worldwide.
 
 INFO:    Command Line Options: -lvs -top_cell NAND_X1 -log_dir LOGS -source_top_cell NAND_X1 -spice /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.spi -qrc_data -control /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/pegasuslvsctl -ui_data -gdb_data /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/.technology.rul
 INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
-         Launch host Memory: MemTotal: 257032 MB,  MemFree: 73201 MB,  SwapTotal: 4095 MB,  SwapFree: 3398 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 376 MB
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 67843 MB,  SwapTotal: 4095 MB,  SwapFree: 3398 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 391 MB
 INFO:    Current path: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs
 INFO:    Run directory same as current path
 INFO:    Log directory: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/LOGS
@@ -191,14 +192,14 @@ WARNING: TEXT_DEPTH at line 35 in file /ece558_658/pdk/verification/pvs/./pvlLVS
 INFO:    See "/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/LOGS/pvl.log" for additional details.
 
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_LVS' version 24.1
-INFO:    License checkout successful ... 2025-09-30 09:20:52
+INFO:    License checkout successful ... 2025-09-30 10:27:10
 
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_16nm' version 24.1
-INFO:    License checkout successful ... 2025-09-30 09:20:52
+INFO:    License checkout successful ... 2025-09-30 10:27:10
 WARNING: Neither hcell nor -automatch option is specified.
 INFO:    Worker 0 started on host vlsicad.ecs.umass.edu with 1 cpu(s)
          CPU: Model: , OS: 	Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 0, Physical cores: 0, Cache: 0 KB, CPU Speed: 0 MHz
-         Memory: MemTotal: 257032 MB,  MemFree: 73195 MB,  SwapTotal: 4095 MB,  SwapFree: 3398 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 376 MB
+         Memory: MemTotal: 257032 MB,  MemFree: 67832 MB,  SwapTotal: 4095 MB,  SwapFree: 3398 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 391 MB
 INFO:    Extraction report file: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.rep 
 INFO:    Extracted layout netlist: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.spi 
 INFO:    Setting LAYOUT_PATH to: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz 
@@ -208,11 +209,11 @@ INFO:    Setting SCHEMATIC_PRIMARY to: NAND_X1
 
 INFO:    Gdsii input summary
          File name: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz
-         File size: 1230
+         File size: 1226
          Version: 5.0
          Library name: NAND_X1
-         Last modified: 2025-9-30 9:8:10
-         Last accessed: 2025-9-30 9:20:47
+         Last modified: 2025-9-30 9:24:38
+         Last accessed: 2025-9-30 10:27:5
          Database unit in user units: 0.0005
          Database unit in meters: 5e-10
          Magnification: 1 
@@ -221,16 +222,16 @@ INFO:    Cell Summary:
          ----------------------------------------------------------------------------
              CELL                          INSTANCE    GEOMETRY      LABELS        HREF        FREF
          ----------------------------------------------------------------------------
-         M1_NWELL_CDNS_759238447000               0           8           0           1           1
-         M2_M1_CDNS_759238447001                  0           3           0           5           5
-         M1_PO_CDNS_759238447002                  0           3           0           2           2
-         M1_PSUB_CDNS_759238447003                0           7           0           1           1
-         M2_M1_CDNS_759238447004                  0           4           0           8           8
-         pmos1v_CDNS_759238447000                 0          17           0           2           2
-         nmos1v_CDNS_759238447001                 0          16           0           2           2
-         NAND_X1                                 21          17           5           1           1
+         M1_PO_CDNS_759242425310                  0           3           0           2           2
+         M1_NWELL_CDNS_759242425311               0           8           0           1           1
+         M1_PSUB_CDNS_759242425312                0           7           0           1           1
+         M2_M1_CDNS_759242425313                  0           3           0           5           5
+         M2_M1_CDNS_759242425314                  0           4           0           8           8
+         nmos1v_CDNS_759242425310                 0          16           0           2           2
+         pmos1v_CDNS_759242425311                 0          17           0           2           2
+         NAND_X1                                 21          16           5           1           1
          ----------------------------------------------------------------------------
-         TOTAL CELL = 8;  INSTANCE = 21;  GEOMETRY = 75;  LABEL = 5
+         TOTAL CELL = 8;  INSTANCE = 21;  GEOMETRY = 74;  LABEL = 5
 
 INFO:    Layer Summary:
          ----------------------------------------------------------------------------
@@ -283,7 +284,7 @@ INFO:    Layer Summary:
          Phvt                   1044         0         0         0         0
          Pimp                   1045         3         0         5         0
          Plvt                   1046         0         0         0         0
-         Poly                   1047        14         0        25         0
+         Poly                   1047        13         0        24         0
          Psub                   1048         0         0         0         0
          ResWdum                1049         0         0         0         0
          Resdum                 1050         0         0         0         0
@@ -335,7 +336,7 @@ INFO:    Layer Summary:
          text                   1098         0         0         0         0
          ----------------------------------------------------------------------------
 
-INFO:    CHIP EXTENT: 0 4320 4520 10460
+INFO:    CHIP EXTENT: 0 0 3000 6000
 
 
 INFO:    Ports ...
@@ -343,11 +344,11 @@ INFO:    Ports ...
 
 INFO:    Texts For Connectivity ...
          ========================================================================
-         Y (2.250, 3.700) 1064 NAND_X1
-         VDD (1.415, 5.000) 1064 NAND_X1
-         GND (1.645, 2.320) 1064 NAND_X1
-         B (0.225, 3.970) 1064 NAND_X1
-         A (0.280, 3.270) 1064 NAND_X1
+         Y (1.450, 1.490) 1064 NAND_X1
+         VDD (0.445, 2.845) 1064 NAND_X1
+         GND (0.460, 0.150) 1064 NAND_X1
+         B (0.085, 1.290) 1064 NAND_X1
+         A (0.080, 1.020) 1064 NAND_X1
 
 INFO:    Texts For SELECT -LABEL ...
          ========================================================================
@@ -390,16 +391,16 @@ INFO:    Layer Summary(Texts For DFM_TEXT):
          ----------------------------------------------------------------------------
 
 INFO:    Expanded Cell Summary
-         M1_NWELL_CDNS_759238447000 is expanded.
-         M1_PSUB_CDNS_759238447003 is expanded.
-INFO:    Status: Runset 100% complete as of 2025-09-30 09:20:53   Elapsed: 00:00:01
+         M1_NWELL_CDNS_759242425311 is expanded.
+         M1_PSUB_CDNS_759242425312 is expanded.
+INFO:    Status: Runset 100% complete as of 2025-09-30 10:27:11   Elapsed: 00:00:01
          Worker: Active CPUs  Total Mem(MB)  Active Mem(MB)  CPU time(s)
               0:    1 /   1             30              22            1
-INFO:	 Status: Finishing as of 2025-09-30 09:20:53   Elapsed: 00:00:01   CPU time[s]: 1
+INFO:	 Status: Finishing as of 2025-09-30 10:27:11   Elapsed: 00:00:01   CPU time[s]: 1
 INFO:    Resource usage by worker at exit:
                   CPU      Elapsed  CPUs       CPU       Peak        Peak engine
          Worker:  time[s]  time[s]  Allocated  usage[%]  Memory[MB]  Memory[MB]
-              0:        1        1          1     89.21          30           22
+              0:        1        1          1     89.39          30           22
          Worker resource usage  summary: Total CPU[s]: 1  Run duration[s]: 1  Max peak memory[MB]: 30
          Worker CPU utilization summary: 1 of 1 available CPU seconds (100.00%) with 1 average available CPU(s)
 INFO:    Extraction result: CLEAN (Reporter)
@@ -407,12 +408,12 @@ INFO:    Generating ERC summary in /home/ece558_658_2025/oraftery/ece558-labs/la
 INFO:    All selected rules completed
          Total CPU Time                    : 1(s)
          Total Real Time                   : 1(s)
-         Total Original Geometry           : 75(151)
+         Total Original Geometry           : 74(150)
          Total ERC RuleChecks              : 0
          Total ERC Results                 : 0 (0)
 INFO:    Pegasus extracted connectivity database creation started
-INFO:    CmdLine: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb -kf -edb NAND_X1_3931058.db -ecdb ./ -topcell NAND_X1 -netlist /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.net -layermap /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.ecdbmap -textmap /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.ports -dependmap NAND_X1.lmap.perc -kvp ifs:EJ -lvsfile /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.lvsfile -saveFloatingNets .NAND_X1.info.softchk 
-INFO:    Opening layer file 'NAND_X1_3931058.db/__layer'...
+INFO:    CmdLine: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb -kf -edb NAND_X1_3949247.db -ecdb ./ -topcell NAND_X1 -netlist /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.net -layermap /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.ecdbmap -textmap /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.ports -dependmap NAND_X1.lmap.perc -kvp ifs:AJ -lvsfile /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.lvsfile -saveFloatingNets .NAND_X1.info.softchk 
+INFO:    Opening layer file 'NAND_X1_3949247.db/__layer'...
 INFO:    Loading layer map file '/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.ecdbmap'...
 INFO:    Loading text map file '/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.ports'...
 INFO:    Loading dependency map file 'NAND_X1.lmap.perc'...
@@ -424,11 +425,11 @@ INFO:    Transfering cdl structures to ecdb structures...
 INFO:    Read Netlist (32 threads)...
 INFO:      DONE - (2s)
 INFO:    Process (32 threads)...
-INFO:    Cell(       2):  16% Done...(2s), M2_M1_CDNS_759238447004                 
-INFO:    Cell(       1):  33% Done...(2s), M1_PO_CDNS_759238447002                 
-INFO:    Cell(       0):  50% Done...(2s), M2_M1_CDNS_759238447001                 
-INFO:    Cell(       4):  66% Done...(2s), nmos1v_CDNS_759238447001                
-INFO:    Cell(       3):  83% Done...(2s), pmos1v_CDNS_759238447000                
+INFO:    Cell(       2):  16% Done...(2s), M2_M1_CDNS_759242425314                 
+INFO:    Cell(       0):  33% Done...(2s), M1_PO_CDNS_759242425310                 
+INFO:    Cell(       1):  50% Done...(2s), M2_M1_CDNS_759242425313                 
+INFO:    Cell(       4):  66% Done...(2s), pmos1v_CDNS_759242425311                
+INFO:    Cell(       3):  83% Done...(2s), nmos1v_CDNS_759242425310                
 INFO:    Cell(       5): 100% Done...(2s), NAND_X1                                 
 INFO:      DONE - (0s)
 INFO:    Cells creation time: (2s)
@@ -441,19 +442,19 @@ INFO:    Erasing cdl subckts...          (0s)
 
 INFO:    edbToEcdb Header Information:
   ECDB file version   : 38
-  DevTmpl offset      : 8653
-  Connect offset      : 8753
-  NameTable offset    : 7300
+  DevTmpl offset      : 8643
+  Connect offset      : 8743
+  NameTable offset    : 7292
   Layer Map offset    : 167
-  Cell Start offset   : 6880
-  Cell End offset     : 7300
-  Aux Data offset     : 9057
+  Cell Start offset   : 6872
+  Cell End offset     : 7292
+  Aux Data offset     : 9047
   Labels     offset   : 0
   Layer RW   offset   : 0
   NVP                 : ifs:0.01 
   Scale               : 8000
   GDS Scale           : 2000
-  File size (static)  : 15938
+  File size (static)  : 15923
   File size (dynamic) : 0
   Cell count          : 6
   ECDB create time    : 2
@@ -462,10 +463,10 @@ INFO:    edbToEcdb Header Information:
   EDB info (Trans)    : WRITTEN_64 W_NOT_NET_ORDER 
 
 INFO:    edbToEcdb Sizes written to disk (MB):
-  NameTbl             :     0.001353
+  NameTbl             :     0.001351
   Layers              :     0.003105
-  Shapes              :     0.001285
-  XYTree              :     0.001063
+  Shapes              :     0.001282
+  XYTree              :     0.001058
   LookUpTbls          :     0.000197
   Cells               :     0.000461
   Insts               :     0.000414
@@ -476,26 +477,26 @@ INFO:    edbToEcdb Sizes written to disk (MB):
   DevTmpl             :     0.000100
   Connect             :     0.000300
   Header              :     0.000167
-  AuxData             :     0.006879
+  AuxData             :     0.006874
   NvnLabels           :     0.000002
 ---------------------------------
-  Total               :     0.015938
+  Total               :     0.015923
 
-INFO:    Manager summary: CPU(s): 0 Elapsed(s): 2 Peak memory(MB): 517.55
-INFO:    Pegasus extracted connectivity database creation completed. 2025-09-30 09:20:55
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 2 Peak memory(MB): 508.79
+INFO:    Pegasus extracted connectivity database creation completed. 2025-09-30 10:27:14
 
 
 INFO:    Creating annotated GDS ...
-INFO:    Library name: NAND_X1_3931058
+INFO:    Library name: NAND_X1_3949247
 INFO:    GDSII file name: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.agf
 INFO:    Cells to be written out: NAND_X1
-INFO:    Source Library: NAND_X1_3931058
+INFO:    Source Library: NAND_X1_3949247
 INFO:    Status: Task in progress ...
-INFO:    Pegasus creating annotated GDS completed. 2025-09-30 09:20:53
+INFO:    Pegasus creating annotated GDS completed. 2025-09-30 10:27:11
 INFO:    Pegasus REPORTDB creation started...
 INFO:    Processing file NAND_X1.rep
 INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 0.00
-INFO:    Pegasus REPORTDB creation completed. 2025-09-30 09:20:55
+INFO:    Pegasus REPORTDB creation completed. 2025-09-30 10:27:14
 
 
 INFO:    Comparing netlists ...
@@ -533,7 +534,7 @@ WARNING (NVN-15140): Cell 'pll_vco_indsym1p3' used in rule 'lvs_black_box' canno
 Skipping this rule.
 INFO:    Commit sch verilog netlist (0s)
 INFO:    Commit lay verilog netlist (0s)
-INFO:    Erase netlist data (1s)
+INFO:    Erase netlist data (0s)
 INFO:    Set blackbox cells (0s)
 INFO:    Sch put cells in memory (0s)
 INFO:    Sch update netlist rules (0s)
@@ -620,13 +621,13 @@ INFO:    Extraction Run Summary
 
 INFO:    NVN Run Summary
          Total CPU Time        : 0(s)
-         Total Real Time       : 1(s)
+         Total Real Time       : 0(s)
          Peak Memory Used      : 265.05(M)
 
 
 INFO:    LVS Summary
          Total CPU Time        : 1(s)
-         Total Real Time       : 2(s)
+         Total Real Time       : 1(s)
          Peak Memory Used      : 265.05(M)
 
     #############################################################
@@ -647,9 +648,9 @@ INFO:    LVS Summary
 INFO:    Creating cross reference database ...
 INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 86.80
 INFO:    Checking in all SoftShare licenses.
-INFO:    Creating cross reference database completed. Tue Sep 30 09:20:56 2025
+INFO:    Creating cross reference database completed. Tue Sep 30 10:27:14 2025
 
 
-Pegasus finished normally. 2025-09-30 09:20:56
+Pegasus finished normally. 2025-09-30 10:27:14
 
 

@@ -1,7 +1,7 @@
 **************************************************************************
 *** Pegasus DRC SUMMARY
 ***
-Execute on Date/Time    : 2025-09-30 09:14:54
+Execute on Date/Time    : 2025-09-30 10:25:05
 Pegasus VERSION         : 24.13-s018
 Rule Deck Path          : /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/.technology.rul
 Rule Deck Title         :
@@ -66,7 +66,7 @@ LAYER PNPdummy ............................. Total Original Geometry:          0
 LAYER Phvt ................................. Total Original Geometry:          0 (         0)
 LAYER Pimp ................................. Total Original Geometry:          3 (         5)
 LAYER Plvt ................................. Total Original Geometry:          0 (         0)
-LAYER Poly ................................. Total Original Geometry:         14 (        25)
+LAYER Poly ................................. Total Original Geometry:         13 (        24)
 LAYER Psub ................................. Total Original Geometry:          0 (         0)
 LAYER ResWdum .............................. Total Original Geometry:          0 (         0)
 LAYER Resdum ............................... Total Original Geometry:          0 (         0)
@@ -679,7 +679,7 @@ RULECHECK soft_check_9 ................................. Total Result          0
 --- SUMMARY
 ---
 Total CPU Time                    : 7(s)
-Total Real Time                   : 19(s)
-Total Original Geometry           : 75 (151)
+Total Real Time                   : 18(s)
+Total Original Geometry           : 74 (150)
 Total DRC RuleChecks              : 576
 Total DRC Results                 : 0 (0)

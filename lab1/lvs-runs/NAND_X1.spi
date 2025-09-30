@@ -2,7 +2,7 @@
 * CDL Netlist:                                              *
 *                                                           *
 * Cell Name  : NAND_X1                                      *
-* Netlisted  : Tue Sep 30 09:20:52 2025                     *
+* Netlisted  : Tue Sep 30 10:27:10 2025                     *
 * Pegasus Version: 24.13-s018 Wed Jun 18 15:36:24 PDT 2025  *
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 *.LDD
@@ -14,8 +14,8 @@
 * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
 .subckt NAND_X1 A B GND VDD Y
 ** N=6 EP=5 FDC=4
-M0 6 A GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=6.02393 scb=0.0015755 scc=2.29155e-06 fw=2.4e-07 $X=1360 $Y=5440 $dt=0
-M1 Y B 6 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=6.9323 scb=0.00267739 scc=7.15276e-06 fw=2.4e-07 $X=3320 $Y=5460 $dt=0
-M2 Y A VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=20.7129 scb=0.0194748 scc=0.00175366 fw=2.4e-07 $X=1360 $Y=8680 $dt=1
-M3 VDD B Y VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=26.3867 scb=0.0302753 scc=0.00185645 fw=2.4e-07 $X=3320 $Y=8720 $dt=1
+M0 6 A GND GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=13.0716 scb=0.0128391 scc=0.000407874 fw=2.4e-07 $X=630 $Y=1050 $dt=0
+M1 Y B 6 GND g45n1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=14.2234 scb=0.0145618 scc=0.000570747 fw=2.4e-07 $X=2320 $Y=1050 $dt=0
+M2 Y A VDD VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=15.8854 scb=0.0156321 scc=0.000428412 fw=2.4e-07 $X=630 $Y=4490 $dt=1
+M3 VDD B Y VDD g45p1svt w=2.4e-07 l=4.5e-08 ad=3.36e-14 as=3.36e-14 pd=7.6e-07 ps=7.6e-07 sa=1.4e-07 sb=1.4e-07 sca=17.0124 scb=0.0173035 scc=0.000589955 fw=2.4e-07 $X=2320 $Y=4500 $dt=1
 .ends NAND_X1

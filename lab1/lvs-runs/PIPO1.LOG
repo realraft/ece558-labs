@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version IC25.1-64b 08/12/2025 20:22 (cpgbld31) $
           : sub-version  IC25.1-64b.ISR1.30 
-Started at: 30-Sep-2025  09:20:47
+Started at: 30-Sep-2025  10:27:05
 User Name : oraftery
 Host Name : vlsicad.ecs.umass.edu
 Directory : /home/ece558_658_2025/oraftery/ece558-labs/lab1
@@ -10,6 +10,7 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
+WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz' already exists. It will be overwritten.
 INFO (XSTRM-217): Reading the layer map file, /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
 WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream Out. This is because there is no color entry in the layer map and the object map file.
 INFO (XSTRM-427): Based on current hardware configuration, running XStream Out translation in multi-threaded mode with 4 threads.
@@ -33,13 +34,13 @@ case                                    Preserve
 convertDot                              node
 
 INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
-INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_759238447000.
-INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759238447001.
-INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_759238447002.
-INFO (XSTRM-223): 4. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_759238447003.
-INFO (XSTRM-223): 5. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759238447004.
-INFO (XSTRM-223): 6. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_759238447000.
-INFO (XSTRM-223): 7. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_759238447001.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_759242425310.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_759242425311.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_759242425312.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759242425313.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_759242425314.
+INFO (XSTRM-223): 6. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_759242425310.
+INFO (XSTRM-223): 7. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_759242425311.
 INFO (XSTRM-223): 8. Translating cellview NAND_X1/NAND_X1/layout as STRUCTURE NAND_X1.
 
 Summary of Objects Translated:
@@ -63,10 +64,10 @@ Summary of Objects Translated:
 	Standard Vias                           17
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               14
+	Pathsegs:                               13
 	Text:                                   5
 	TextDisplay:                            0
 	Cells:                                  8
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 33768KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 33748KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

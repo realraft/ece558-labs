@@ -1,3 +1,3 @@
-1759238462 0 1759238462 "/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs" "pegasusrv" "" "NAND_X1" "" "" "" "" "" "" "" "" "LVS" true
-1759238121 0 1759238121 "/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs" "pegasusrv" "" "NAND_X1" "" "" "" "" "" "" "" "" "DRC" true
-1759238115 0 1759238115 "/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1759242438 0 1759242438 "/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs" "pegasusrv" "" "NAND_X1" "" "" "" "" "" "" "" "" "LVS" true
+1759242329 0 1759242329 "/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs" "pegasusrv" "" "NAND_X1" "" "" "" "" "" "" "" "" "DRC" true
+1759242325 0 1759242325 "/home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true

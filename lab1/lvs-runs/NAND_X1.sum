@@ -1,7 +1,7 @@
 ********************************************************************************
 *** Pegasus ERC SUMMARY
 ***
-Execute on Date/Time    : Tue Sep 30 09:20:51 2025
+Execute on Date/Time    : Tue Sep 30 10:27:10 2025
 Pegasus VERSION         : 24.13-s018 Wed Jun 18 15:36:24 PDT 2025
 Rule Deck Path          : /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/.technology.rul
 Rule Deck Title         :
@@ -75,7 +75,7 @@ LAYER PNPdummy ............................. Total Original Geometry:          0
 LAYER Phvt ................................. Total Original Geometry:          0 (         0)
 LAYER Pimp ................................. Total Original Geometry:          3 (         5)
 LAYER Plvt ................................. Total Original Geometry:          0 (         0)
-LAYER Poly ................................. Total Original Geometry:         14 (        25)
+LAYER Poly ................................. Total Original Geometry:         13 (        24)
 LAYER Psub ................................. Total Original Geometry:          0 (         0)
 LAYER ResWdum .............................. Total Original Geometry:          0 (         0)
 LAYER Resdum ............................... Total Original Geometry:          0 (         0)
@@ -136,6 +136,6 @@ LAYER text ................................. Total Original Geometry:          0
 ---
 Total CPU Time                    : 1(s)
 Total Real Time                   : 1(s)
-Total Original Geometry           : 75 (151)
+Total Original Geometry           : 74 (150)
 Total ERC RuleChecks              : 0
 Total ERC Results                 : 0 (0)

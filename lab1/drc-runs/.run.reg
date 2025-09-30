@@ -5,7 +5,7 @@
 "Run Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs
 "Current Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1
 "Cadence Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/.cadence/
-"Job Signature" internal none IPVS_1759238089_3930051
+"Job Signature" internal none IPVS_1759242303_3942882
 "Pegasus Job Mode" internal none drc
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/.preset.autosave
@@ -16,7 +16,7 @@
 "Pegasus Version" internal none 24.13-s018
 "Binary Name" internal none pegasusgui
 "Pegasus Build Date" internal none "Wed Jun 18 15:36:24 PDT 2025"
-"Pegasus Job Time" internal none 1759238094
+"Pegasus Job Time" internal none 1759242304
 "DFII version" internal none IC25.1.0
 "Run Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs
 "Pegasus Job Mode" internal none drc
@@ -27,6 +27,7 @@
 "Layout Library Name" internal none NAND_X1
 "Layout Cell Name" internal none NAND_X1
 "Layout View Name" internal none layout
+"Layout Layermap" internal text /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
 "Layout ConvertPin" internal text geometry
 "Layout HierDepth" internal none 32
 "Layout MaxVertices" internal none 2048
@@ -39,7 +40,7 @@
 "Layout ReplaceBusBitChar" input none nil
 "Layout NoConvertHalfWidthPath" input none nil
 "Layout FlattenPCells" input none nil
-"Job Signature" internal none IPVS_1759238089_3930051
+"Job Signature" internal none IPVS_1759242303_3942882
 "Do not check rules files before run" internal none ENABLED
 "Control File" input text /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/pegasusdrcctl
 "Pegasus Job Log" log text /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/pegasusuidrc.log
@@ -53,7 +54,7 @@
 "Pegasus Version" internal none 24.13-s018
 "Binary Name" internal none pegasusvirt
 "Pegasus Build Date" internal none "Wed Jun 18 15:36:24 PDT 2025"
-"Pegasus Job Time" internal none 1759238094
+"Pegasus Job Time" internal none 1759242305
 "ASCII DRC Report Database" output rdb /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.drc_errors.ascii
 "DRC Summary" output text /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.sum
 "Layout GDSII" input none /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.gds.gz
@@ -62,8 +63,8 @@
 "Report MaxResults" internal none 1000
 "Rule File" input text /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/.technology.rul
 "Run Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/
-"Pegasus Mode Info" internal none JFGJBANHDDJNOMOHBHLKLMBCCHMADEJE
+"Pegasus Mode Info" internal none JFGJBANHDDJNOMOHJPEOECPDBFJHMDCE
 "Pegasus Version" internal none 24.13-s018
 "Binary Name" internal none pegasus
 "Pegasus Build Date" internal none "Wed Jun 18 22:37:46 EDT 2025"
-"Pegasus Job Time" internal none 1759238115
+"Pegasus Job Time" internal none 1759242325

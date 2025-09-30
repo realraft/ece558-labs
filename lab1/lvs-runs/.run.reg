@@ -5,7 +5,7 @@
 "Run Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs
 "Current Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1
 "Cadence Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/.cadence/
-"Job Signature" internal none IPVS_1759238443_3930051
+"Job Signature" internal none IPVS_1759242423_3942882
 "Pegasus Job Mode" internal none lvs
 "GUI Flow" internal none virtuoso6
 "GUI Preset" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/.preset.autosave
@@ -16,7 +16,7 @@
 "Pegasus Version" internal none 24.13-s018
 "Binary Name" internal none pegasusgui
 "Pegasus Build Date" internal none "Wed Jun 18 15:36:24 PDT 2025"
-"Pegasus Job Time" internal none 1759238446
+"Pegasus Job Time" internal none 1759242424
 "DFII version" internal none IC25.1.0
 "Rule File" input text /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/.technology.rul
 "Layout Scale" internal none 0.0005
@@ -73,7 +73,7 @@
 "Extraction Result" internal none CLEAN
 "ERC Result" internal none EMPTY
 "UI Data" internal none ENABLED
-"Pegasus Mode Info" internal none JFGJBANHDDJNOMOHEJNFLKDAKHGFOAMG
+"Pegasus Mode Info" internal none JFGJBANHDDJNOMOHBCNLLLNNEGDPIENE
 "Report MaxResults" internal none 1000
 "Binary Name" internal none Pegasus
 "Comparison Result" internal none MISMATCH
@@ -81,4 +81,4 @@
 "Pegasus Version" internal none 24.13-s018
 "Binary Name" internal none pegasusnvn
 "Pegasus Build Date" internal none "Wed Jun 18 15:36:24 PDT 2025"
-"Pegasus Job Time" internal none 1759238455
+"Pegasus Job Time" internal none 1759242434

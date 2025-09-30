@@ -7,16 +7,16 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 3.10.0-693.el7.x86_64
 Executed on:     vlsicad.ecs.umass.edu (Linux x86_64 4.18.0-553.16.1.el8_10.x86_64)
-Process Id:      3931207
-Starting Time:   Tue Sep 30 09:20:53 2025 (Tue Sep 30 13:20:53 2025 GMT)
-With parameters: NAND_X1_3931058 /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.agf NAND_X1 -lmap lmapLY0s3f -netmap /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.lnn -property_nqrc -gds_scale 2000 -vircolon 
+Process Id:      3949395
+Starting Time:   Tue Sep 30 10:27:11 2025 (Tue Sep 30 14:27:11 2025 GMT)
+With parameters: NAND_X1_3949247 /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.agf NAND_X1 -lmap lmapuuK4A1 -netmap /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.lnn -property_nqrc -gds_scale 2000 -vircolon 
 ********************************************************************************
 
-Library name: NAND_X1_3931058
+Library name: NAND_X1_3949247
 GDSII file name: /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb/NAND_X1.agf
 Cells to be written out: NAND_X1
-Source Library: NAND_X1_3931058
-Layer mapping file(GDS <- DMC): lmapLY0s3f
+Source Library: NAND_X1_3949247
+Layer mapping file(GDS <- DMC): lmapuuK4A1
     23 (dt:0 tt:0) <- 23
     24 (dt:0 tt:0) <- 24
     55 (dt:0 tt:0) <- 55
@@ -126,12 +126,12 @@ Option: output object property for new qrc flow
                 Object Statistics of Cells                            
 Cell Name         Box  Polygon     Path   Label Instance Array    Total
 ----------------------------------------------------------------------
-NAND_X1            30        2        0       0    19      0        51
-M2_M1_CDNS_759238447001        3        0        0       0     0      0         3
-M1_PO_CDNS_759238447002        3        0        0       0     0      0         3
-M2_M1_CDNS_759238447004        4        0        0       0     0      0         4
-pmos1v_CDNS_759238447000       11        0        0       0     0      0        11
-nmos1v_CDNS_759238447001       10        0        0       0     0      0        10
+NAND_X1            29        3        0       0    19      0        51
+M1_PO_CDNS_759242425310        3        0        0       0     0      0         3
+M2_M1_CDNS_759242425313        3        0        0       0     0      0         3
+M2_M1_CDNS_759242425314        4        0        0       0     0      0         4
+nmos1v_CDNS_759242425310       10        0        0       0     0      0        10
+pmos1v_CDNS_759242425311       11        0        0       0     0      0        11
 ----------------------------------------------------------------------
 
 Object Statistics of Layers
@@ -156,8 +156,8 @@ Layer   Objects
 
 Object Summary
 ------------------
-     Box        61
- Polygon         2
+     Box        60
+ Polygon         3
     Path         0
    Label         0
 Instance        19
