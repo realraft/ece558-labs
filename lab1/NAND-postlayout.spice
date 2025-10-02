@@ -1,0 +1,57 @@
+** Post-Layout Simulation with Parasitics
+** Include model files
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+.include 'NAND_X1-post-layout.sp'
+
+.param vdd_val=1.1
+
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
++    HIER_DELIM=0
+
+.vec 'input.vec'
+
+** Power supplies
+Vgnd gnd 0 0
+Vsupply vdd 0 vdd_val
+
+** Instantiate the extracted cell
+** Port order from .SUBCKT: A B GND VDD Y
+Xnand a b gnd vdd y NAND_X1
+
+** Load capacitance
+Cload y 0 5e-15
+
+** Transient analysis
+.tran 1p 2.5n
+
+
+.MEASURE TRAN tpdr
++ TRIG=v(a) VAL='0.5*vdd_val' FALL=1
++ TARG=v(y) VAL='0.5*vdd_val' RISE=1
+
+.MEASURE TRAN tpdf
++ TRIG=v(a) VAL='0.5*vdd_val' RISE=1
++ TARG=v(y) VAL='0.5*vdd_val' FALL=1
+
+.MEASURE TRAN tr_y
++ TRIG=v(y) VAL='0.2*vdd_val' RISE=1
++ TARG=v(y) VAL='0.8*vdd_val' RISE=1
+
+.MEASURE TRAN tf_y
++ TRIG=v(y) VAL='0.8*vdd_val' FALL=1
++ TARG=v(y) VAL='0.2*vdd_val' FALL=1
+
+.MEASURE TRAN istat AVG I(Vsupply) FROM=50p TO=150p
+.MEASURE TRAN ipeak MIN I(Vsupply) FROM=0p TO=2.5n
+
+.print tran v(a) v(b) v(y) i(Vsupply)
+.option post
+
+.END
+EOF

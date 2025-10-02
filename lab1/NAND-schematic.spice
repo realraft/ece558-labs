@@ -8,7 +8,7 @@
 .include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
 .include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
 
-** Define parameters
+
 .param vdd_val=1.1
 
 .TEMP 25
@@ -19,12 +19,11 @@
 +    PSF=2
 +    HIER_DELIM=0
 
-** Vector file input
 .vec 'input.vec'
 
 ** Power supplies with current measurement
 Vgnd gnd 0 0
-** Current flows through Vsupply, so we measure it here
+
 Vsupply vdd 0 vdd_val
 
 ** Library name: NAND_X1
@@ -35,7 +34,6 @@ mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=
 mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 mnm0 y a net13 net13 g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 
-** Load capacitance (5fF as specified)
 Cload y 0 5e-15
 
 ** Transient analysis
@@ -68,7 +66,6 @@ Cload y 0 5e-15
 ** Peak current measurement during entire simulation
 .MEASURE TRAN ipeak MIN I(Vsupply) FROM=0p TO=2.5n
 
-** Output for waveform viewing
 .print tran v(a) v(b) v(y) i(Vsupply)
 .option post
 

@@ -4,50 +4,140 @@ Mdi:ArrangeIcons
 wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
+wm geometry . 900x785+614+34
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/lab1/NAND-schematic.tr0 1 openonly
+Mdi:ArrangeIcons
+wm geometry . 900x785+315+49
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-schematic.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 232x242+768+480
-wm geometry .sigmgr._PF:1 231x319+663+416
-wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr._PF:1 232x242+918+379
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
 pf:read PF:1 i(vsupply)
 # WF:1:1
 Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal0
-Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+632+433
-Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+768+480
-Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+632+433
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-101u -2u } {264p 528p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
+pf:read PF:1 v(a)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(b)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(y)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Mdi:FullSize
+wm geometry .sigmgr._PF:1 232x242+1254+333
+wm geometry .sigmgr 376x204+1234+53
 Graph:Select Graph0
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-27.57357972261u -44.129377989672u} {307.19573796p 375.26503571p}}
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig {Signal3 Signal1} -region {1 1} -rgnindex {0 1}
+Mdi:ArrangeIcons
+Graph:DSel
+Mdi:ArrangeIcons
+Graph:DSel
+Mdi:ArrangeIcons
+Graph:DSel
+Mdi:ArrangeIcons
+wm geometry . 900x785+650+46
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+910+897
+wm geometry .sigmgr._PF:1 232x242+912+842
+wm geometry .sigmgr 376x204+1164+864
+wm geometry .sigmgr._PF:1 232x242+916+868
+Mdi:ArrangeIcons
+wm geometry . 900x785+565+36
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+918+379
+wm geometry .sigmgr 376x204+829+128
+Mdi:ArrangeIcons
+wm geometry . 900x785+315+49
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+1254+333
+wm geometry .sigmgr 376x204+1234+53
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-65u -5u } {250p 450p }}
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-120u 40u } {0.0 800p }}
+wm geometry . 900x785+650+46
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+910+897
+wm geometry .sigmgr._PF:1 232x242+912+842
+wm geometry .sigmgr 376x204+1164+864
+wm geometry .sigmgr._PF:1 232x242+916+868
+Mdi:ArrangeIcons
+wm geometry . 900x785+565+36
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal3 Signal1 1 {- {.55} - {.55}} Signal xyrangeDefined {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:0
+GrMeas:DeltaX Graph0 Signal3 Signal1 1 {- {.55} - {.55}} Signal xyrangeDefined {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 1 activeGraph 0 - 1
+# M:1
+Graph:DSel
+GrMeas:Select Graph0 M:1 0
+Graph delsignal selected
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{17.654029116036u -49.751720971288u} {129.3p 292.18p}}
+GrMeas:Select Graph0 M:0 0
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal3 Signal1 1 {- {.55} - {.55}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:2
+Graph:DSel
+GrMeas:Select Graph0 M:2 0
+GrMeas:MoveDiffAnc2 Graph0 M:2 0 821.65498338848p 0.57065594240236
+GrMeas:MoveDiffAnc1 Graph0 M:2 0 413.38380795002p 1.0980277651672
+GrMeas:MoveDiffAnc2 Graph0 M:2 0 400.9p 0.021999999880798
+Mdi:ArrangeIcons
+wm geometry . 900x785+620+43
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:MoveDiffAnc2 Graph0 M:2 0 917.17591891058p 48.75841552506f
+GrMeas:MoveDiffAnc1 Graph0 M:2 0 412.99599999999p 1.0997242927551
+GrMeas:MoveDiffAnc2 Graph0 M:2 0 635.44961755255p 1.1000000238419
+GrMeas:MoveDiffAnc1 Graph0 M:2 0 425.25027686614p 1.0253692602306
+GrMeas:MoveDiffAnc1 Graph0 M:2 0 453.59623801472p 0.41055821184878
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:2 0
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal3 Signal3 0 {- {.22} - {.88}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:3
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
@@ -58,8 +148,133 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph itemcreate oval 79.0 91.0 352.0 163.0 -tags draw0_oval -fill {} -outline pink -width 0 -linestyle - -dashlen 10
-# GrDraw0_oval
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:3 0
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal3 Signal1 1 {- {.55} - {.55}} Signal xyrangeDefined {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:4
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal1 Signal3 1 {- {.55} - {.55}} Signal xyrangeDefined {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 1 activeGraph 0 - 1
+# M:5
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:5 0
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:4 0
+Graph delsignal selected
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal1 Signal3 1 {- {.55} - {.55}} Signal xyrangeDefined {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:6
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:6 0
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.2213694778758 -0.15589039944698} {628.317p 1.07409n}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal1 Signal3 1 {- {.55} - {.55}} Signal xyrangeDefined {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:7
+Graph:DSel
+GrMeas:Select Graph0 M:7 0
+Graph delsignal selected
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal1 Signal3 1 {- {.55} - {.55}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:8
+Mdi:ArrangeIcons
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:DeltaX Graph0 Signal3 Signal3 0 {- {.22} - {.88}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 1 activeGraph 0 - 1
+# M:9
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:9 0
+GrMeas:MoveText Graph0 M:9 0 53.0 6.0
+Graph:DSel
+GrMeas:DeltaX Graph0 Signal1 Signal1 0 {- {.88} - {.22}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 1 activeGraph 0 - 1
+# M:10
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:10 0
+GrMeas:MoveText Graph0 M:10 0 26.0 55.0
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph0 M:10 0
+GrMeas:MoveDiffAnc1 Graph0 M:10 0 802.48379361956p 1.0392849945202
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph0 M:10 0
+GrMeas:MoveDiffAnc2 Graph0 M:10 0 847.01729949808p 48.75841552506f
+GrMeas:MoveDiffAnc2 Graph0 M:10 0 847.70309867374p 48.75841552506f
+Mdi:ArrangeIcons
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{0.24279009135697 -0.32502757736381} {801.754553962p 884.050455107p}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:10 0
+GrMeas:MoveDiffAnc2 Graph0 M:10 0 845.01434517544p -18.267237365727f
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0)} -range {{-325u 175u } {750p 950p } {-0.75 0.65 } {-0.71875 1.90625 }}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0)} -range {{-700u 500u } {550p 1.15n } {-1.6125 1.5375 } {-2.5 3.5 }}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.4185765017634 0.57289061217927} {776.57394175p 825.95148244p}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:10 0
+GrMeas:MoveDiffAnc1 Graph0 M:10 0 800.1874639756p 1.0954175556107
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0) AxisY(2,0)} -range {all all all all} -zoomed {0 0 0 0}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.3421817478164 -0.4458398473044} {646.148p 1.09548n}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:8 0
+GrMeas:MoveText Graph0 M:8 0 -74.0 20.0
+Graph:DSel
+GrMeas:Select Graph0 M:9 0
+GrMeas:MoveText Graph0 M:9 0 62.0 9.0
+Graph:DSel
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
@@ -69,1107 +284,291 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph:ManipulateItem icursor draw1_text @133.0,68.0
-Graph itemcreate text 133.0 68.0 -tags draw1_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw0_text @515.0,385.0
+Graph itemcreate text 515.0 385.0 -tags draw0_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw0_text
+Graph:ManipulateItem insert GrDraw0_text insert r
+Graph:ManipulateItem insert GrDraw0_text insert i
+Graph:ManipulateItem insert GrDraw0_text insert s
+Graph:ManipulateItem insert GrDraw0_text insert e
+Graph:ManipulateItem insert GrDraw0_text insert { }
+Graph:ManipulateItem dchars GrDraw0_text 4
+Graph:ManipulateItem insert GrDraw0_text insert /
+Graph:ManipulateItem insert GrDraw0_text insert f
+Graph:ManipulateItem insert GrDraw0_text insert a
+Graph:ManipulateItem insert GrDraw0_text insert l
+Graph:ManipulateItem insert GrDraw0_text insert l
+Graph:ManipulateItem insert GrDraw0_text insert { }
+Graph:ManipulateItem insert GrDraw0_text insert t
+Graph:ManipulateItem insert GrDraw0_text insert i
+Graph:ManipulateItem insert GrDraw0_text insert m
+Graph:ManipulateItem insert GrDraw0_text insert e
+Graph:ManipulateItem insert GrDraw0_text insert { }
+Graph:ManipulateItem insert GrDraw0_text insert {}
+Graph:ManipulateItem insert GrDraw0_text insert V
+Graph:ManipulateItem insert GrDraw0_text insert 9
+Graph:ManipulateItem dchars GrDraw0_text 16
+Graph:ManipulateItem insert GrDraw0_text insert {}
+Graph:ManipulateItem insert GrDraw0_text insert (
+Graph:ManipulateItem insert GrDraw0_text insert a
+Graph:ManipulateItem insert GrDraw0_text insert {}
+Graph:ManipulateItem insert GrDraw0_text insert )
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw0_text
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw2_text @579.0,332.0
+Graph itemcreate text 579.0 332.0 -tags draw2_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
 # GrDraw1_text
-Graph:ManipulateItem insert GrDraw1_text insert i
+Graph:ManipulateItem insert GrDraw1_text insert r
 Graph:ManipulateItem insert GrDraw1_text insert s
+Graph:ManipulateItem insert GrDraw1_text insert i
+Graph:ManipulateItem insert GrDraw1_text insert e
 Graph:ManipulateItem insert GrDraw1_text insert { }
+Graph:ManipulateItem insert GrDraw1_text insert t
+Graph:ManipulateItem insert GrDraw1_text insert r
+Graph:ManipulateItem insert GrDraw1_text insert i
+Graph:ManipulateItem dchars GrDraw1_text 7
+Graph:ManipulateItem dchars GrDraw1_text 6
+Graph:ManipulateItem dchars GrDraw1_text 5
+Graph:ManipulateItem dchars GrDraw1_text 4
+Graph:ManipulateItem dchars GrDraw1_text 3
 Graph:ManipulateItem dchars GrDraw1_text 2
 Graph:ManipulateItem dchars GrDraw1_text 1
-Graph:ManipulateItem dchars GrDraw1_text 0
-Graph:ManipulateItem insert GrDraw1_text insert {}
-Graph:ManipulateItem insert GrDraw1_text insert ~
-Graph:ManipulateItem insert GrDraw1_text insert {}
-Graph:ManipulateItem insert GrDraw1_text insert {}
-Graph:ManipulateItem dchars GrDraw1_text 0
-Graph:ManipulateItem insert GrDraw1_text insert {}
-Graph:ManipulateItem insert GrDraw1_text insert ~
-Graph:ManipulateItem insert GrDraw1_text insert ~
-Graph:ManipulateItem dchars GrDraw1_text 1
-Graph:ManipulateItem insert GrDraw1_text insert =
+Graph:ManipulateItem insert GrDraw1_text insert i
+Graph:ManipulateItem insert GrDraw1_text insert s
+Graph:ManipulateItem insert GrDraw1_text insert e
 Graph:ManipulateItem insert GrDraw1_text insert { }
-Graph:DSel
+Graph:ManipulateItem insert GrDraw1_text insert t
+Graph:ManipulateItem insert GrDraw1_text insert i
+Graph:ManipulateItem insert GrDraw1_text insert m
+Graph:ManipulateItem insert GrDraw1_text insert e
+Graph:ManipulateItem insert GrDraw1_text insert { }
+Graph:ManipulateItem insert GrDraw1_text insert t
+Graph:ManipulateItem insert GrDraw1_text insert r
+Graph:ManipulateItem insert GrDraw1_text insert { }
+Graph:ManipulateItem insert GrDraw1_text insert o
+Graph:ManipulateItem insert GrDraw1_text insert f
+Graph:ManipulateItem insert GrDraw1_text insert { }
+Graph:ManipulateItem insert GrDraw1_text insert y
 Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw3_text @238.0,347.0
+Graph itemcreate text 238.0 347.0 -tags draw3_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw2_text
+Graph:ManipulateItem insert GrDraw2_text insert {}
+Graph:ManipulateItem insert GrDraw2_text insert T
+Graph:ManipulateItem insert GrDraw2_text insert P
+Graph:ManipulateItem insert GrDraw2_text insert D
+Graph:ManipulateItem insert GrDraw2_text insert R
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem insert GrDraw2_text insert f
+Graph:ManipulateItem dchars GrDraw2_text 4
+Graph:ManipulateItem insert GrDraw2_text insert 
+Graph:ManipulateItem insert GrDraw2_text insert 
+Graph:ManipulateItem insert GrDraw2_text insert f
+Graph:ManipulateItem dchars GrDraw2_text 6
+Graph:DSel
+Graph axisconfig {AxisX(0) AxisY(0,0) AxisY(1,0) AxisY(2,0)} -range {all all all all} -zoomed {0 0 0 0}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:8 0
+GrMeas:MoveText Graph0 M:8 0 -72.0 6.0
 Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw1_text
-Graph:Select Graph0
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Mdi:ArrangeIcons
-wm geometry . 900x785+-61+74
-Mdi:ArrangeIcons
-wm geometry .sigmgr 376x204+1066+531
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:Select Graph0
-Mdi:ArrangeIcons
-wm geometry .sigmgr 376x204+522+164
-Mdi:ArrangeIcons
-wm geometry .sigmgr 376x204+1066+531
-Graph:ManipulateItem move selSet -1 9
-Graph:ManipulateItem move selSet -1 6
-Graph:ManipulateItem move selSet 0 3
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 2 -4
-Graph:ManipulateItem move selSet 3 -5
-Graph:ManipulateItem move selSet 2 -3
-Graph:DSel
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:Move 46 11
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-100u 60u } {0.0 400p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-34u 32u } {132p 264p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem move selSet -3 9
-Graph:ManipulateItem move selSet -5 16
-Graph:ManipulateItem move selSet -3 12
-Graph:ManipulateItem move selSet -1 10
-Graph:ManipulateItem move selSet 0 3
-Graph:ManipulateItem move selSet -1 1
-Graph:ManipulateItem move selSet 0 3
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 0 3
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem dtag GrDraw0_oval selSet
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw1_text
-Graph:ManipulateItem move selSet 0 15
-Graph:ManipulateItem move selSet 0 19
-Graph:ManipulateItem move selSet 0 11
-Graph:ManipulateItem move selSet 1 4
-Graph:ManipulateItem move selSet 2 2
-Graph:ManipulateItem move selSet 1 4
-Graph:ManipulateItem move selSet 1 2
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 1 -1
-Graph:ManipulateItem move selSet 5 -1
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 0 0
-Mdi:Move 101 7
-Mdi:ArrangeIcons
-Graph:DSel
-pf:read PF:1 i(vsupply)
-# WF:1:1
-Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
-# Signal1
-Mdi:ArrangeIcons
-Graph:DSel
-Graph:Select Graph0
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem move selSet -4 0
-Graph:ManipulateItem move selSet -10 1
-Graph:ManipulateItem move selSet -21 0
-Graph:ManipulateItem move selSet -4 0
-Graph:ManipulateItem move selSet -8 0
-Graph:ManipulateItem move selSet -2 0
+Graph:ManipulateItem addtag selSet withtag GrDraw0_text
 Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -4 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -5 2
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 1 3
-Graph:ManipulateItem move selSet 8 6
-Graph:ManipulateItem move selSet 8 2
-Graph:ManipulateItem move selSet 2 1
-Graph:ManipulateItem move selSet 3 1
-Graph:ManipulateItem move selSet 4 1
-Graph:ManipulateItem move selSet 3 2
-Graph:ManipulateItem move selSet 2 0
-Graph:ManipulateItem move selSet 4 2
-Graph:ManipulateItem move selSet 4 2
-Graph:ManipulateItem move selSet 5 2
-Graph:ManipulateItem move selSet 13 6
-Graph:ManipulateItem move selSet 4 2
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 2 1
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 2 1
-Graph:ManipulateItem move selSet 2 1
-Graph:ManipulateItem move selSet 3 2
-Graph:ManipulateItem move selSet 7 3
-Graph:ManipulateItem move selSet 4 2
-Graph:ManipulateItem move selSet 2 1
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -1 1
-Graph:ManipulateItem move selSet -2 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 1
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -2 -2
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem dtag GrDraw0_oval selSet
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw1_text
-Graph:ManipulateItem move selSet 2 0
-Graph:ManipulateItem move selSet 15 7
-Graph:ManipulateItem move selSet 14 5
-Graph:ManipulateItem move selSet 6 3
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 2 2
-Graph:ManipulateItem move selSet 6 5
-Graph:ManipulateItem move selSet 4 4
-Graph:ManipulateItem move selSet 3 4
-Graph:ManipulateItem move selSet 4 5
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 2 3
-Graph:ManipulateItem move selSet 2 7
-Graph:ManipulateItem move selSet 1 3
-Graph:ManipulateItem move selSet 1 9
-Graph:ManipulateItem move selSet 1 5
-Graph:ManipulateItem move selSet 2 7
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 1 2
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 3 2
-Graph:ManipulateItem move selSet 2 1
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet -2 4
-Graph:ManipulateItem move selSet -8 5
-Graph:ManipulateItem move selSet -3 1
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -5 2
-Graph:ManipulateItem move selSet -9 1
-Graph:ManipulateItem move selSet -14 2
-Graph:ManipulateItem move selSet -6 1
-Graph:ManipulateItem move selSet -1 0
-Graph:DSel
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {{-80u 80u } {0.0 400p } {-350u 250u }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph:DSel
-Graph:DSel
-Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{262.61820510422u 87.688229792004u} {211.73p 240.9p}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-350u 250u } {0.0 400p }} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{262.61820510422u 87.688229792004u} {211.73p 240.9p}} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-350u 250u } {0.0 400p }} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{262.61820510422u 87.688229792004u} {211.73p 240.9p}} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-350u 250u } {0.0 400p }} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{262.61820510422u 87.688229792004u} {211.73p 240.9p}} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-350u 250u } {0.0 400p }} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(1,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{262.61820510422u 87.688229792004u} {211.73p 240.9p}} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph itemselect AxisY(1,0) add
-# AxisY(1,0)
-Graph delsignal selected
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph itemselect Signal1 add
-# Signal1
-Graph delsignal selected
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem move selSet 3 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 -2
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 2 -5
-Graph:ManipulateItem move selSet 3 -9
-Graph:ManipulateItem move selSet 2 -5
-Graph:ManipulateItem move selSet 3 -17
-Graph:ManipulateItem move selSet 1 -5
-Graph:ManipulateItem move selSet 1 -4
-Graph:ManipulateItem move selSet 1 -3
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 -3
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet -2 -5
-Graph:ManipulateItem move selSet -1 -8
-Graph:ManipulateItem move selSet 0 -3
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -5 0
+Graph:ManipulateItem move selSet -4 2
+Graph:ManipulateItem move selSet -10 2
+Graph:ManipulateItem move selSet -16 0
+Graph:ManipulateItem move selSet -24 0
+Graph:ManipulateItem move selSet -16 1
+Graph:ManipulateItem move selSet -13 0
 Graph:ManipulateItem move selSet -3 0
-Graph:ManipulateItem move selSet -4 0
-Graph:ManipulateItem move selSet -6 1
-Graph:ManipulateItem move selSet -3 1
-Graph:ManipulateItem move selSet -2 1
-Graph:ManipulateItem move selSet 3 5
-Graph:ManipulateItem move selSet 2 2
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 5 0
-Graph:ManipulateItem move selSet 3 -1
-Graph:ManipulateItem move selSet 2 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-200u 200u } {170p 290p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-400u 400u } {0.0 400p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-800u 800u } {-200p 600p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-340u 320u } {-5p 490p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-355.68177100496u -52.94717412154u} {-52.721p -347.49p}}
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-600u 200u } {-600p 200p }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-0.001 600u } {-1.75n 1.25n }}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 6 -10
-Graph:ManipulateItem move selSet 2 -6
-Graph:ManipulateItem move selSet 1 -1
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet 0 -4
-Graph:ManipulateItem move selSet -1 -3
-Graph:ManipulateItem move selSet 0 -3
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 -3
-Graph:ManipulateItem move selSet 0 -5
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet -1 -4
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -3 -3
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 344.0 166.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 330.0 159.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 322.0 155.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 297.0 148.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 293.0 147.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 286.0 146.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 283.0 146.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 279.0 146.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 276.0 146.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 266.0 146.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 258.0 145.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 251.0 145.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 250.0 146.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 248.0 147.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 246.0 149.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 244.0 150.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 242.0 154.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 241.0 156.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 240.0 157.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 238.0 159.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 237.0 160.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 236.0 160.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 235.0 161.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 233.0 162.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 230.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 227.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 226.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 225.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 223.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 222.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 221.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 221.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 220.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 219.0 164.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 219.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 218.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 217.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 216.0 168.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 215.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 214.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 214.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 214.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 213.0 167.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 212.0 166.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 212.0 166.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 210.0 165.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 209.0 164.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 206.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 204.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 96.0 204.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 98.0 204.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 100.0 202.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 101.0 202.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 102.0 201.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 102.0 200.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 102.0 200.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 103.0 200.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 105.0 198.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 106.0 197.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 106.0 197.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 107.0 196.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 107.0 196.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 109.0 195.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 109.0 194.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 194.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 193.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 192.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 112.0 191.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 113.0 190.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 114.0 189.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 114.0 188.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 114.0 188.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 114.0 186.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 115.0 182.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 115.0 180.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 113.0 181.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 112.0 181.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 112.0 181.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 181.0 163.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 181.0 159.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 181.0 157.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 181.0 156.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 181.0 155.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 182.0 158.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 182.0 161.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 111.0 182.0 161.0
-Graph:ManipulateItem dtag GrDraw0_oval selSet
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw1_text
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 3 -7
-Graph:ManipulateItem move selSet 1 -4
-Graph:ManipulateItem move selSet 3 -13
-Graph:ManipulateItem move selSet 1 -6
-Graph:ManipulateItem move selSet 2 -5
-Graph:ManipulateItem move selSet 1 -10
-Graph:ManipulateItem move selSet 0 -15
-Graph:ManipulateItem move selSet 0 -11
-Graph:ManipulateItem move selSet 0 -5
-Graph:ManipulateItem move selSet 0 -13
-Graph:ManipulateItem move selSet -1 -11
-Graph:ManipulateItem move selSet -1 -6
-Graph:ManipulateItem move selSet -1 -3
-Graph:ManipulateItem move selSet -2 -7
-Graph:ManipulateItem move selSet -3 -4
-Graph:ManipulateItem move selSet -2 -3
-Graph:ManipulateItem move selSet -3 -1
-Graph:ManipulateItem move selSet -3 -1
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -2 -2
-Graph:ManipulateItem move selSet -4 -5
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -2 1
-Graph:ManipulateItem move selSet -3 0
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -3 -1
-Graph:ManipulateItem move selSet -5 0
-Graph:ManipulateItem move selSet -7 0
+Graph:ManipulateItem move selSet -9 2
 Graph:ManipulateItem move selSet -6 0
-Graph:ManipulateItem move selSet -7 -1
-Graph:ManipulateItem move selSet -7 -1
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -2 -2
+Graph:ManipulateItem move selSet -11 0
+Graph:ManipulateItem move selSet -13 0
+Graph:ManipulateItem move selSet -26 0
+Graph:ManipulateItem move selSet -12 0
+Graph:ManipulateItem move selSet -18 0
+Graph:ManipulateItem move selSet -3 0
+Graph:ManipulateItem move selSet -5 0
 Graph:ManipulateItem move selSet -1 0
 Graph:ManipulateItem move selSet -1 0
 Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 -1
 Graph:ManipulateItem move selSet 0 1
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-172.73765095518u -205.8492474893u} {246p 360.25p}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(A)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{-194.82962670736u 9.2891004896956u} {0.0 800p}} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+579+395
-Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet 19 11
-Graph:ManipulateItem move selSet 16 8
-Graph:ManipulateItem move selSet 28 18
-Graph:ManipulateItem move selSet 24 13
-Graph:ManipulateItem move selSet 15 10
-Graph:ManipulateItem move selSet 10 5
-Graph:ManipulateItem move selSet 5 4
-Graph:ManipulateItem move selSet 1 2
-Graph:ManipulateItem move selSet 2 3
-Graph:ManipulateItem move selSet 1 2
-Graph:ManipulateItem move selSet 2 6
-Graph:ManipulateItem move selSet 1 8
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 0 5
-Graph:ManipulateItem move selSet 0 6
-Graph:ManipulateItem move selSet 0 3
-Graph:ManipulateItem move selSet -1 5
-Graph:ManipulateItem move selSet -1 7
-Graph:ManipulateItem move selSet -1 3
-Graph:ManipulateItem move selSet -1 4
-Graph:ManipulateItem move selSet -1 2
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -9 1
-Graph:ManipulateItem move selSet -12 1
-Graph:ManipulateItem move selSet -16 2
-Graph:ManipulateItem move selSet -8 2
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 4
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem dtag GrDraw0_oval selSet
+Graph:ManipulateItem dtag GrDraw0_text selSet
 Graph:DSel 0
 Graph:ManipulateItem addtag selSet withtag GrDraw1_text
-Graph:ManipulateItem move selSet 8 2
-Graph:ManipulateItem move selSet 32 12
-Graph:ManipulateItem move selSet 48 24
-Graph:ManipulateItem move selSet 21 15
-Graph:ManipulateItem move selSet 7 9
-Graph:ManipulateItem move selSet 12 19
-Graph:ManipulateItem move selSet 4 10
-Graph:ManipulateItem move selSet 3 8
-Graph:ManipulateItem move selSet 9 27
-Graph:ManipulateItem move selSet 4 11
-Graph:ManipulateItem move selSet 5 14
-Graph:ManipulateItem move selSet 1 8
-Graph:ManipulateItem move selSet 2 6
-Graph:ManipulateItem move selSet 2 13
-Graph:ManipulateItem move selSet 0 3
-Graph:ManipulateItem move selSet 0 6
-Graph:ManipulateItem move selSet 0 2
-Graph:ManipulateItem move selSet 0 3
-Graph:ManipulateItem move selSet 0 4
-Graph:ManipulateItem move selSet -2 4
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet -1 1
+Graph:ManipulateItem move selSet -28 10
+Graph:ManipulateItem move selSet -19 3
+Graph:ManipulateItem move selSet -15 1
+Graph:ManipulateItem move selSet -7 -1
+Graph:ManipulateItem move selSet -4 -1
+Graph:ManipulateItem move selSet -6 -3
+Graph:ManipulateItem move selSet -1 -2
+Graph:ManipulateItem move selSet -3 -1
+Graph:ManipulateItem move selSet -2 -1
+Graph:ManipulateItem move selSet -6 -3
+Graph:ManipulateItem move selSet -8 -1
+Graph:ManipulateItem move selSet -5 -2
+Graph:ManipulateItem move selSet -9 0
+Graph:ManipulateItem move selSet -13 -2
+Graph:ManipulateItem move selSet -15 -3
+Graph:ManipulateItem move selSet -15 -3
+Graph:ManipulateItem move selSet -3 -1
+Graph:ManipulateItem move selSet -6 -2
+Graph:ManipulateItem move selSet -5 -2
 Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet -4 -2
+Graph:ManipulateItem move selSet -10 -1
+Graph:ManipulateItem move selSet -10 -2
 Graph:ManipulateItem move selSet -2 0
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -2 -1
-Graph:ManipulateItem move selSet -3 0
-Graph:ManipulateItem move selSet -4 -1
-Graph:ManipulateItem move selSet -3 0
-Graph:ManipulateItem move selSet -4 -1
-Graph:ManipulateItem move selSet -7 -2
-Graph:ManipulateItem move selSet -7 -1
-Graph:ManipulateItem move selSet -4 -2
-Graph:ManipulateItem move selSet -7 -1
-Graph:ManipulateItem move selSet -4 -1
-Graph:ManipulateItem move selSet -2 -1
-Graph:ManipulateItem move selSet -2 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -2 -1
-Graph:ManipulateItem move selSet -2 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -4 -2
 Graph:ManipulateItem move selSet -2 -2
-Graph:ManipulateItem move selSet -4 -2
-Graph:ManipulateItem move selSet -2 -2
-Graph:ManipulateItem move selSet -3 -2
-Graph:ManipulateItem move selSet -3 -1
-Graph:ManipulateItem move selSet -2 -2
-Graph:ManipulateItem move selSet -2 -1
+Graph:ManipulateItem move selSet -3 -3
 Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -3 -1
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet -2 -1
-Graph:ManipulateItem move selSet -2 -4
-Graph:ManipulateItem move selSet -1 -3
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet -1 -2
 Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 3 -3
-Graph:ManipulateItem move selSet 2 -2
-Graph:ManipulateItem move selSet 1 -1
-Graph:ManipulateItem move selSet 3 -3
-Graph:ManipulateItem move selSet 3 -3
-Graph:ManipulateItem move selSet 4 -4
-Graph:ManipulateItem move selSet 7 -4
-Graph:ManipulateItem move selSet 9 -5
-Graph:ManipulateItem move selSet 8 -5
-Graph:ManipulateItem move selSet 3 -3
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 -2
-Graph:ManipulateItem move selSet 2 -1
-Graph:ManipulateItem move selSet 2 -2
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 5 -3
-Graph:ManipulateItem move selSet 8 -4
-Graph:ManipulateItem move selSet 11 -3
-Graph:ManipulateItem move selSet 2 -2
-Graph:ManipulateItem move selSet 1 -1
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 -5
-Graph:ManipulateItem move selSet 0 -9
-Graph:ManipulateItem move selSet 1 -4
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 -1
 Graph:ManipulateItem dtag GrDraw1_text selSet
 Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem move selSet -4 -11
-Graph:ManipulateItem move selSet -9 -22
-Graph:ManipulateItem move selSet -8 -14
-Graph:ManipulateItem move selSet -3 -9
-Graph:ManipulateItem move selSet -1 -1
-Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem addtag selSet withtag GrDraw2_text
+Graph:ManipulateItem move selSet -2 -1
 Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet 0 -4
-Graph:ManipulateItem move selSet 0 -4
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet 0 -3
-Graph:ManipulateItem move selSet -2 -4
-Graph:ManipulateItem move selSet -2 -3
-Graph:ManipulateItem move selSet -2 -3
-Graph:ManipulateItem move selSet -4 -6
-Graph:ManipulateItem move selSet -7 -9
-Graph:ManipulateItem move selSet -7 -10
-Graph:ManipulateItem move selSet -5 -6
-Graph:ManipulateItem move selSet 0 -1
 Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -12 -4
-Graph:ManipulateItem move selSet -24 -6
-Graph:ManipulateItem move selSet -13 -8
-Graph:ManipulateItem move selSet 8 6
-Graph:ManipulateItem move selSet 3 2
-Graph:ManipulateItem move selSet 3 2
-Graph:ManipulateItem move selSet 1 1
+Graph:ManipulateItem move selSet -1 -2
+Graph:ManipulateItem move selSet -1 -1
+Graph:ManipulateItem move selSet -1 -1
 Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 2 -3
-Graph:ManipulateItem move selSet 2 -1
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 2 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 1 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 -1
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-wm geometry .sigmgr._PF:1 232x242+632+433
+Graph:ManipulateItem move selSet -1 2
+Graph:ManipulateItem move selSet 0 2
+Graph:ManipulateItem move selSet 0 2
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 1
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+579+395
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{11.741244020657u -40.291264818681u} {608.22p 318.93p}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig AxisX(0) -range {411.5816228p 725.32910328p}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem dtag GrDraw0_oval selSet
+Graph:ManipulateItem dtag GrDraw2_text selSet
 Graph:DSel 0
 Graph:ManipulateItem addtag selSet withtag GrDraw1_text
-Graph:DSel
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:Select Graph0
-Graph:ManipulateItem type GrDraw1_text
-Graph:ManipulateItem delete GrDraw1_text
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 181.0 175.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 176.0 177.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 172.0 178.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 171.0 179.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 170.0 179.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 169.0 179.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 167.0 179.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 163.0 180.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 162.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 161.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 159.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 159.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 158.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 158.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 156.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 153.0 181.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 146.0 182.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 141.0 182.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 139.0 182.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 136.0 183.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 135.0 183.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 135.0 183.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 135.0 183.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 134.0 184.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 134.0 185.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 135.0 186.0
-Graph:ManipulateItem coords GrDraw0_oval 74.0 124.0 135.0 186.0
-Graph:ManipulateItem itemconfig GrDraw0_oval -width
-Graph:ManipulateItem itemconfig GrDraw0_oval -linestyle
-Graph:ManipulateItem itemconfig GrDraw0_oval -dashlen
-Graph:ManipulateItem itemconfig GrDraw0_oval -stipple
+Graph:ManipulateItem itemconfig GrDraw1_text -anchor
+Graph:ManipulateItem itemconfig GrDraw1_text -bg
+Graph:ManipulateItem itemconfig GrDraw1_text -font
+Graph:ManipulateItem itemconfig GrDraw1_text -justify
+Graph:ManipulateItem itemconfig GrDraw1_text -stipple
+Graph:ManipulateItem itemconfig GrDraw1_text -box
 Graph:ManipulateItem isreadonly
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph:ManipulateItem itemconfig GrDraw0_oval -width 1
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:ManipulateItem move selSet 4 -2
-Graph:ManipulateItem move selSet 36 0
-Graph:ManipulateItem move selSet 55 2
-Graph:ManipulateItem move selSet 16 1
-Graph:ManipulateItem move selSet 10 0
-Graph:ManipulateItem move selSet 4 0
-Graph:ManipulateItem move selSet 1 0
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 1 -21
-Graph:ManipulateItem move selSet -1 -25
-Graph:ManipulateItem move selSet -4 -15
-Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet 0 -2
-Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet 0 -1
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{21.201700173263u -23.735466551619u} {32.063p 231.41p}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{38.940055459401u -27.283137608847u} {10.184p 253.29p}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet -4 8
-Graph:ManipulateItem move selSet -9 14
-Graph:ManipulateItem move selSet -5 8
-Graph:ManipulateItem move selSet -5 4
-Graph:ManipulateItem move selSet -3 2
-Graph:ManipulateItem move selSet -6 5
-Graph:ManipulateItem move selSet -8 8
-Graph:ManipulateItem move selSet -21 14
-Graph:ManipulateItem move selSet -12 10
-Graph:ManipulateItem move selSet -9 8
-Graph:ManipulateItem move selSet -3 3
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -2 1
-Graph:ManipulateItem move selSet -8 6
-Graph:ManipulateItem move selSet -14 6
-Graph:ManipulateItem move selSet -8 3
-Graph:ManipulateItem move selSet -1 0
-Graph:ManipulateItem move selSet -3 -5
-Graph:ManipulateItem move selSet -1 -5
-Graph:ManipulateItem move selSet -1 -2
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 134.0 196.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 143.0 196.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 145.0 196.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 146.0 196.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 147.0 197.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 148.0 197.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 149.0 198.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 151.0 199.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 152.0 199.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 154.0 200.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 154.0 200.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 156.0 202.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 157.0 202.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 160.0 204.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 163.0 206.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 165.0 206.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 166.0 206.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 169.0 207.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 169.0 207.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 173.0 209.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 181.0 210.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 184.0 211.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 187.0 211.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 191.0 212.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 194.0 213.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 200.0 214.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 205.0 216.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 208.0 216.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 210.0 216.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 213.0 216.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 219.0 217.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 222.0 217.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 228.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 232.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 235.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 238.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 241.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 249.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 253.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 258.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 260.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 263.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 266.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 269.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 277.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 278.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 283.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 287.0 218.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 296.0 220.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 300.0 220.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 311.0 223.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 313.0 224.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 315.0 224.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 317.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 318.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 318.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 318.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 319.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 320.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 323.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 328.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 331.0 225.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 338.0 226.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 340.0 226.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 343.0 226.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 345.0 227.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 346.0 227.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 347.0 227.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 347.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 347.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 348.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 349.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 350.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 352.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 355.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 357.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 358.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 360.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 360.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 361.0 228.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 364.0 227.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 365.0 227.0
-Graph:ManipulateItem coords GrDraw0_oval 69.0 134.0 365.0 226.0
-Mdi:ArrangeIcons
-Graph:DSel
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:ManipulateItem icursor draw2_text @155.0,99.0
-Graph itemcreate text 155.0 99.0 -tags draw2_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
-# GrDraw2_text
-Graph:ManipulateItem insert GrDraw2_text insert -
-Graph:ManipulateItem insert GrDraw2_text insert 1
-Graph:ManipulateItem insert GrDraw2_text insert .
-Graph:ManipulateItem insert GrDraw2_text insert 7
-Graph:ManipulateItem insert GrDraw2_text insert 5
-Graph:ManipulateItem insert GrDraw2_text insert { }
-Graph:ManipulateItem insert GrDraw2_text insert u
-Graph:ManipulateItem insert GrDraw2_text insert {}
-Graph:ManipulateItem insert GrDraw2_text insert A
-Graph:ManipulateItem insert GrDraw2_text insert { }
-Graph:ManipulateItem insert GrDraw2_text insert {}
-Graph:ManipulateItem insert GrDraw2_text insert A
-Graph:ManipulateItem insert GrDraw2_text insert v
-Graph:ManipulateItem insert GrDraw2_text insert e
-Graph:ManipulateItem insert GrDraw2_text insert r
-Graph:ManipulateItem insert GrDraw2_text insert a
-Graph:ManipulateItem insert GrDraw2_text insert g
-Graph:ManipulateItem insert GrDraw2_text insert e
-Graph:ManipulateItem insert GrDraw2_text insert { }
-Graph:ManipulateItem insert GrDraw2_text insert {}
-Graph:ManipulateItem insert GrDraw2_text insert L
-Graph:ManipulateItem insert GrDraw2_text insert e
-Graph:ManipulateItem insert GrDraw2_text insert a
-Graph:ManipulateItem insert GrDraw2_text insert k
-Graph:ManipulateItem insert GrDraw2_text insert a
-Graph:ManipulateItem insert GrDraw2_text insert g
-Graph:ManipulateItem insert GrDraw2_text insert e
-Graph:ManipulateItem insert GrDraw2_text insert { }
-Graph:ManipulateItem insert GrDraw2_text insert c
-Graph:ManipulateItem insert GrDraw2_text insert u
-Graph:ManipulateItem insert GrDraw2_text insert r
-Graph:ManipulateItem insert GrDraw2_text insert r
-Graph:ManipulateItem insert GrDraw2_text insert e
-Graph:ManipulateItem insert GrDraw2_text insert n
-Graph:ManipulateItem insert GrDraw2_text insert t
-Graph:ManipulateItem insert GrDraw2_text insert {
-}
-Graph:ManipulateItem dchars GrDraw2_text 32
-wm geometry .sigmgr._PF:1 232x242+573+240
-Graph:ManipulateItem insert GrDraw2_text insert {}
-wm geometry .sigmgr 376x204+434+534
-Graph:DSel
-wm geometry .sigmgr._PF:1 232x242+579+395
-wm geometry .sigmgr 376x204+1066+531
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+573+240
-wm geometry .sigmgr 376x204+434+534
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-wm geometry .sigmgr 376x204+609+522
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/lab1/NAND-schematic.tr0 1 append
-# PF:1
-wm geometry .sigmgr 376x204+569+527
-Mdi:Move 64 137
-Mdi:Move 71 0
-wm geometry .sigmgr 376x204+609+522
-wm geometry .sigmgr 376x204+569+527
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/lab1/res4-2.tr0 1 openonly
-# PF:2
-wm geometry .sigmgr._PF:2 232x242+798+510
-pf:read PF:2 i(vsupply)
-# WF:2:1
-Graph addsignal WF:2:1 -region new -yview real(y) -xview real(x) -tracehi 2
-# Signal2
-ScopeSigMgr:Unload 0 {{(2) res4-2.tr0}}
-Graph0 delsignal Signal2
-Mdi:ArrangeIcons
-Mdi:Move 65 16
-Mdi:Move 68 7
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+Graph:ManipulateItem itemconfig GrDraw1_text -font {{OF Helvetica} 12.0 outline}
 Graph:DSel
 Graph:Select Graph0
-Mdi:ArrangeIcons
-Graph:DSel
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-164.45975182165u -198.75390537485u} {250.86p 355.39p}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
 Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw2_text
-Graph delsignal selected
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw0_oval
-Graph delsignal selected
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+Graph:ManipulateItem addtag selSet withtag GrDraw0_text
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 2 -2
+Graph:ManipulateItem move selSet 2 -2
+Graph:ManipulateItem move selSet 6 -5
+Graph:ManipulateItem move selSet 4 -3
+Graph:ManipulateItem move selSet 7 -2
+Graph:ManipulateItem move selSet 4 -1
+Graph:ManipulateItem move selSet 4 -1
+Graph:ManipulateItem move selSet 2 -1
+Graph:ManipulateItem move selSet 1 -1
+Graph:ManipulateItem move selSet 3 0
+Graph:ManipulateItem move selSet 2 -1
+Graph:ManipulateItem move selSet 3 -1
+Graph:ManipulateItem move selSet 7 -1
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 2 0
+Graph:ManipulateItem move selSet 2 0
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 1 1
+Graph:ManipulateItem move selSet 2 0
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 3 1
+Graph:ManipulateItem move selSet 6 3
+Graph:ManipulateItem move selSet 3 1
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 1 1
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 -2
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 2 -2
+Graph:ManipulateItem move selSet 1 -1
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 1 -1
+Graph:ManipulateItem move selSet -1 1
+Graph:ManipulateItem move selSet -1 1
+Graph:ManipulateItem move selSet -2 2
+Graph:ManipulateItem move selSet -1 2
+Graph:ManipulateItem move selSet 0 2
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 1 -1
+Graph:ManipulateItem move selSet 1 -2
+Graph:ManipulateItem move selSet 1 -1
+Graph:ManipulateItem move selSet 0 0
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Graph:DSel
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{1 1} {}} -subticks {{0} {0}} -label {{t(s)} {(A)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{250.86p 355.39p} {-164.45975182165u -198.75390537485u}} -unitscale {{auto} {auto}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Graph:DSel
 Mdi:ArrangeIcons
@@ -1182,74 +581,89 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:ManipulateItem icursor draw3_text @280.0,195.0
-Graph itemcreate text 280.0 195.0 -tags draw3_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+Graph:ManipulateItem icursor draw4_text @342.0,577.0
+Graph itemcreate text 342.0 577.0 -tags draw4_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
 # GrDraw3_text
-Graph:ManipulateItem insert GrDraw3_text insert 9
-Graph:ManipulateItem insert GrDraw3_text insert ,
-Graph:ManipulateItem insert GrDraw3_text insert 2
-Graph:ManipulateItem insert GrDraw3_text insert 9
+Graph:ManipulateItem insert GrDraw3_text insert -
+Graph:ManipulateItem insert GrDraw3_text insert 1
+Graph:ManipulateItem insert GrDraw3_text insert 7
+Graph:ManipulateItem insert GrDraw3_text insert 5
 Graph:ManipulateItem insert GrDraw3_text insert { }
 Graph:ManipulateItem insert GrDraw3_text insert u
 Graph:ManipulateItem insert GrDraw3_text insert {}
 Graph:ManipulateItem insert GrDraw3_text insert A
-Graph:ManipulateItem icursor GrDraw3_text 6
-Graph:ManipulateItem icursor GrDraw3_text 5
-Graph:ManipulateItem icursor GrDraw3_text 4
-Graph:ManipulateItem icursor GrDraw3_text 3
-Graph:ManipulateItem icursor GrDraw3_text 2
-Graph:ManipulateItem dchars GrDraw3_text 1
-Graph:ManipulateItem insert GrDraw3_text insert .
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+Graph:ManipulateItem insert GrDraw3_text insert { }
+Graph:ManipulateItem insert GrDraw3_text insert {}
+Graph:ManipulateItem insert GrDraw3_text insert P
+Graph:ManipulateItem insert GrDraw3_text insert e
+Graph:ManipulateItem insert GrDraw3_text insert a
+Graph:ManipulateItem insert GrDraw3_text insert k
 Graph:ManipulateItem insert GrDraw3_text insert 
-Graph:ManipulateItem dchars GrDraw3_text 2
+Graph:ManipulateItem insert GrDraw3_text insert 
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw5_text @181.0,494.0
+Graph itemcreate text 181.0 494.0 -tags draw5_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw4_text
+Graph:ManipulateItem insert GrDraw4_text insert -
+Graph:ManipulateItem insert GrDraw4_text insert 1
+Graph:ManipulateItem insert GrDraw4_text insert 9
+Graph:ManipulateItem insert GrDraw4_text insert .
+Graph:ManipulateItem insert GrDraw4_text insert 5
+Graph:ManipulateItem insert GrDraw4_text insert { }
+Graph:ManipulateItem insert GrDraw4_text insert n
+Graph:ManipulateItem insert GrDraw4_text insert {}
+Graph:ManipulateItem insert GrDraw4_text insert A
+Graph:ManipulateItem insert GrDraw4_text insert { }
+Graph:ManipulateItem insert GrDraw4_text insert s
+Graph:ManipulateItem insert GrDraw4_text insert t
+Graph:ManipulateItem insert GrDraw4_text insert a
+Graph:ManipulateItem insert GrDraw4_text insert t
+Graph:ManipulateItem insert GrDraw4_text insert p
+Graph:ManipulateItem dchars GrDraw4_text 13
+Graph:ManipulateItem insert GrDraw4_text insert { }
+Graph:ManipulateItem insert GrDraw4_text insert p
+Graph:ManipulateItem insert GrDraw4_text insert e
+Graph:ManipulateItem dchars GrDraw4_text 15
+Graph:ManipulateItem dchars GrDraw4_text 14
+Graph:ManipulateItem dchars GrDraw4_text 13
+Graph:ManipulateItem dchars GrDraw4_text 12
+Graph:ManipulateItem dchars GrDraw4_text 11
+Graph:ManipulateItem dchars GrDraw4_text 10
+Graph:ManipulateItem dchars GrDraw4_text 9
+Graph:ManipulateItem insert GrDraw4_text insert i
+Graph:ManipulateItem insert GrDraw4_text insert s
+Graph:ManipulateItem insert GrDraw4_text insert t
+Graph:ManipulateItem insert GrDraw4_text insert a
+Graph:ManipulateItem insert GrDraw4_text insert t
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw3_text
 Graph:DSel
 Graph:DSel
-Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{34.209827383098u -23.735466551619u} {352.96p 481.81p}}
+Graph:Select Graph0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Graph:DSel 0
 Graph:ManipulateItem addtag selSet withtag GrDraw3_text
-Graph:ManipulateItem move selSet -9 -6
-Graph:ManipulateItem move selSet -39 -13
-Graph:ManipulateItem move selSet -58 -21
-Graph:ManipulateItem move selSet -19 -11
-Graph:ManipulateItem move selSet -2 -2
-Graph:ManipulateItem move selSet -1 -7
-Graph:ManipulateItem move selSet 0 -2
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet -1 -1
+Graph:ManipulateItem move selSet -1 -1
+Graph:ManipulateItem move selSet -1 -3
+Graph:ManipulateItem move selSet -2 -3
 Graph:ManipulateItem move selSet 0 0
-Graph:ManipulateItem move selSet 0 -1
-Graph:ManipulateItem move selSet -1 -5
-Graph:ManipulateItem move selSet -1 -5
-Graph:ManipulateItem move selSet -1 -4
-Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet -1 1
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph itemcreate oval 223.0 148.0 328.0 183.0 -tags draw4_oval -fill {} -outline pink -width 0 -linestyle - -dashlen 10
-# GrDraw4_oval
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
+Graph itemcreate oval 303.0 570.0 332.0 587.0 -tags draw6_oval -fill {} -outline pink -width 0 -linestyle - -dashlen 10
+# GrDraw5_oval
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
@@ -1258,53 +672,15 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry . 900x785+-4+73
-Mdi:ArrangeIcons
-wm geometry . 900x785+-61+74
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-wm geometry . 900x785+-4+73
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw3_text
-Graph:Select Graph0
-Graph:DSel
+Graph itemcreate oval 193.0 471.0 221.0 483.0 -tags draw7_oval -fill {} -outline pink -width 0 -linestyle - -dashlen 10
+# GrDraw6_oval
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Graph:DSel
-Graph:Select Graph0
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw4_oval
-Graph:ManipulateItem dtag GrDraw4_oval selSet
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw3_text
-Graph:DSel
-Graph:DSel 0
-Graph:ManipulateItem addtag selSet withtag GrDraw4_oval
-Graph:Select Graph0
-Graph:ManipulateItem type GrDraw3_text
-Graph:ManipulateItem delete GrDraw3_text
-Graph:ManipulateItem itemconfig GrDraw4_oval -width
-Graph:ManipulateItem itemconfig GrDraw4_oval -linestyle
-Graph:ManipulateItem itemconfig GrDraw4_oval -dashlen
-Graph:ManipulateItem itemconfig GrDraw4_oval -stipple
-Graph:ManipulateItem isreadonly
 Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:ManipulateItem itemconfig GrDraw4_oval -width
-Graph:ManipulateItem itemconfig GrDraw4_oval -linestyle
-Graph:ManipulateItem itemconfig GrDraw4_oval -dashlen
-Graph:ManipulateItem itemconfig GrDraw4_oval -stipple
-Graph:ManipulateItem isreadonly
-Graph:ManipulateItem move selSet 15 140
-Graph:ManipulateItem move selSet 6 40
-Graph:ManipulateItem move selSet -9 103
-Graph:DSel
