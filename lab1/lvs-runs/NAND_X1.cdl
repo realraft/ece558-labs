@@ -4,7 +4,7 @@
 * Library Name:  NAND_X1
 * Top Cell Name: NAND_X1
 * View Name:     schematic
-* Netlisted on:  Sep 30 10:27:05 2025
+* Netlisted on:  Oct  1 21:05:33 2025
 ************************************************************************
 
 *.BIPOLAR
@@ -31,6 +31,6 @@
 MPM1 Y A VDD VDD g45p1svt m=1 l=45n w=240n
 MPM0 Y B VDD VDD g45p1svt m=1 l=45n w=240n
 MNM1 net13 B GND GND g45n1svt m=1 l=45n w=240n
-MNM0 Y A net13 net13 g45n1svt m=1 l=45n w=240n
+MNM0 Y A net13 GND g45n1svt m=1 l=45n w=240n
 .ENDS
 

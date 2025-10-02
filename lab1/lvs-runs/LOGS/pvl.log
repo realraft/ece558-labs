@@ -11,7 +11,7 @@ ENV VAR: PEGASUS_LVS_DEVICE_DFM_LIBRARY = /opt/cadence/pegasus/tools.lnx86/pegas
 
 
 ########################################################################
-Parsing Control File /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/pegasuslvsctl ...
+Parsing Control File /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/pegasuslvsctl ...
 ########################################################################
 TEXT_DEPTH -primary;
 VIRTUAL_CONNECT -colon no;
@@ -31,16 +31,16 @@ LVS_RUN_ERC_CHECKS yes;
 LVS_REPORT_OPT -none;
 REPORT_SUMMARY -erc "NAND_X1.sum" -replace;
 MAX_RESULTS -erc 1000;
-RESULTS_DB -erc "/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.erc_errors.ascii" -ascii;
-MASK_SVDB_DIR /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/svdb;
+RESULTS_DB -erc "/home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.erc_errors.ascii" -ascii;
+MASK_SVDB_DIR /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/svdb;
 SCHEMATIC_FORMAT cdl;
-SCHEMATIC_PATH "/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.cdl";
+SCHEMATIC_PATH "/home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.cdl";
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz";
+LAYOUT_PATH "/home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz";
 
 ########################################################################
-Parsing Rule File /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/.technology.rul ...
+Parsing Rule File /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/.technology.rul ...
 ########################################################################
 TECHNOLOGY gpdk045 -ruleSet default -techLib /ece558_658/pdk/verification/pvtech.lib;
 WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
@@ -3104,6 +3104,6 @@ operation group: 236/236
 Completed execution after parsing the rules, as requested by the "-p" flag or "-get_rules" flag 
 
 
-Netlist extraction finished normally. Tue Sep 30 10:27:10 2025
+Netlist extraction finished normally. Wed Oct  1 21:05:38 2025
 
 

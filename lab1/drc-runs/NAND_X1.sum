@@ -1,24 +1,24 @@
 **************************************************************************
 *** Pegasus DRC SUMMARY
 ***
-Execute on Date/Time    : 2025-09-30 10:25:05
+Execute on Date/Time    : 2025-10-01 20:58:44
 Pegasus VERSION         : 24.13-s018
-Rule Deck Path          : /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/.technology.rul
+Rule Deck Path          : /home/ece558_658_2025/azguro/ece558-labs/lab1/drc-runs/.technology.rul
 Rule Deck Title         :
 Layout System           : GDSII
-Layout Path             : /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.gds.gz
-Current Directory       : /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs
-User Name               : oraftery
+Layout Path             : /home/ece558_658_2025/azguro/ece558-labs/lab1/drc-runs/NAND_X1.gds.gz
+Current Directory       : /home/ece558_658_2025/azguro/ece558-labs/lab1/drc-runs
+User Name               : azguro
 Maximum Results         : 1000
 Maximum Result Vertices : 4096
 Layout Depth            : ALL
 Text Depth              : 0
-Summary File            : /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.sum
+Summary File            : /home/ece558_658_2025/azguro/ece558-labs/lab1/drc-runs/NAND_X1.sum
 Geometry Flagging       : ACUTE = NO ANGLED = NO SKEW = NO OFFGRID = NO NONSIMPLE POLYGON = YES NONSIMPLE PATH = NO
 Keep Empty Checks       : YES
 Excluded Cells          :
 Layout Primary Cell     : NAND_X1
-ASCII DRC Error Report  : /home/ece558_658_2025/oraftery/ece558-labs/lab1/drc-runs/NAND_X1.drc_errors.ascii
+ASCII DRC Error Report  : /home/ece558_658_2025/azguro/ece558-labs/lab1/drc-runs/NAND_X1.drc_errors.ascii
 DRC Results Database    :
 --------------------------------------------------------------------------------
 --- RUNNING TIME WARNINGS
@@ -679,7 +679,7 @@ RULECHECK soft_check_9 ................................. Total Result          0
 --- SUMMARY
 ---
 Total CPU Time                    : 7(s)
-Total Real Time                   : 18(s)
+Total Real Time                   : 19(s)
 Total Original Geometry           : 74 (150)
 Total DRC RuleChecks              : 576
 Total DRC Results                 : 0 (0)

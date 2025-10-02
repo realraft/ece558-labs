@@ -6,13 +6,13 @@
 
 
 Report File Name         : NAND_X1.rep
-ERC Summary File         : /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.sum
+ERC Summary File         : /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.sum
 LVS Comparison Report    : NAND_X1.rep.cls
 LVS Softchk Report       : NAND_X1.softchk
-Layout Name              : /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz ("NAND_X1")
-User Name                : oraftery
-Creation Time            : Tue Sep 30 10:27:10 2025
-Current directory        : /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs
+Layout Name              : /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz ("NAND_X1")
+User Name                : azguro
+Creation Time            : Wed Oct  1 21:05:38 2025
+Current directory        : /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs
 Pegasus Version          : 24.13-s018 Wed Jun 18 15:36:24 PDT 2025
 
 

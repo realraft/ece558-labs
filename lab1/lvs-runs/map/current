@@ -5,7 +5,7 @@
   repList "auCdl schematic"
   stopList "auCdl"
   hierDelim "."
-  netlistDir "/home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/"
+  netlistDir "/home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/"
  )
 ( model
 ( "NAND_X1/NAND_X1/schematic" "NAND_X1" )

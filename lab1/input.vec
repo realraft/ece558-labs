@@ -1,20 +1,18 @@
 ; NAND Gate Delay Measurement Vectors
-
 radix 11
 io ii
-vname A B
-
+vname a b
 tunit ps
-trise tris
-tfall tfall
-period tper
-
-idelay 25
-
-vih vdd_val
+trise 45
+tfall 45
+period 400
+idelay 0
+vih 1.1
 vil 0
-
+; Test vectors
+01
 11
 01
 11
 10
+11

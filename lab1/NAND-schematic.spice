@@ -1,5 +1,5 @@
 ** Generated for: hspiceD
-** Generated on: Sep 17 15:35:32 2025
+** Generated on: Sep 30 20:03:28 2025
 ** Design library name: NAND_X1
 ** Design cell name: NAND_X1
 ** Design view name: schematic
@@ -8,10 +8,7 @@
 .include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
 .include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
 
-** Define parameters (needed for vector file)
-.param tper  = 200
-.param tris  = 45
-.param tfall = 45
+** Define parameters
 .param vdd_val=1.1
 
 .TEMP 25
@@ -20,62 +17,56 @@
 +    INGOLD=2
 +    PARHIER=LOCAL
 +    PSF=2
++    HIER_DELIM=0
 
-** Test inputs with pulse sources (temporary - to verify current measurement)
-Va a 0 pulse(0 vdd_val 0n 45p 45p 200p 400p)
-Vb b 0 pulse(0 vdd_val 100p 45p 45p 200p 400p)
+** Vector file input
+.vec 'input.vec'
 
-** Comment out vector file for now
-** .vec 'input.vec'
-
-** Power supplies (matching vector file style)
-Vsupply vdd 0 vdd_val
+** Power supplies with current measurement
 Vgnd gnd 0 0
+** Current flows through Vsupply, so we measure it here
+Vsupply vdd 0 vdd_val
 
 ** Library name: NAND_X1
 ** Cell name: NAND_X1
 ** View name: schematic
-mpm1 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm0 y a net13 net13 g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
+mpm1 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a net13 net13 g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 
-** Load capacitance (check page 2 of your assignment for the exact value)
-Cload y 0 10e-15
+** Load capacitance (5fF as specified)
+Cload y 0 5e-15
 
-** Current measurement - 0V source acts as ammeter for VDD current
-Imeas vdd vdd_internal 0
-** Connect circuit to measured VDD
-** (Change all "vdd" connections in transistors to "vdd_internal" if needed)
-
-.tran 1p 0.8n
+** Transient analysis
+.tran 1p 2.5n
 
 ** HSPICE Delay Measurements
-** Propagation delay rising (tpdr) - 50%-50% metric as specified
+** Propagation delay rising (tpdr) - when A falls, Y rises
 .MEASURE TRAN tpdr
 + TRIG=v(a) VAL='0.5*vdd_val' FALL=1
 + TARG=v(y) VAL='0.5*vdd_val' RISE=1
 
-** Propagation delay falling (tpdf) - 50%-50% metric as specified
+** Propagation delay falling (tpdf) - when A rises, Y falls
 .MEASURE TRAN tpdf
 + TRIG=v(a) VAL='0.5*vdd_val' RISE=1
 + TARG=v(y) VAL='0.5*vdd_val' FALL=1
 
-** Rise time of output Y (tr) - 20%-80% metric as specified
+** Rise time of output Y (tr) - 20%-80% metric
 .MEASURE TRAN tr_y
 + TRIG=v(y) VAL='0.2*vdd_val' RISE=1
 + TARG=v(y) VAL='0.8*vdd_val' RISE=1
 
-** Fall time of output Y (tf) - 80%-20% metric as specified
+** Fall time of output Y (tf) - 80%-20% metric
 .MEASURE TRAN tf_y
 + TRIG=v(y) VAL='0.8*vdd_val' FALL=1
 + TARG=v(y) VAL='0.2*vdd_val' FALL=1
 
-** Static leakage current measurement (when inputs are low - first 100ps)
-.MEASURE TRAN istat AVG I(Vsupply) FROM=50p TO=100p
+** Static leakage current measurement (when both inputs are low - first vector)
+.MEASURE TRAN istat AVG I(Vsupply) FROM=50p TO=150p
 
-** Peak current measurement during entire simulation  
-.MEASURE TRAN ipeak MIN I(Vsupply) FROM=0p TO=800p
+** Peak current measurement during entire simulation
+.MEASURE TRAN ipeak MIN I(Vsupply) FROM=0p TO=2.5n
 
 ** Output for waveform viewing
 .print tran v(a) v(b) v(y) i(Vsupply)

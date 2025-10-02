@@ -1,1 +1,10 @@
-[ADE GUI: 1445552]
+[ADE GUI: 4167149]
+[2025-09-30 20:02:10.102 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - /home/ece558_658_2025/azguro/ece558-labs/lab1/.tmp_azguro/.cmddir0/swiftLoggingService0 is starting {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/lab1/logs_azguro/logs0/LoggingService0.log"}
+[2025-09-30 20:02:10.211 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - /home/ece558_658_2025/azguro/ece558-labs/lab1/.tmp_azguro/.cmddir0/swiftNetlistService1 is starting {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/lab1/logs_azguro/logs0/Service1.log"}
+[2025-09-30 20:02:10.212 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - COLLECTION_JOB_ID = '0'
+ {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/lab1/logs_azguro/logs0/LoggingService0.log"}
+[2025-09-30 20:02:10.212 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '4174448' is starting up on host 'vlsicad.ecs.umass.edu' {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/lab1/logs_azguro/logs0/LoggingService0.log"}
+[2025-09-30 20:02:38.117 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - COLLECTION_JOB_ID = '1'
+ {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/lab1/logs_azguro/logs0/Service1.log"}
+[2025-09-30 20:02:38.496 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Netlist Service '4174465' is starting up on host 'vlsicad.ecs.umass.edu' {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/lab1/logs_azguro/logs0/Service1.log"}
+[2025-09-30 20:07:11.172 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '4174448' stopped with exit code '0' {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/lab1/logs_azguro/logs0/LoggingService0.log"}

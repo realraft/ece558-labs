@@ -3,38 +3,31 @@
 #####                                       Pegasus LVS COMPARISON
 #####  
 #####  Version                       :   24.13-s018
-#####  NVN Run Start                 :   Tue Sep 30 10:27:14 2025
+#####  NVN Run Start                 :   Wed Oct  1 21:05:42 2025
 #####  ERC Summary File              :   NAND_X1.sum
 #####  Extraction Report File        :   NAND_X1.rep
 #####  Comparison Report File        :   NAND_X1.rep.cls
 #####  Top Cell                      :   NAND_X1  <vs>  NAND_X1
 #####  
-#####                                :      @     @
-#####                                :       @   @ 
-#####                                :        @ @  
-#####  Run Result                    :     MISMATCH
-#####                                :        @ @  
-#####                                :       @   @ 
-#####                                :      @     @
+#####  Run Result                    :   MATCH
 #####  
-#####  Run Summary                   :   [ERROR] Connectivity Mismatches
-#####                                :   [INFO]  ERC Results: Empty
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
 #####                                :   [INFO]  Extraction Clean
 #####  
 #####  Layout Design                 :   NAND_X1 NAND_X1 layout
-#####  Schematic File                :   /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.cdl (cdl)
-#####  Rules File                    :   /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/.technology.rul
+#####  Schematic File                :   /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.cdl (cdl)
+#####  Rules File                    :   /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/.technology.rul
 #####  Pin Swap File                 :   NAND_X1.rep.cps
 #####  
 #####  Extraction CPU Time           :   0h 0m 1s - (1s)
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   31.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
-#####  NVN Peak Memory Usage         :   265.05MB
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   264.68MB
 #####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
-#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   265.05MB
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   264.68MB
 #####  
 ##############################################################################################################
 
@@ -47,10 +40,10 @@
 
 Cell Statistic Descriptions                  | Count
 ---------------------------------------------+----------
-Cells matched                                |         0
+Cells matched                                |         1
 Cells expanded                               |         0
 Cells not run                                |         0
-Cells which mismatch                         |         1
+Cells which mismatch                         |         0
 ---------------------------------------------+----------
 Total                                        |         1
 
@@ -68,10 +61,10 @@ Cells that have been blackboxed              |         0
 #
 ##############################################################################################################
 
-            |     Initial Pins     |     Compare Pins     |              | 
-Cell        |   lay    :    sch    |   lay    :    sch    | Status       | Detail
-------------+----------+-----------+----------+-----------+--------------+-----------
-NAND_X1     |        5 :         5 |        5 :         5 | mismatch     | 
+            |     Initial Pins     |     Compare Pins     |            | 
+Cell        |   lay    :    sch    |   lay    :    sch    | Status     | Detail
+------------+----------+-----------+----------+-----------+------------+-----------
+NAND_X1     |        5 :         5 |        5 :         5 | match      | 
 
 
 ##############################################################################################################
@@ -91,9 +84,9 @@ LVS Rules Given in the Rules File
 
     lvs_abort                               -softchk                               no  
     lvs_abort                               -supply_error                          no  
-    layout_path                             /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz
+    layout_path                             /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.gds.gz
     layout_format                           gdsii
-    schematic_path                          /home/ece558_658_2025/oraftery/ece558-labs/lab1/lvs-runs/NAND_X1.cdl
+    schematic_path                          /home/ece558_658_2025/azguro/ece558-labs/lab1/lvs-runs/NAND_X1.cdl
     schematic_format                        cdl
     lvs_black_box                           pll_vco_indsym1p3
                                              
@@ -278,34 +271,33 @@ Effective LVS Rule Values
 #
 ##############################################################################################################
 
-                              ##################################################
-                              #                                                #
-                              #       ------->>> $ MISMATCH $ <<<-------       #
-                              #                                                #
-                              #             NAND_X1  <vs>  NAND_X1             #
-                              #                                                #
-                              #            CONNECTIVITY MISMATCHES             #
-                              #                                                #
-                              ##################################################
+                              +------------------------------------------------+
+                              |                                                |
+                              |        ------->>>   MATCH   <<<-------         |
+                              |                                                |
+                              |             NAND_X1  <vs>  NAND_X1             |
+                              |                                                |
+                              |                                                |
+                              +------------------------------------------------+
 
 +===[NAND_X1]=================================================================================================
 |                                                 STATISTICS                                                  
 +=============================================================================================================
 
 
-                              |     Original      |      Reduced      |     Unmatched     
-Cell                          |   lay   :   sch   |   lay   :   sch   |   lay   :   sch
-------------------------------+---------+---------+---------+---------+---------+---------
-M [4 pins]                    |         :         |         :         |         :         
- M(G45P1SVT)                  |       2 :       2 |       2 :       2 |       0 :        0
- M(G45N1SVT)                  |       2 :       2 |      *0 :       2 |      *0 :        2
-(M:SerMos2#1 [4 pins], -)     |       - :       - |      *1 :       - |      *1 :        -
-------------------------------+---------+---------+---------+---------+---------+---------
-Total                         |       4 :       4 |       3 :       4 |       1 :        2
-==============================+=========+=========+=========+=========+=========+=========
-Pins                          |         :         |       5 :       5 |       0 :        0
-Nets                          |         :         |      *0 :       1 |       0 :        0
-==============================+=========+=========+=========+=========+=========+=========
+                 |     Original      |     Reduced      
+Cell             |   lay   :   sch   |   lay   :  sch
+-----------------+---------+---------+---------+--------
+M [4 pins]       |         :         |         :        
+ M(G45P1SVT)     |       2 :       2 |       2 :       2
+ M(G45N1SVT)     |       2 :       2 |       0 :       0
+ M:SerMos2#1     |       - :       - |       1 :       1
+-----------------+---------+---------+---------+--------
+Total            |       4 :       4 |       3 :       3
+=================+=========+=========+=========+========
+Pins             |         :         |       5 :       5
+Nets             |         :         |       0 :       0
+=================+=========+=========+=========+========
 
 +===[NAND_X1]=================================================================================================
 |                                           INITIAL CORRESPONDENCES                                           
@@ -314,27 +306,6 @@ Nets                          |         :         |      *0 :       1 |       0 
 Type     | Name
 ---------+------------------
 Pin      | A B GND VDD Y
-
-
-+===[NAND_X1]=================================================================================================
-|                                            MISMATCHED INSTANCES                                             
-+=============================================================================================================
-                                                                                 
-                                                                                 
-Layout Inst : ** missing inst **        | Schematic Inst : MNM1
-Layout Model:                           | Schematic Model: M(G45N1SVT)
-========================================+==================================(mi 1)
-                                                                                 
-                                                                                 
-Layout Inst : ** missing inst **        | Schematic Inst : MNM0
-Layout Model:                           | Schematic Model: M(G45N1SVT)
-========================================+==================================(mi 2)
-                                                                                 
-                                                                                 
-Layout Insts: M0 @(0.315,0.525)         | Schematic Insts: ** missing inst **
-            : M1 @(1.160,0.525)         |                : ** missing inst **
-Layout Model: M:SerMos2#1(G45N1SVT)     | Schematic Model: 
-========================================+==================================(mi 3)
 
 
 ##############################################################################################################

@@ -4,13 +4,13 @@
 # Information about current Edit Lock Owner.
 #
 LockStakeVersion               1.1
-LoginName                      oraftery
+LoginName                      azguro
 HostName                       vlsicad.ecs.umass.edu
-ProcessIdentifier              3942722
-ProcessCreationTime_UTC        1759241574
-ProcessCreationTime_Readable   Tue Sep 30 10:12:54 2025 EDT
+ProcessIdentifier              371922
+ProcessCreationTime_UTC        1759366450
+ProcessCreationTime_Readable   Wed Oct  1 20:54:10 2025 EDT
 AppIdentifier                  /opt/cadence/ic251_hotfix/install/tools/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       
-FilePathUsedToEditLock         /home/ece558_658_2025/oraftery/ece558-labs/lab1/NAND_X1/NAND_X1/physConfig/physExpand.cfg
-TimeEditLocked                 Tue Sep 30 10:14:25 2025 EDT
+FilePathUsedToEditLock         /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND_X1/NAND_X1/physConfig/physExpand.cfg
+TimeEditLocked                 Wed Oct  1 20:56:07 2025 EDT
