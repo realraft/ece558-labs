@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "T-2022.06-3 linux64"
 * "format" "HSP"
-* "rundate" "12:29:01 10/02/2025 "
+* "rundate" "10:49:22 10/03/2025 "
 * "netlist" "NAND-postlayout.spice "
 * "runtitle" "** post-layout simulation with parasitics"
 * time =  0.000e+00       
