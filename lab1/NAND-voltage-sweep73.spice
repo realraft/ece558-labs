@@ -1,0 +1,88 @@
+** Post-Layout Simulation at 0.90V for Cscope Plot
+** Single run for clean waveform annotation
+
+** Include model files
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+.include 'NAND_X1-post-layout.sp'
+
+** Fixed supply voltage at 0.90V
+.param supply=0.90
+
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
++    HIER_DELIM=0
++    POST=1
+
+** Power supplies
+Vgnd gnd 0 0
+Vsupply vdd 0 0.90
+
+** Input stimulus at 0.90V levels
+** Input A: transitions for measuring tpdr and tpdf
+Va a 0 PWL(0n 0 0.5n 0 0.51n 0.90 1.0n 0.90 1.01n 0 1.5n 0 1.51n 0.90 2.0n 0.90 2.01n 0 2.4n 0)
+
+** Input B: held high at 0.90V
+Vb b 0 0.90
+
+** Instantiate the extracted cell
+** Port order from .SUBCKT: A B GND VDD Y
+Xnand a b gnd vdd y NAND_X1
+
+** Load capacitance
+Cload y 0 5e-15
+
+** Transient analysis - single run at 0.90V
+.tran 1p 2.4n
+
+** Measurements for annotation in Cscope
+** tpdr measurement (A falling at 1.01n, Y rising)
+.MEASURE TRAN tpdr
++ TRIG=v(a) VAL=0.45 FALL=1
++ TARG=v(y) VAL=0.45 RISE=1
+
+** tpdf measurement (A rising at 0.51n, Y falling)
+.MEASURE TRAN tpdf
++ TRIG=v(a) VAL=0.45 RISE=1
++ TARG=v(y) VAL=0.45 FALL=1
+
+** Rise time of input A (10% to 90%)
+.MEASURE TRAN tr_a
++ TRIG=v(a) VAL=0.09 RISE=1
++ TARG=v(a) VAL=0.81 RISE=1
+
+** Fall time of input A (90% to 10%)
+.MEASURE TRAN tf_a
++ TRIG=v(a) VAL=0.81 FALL=1
++ TARG=v(a) VAL=0.09 FALL=1
+
+** Rise time of output Y (20% to 80%)
+.MEASURE TRAN tr_y
++ TRIG=v(y) VAL=0.18 RISE=1
++ TARG=v(y) VAL=0.72 RISE=1
+
+** Fall time of output Y (80% to 20%)
+.MEASURE TRAN tf_y
++ TRIG=v(y) VAL=0.72 FALL=1
++ TARG=v(y) VAL=0.18 FALL=1
+
+** Static current measurement
+.MEASURE TRAN istat AVG I(Vsupply) FROM=50p TO=150p
+
+** Peak current measurement
+.MEASURE TRAN ipeak MIN I(Vsupply) FROM=0p TO=2.4n
+
+** Print statements for waveform viewing
+.print tran v(a) v(b) v(y) i(Vsupply)
+
+** Additional print for verification
+.print tran
++ tpdr='tpdr'
++ tr_a='tr_a' 
++ tf_a='tf_a'
+
+.END
