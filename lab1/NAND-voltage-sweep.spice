@@ -1,0 +1,103 @@
+** Post-Layout Supply Voltage Characterization
+** Sweeping Vdd from 0.85V to 1.10V
+
+** Include model files
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+.include 'NAND_X1-post-layout.sp'
+
+** Initial parameter definition
+.param vdd_val=1.10
+
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
++    HIER_DELIM=0
++    POST=1
+
+** Power supplies
+Vgnd gnd 0 0
+Vsupply vdd 0 vdd_val
+
+** Input stimulus with voltage that tracks Vdd
+** Using PWL to ensure inputs switch between 0 and vdd_val
+Va a 0 PWL(0n 0 0.5n 0 0.55n vdd_val 1.0n vdd_val 1.05n 0 1.5n 0 1.55n vdd_val 2.0n vdd_val 2.05n 0 2.5n 0)
+Vb b 0 PWL(0n vdd_val 2.5n vdd_val)
+
+** Instantiate the extracted cell
+** Port order from .SUBCKT: A B GND VDD Y
+Xnand a b gnd vdd y NAND_X1
+
+** Load capacitance
+Cload y 0 5e-15
+
+** Transient analysis
+.tran 1p 2.5n
+
+** Measurements for tpdr (falling A, rising Y)
+.MEASURE TRAN tpdr
++ TRIG=v(a) VAL='0.5*vdd_val' FALL=1
++ TARG=v(y) VAL='0.5*vdd_val' RISE=1
+
+** Measurements for tpdf (rising A, falling Y)
+.MEASURE TRAN tpdf
++ TRIG=v(a) VAL='0.5*vdd_val' RISE=1
++ TARG=v(y) VAL='0.5*vdd_val' FALL=1
+
+** Rise time measurement for input A
+.MEASURE TRAN tr_a
++ TRIG=v(a) VAL='0.1*vdd_val' RISE=1
++ TARG=v(a) VAL='0.9*vdd_val' RISE=1
+
+** Fall time measurement for input A  
+.MEASURE TRAN tf_a
++ TRIG=v(a) VAL='0.9*vdd_val' FALL=1
++ TARG=v(a) VAL='0.1*vdd_val' FALL=1
+
+** Rise time measurement for output Y
+.MEASURE TRAN tr_y
++ TRIG=v(y) VAL='0.2*vdd_val' RISE=1
++ TARG=v(y) VAL='0.8*vdd_val' RISE=1
+
+** Fall time measurement for output Y
+.MEASURE TRAN tf_y
++ TRIG=v(y) VAL='0.8*vdd_val' FALL=1
++ TARG=v(y) VAL='0.2*vdd_val' FALL=1
+
+** Static current measurement (when output is high/stable)
+.MEASURE TRAN istat AVG I(Vsupply) FROM=50p TO=150p
+
+** Peak current measurement
+.MEASURE TRAN ipeak MIN I(Vsupply) FROM=0p TO=2.5n
+
+** Print statements for waveform viewing
+.print tran v(a) v(b) v(y) i(Vsupply)
+
+** ========================================
+** ALTER statements for different Vdd values
+** ========================================
+
+** Vdd = 1.05V
+.ALTER
+.param vdd_val=1.05
+
+** Vdd = 1.00V
+.ALTER  
+.param vdd_val=1.00
+
+** Vdd = 0.95V
+.ALTER
+.param vdd_val=0.95
+
+** Vdd = 0.90V
+.ALTER
+.param vdd_val=0.90
+
+** Vdd = 0.85V
+.ALTER
+.param vdd_val=0.85
+
+.END

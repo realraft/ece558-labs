@@ -1,0 +1,8 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** post-layout supply voltage characterization'
+ tpdr             tpdf             tr_a             tf_a            
+ tr_y             tf_y             istat            ipeak           
+ temper           alter#          
+  2.837e-11        3.122e-11        4.000e-11        4.000e-11      
+  3.127e-11        3.584e-11       -1.609e-08       -1.541e-04      
+  2.500e+01       2               

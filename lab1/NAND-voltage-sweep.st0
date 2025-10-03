@@ -1,0 +1,272 @@
+****** PrimeSim HSPICE -- T-2022.06-3 linux64 (Aug 04 2022 7739753) ******
+Input File: NAND-voltage-sweep.spice
+lic:
+lic: FLEXlm: SDK_12.10
+lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu
+lic: HOSTID: 13ac8554             PID:      703315
+lic: Using FLEXlm license file:
+lic: 27020@vlsicad.ecs.umass.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 09-sep-2027/2025.06
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 4.57E-02
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option hier_delim =     0.00
+       option post =     1.00
+ init: end read circuit files, cpu clock= 4.74E-02 peak memory=     513 mb
+ init: begin check errors, cpu clock= 4.74E-02
+ init: end check errors, cpu clock= 5.11E-02 peak memory=     513 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.11E-02
+       establish matrix -- done, cpu clock= 5.12E-02 peak memory=     513 mb
+       re-order matrix -- done, cpu clock= 5.14E-02 peak memory=     513 mb
+ init: end setup matrix, cpu clock= 5.19E-02 peak memory=     513 mb
+ dcop: begin dcop, cpu clock= 5.20E-02
+ dcop: end dcop, cpu clock= 5.26E-02 peak memory=     513 mb tot_iter=       4
+ output: NAND-voltage-sweep.mt0
+ sweep: tran tran0    begin, stop_t=  2.50E-09 #sweeps=2501 cpu clock= 5.31E-02
+ tran: time= 2.7807E-10 tot_iter=      12 conv_iter=       6 cpu clock= 5.35E-02
+ tran: time= 5.0000E-10 tot_iter=      16 conv_iter=       8 cpu clock= 5.36E-02
+ tran: time= 7.5453E-10 tot_iter=      66 conv_iter=      27 cpu clock= 5.46E-02
+ tran: time= 1.0000E-09 tot_iter=      72 conv_iter=      30 cpu clock= 5.47E-02
+ tran: time= 1.3064E-09 tot_iter=     123 conv_iter=      50 cpu clock= 5.57E-02
+ tran: time= 1.5000E-09 tot_iter=     127 conv_iter=      52 cpu clock= 5.57E-02
+ tran: time= 1.7701E-09 tot_iter=     180 conv_iter=      73 cpu clock= 5.67E-02
+ tran: time= 2.0000E-09 tot_iter=     184 conv_iter=      75 cpu clock= 5.68E-02
+ tran: time= 2.3113E-09 tot_iter=     234 conv_iter=      94 cpu clock= 5.77E-02
+ tran: time= 2.5000E-09 tot_iter=     238 conv_iter=      96 cpu clock= 5.78E-02
+ sweep: tran tran0    end, cpu clock= 5.78E-02 peak memory=     513 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 8.51E-02
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option hier_delim =     0.00
+       option post =     1.00
+ init: end read circuit files, cpu clock= 8.67E-02 peak memory=     514 mb
+ init: begin check errors, cpu clock= 8.67E-02
+ init: end check errors, cpu clock= 8.93E-02 peak memory=     514 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 8.93E-02
+       establish matrix -- done, cpu clock= 8.94E-02 peak memory=     514 mb
+       re-order matrix -- done, cpu clock= 8.96E-02 peak memory=     514 mb
+ init: end setup matrix, cpu clock= 9.00E-02 peak memory=     514 mb
+ dcop: begin dcop, cpu clock= 9.02E-02
+ dcop: end dcop, cpu clock= 9.07E-02 peak memory=     514 mb tot_iter=       4
+ output: NAND-voltage-sweep.mt1
+ sweep: tran tran0    begin, stop_t=  2.50E-09 #sweeps=2501 cpu clock= 9.09E-02
+ tran: time= 2.7807E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.13E-02
+ tran: time= 5.0000E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.13E-02
+ tran: time= 7.5096E-10 tot_iter=      65 conv_iter=      27 cpu clock= 9.23E-02
+ tran: time= 1.0000E-09 tot_iter=      71 conv_iter=      30 cpu clock= 9.25E-02
+ tran: time= 1.2582E-09 tot_iter=     121 conv_iter=      50 cpu clock= 9.34E-02
+ tran: time= 1.5000E-09 tot_iter=     127 conv_iter=      53 cpu clock= 9.35E-02
+ tran: time= 1.8193E-09 tot_iter=     179 conv_iter=      74 cpu clock= 9.45E-02
+ tran: time= 2.0000E-09 tot_iter=     183 conv_iter=      76 cpu clock= 9.46E-02
+ tran: time= 2.2585E-09 tot_iter=     233 conv_iter=      96 cpu clock= 9.55E-02
+ tran: time= 2.5000E-09 tot_iter=     239 conv_iter=      99 cpu clock= 9.56E-02
+ sweep: tran tran0    end, cpu clock= 9.56E-02 peak memory=     514 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 1.10E-01
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option hier_delim =     0.00
+       option post =     1.00
+ init: end read circuit files, cpu clock= 1.11E-01 peak memory=     514 mb
+ init: begin check errors, cpu clock= 1.11E-01
+ init: end check errors, cpu clock= 1.14E-01 peak memory=     514 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.14E-01
+       establish matrix -- done, cpu clock= 1.14E-01 peak memory=     514 mb
+       re-order matrix -- done, cpu clock= 1.14E-01 peak memory=     514 mb
+ init: end setup matrix, cpu clock= 1.14E-01 peak memory=     514 mb
+ dcop: begin dcop, cpu clock= 1.15E-01
+ dcop: end dcop, cpu clock= 1.15E-01 peak memory=     514 mb tot_iter=       4
+ output: NAND-voltage-sweep.mt2
+ sweep: tran tran0    begin, stop_t=  2.50E-09 #sweeps=2501 cpu clock= 1.15E-01
+ tran: time= 2.7807E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.16E-01
+ tran: time= 5.0000E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.16E-01
+ tran: time= 7.5508E-10 tot_iter=      66 conv_iter=      27 cpu clock= 1.17E-01
+ tran: time= 1.0000E-09 tot_iter=      72 conv_iter=      30 cpu clock= 1.17E-01
+ tran: time= 1.3476E-09 tot_iter=     122 conv_iter=      49 cpu clock= 1.18E-01
+ tran: time= 1.5000E-09 tot_iter=     126 conv_iter=      51 cpu clock= 1.18E-01
+ tran: time= 1.8107E-09 tot_iter=     179 conv_iter=      72 cpu clock= 1.19E-01
+ tran: time= 2.0000E-09 tot_iter=     183 conv_iter=      74 cpu clock= 1.19E-01
+ tran: time= 2.3513E-09 tot_iter=     232 conv_iter=      93 cpu clock= 1.20E-01
+ tran: time= 2.5000E-09 tot_iter=     236 conv_iter=      95 cpu clock= 1.20E-01
+ sweep: tran tran0    end, cpu clock= 1.20E-01 peak memory=     514 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 1.34E-01
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option hier_delim =     0.00
+       option post =     1.00
+ init: end read circuit files, cpu clock= 1.35E-01 peak memory=     514 mb
+ init: begin check errors, cpu clock= 1.35E-01
+ init: end check errors, cpu clock= 1.38E-01 peak memory=     514 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.38E-01
+       establish matrix -- done, cpu clock= 1.38E-01 peak memory=     514 mb
+       re-order matrix -- done, cpu clock= 1.38E-01 peak memory=     514 mb
+ init: end setup matrix, cpu clock= 1.39E-01 peak memory=     514 mb
+ dcop: begin dcop, cpu clock= 1.39E-01
+ dcop: end dcop, cpu clock= 1.39E-01 peak memory=     514 mb tot_iter=       4
+ output: NAND-voltage-sweep.mt3
+ sweep: tran tran0    begin, stop_t=  2.50E-09 #sweeps=2501 cpu clock= 1.40E-01
+ tran: time= 2.7807E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.40E-01
+ tran: time= 5.0000E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.40E-01
+ tran: time= 8.0511E-10 tot_iter=      66 conv_iter=      28 cpu clock= 1.41E-01
+ tran: time= 1.0000E-09 tot_iter=      70 conv_iter=      30 cpu clock= 1.41E-01
+ tran: time= 1.3105E-09 tot_iter=     118 conv_iter=      49 cpu clock= 1.42E-01
+ tran: time= 1.5000E-09 tot_iter=     122 conv_iter=      51 cpu clock= 1.42E-01
+ tran: time= 1.7551E-09 tot_iter=     171 conv_iter=      70 cpu clock= 1.43E-01
+ tran: time= 2.0000E-09 tot_iter=     177 conv_iter=      73 cpu clock= 1.43E-01
+ tran: time= 2.3102E-09 tot_iter=     224 conv_iter=      92 cpu clock= 1.44E-01
+ tran: time= 2.5000E-09 tot_iter=     228 conv_iter=      94 cpu clock= 1.44E-01
+ sweep: tran tran0    end, cpu clock= 1.44E-01 peak memory=     514 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 1.58E-01
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option hier_delim =     0.00
+       option post =     1.00
+ init: end read circuit files, cpu clock= 1.60E-01 peak memory=     514 mb
+ init: begin check errors, cpu clock= 1.60E-01
+ init: end check errors, cpu clock= 1.62E-01 peak memory=     514 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.62E-01
+       establish matrix -- done, cpu clock= 1.62E-01 peak memory=     514 mb
+       re-order matrix -- done, cpu clock= 1.62E-01 peak memory=     514 mb
+ init: end setup matrix, cpu clock= 1.63E-01 peak memory=     514 mb
+ dcop: begin dcop, cpu clock= 1.63E-01
+ dcop: end dcop, cpu clock= 1.64E-01 peak memory=     514 mb tot_iter=       4
+ output: NAND-voltage-sweep.mt4
+ sweep: tran tran0    begin, stop_t=  2.50E-09 #sweeps=2501 cpu clock= 1.64E-01
+ tran: time= 2.7807E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.64E-01
+ tran: time= 5.0000E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.64E-01
+ tran: time= 8.0733E-10 tot_iter=      66 conv_iter=      28 cpu clock= 1.65E-01
+ tran: time= 1.0000E-09 tot_iter=      70 conv_iter=      30 cpu clock= 1.65E-01
+ tran: time= 1.2902E-09 tot_iter=     118 conv_iter=      49 cpu clock= 1.66E-01
+ tran: time= 1.5000E-09 tot_iter=     122 conv_iter=      51 cpu clock= 1.66E-01
+ tran: time= 1.8073E-09 tot_iter=     172 conv_iter=      71 cpu clock= 1.67E-01
+ tran: time= 2.0000E-09 tot_iter=     176 conv_iter=      73 cpu clock= 1.67E-01
+ tran: time= 2.2901E-09 tot_iter=     224 conv_iter=      92 cpu clock= 1.68E-01
+ tran: time= 2.5000E-09 tot_iter=     228 conv_iter=      94 cpu clock= 1.68E-01
+ sweep: tran tran0    end, cpu clock= 1.68E-01 peak memory=     514 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 1.82E-01
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option hier_delim =     0.00
+       option post =     1.00
+ init: end read circuit files, cpu clock= 1.84E-01 peak memory=     514 mb
+ init: begin check errors, cpu clock= 1.84E-01
+ init: end check errors, cpu clock= 1.86E-01 peak memory=     514 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.86E-01
+       establish matrix -- done, cpu clock= 1.86E-01 peak memory=     514 mb
+       re-order matrix -- done, cpu clock= 1.86E-01 peak memory=     514 mb
+ init: end setup matrix, cpu clock= 1.87E-01 peak memory=     514 mb
+ dcop: begin dcop, cpu clock= 1.87E-01
+ dcop: end dcop, cpu clock= 1.87E-01 peak memory=     514 mb tot_iter=       4
+ output: NAND-voltage-sweep.mt5
+ sweep: tran tran0    begin, stop_t=  2.50E-09 #sweeps=2501 cpu clock= 1.88E-01
+ tran: time= 2.7807E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.88E-01
+ tran: time= 5.0000E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.88E-01
+ tran: time= 8.1315E-10 tot_iter=      67 conv_iter=      28 cpu clock= 1.89E-01
+ tran: time= 1.0000E-09 tot_iter=      71 conv_iter=      30 cpu clock= 1.89E-01
+ tran: time= 1.2856E-09 tot_iter=     119 conv_iter=      49 cpu clock= 1.90E-01
+ tran: time= 1.5000E-09 tot_iter=     123 conv_iter=      51 cpu clock= 1.90E-01
+ tran: time= 1.8127E-09 tot_iter=     173 conv_iter=      71 cpu clock= 1.91E-01
+ tran: time= 2.0000E-09 tot_iter=     177 conv_iter=      73 cpu clock= 1.91E-01
+ tran: time= 2.2857E-09 tot_iter=     225 conv_iter=      92 cpu clock= 1.92E-01
+ tran: time= 2.5000E-09 tot_iter=     229 conv_iter=      94 cpu clock= 1.92E-01
+ sweep: tran tran0    end, cpu clock= 1.92E-01 peak memory=     514 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
