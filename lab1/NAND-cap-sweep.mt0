@@ -1,0 +1,16 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=1
+.TITLE '** complete step 8: capacitance sweep and inverter load test'
+ cap_load         tpdr             tpdf             temper          
+                  alter#          
+  2.000e-15        2.098e-11        2.285e-11        2.500e+01      
+                 1               
+  7.000e-15        3.635e-11        4.042e-11        2.500e+01      
+                 1               
+  1.200e-14        5.039e-11        5.640e-11        2.500e+01      
+                 1               
+  1.700e-14        6.336e-11        7.222e-11        2.500e+01      
+                 1               
+  2.200e-14        7.724e-11        8.921e-11        2.500e+01      
+                 1               
+  2.700e-14        9.036e-11        1.047e-10        2.500e+01      
+                 1               

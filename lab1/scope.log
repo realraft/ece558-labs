@@ -4,59 +4,61 @@ Mdi:ArrangeIcons
 wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
+wm geometry . 900x785+0+34
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-cap-sweep.tr0 1 openonly
+wm geometry . 773x851+0+31
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+34
+Mdi:ArrangeIcons
+wm geometry . 773x851+0+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-postlayout.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 232x242+768+480
-wm geometry .sigmgr._PF:1 231x319+530+404
-wm geometry .sigmgr._PF:1 232x242+768+480
-wm geometry .sigmgr._PF:1 232x242+572+415
-pf:read PF:1 v(y)
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+533+371
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+504+363
+pf:read PF:1 v(a)
 # WF:1:1
 Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal0
-Mdi:ArrangeIcons
-pf:read PF:1 v(b)
+pf:read PF:1 v(y)
 # WF:1:2
 Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal1
-pf:read PF:1 v(a)
+pf:read PF:1 i(vsupply)
 # WF:1:3
 Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal2
 Graph:Select Graph0
 Graph:DSel
-Graph itemselect Signal0 add
-# Signal0
-Graph sigconfig {Signal0 Signal1} -region {1 1} -rgnindex {0 1}
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
 Graph:DSel
 Graph itemselect Signal2 add
 # Signal2
-Graph sigconfig {Signal2 Signal1} -region {0 0} -rgnindex {1 2}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-GrMeas:Delay Graph0 Signal0 Signal2 either either default default default default 0.5 0.5 xyrangeAll - 0 - activeGraph
-# Signal3
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal1 Signal0} -regswap {0 1 1}
 Graph:DSel
-Mdi:Resize 511 398
-Mdi:Move 5 5
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.3798602839535 -0.35194647163747} {692.764p 981.451p}}
+wm geometry .sigmgr._PF:1 232x242+768+480
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+533+371
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+504+363
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
@@ -64,48 +66,71 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Graph:DSel
+GrMeas:DeltaX Graph0 Signal1 Signal0 1 {- {.5} - {.5}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+# M:0
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Mdi:FullSize
+GrMeas:DeltaX Graph0 Signal0 Signal1 1 {- {.5} - {.5}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 1 activeGraph 0 - 1
+# M:1
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
 Mdi:ArrangeIcons
-wm geometry . 900x785+8+85
-Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
-Mdi:ArrangeIcons
-wm geometry . 1536x860+8+31
-Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
-Mdi:ArrangeIcons
-wm geometry . 1536x860+0+0
-Mdi:ArrangeIcons
-wm geometry . 1536x860+8+31
-Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
-Mdi:ArrangeIcons
-wm geometry . 1536x860+0+0
+Graph:DSel
+GrMeas:Select Graph0 M:1 0
+GrMeas:MoveText Graph0 M:1 0 30.0 30.0
+Graph delsignal selected
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry . 1536x860+0+0
 Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
+Graph:DSel
+GrMeas:Select Graph0 M:0 0
+GrMeas:MoveDiffAnc2 Graph0 M:0 0 841.70281289725p 0.48835872337314
+Graph delsignal selected
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry . 1536x860+8+31
 Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
 Mdi:ArrangeIcons
-wm geometry . 900x785+570+40
 Mdi:ArrangeIcons
-wm geometry . 1536x860+8+31
 Mdi:ArrangeIcons
-wm geometry . 1536x860+0+23
+Graph:DSel
+Graph axisconfig {AxisX(0) AxisY(0,1) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
 Mdi:ArrangeIcons
-wm geometry . 900x785+570+40
+Mdi:ArrangeIcons
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.5897762543282 -0.71929941979313} {654.779p 1.07262n}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph axisconfig {AxisX(0) AxisY(0,1) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal0 Signal1 either either default default default default 0.5 0.5 xyrangeAll
+# M:2
+Graph:DSel
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.4848182691408 -0.56186244201213} {320.51p 639.585p}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Select Graph0 M:2 6
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:Unload 0 {{(1) NAND-postlayout.tr0}}
+Mdi:ArrangeIcons
+ScopeSigMgr:Unload 0 {{(1) NAND-postlayout.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons

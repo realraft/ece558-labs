@@ -2,8 +2,8 @@ header
 "PSFversion" "1.00"
 "simulator" "HSPICE"
 "version" "T-2022.06-3 linux64"
-"rundate" "10:42:37 10/03/2025 "
-"runtitle" "** post-layout simulation with capacitance sweep and inverter load"
+"rundate" "11:02:09 10/03/2025 "
+"runtitle" "** complete step 8: capacitance sweep and inverter load test      "
 "runtype" "logFile"
 TYPE
 "analysisInst" STRUCT(
@@ -44,7 +44,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 5e-15
+"cap_load" 7e-15
 )
 "NAND-cap-sweep.tr0@3" "analysisInst" ( 
 "Transient Analysis"
@@ -55,7 +55,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 1e-14
+"cap_load" 1.2e-14
 )
 "NAND-cap-sweep.tr0@4" "analysisInst" ( 
 "Transient Analysis"
@@ -66,7 +66,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 1.5e-14
+"cap_load" 1.7e-14
 )
 "NAND-cap-sweep.tr0@5" "analysisInst" ( 
 "Transient Analysis"
@@ -77,7 +77,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 2e-14
+"cap_load" 2.2e-14
 )
 "NAND-cap-sweep.tr0@6" "analysisInst" ( 
 "Transient Analysis"
@@ -88,18 +88,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 2.5e-14
-)
-"NAND-cap-sweep.tr0@7" "analysisInst" ( 
-"Transient Analysis"
-"NAND-cap-sweep.tr0@7"
-"PSF"
-"timeSweep"
-()
-"Transient Analysis"
-) PROP(
-"sweep_tree_type" "leafNode"
-"cap_load" 3e-14
+"cap_load" 2.7e-14
 )
 "summary" "analysisInst" ( 
 "Summary Information"
@@ -139,7 +128,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 5e-15
+"cap_load" 7e-15
 )
 "NAND-cap-sweep.tr1" "analysisInst" ( 
 "Transient Analysis"
@@ -150,7 +139,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 1e-14
+"cap_load" 1.2e-14
 )
 "NAND-cap-sweep.tr1" "analysisInst" ( 
 "Transient Analysis"
@@ -161,7 +150,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 1.5e-14
+"cap_load" 1.7e-14
 )
 "NAND-cap-sweep.tr1" "analysisInst" ( 
 "Transient Analysis"
@@ -172,7 +161,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 2e-14
+"cap_load" 2.2e-14
 )
 "NAND-cap-sweep.tr1" "analysisInst" ( 
 "Transient Analysis"
@@ -183,18 +172,7 @@ VALUE
 "Transient Analysis"
 ) PROP(
 "sweep_tree_type" "leafNode"
-"cap_load" 2.5e-14
-)
-"NAND-cap-sweep.tr1" "analysisInst" ( 
-"Transient Analysis"
-"NAND-cap-sweep.tr1"
-"PSF"
-"timeSweep1"
-()
-"Transient Analysis"
-) PROP(
-"sweep_tree_type" "leafNode"
-"cap_load" 3e-14
+"cap_load" 2.7e-14
 )
 "timeSweep2" "analysisInst" ( 
 "Transient Analysis"
