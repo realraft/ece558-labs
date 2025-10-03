@@ -3,8 +3,8 @@ radix 11
 io ii
 vname a b
 tunit ps
-trise 45
-tfall 45
+trise 75
+tfall 75
 period 400
 idelay 0
 vih 1.1
