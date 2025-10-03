@@ -4,28 +4,243 @@ Mdi:ArrangeIcons
 wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
+wm geometry . 900x785+864+40
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+707+38
+Mdi:ArrangeIcons
+wm geometry . 900x785+470+69
+Mdi:ArrangeIcons
+wm geometry . 900x785+707+38
+Mdi:ArrangeIcons
+wm geometry . 900x785+470+69
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-voltage-sweep.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 232x242+768+480
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr 376x204+519+139
+wm geometry .sigmgr._PF:1 232x242+559+366
+pf:read PF:1 v(a)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(b)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(y)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:DSel
+Graph itemselect AxisY(2,0) add
+# AxisY(2,0)
 Graph:Select Graph0
-Graph:DSel 0
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig Signal2 -region 1 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal1 Signal2} -region {1 1 1} -rgnindex {0 1 2}
+Mdi:FullSize
+wm geometry .sigmgr 376x204+1072+117
+wm geometry .sigmgr._PF:1 232x242+1055+311
+Graph:DSel
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {{-1.3n 3.9n } {-1.5 2.5 }}
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {{-20p 1.96n } {-0.35 1.3 }}
+Graph axisconfig {AxisX(0) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Mdi:ArrangeIcons
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.2745190051482 -0.21444848837935} {41.2602p 2.52627n}}
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{1.1976926725583 0.19529195209997} {129.506p 1.88737n}}
+Graph axisconfig {AxisY(0,0) AxisX(0)} -scale {{linear} {linear}} -gridvis {{no} {no}} -linticks {{} {}} -logticks {{} {1 1}} -subticks {{0} {0}} -label {{(V)} {t(s)}} -digiview {{} {}} -lock {{no} {no}} -slider {{no} {no}} -range {{1.2745190051482 -0.21444848837935} {41.2602p 2.52627n}} -unitscale {{auto} {auto}}
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr 376x204+984+148
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr 376x204+519+139
+wm geometry .sigmgr._PF:1 232x242+559+366
+wm geometry .sigmgr 376x204+1072+117
+wm geometry .sigmgr._PF:1 232x242+1055+311
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
 Graph:DSel
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-voltage-sweep.mt0 1 openonly
-# PF:1
-wm geometry .sigmgr._PF:1 232x242+768+480
-wm geometry .sigmgr 376x204+522+164
-wm geometry .sigmgr 376x204+915+108
-wm geometry .sigmgr._PF:1 231x319+768+480
-wm geometry .sigmgr._PF:1 231x319+914+347
-wm geometry .sigmgr._PF:1 232x242+768+480
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+911+377
-wm geometry .sigmgr._PF:1 232x242+768+480
-wm geometry .sigmgr._PF:1 232x242+911+377
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-voltage-sweep.mt1 1 openonly
+ScopeSigMgr:Unload 0 {{(1) NAND-voltage-sweep.tr0 [6]}}
+Graph0 delsignal Signal0
+Graph0 delsignal Signal1
+Graph0 delsignal Signal2
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+17+47
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+0
+Mdi:ArrangeIcons
+wm geometry . 900x785+17+47
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-voltage-sweep.tr0 1 openonly
 # PF:2
-wm geometry .sigmgr._PF:2 232x242+798+510
-wm geometry .sigmgr._PF:2 231x319+952+409
+wm geometry .sigmgr._PF:2 232x242+768+480
+wm geometry .sigmgr._PF:2 231x319+1060+386
+pf:read PF:2 v(a)
+# WF:2:1
+Graph addsignal WF:2:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 v(b)
+# WF:2:2
+Graph addsignal WF:2:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:2 v(y)
+# WF:2:3
+Graph addsignal WF:2:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal1} -region {1 1} -rgnindex {0 1}
+wm geometry .sigmgr._PF:2 232x242+1104+436
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {1 2}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+ScopeSigMgr:Unload 0 {{(1) NAND-voltage-sweep.tr0 [6]}}
+Graph0 delsignal Signal0
+Graph0 delsignal Signal1
+Graph0 delsignal Signal2
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+0
+Mdi:ArrangeIcons
+wm geometry . 900x785+17+47
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+0
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+17+47
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+0
+Mdi:ArrangeIcons
+wm geometry . 900x785+17+47
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-voltage-sweep.tr0 1 openonly
+# PF:3
+wm geometry .sigmgr._PF:3 232x242+768+480
+wm geometry .sigmgr._PF:3 232x242+1147+387
+pf:read PF:3 v(a)
+# WF:3:1
+Graph addsignal WF:3:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:3 v(b)
+# WF:3:2
+Graph addsignal WF:3:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:3 v(y)
+# WF:3:3
+Graph addsignal WF:3:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig Signal2 -region 1 -rgnindex 1
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig {Signal2 Signal1 Signal0} -region {0 0 0} -rgnindex {0 1 2}
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-1.5 2.5 } {-1n 3n }}
+Graph axisconfig {AxisY(0,0) AxisX(0)} -range {{-0.35 1.3 } {320p 1.64n }}
+Graph:DSel
+Mdi:ArrangeIcons
+Graph:DSel
+Graph:Select Graph0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:NormalSize
+Graph:DSel
+pf:read PF:3 v(vdd)
+# WF:3:4
+Graph addsignal WF:3:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph delsignal selected
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph delsignal selected
+Graph:DSel
+Graph:DSel
+pf:read PF:3 v(y)
+# WF:3:3
+Graph addsignal WF:3:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph sigconfig {Signal4 Signal0} -region {0 0} -rgnindex {1 2}
+Graph:DSel
+pf:read PF:3 i(va)
+# WF:3:5
+Graph addsignal WF:3:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+0
+wm geometry .sigmgr._PF:3 232x242+768+480
+wm geometry .sigmgr._PF:3 232x242+1147+387
+Mdi:ArrangeIcons
+wm geometry . 900x785+17+47
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+0+0

@@ -8,11 +8,11 @@ Using: /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/linux64/hspice NAND-voltag
   this software is strictly prohibited.
   Input File: NAND-voltage-sweep.spice                                          
   Command line options: /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/linux64/hspice NAND-voltage-sweep.spice
-  Start time: Thu Oct  2 19:50:01 2025
+  Start time: Thu Oct  2 20:18:37 2025
  lic:  
  lic: FLEXlm: SDK_12.10 
  lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu 
- lic: HOSTID: 13ac8554             PID:      703315 
+ lic: HOSTID: 13ac8554             PID:      717561 
  lic: Using FLEXlm license file: 
  lic: 27020@vlsicad.ecs.umass.edu 
  lic: Checkout 1 hspice 
@@ -3161,13 +3161,13 @@ y
  ******  Machine Information  ******
  CPU:
  model name	: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz
- cpu MHz	: 2736.139
+ cpu MHz	: 3200.000
  CPU(s)		: 64
   
  OS:
  Linux version 4.18.0-553.16.1.el8_10.x86_64 (mockbuild@x86-64-01.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-22) (GCC)) #1 SMP Thu Aug 1 04:16:12 EDT 2024
 
- System loadavg : 0.50 0.52 0.43 2/2761 703318
+ System loadavg : 0.44 0.61 0.54 2/2705 717564
 
 
   ******  PrimeSim HSPICE Threads Information  ******
@@ -3196,18 +3196,18 @@ y
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1           4
-  transient          0.00        2501         240          97 rev=         8
+  transient          0.01        2501         240          97 rev=         8
   readin             0.01
-  errchk             0.00
+  errchk             0.01
   setup              0.00
   output             0.00
 
 
-           peak memory used        513.28 megabytes
-           total cpu time            0.03 seconds
-           total elapsed time        0.08 seconds
-           job started at     19:50:01 10/02/2025
-           job ended   at     19:50:01 10/02/2025
+           peak memory used        513.29 megabytes
+           total cpu time            0.05 seconds
+           total elapsed time        0.11 seconds
+           job started at     20:18:37 10/02/2025
+           job ended   at     20:18:37 10/02/2025
 
 >info:         ***** hspice job concluded
   **warning** (NAND_X1-post-layout.sp:31) Parameter fw is ignored
@@ -6366,18 +6366,18 @@ y
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1           4
-  transient          0.00        2501         241         100 rev=         8
-  readin             0.00
+  transient          0.01        2501         241         100 rev=         8
+  readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
            peak memory used        514.27 megabytes
-           total cpu time            0.02 seconds
-           total elapsed time        0.03 seconds
-           job started at     19:50:01 10/02/2025
-           job ended   at     19:50:01 10/02/2025
+           total cpu time            0.04 seconds
+           total elapsed time        0.04 seconds
+           job started at     20:18:37 10/02/2025
+           job ended   at     20:18:37 10/02/2025
 
 >info:         ***** hspice job concluded
   **warning** (NAND_X1-post-layout.sp:31) Parameter fw is ignored
@@ -9546,8 +9546,8 @@ y
            peak memory used        514.27 megabytes
            total cpu time            0.02 seconds
            total elapsed time        0.02 seconds
-           job started at     19:50:01 10/02/2025
-           job ended   at     19:50:01 10/02/2025
+           job started at     20:18:37 10/02/2025
+           job ended   at     20:18:37 10/02/2025
 
 >info:         ***** hspice job concluded
   **warning** (NAND_X1-post-layout.sp:31) Parameter fw is ignored
@@ -12716,8 +12716,8 @@ y
            peak memory used        514.27 megabytes
            total cpu time            0.02 seconds
            total elapsed time        0.02 seconds
-           job started at     19:50:01 10/02/2025
-           job ended   at     19:50:01 10/02/2025
+           job started at     20:18:37 10/02/2025
+           job ended   at     20:18:37 10/02/2025
 
 >info:         ***** hspice job concluded
   **warning** (NAND_X1-post-layout.sp:31) Parameter fw is ignored
@@ -15886,8 +15886,8 @@ y
            peak memory used        514.27 megabytes
            total cpu time            0.02 seconds
            total elapsed time        0.02 seconds
-           job started at     19:50:01 10/02/2025
-           job ended   at     19:50:01 10/02/2025
+           job started at     20:18:37 10/02/2025
+           job ended   at     20:18:37 10/02/2025
 
 >info:         ***** hspice job concluded
   **warning** (NAND_X1-post-layout.sp:31) Parameter fw is ignored
@@ -19056,12 +19056,12 @@ y
            peak memory used        514.27 megabytes
            total cpu time            0.02 seconds
            total elapsed time        0.02 seconds
-           job started at     19:50:01 10/02/2025
-           job ended   at     19:50:01 10/02/2025
+           job started at     20:18:37 10/02/2025
+           job ended   at     20:18:37 10/02/2025
 
 >info:         ***** hspice job concluded
-           job total runtime         0.20 seconds
+           job total runtime         0.25 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.04(s)
+ lic: total license checkout elapse time:        0.05(s)
