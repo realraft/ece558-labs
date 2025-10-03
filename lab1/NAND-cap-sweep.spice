@@ -1,0 +1,84 @@
+** Post-Layout Simulation with Capacitance Sweep and Inverter Load
+** Include model files
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+.include 'NAND_X1-post-layout.sp'
+
+.param vdd_val=1.1
+.param cap_load=5f
+.TEMP 25
+
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
++    HIER_DELIM=0
+
+.vec 'input.vec'
+
+** Power supplies
+Vgnd gnd 0 0
+Vsupply vdd 0 vdd_val
+
+** Define minimum inverter subcircuit locally
+.subckt inverter GND VDD IN OUT size=1
+m0 OUT IN VDD VDD g45p1svt L=45e-9 W='size*240e-9'
+m1 OUT IN GND GND g45n1svt L=45e-9 W='size*120e-9'
+.ends
+
+** Main NAND gate
+Xnand a b gnd vdd y NAND_X1
+
+** Load capacitance - parameterized
+Cload y 0 cap_load
+
+** First set of simulations: Sweep capacitance only
+.tran 1p 2.5n SWEEP DATA=cap_sweep
+
+** Define sweep data
+.DATA cap_sweep
+cap_load
+2f
+5f
+10f
+15f
+20f
+25f
+30f
+.ENDDATA
+
+** Measurements for capacitance sweep
+.MEASURE TRAN tpdr
++ TRIG=v(a) VAL='0.5*vdd_val' FALL=1
++ TARG=v(y) VAL='0.5*vdd_val' RISE=1
+
+.MEASURE TRAN tpdf
++ TRIG=v(a) VAL='0.5*vdd_val' RISE=1
++ TARG=v(y) VAL='0.5*vdd_val' FALL=1
+
+** Now add simulation with inverter loads
+.ALTER INVERTER_LOAD_TEST
+.param cap_load=4f
+
+** Remove the sweep for this test
+.tran 1p 2.5n
+
+** Add 6 parallel minimum-sized inverters to the output
+** Using the inverter subcircuit with size=1 (minimum: Wn=120nm, Wp=240nm)
+** Port order: GND VDD IN OUT
+Xinv1 gnd vdd y dummy1 inverter size=1
+Xinv2 gnd vdd y dummy2 inverter size=1
+Xinv3 gnd vdd y dummy3 inverter size=1
+Xinv4 gnd vdd y dummy4 inverter size=1
+Xinv5 gnd vdd y dummy5 inverter size=1
+Xinv6 gnd vdd y dummy6 inverter size=1
+
+** Measure with inverter + 4fF load
+.MEASURE TRAN tpdr_with_inv
++ TRIG=v(a) VAL='0.5*vdd_val' FALL=1
++ TARG=v(y) VAL='0.5*vdd_val' RISE=1
+
+.print tran v(a) v(b) v(y)
+.option post
+.END

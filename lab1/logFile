@@ -2,8 +2,8 @@ header
 "PSFversion" "1.00"
 "simulator" "HSPICE"
 "version" "T-2022.06-3 linux64"
-"rundate" "13:56:21 09/22/2025 "
-"runtitle" "** generated for: hspiced                                         "
+"rundate" "10:42:37 10/03/2025 "
+"runtitle" "** post-layout simulation with capacitance sweep and inverter load"
 "runtype" "logFile"
 TYPE
 "analysisInst" STRUCT(
@@ -16,17 +16,191 @@ TYPE
 VALUE
 "timeSweep" "analysisInst" ( 
 "Transient Analysis"
-"NAND-schematic.tr0"
+""
+"PSF"
+""
+("cap_load" )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"NAND-cap-sweep.tr0@1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr0@1"
+"PSF"
+"timeSweep"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 2e-15
+)
+"NAND-cap-sweep.tr0@2" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr0@2"
+"PSF"
+"timeSweep"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 5e-15
+)
+"NAND-cap-sweep.tr0@3" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr0@3"
+"PSF"
+"timeSweep"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 1e-14
+)
+"NAND-cap-sweep.tr0@4" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr0@4"
+"PSF"
+"timeSweep"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 1.5e-14
+)
+"NAND-cap-sweep.tr0@5" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr0@5"
+"PSF"
+"timeSweep"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 2e-14
+)
+"NAND-cap-sweep.tr0@6" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr0@6"
+"PSF"
+"timeSweep"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 2.5e-14
+)
+"NAND-cap-sweep.tr0@7" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr0@7"
+"PSF"
+"timeSweep"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 3e-14
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"NAND-cap-sweep.su0"
+"PSF"
+""
+()
+"Summary Information"
+)
+"timeSweep1" "analysisInst" ( 
+"Transient Analysis"
+""
+"PSF"
+""
+("cap_load" )
+"sweep parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+"NAND-cap-sweep.tr1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr1"
+"PSF"
+"timeSweep1"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 2e-15
+)
+"NAND-cap-sweep.tr1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr1"
+"PSF"
+"timeSweep1"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 5e-15
+)
+"NAND-cap-sweep.tr1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr1"
+"PSF"
+"timeSweep1"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 1e-14
+)
+"NAND-cap-sweep.tr1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr1"
+"PSF"
+"timeSweep1"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 1.5e-14
+)
+"NAND-cap-sweep.tr1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr1"
+"PSF"
+"timeSweep1"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 2e-14
+)
+"NAND-cap-sweep.tr1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr1"
+"PSF"
+"timeSweep1"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 2.5e-14
+)
+"NAND-cap-sweep.tr1" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr1"
+"PSF"
+"timeSweep1"
+()
+"Transient Analysis"
+) PROP(
+"sweep_tree_type" "leafNode"
+"cap_load" 3e-14
+)
+"timeSweep2" "analysisInst" ( 
+"Transient Analysis"
+"NAND-cap-sweep.tr2"
 "PSF"
 ""
 ()
 "Transient Analysis"
-)
-"summary" "analysisInst" ( 
-"Summary Information"
-"NAND-schematic.su0"
-"PSF"
-""
-()
-"Summary Information"
 )

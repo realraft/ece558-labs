@@ -1,0 +1,20 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "HSPICE"
+"version" "T-2022.06-3 linux64"
+"rundate" "10:42:37 10/03/2025"
+"runtitle" "** post-layout simulation with capacitance sweep and inverter load                                                      "
+"runtype" "Summary Information"
+"temperature" "2.500e+01"
+"op point time" "0.00"
+"op point iterations" "8"
+"transient time" "0.04"
+"transient iterations" "1959"
+"total cpu time" "0.06"
+"node value" "invalid"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "invalid"
+"transient analysis" "complete"
+TRAILER
+END
