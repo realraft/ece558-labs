@@ -1,1 +1,1 @@
-("NAND:/\tNAND components symbol" (("open" (nil hierarchy "/{components NAND symbol }:a"))) (((-0.825 -1.44375) (4.19375 1.00625)) "a" "Symbol" 2))
+("INV:/\tINV components schematic" (("open" (nil hierarchy "/{components INV schematic }:a"))) (((-2.56875 -2.0) (2.56875 2.00625)) "a" "Schematics" 6))("NAND:/\tNAND components symbol" (("open" (nil hierarchy "/{components NAND symbol }:a"))) (((-0.825 -1.44375) (4.19375 1.00625)) "a" "Symbol" 2))
