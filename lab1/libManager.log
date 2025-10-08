@@ -1,167 +1,73 @@
 \o Program:		@(#)$CDS: libManager version 25.1 - CAT39.24 07/11/2025 15:44 (cpgbld31) $
 \o Sub version:		sub-version  s010 
-\o Arguments:		-unmapped -mpssession virtuoso1445552 -mpshost vlsicad.ecs.umass.edu -masterPID 1445552 -ADVM 
-\o Working Directory:	vlsicad.ecs.umass.edu:/home/ece558_658_2025/azguro/lab1
+\o Arguments:		-unmapped -mpssession virtuoso1502954 -mpshost vlsicad.ecs.umass.edu -masterPID 1502954 -ADVM 
+\o Working Directory:	vlsicad.ecs.umass.edu:/home/ece558_658_2025/azguro/ece558-labs/lab1
 \o 64-bit offsets
 \o Qt version: 		5.15.9
+\o DB was auto refreshed.
 \o MPS virtuoso types registered: 73
-\o changeWorkingDir("/home/ece558_658_2025/azguro/lab1") unnecessary.
+\o changeWorkingDir("/home/ece558_658_2025/azguro/ece558-labs/lab1") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o Session hidden cells enabled.
-\o Log file is "/home/ece558_658_2025/azguro/lab1/libManager.log".
+\o Log file is "/home/ece558_658_2025/azguro/ece558-labs/lab1/libManager.log".
 \o Opening libManager window.
 \a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a nrResizeWindow(cdsLibManager list(135 257 602 491))
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a nrListItemAction(cdsLibManager->libListBox "NAND_X1" 0)
-\a cdsLibManager->libListBox->value = nil
+\a nrResizeWindow(cdsLibManager list(183 228 602 440))
+\a cdsLibManager->libListBox->value = "INV_X1"
+\a cdsLibManager->libLineEdit->value = "INV_X1"
+\a nrListItemAction(cdsLibManager->libListBox "INV_X1" 0)
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a nrListItemAction(cdsLibManager->libListBox "INV_X1" 0)
+\a cdsLibManager->libListBox->value = "INV_X1"
+\a cdsLibManager->libLineEdit->value = "INV_X1"
+\a nrResizeWindow(cdsLibManager list(644 183 602 440))
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a nrListItemAction(cdsLibManager->libListBox "INV_X1" 0)
+\a cdsLibManager->libListBox->value = "INV_X1"
+\a cdsLibManager->libLineEdit->value = "INV_X1"
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a _lmgrCloseIconify("cdsLibManager" 0)
+\a nrResizeWindow(cdsLibManager list(555 229 602 440))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a _lmgrCloseIconify("cdsLibManager" 0)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a _lmgrCloseIconify("cdsLibManager" 0)
+\a nrResizeWindow(cdsLibManager list(527 229 602 440))
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(16 268 602 491))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(183 228 602 491))
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
 \a nrSetWindowVisibility(cdsLibManager "show")
 \a _lmgrCloseIconify("cdsLibManager" 0)
-\a nrResizeWindow(cdsLibManager list(222 356 602 491))
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(130 182 602 491))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(59 415 602 332))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(163 170 602 332))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\a cdsLibManager->viewRefreshButton->value = t
+\o MPS request: refresh library list
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(198 181 602 332))
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
-\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "INV_X1"
+\a cdsLibManager->libLineEdit->value = "INV_X1"
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(64 164 602 332))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
 \a cdsLibManager->libListBox->value = nil
+\a nrListItemAction(cdsLibManager->libListBox "INV_X1" 0)
+\a cdsLibManager->libListBox->value = "INV_X1"
+\a cdsLibManager->libLineEdit->value = "INV_X1"
 \a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "NAND_X1"
-\a cdsLibManager->libLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "NAND_X1"
-\a cdsLibManager->cellLineEdit->value = "NAND_X1"
+\a cdsLibManager->libListBox->value = nil
+\a nrListItemAction(cdsLibManager->libListBox "INV_X1" 0)
+\a cdsLibManager->libListBox->value = "INV_X1"
+\a cdsLibManager->libLineEdit->value = "INV_X1"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(26 126 602 332))
-\o MPS service: shutdown
-\o libManager is exiting.
-\a exit(0)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a _lmgrCloseIconify("cdsLibManager" 0)

@@ -4,57 +4,54 @@ Mdi:ArrangeIcons
 wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry . 900x785+0+34
-Mdi:ArrangeIcons
-wm geometry . 773x851+0+31
-Mdi:ArrangeIcons
-wm geometry . 900x785+0+34
-Mdi:ArrangeIcons
-wm geometry . 773x851+0+31
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-postlayout.tr0 1 openonly
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab1/NAND-voltage-sweep73.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 232x242+768+480
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+533+371
+pf:read PF:1 v(b) v(y) v(a)
+# WF:1:1 WF:1:2 WF:1:3
+Graph addsignal {WF:1:1 WF:1:2 WF:1:3} -region {new new new} -yview {real(y) real(y) real(y)} -xview {real(x) real(x) real(x)} -tracehi {2 2 2}
+# Signal0 Signal1 Signal2
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+504+363
-pf:read PF:1 v(a)
-# WF:1:1
-Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
-# Signal0
-pf:read PF:1 v(y)
-# WF:1:2
-Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
-# Signal1
-pf:read PF:1 i(vsupply)
-# WF:1:3
-Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
-# Signal2
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:FullSize
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
 Graph:Select Graph0
+Graph:DSel
+Mdi:ArrangeIcons
+wm geometry . 1536x860+0+23
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1536x860+8+31
+Mdi:ArrangeIcons
+wm geometry . 1536x860+0+23
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph:DSel
 Graph:DSel
 Graph itemselect Signal1 add
 # Signal1
-Graph sigconfig {Signal1 Signal0} -region {0 0} -rgnindex {0 1}
+Graph sigconfig Signal1 -region 2 -rgnindex 1
 Graph:DSel
-Graph itemselect Signal2 add
-# Signal2
-Graph itemselect Signal2 add
-# Signal2
-Graph sigconfig {Signal2 Signal1 Signal0} -regswap {0 1 1}
-Graph:DSel
-Graph:DSel
-Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.3798602839535 -0.35194647163747} {692.764p 981.451p}}
-wm geometry .sigmgr._PF:1 232x242+768+480
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig Signal0 -region 1 -rgnindex 2
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+533+371
+wm geometry . 1536x860+8+31
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+504+363
+wm geometry . 1536x860+0+23
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
@@ -65,72 +62,200 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph:DSel
-GrMeas:DeltaX Graph0 Signal1 Signal0 1 {- {.5} - {.5}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 0 activeGraph 0 - 1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal1 Signal2 either either default default default default 0.5 0.5 xyrangeAll
 # M:0
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-GrMeas:DeltaX Graph0 Signal0 Signal1 1 {- {.5} - {.5}} Signal xyrangeVisible {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}  {auto}  {Parameter}} 1 1 activeGraph 0 - 1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Falltime Graph0 Signal2 {0.1 0.5 0.9} default default xyrangeAll
 # M:1
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-Graph:DSel
-GrMeas:Select Graph0 M:1 0
-GrMeas:MoveText Graph0 M:1 0 30.0 30.0
-Graph delsignal selected
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-GrMeas:Select Graph0 M:0 0
-GrMeas:MoveDiffAnc2 Graph0 M:0 0 841.70281289725p 0.48835872337314
-Graph delsignal selected
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisX(0) AxisY(0,1) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph:DSel
-Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.5897762543282 -0.71929941979313} {654.779p 1.07262n}}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Graph axisconfig {AxisX(0) AxisY(0,1) AxisY(1,0)} -range {all all all} -zoomed {0 0 0}
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-GrMeas:Delay Graph0 Signal0 Signal1 either either default default default default 0.5 0.5 xyrangeAll
+GrMeas:Risetime Graph0 Signal2 {0.1 0.5 0.9} default default xyrangeAll
 # M:2
-Graph:DSel
-Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{1.4848182691408 -0.56186244201213} {320.51p 639.585p}}
-Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Graph:DSel
 GrMeas:Select Graph0 M:2 6
-Graph delsignal selected
+GrMeas:MoveText Graph0 M:2 6 56.0 -8.0
+Graph:DSel
+GrMeas:Select Graph0 M:0 6
+GrMeas:MoveText Graph0 M:0 6 70.0 28.0
+Graph:DSel
+GrMeas:Select Graph0 M:1 6
+GrMeas:MoveText Graph0 M:1 6 49.0 31.0
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw0_text @456.0,363.0
+Graph itemcreate text 456.0 363.0 -tags draw0_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw0_text
+Graph:ManipulateItem insert GrDraw0_text insert t
+Graph:ManipulateItem insert GrDraw0_text insert r
+Graph:ManipulateItem insert GrDraw0_text insert 
+Graph:DSel
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw1_text @511.0,400.0
+Graph itemcreate text 511.0 400.0 -tags draw1_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw1_text
+Graph:ManipulateItem insert GrDraw1_text insert t
+Graph:ManipulateItem insert GrDraw1_text insert p
+Graph:ManipulateItem insert GrDraw1_text insert d
+Graph:ManipulateItem insert GrDraw1_text insert r
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-ScopeSigMgr:Unload 0 {{(1) NAND-postlayout.tr0}}
 Mdi:ArrangeIcons
-ScopeSigMgr:Unload 0 {{(1) NAND-postlayout.tr0}}
+Graph:ManipulateItem insert GrDraw1_text insert 
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw2_text @747.0,402.0
+Graph itemcreate text 747.0 402.0 -tags draw2_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw2_text
+Graph:ManipulateItem insert GrDraw2_text insert t
+Graph:ManipulateItem insert GrDraw2_text insert f
+Graph:ManipulateItem insert GrDraw2_text insert { }
+Graph:ManipulateItem insert GrDraw2_text insert o
+Graph:ManipulateItem insert GrDraw2_text insert f
+Graph:ManipulateItem insert GrDraw2_text insert { }
+Graph:ManipulateItem insert GrDraw2_text insert {}
+Graph:ManipulateItem insert GrDraw2_text insert A
+Graph:ManipulateItem insert GrDraw2_text insert {}
+Graph:ManipulateItem insert GrDraw2_text insert {}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem insert GrDraw2_text insert 
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw0_text
+Graph:ManipulateItem itemconfig GrDraw0_text -anchor
+Graph:ManipulateItem itemconfig GrDraw0_text -bg
+Graph:ManipulateItem itemconfig GrDraw0_text -font
+Graph:ManipulateItem itemconfig GrDraw0_text -justify
+Graph:ManipulateItem itemconfig GrDraw0_text -stipple
+Graph:ManipulateItem itemconfig GrDraw0_text -box
+Graph:ManipulateItem isreadonly
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem itemconfig GrDraw0_text -font {{OF Helvetica} 12.0 outline}
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw0_text
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 -2
+Graph:ManipulateItem move selSet 0 -3
+Graph:ManipulateItem move selSet 0 -4
+Graph:ManipulateItem move selSet 0 -4
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 -2
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 1 2
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem dtag GrDraw0_text selSet
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw1_text
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet -5 -4
+Graph:ManipulateItem move selSet -1 -1
+Graph:ManipulateItem move selSet -1 -2
+Graph:ManipulateItem move selSet -2 -1
+Graph:ManipulateItem move selSet -2 -2
+Graph:ManipulateItem move selSet -3 -2
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 1
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem dtag GrDraw1_text selSet
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw2_text
+Graph:ManipulateItem move selSet -1 -2
+Graph:ManipulateItem move selSet -2 -2
+Graph:ManipulateItem move selSet -1 -2
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet -2 0
+Graph:ManipulateItem move selSet -3 -1
+Graph:ManipulateItem move selSet -1 -1
+Graph:ManipulateItem move selSet -2 0
+Graph:ManipulateItem move selSet -2 -1
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 0 -1
+Graph:ManipulateItem move selSet 1 0
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet 1 0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:ManipulateItem icursor draw3_text @550.0,330.0
+Graph itemcreate text 550.0 330.0 -tags draw3_text -font {-family {OF Helvetica} -size 12.0 -weight normal -slant roman -underline 0 -overstrike 0 -type outline} -fill pink -justify left -anchor nw -box 0 -bg {}
+# GrDraw3_text
+Graph:ManipulateItem insert GrDraw3_text insert o
+Mdi:ArrangeIcons
+Graph:ManipulateItem insert GrDraw3_text insert f
+Graph:ManipulateItem insert GrDraw3_text insert { }
+Graph:ManipulateItem insert GrDraw3_text insert {}
+Graph:ManipulateItem insert GrDraw3_text insert A
+Graph:ManipulateItem insert GrDraw3_text insert 
+Graph:ManipulateItem dtag GrDraw2_text selSet
+Graph:DSel 0
+Graph:ManipulateItem addtag selSet withtag GrDraw3_text
+Graph:ManipulateItem move selSet -4 0
+Graph:ManipulateItem move selSet -9 6
+Graph:ManipulateItem move selSet -37 18
+Graph:ManipulateItem move selSet -1 1
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet -1 1
+Graph:ManipulateItem move selSet -1 1
+Graph:ManipulateItem move selSet -5 1
+Graph:ManipulateItem move selSet -2 0
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet 0 0
+Graph:ManipulateItem move selSet -2 -2
+Graph:ManipulateItem move selSet -1 0
+Graph:ManipulateItem move selSet -6 -3
+Graph:ManipulateItem move selSet 0 0
+Graph:Select Graph0
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
