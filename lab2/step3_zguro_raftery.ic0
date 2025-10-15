@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "T-2022.06-3 linux64"
 * "format" "HSP"
-* "rundate" "15:39:04 10/15/2025 "
+* "rundate" "15:54:48 10/15/2025 "
 * "netlist" "step3_zguro_raftery.spice "
 * "runtitle" "** half adder accumulator spice netlist with testbench"
 * time =  0.000e+00       

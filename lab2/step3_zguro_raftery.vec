@@ -1,3 +1,4 @@
+; Try to force a rising edge on SOUT
 radix 111
 io iii
 vname phi rst cin
@@ -8,17 +9,16 @@ period 1000
 idelay 100
 vih 1.1
 vil 0
-; Initial reset
+; Reset with specific pattern to force Q=1 (SOUT=0 due to inverter)
 010
-; Normal operation with RST=0
-100
+110  ; RST=1 should set/clear flip-flop
+010
+; Now release reset and apply inputs
+100  ; RST=0, CIN=0, SOUT should be 0
 000
-100
-000
-101
+101  ; RST=0, CIN=1, might cause SOUT to rise
 001
-100
+100  ; RST=0, CIN=0
 000
-101
+101  ; RST=0, CIN=1
 001
-101

@@ -3,6 +3,6 @@ $DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
  tpdr_sout        tpdf_sout        tpdr_cout        tr_sout         
  tf_sout          tr_cout          sout_max         cout_max        
  temper           alter#          
-    failed        -1.950e-09          failed           failed       
-  4.230e-11          failed         1.101e+00        2.215e-04      
+    failed         4.958e-11        2.924e-11          failed       
+  4.442e-11        2.324e-11        1.101e+00        1.063e+00      
   2.500e+01       1               
