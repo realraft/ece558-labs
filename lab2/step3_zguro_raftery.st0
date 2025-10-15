@@ -3,7 +3,7 @@ Input File: step3_zguro_raftery.spice
 lic:
 lic: FLEXlm: SDK_12.10
 lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu
-lic: HOSTID: 13ac8554             PID:      2240934
+lic: HOSTID: 13ac8554             PID:      2257258
 lic: Using FLEXlm license file:
 lic: 27020@vlsicad.ecs.umass.edu
 lic: Checkout 1 hspice
@@ -11,7 +11,7 @@ lic: License/Maintenance for hspice will expire on 09-sep-2027/2025.06
 lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
 lic:
 
- init: begin read circuit files, cpu clock= 4.81E-02
+ init: begin read circuit files, cpu clock= 1.66E-01
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
@@ -32,27 +32,27 @@ lic:
        option hier_delim =     0.00
        option post =     1.00
        option probe =     1.00
- init: end read circuit files, cpu clock= 4.96E-02 peak memory=     512 mb
- init: begin check errors, cpu clock= 4.96E-02
- init: end check errors, cpu clock= 5.46E-02 peak memory=     512 mb
- init: begin setup matrix, pivot=     0 cpu clock= 5.46E-02
-       establish matrix -- done, cpu clock= 5.47E-02 peak memory=     512 mb
-       re-order matrix -- done, cpu clock= 5.51E-02 peak memory=     512 mb
- init: end setup matrix, cpu clock= 5.55E-02 peak memory=     512 mb
- dcop: begin dcop, cpu clock= 5.56E-02
- dcop: end dcop, cpu clock= 7.54E-02 peak memory=     512 mb tot_iter=     255
+ init: end read circuit files, cpu clock= 1.67E-01 peak memory=     512 mb
+ init: begin check errors, cpu clock= 1.67E-01
+ init: end check errors, cpu clock= 1.72E-01 peak memory=     512 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.72E-01
+       establish matrix -- done, cpu clock= 1.72E-01 peak memory=     512 mb
+       re-order matrix -- done, cpu clock= 1.73E-01 peak memory=     512 mb
+ init: end setup matrix, cpu clock= 1.73E-01 peak memory=     512 mb
+ dcop: begin dcop, cpu clock= 1.73E-01
+ dcop: end dcop, cpu clock= 1.89E-01 peak memory=     512 mb tot_iter=     208
  output: step3_zguro_raftery.mt0
- sweep: tran tran0    begin, stop_t=  6.00E-09 #sweeps=6001 cpu clock= 7.59E-02
- tran: time= 7.5307E-10 tot_iter=      14 conv_iter=       7 cpu clock= 7.65E-02
- tran: time= 1.2267E-09 tot_iter=      78 conv_iter=      31 cpu clock= 8.02E-02
- tran: time= 1.8244E-09 tot_iter=      90 conv_iter=      37 cpu clock= 8.07E-02
- tran: time= 2.5020E-09 tot_iter=     143 conv_iter=      59 cpu clock= 8.36E-02
- tran: time= 3.1000E-09 tot_iter=     147 conv_iter=      61 cpu clock= 8.38E-02
- tran: time= 3.7630E-09 tot_iter=     232 conv_iter=      93 cpu clock= 8.87E-02
- tran: time= 4.2088E-09 tot_iter=     304 conv_iter=     120 cpu clock= 9.26E-02
- tran: time= 4.8607E-09 tot_iter=     318 conv_iter=     127 cpu clock= 9.32E-02
- tran: time= 5.4702E-09 tot_iter=     448 conv_iter=     172 cpu clock= 1.03E-01
- tran: time= 6.0000E-09 tot_iter=     456 conv_iter=     176 cpu clock= 1.03E-01
- sweep: tran tran0    end, cpu clock= 1.04E-01 peak memory=     512 mb
+ sweep: tran tran0    begin, stop_t=  6.00E-09 #sweeps=6001 cpu clock= 1.90E-01
+ tran: time= 7.5307E-10 tot_iter=      14 conv_iter=       7 cpu clock= 1.91E-01
+ tran: time= 1.2116E-09 tot_iter=     103 conv_iter=      41 cpu clock= 1.96E-01
+ tran: time= 1.9178E-09 tot_iter=     170 conv_iter=      65 cpu clock= 2.00E-01
+ tran: time= 2.4103E-09 tot_iter=     281 conv_iter=     103 cpu clock= 2.08E-01
+ tran: time= 3.1000E-09 tot_iter=     293 conv_iter=     109 cpu clock= 2.09E-01
+ tran: time= 3.6215E-09 tot_iter=     436 conv_iter=     161 cpu clock= 2.18E-01
+ tran: time= 4.2021E-09 tot_iter=     507 conv_iter=     186 cpu clock= 2.23E-01
+ tran: time= 4.9014E-09 tot_iter=     564 conv_iter=     207 cpu clock= 2.28E-01
+ tran: time= 5.4003E-09 tot_iter=     699 conv_iter=     256 cpu clock= 2.37E-01
+ tran: time= 6.0000E-09 tot_iter=     720 conv_iter=     266 cpu clock= 2.38E-01
+ sweep: tran tran0    end, cpu clock= 2.39E-01 peak memory=     512 mb
 >info:         ***** hspice job concluded
  lic: Release hspice token(s)

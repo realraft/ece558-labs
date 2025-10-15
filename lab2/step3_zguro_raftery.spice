@@ -1,5 +1,5 @@
 ** Half Adder Accumulator SPICE Netlist with Testbench
-** step3_zguro_raftery.sp
+** step3_zguro_raftery.sp - Original Extracted Netlist
 
 ** Parameter for clock period
 .param tclk=1n
@@ -70,18 +70,16 @@ xi1 a b gnd vdd c AND
 .ends HA
 
 ** Library name: components
-** Cell name: RST-FF (was _sub0)
+** Cell name: RST-FF
 ** View name: schematic
 .subckt _sub0 gnd phi rst s sout vdd
-** CRITICAL FIX: Connect net1 to VDD and net19 to GND
-** These were floating, causing the millivolt output issue
 mpm3 net14 net6 net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm2 net11 net7 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net11 net7 net1 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
 mpm1 net7 phi net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm0 net4 net5 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mnm3 net22 net7 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm0 net4 net5 net1 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mnm3 net22 net7 net19 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 mnm2 net14 phi net22 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-mnm1 net15 net5 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 net15 net5 net19 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 mnm0 net7 net6 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 xi1 phi gnd vdd net6 INV
 xi0 net14 gnd vdd sout INV
@@ -89,7 +87,6 @@ xi2 rst s gnd vdd net5 NAND
 .ends _sub0
 
 ** Main Circuit: HA_ACCUM
-** Top level subcircuit
 .subckt HA_ACCUM cin phi rst cout sout gnd vdd
 xi0 cin sout cout gnd net3 vdd HA
 xi1 gnd phi rst net3 sout vdd _sub0
@@ -101,40 +98,26 @@ xdut cin phi rst cout sout 0 vdd HA_ACCUM
 ** Power Supply
 vvdd vdd 0 DC 1.1
 
-** Load capacitances on outputs
+** Load capacitances
 Ccout cout 0 5f
 Csout sout 0 5f
 
-** Include vector file for stimulus
+** Include vector file
 .vec 'step3_zguro_raftery.vec'
 
 ** Transient Analysis
 .tran 1p 6n
 
-** Measurements for propagation delays and rise/fall times
-** Measure propagation delays (50% to 50%)
-.measure tran tpdr_sout trig v(phi) val=0.55 rise=1 
-+                       targ v(sout) val=0.55 rise=1
-.measure tran tpdf_sout trig v(phi) val=0.55 rise=3 
-+                       targ v(sout) val=0.55 fall=1
-
-.measure tran tpdr_cout trig v(phi) val=0.55 rise=3 
-+                       targ v(cout) val=0.55 rise=1
-
-** Measure rise and fall times (20% to 80%)
-.measure tran tr_sout trig v(sout) val=0.22 rise=1 
-+                     targ v(sout) val=0.88 rise=1
-.measure tran tf_sout trig v(sout) val=0.88 fall=1 
-+                     targ v(sout) val=0.22 fall=1
-
-.measure tran tr_cout trig v(cout) val=0.22 rise=1 
-+                     targ v(cout) val=0.88 rise=1
-
-** Check actual voltage levels
+** Measurements
+.measure tran tpdr_sout trig v(phi) val=0.55 rise=1 targ v(sout) val=0.55 rise=1
+.measure tran tpdf_sout trig v(phi) val=0.55 rise=3 targ v(sout) val=0.55 fall=1
+.measure tran tpdr_cout trig v(phi) val=0.55 rise=3 targ v(cout) val=0.55 rise=1
+.measure tran tr_sout trig v(sout) val=0.22 rise=1 targ v(sout) val=0.88 rise=1
+.measure tran tf_sout trig v(sout) val=0.88 fall=1 targ v(sout) val=0.22 fall=1
+.measure tran tr_cout trig v(cout) val=0.22 rise=1 targ v(cout) val=0.88 rise=1
 .measure tran sout_max max v(sout)
 .measure tran cout_max max v(cout)
 
-** Print statements for debugging
 .print tran v(phi) v(rst) v(cin) v(sout) v(cout)
 
 .END
