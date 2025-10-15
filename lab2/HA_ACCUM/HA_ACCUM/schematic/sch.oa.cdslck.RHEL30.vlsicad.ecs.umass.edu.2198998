@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      azguro
+HostName                       vlsicad.ecs.umass.edu
+ProcessIdentifier              2198998
+ProcessCreationTime_UTC        1760542676
+ProcessCreationTime_Readable   Wed Oct 15 11:37:56 2025 EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/ece558_658_2025/azguro/ece558-labs/lab2/HA_ACCUM/HA_ACCUM/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed Oct 15 11:43:14 2025 EDT

@@ -23,22 +23,22 @@
 ** Cell name: INV
 ** View name: schematic
 .subckt INV a gnd vdd y
-mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9
+mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
 .ends INV
 
 ** Library name: components
 ** Cell name: XOR
 ** View name: schematic
 .subckt XOR a b gnd vdd y
-mpm3 y a net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mpm2 net11 net9 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mpm1 y net5 net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mpm0 net4 b vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mnm3 net18 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm2 net15 net9 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm1 y a net18 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm0 y net5 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
+mpm3 y a net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net11 net9 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm1 y net5 net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm0 net4 b vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mnm3 net18 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm2 net15 net9 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 y a net18 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y net5 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 xi1 b gnd vdd net9 INV
 xi0 a gnd vdd net5 INV
 .ends XOR
@@ -47,10 +47,10 @@ xi0 a gnd vdd net5 INV
 ** Cell name: NAND
 ** View name: schematic
 .subckt NAND a b gnd vdd y
-mpm1 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm0 y a net13 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
+mpm1 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a net13 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 .ends NAND
 
 ** Library name: components
@@ -70,33 +70,35 @@ xi1 a b gnd vdd c AND
 .ends HA
 
 ** Library name: components
-** Cell name: RST-FF
+** Cell name: RST-FF (was _sub0)
 ** View name: schematic
-.subckt RST_FF gnd phi rst s sout vdd
-mpm3 net14 net6 net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mpm2 net11 net7 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mpm1 net7 phi net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mpm0 net4 net5 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6
-mnm3 net22 net7 net19 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm2 net14 phi net22 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm1 net15 net5 net19 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
-mnm0 net7 net6 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9
+.subckt _sub0 gnd phi rst s sout vdd
+** CRITICAL FIX: Connect net1 to VDD and net19 to GND
+** These were floating, causing the millivolt output issue
+mpm3 net14 net6 net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net11 net7 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm1 net7 phi net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm0 net4 net5 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mnm3 net22 net7 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm2 net14 phi net22 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 net15 net5 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 net7 net6 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 xi1 phi gnd vdd net6 INV
 xi0 net14 gnd vdd sout INV
 xi2 rst s gnd vdd net5 NAND
-.ends RST_FF
+.ends _sub0
 
 ** Main Circuit: HA_ACCUM
 ** Top level subcircuit
 .subckt HA_ACCUM cin phi rst cout sout gnd vdd
 xi0 cin sout cout gnd net3 vdd HA
-xi1 gnd phi rst net3 sout vdd RST_FF
+xi1 gnd phi rst net3 sout vdd _sub0
 .ends HA_ACCUM
 
 ** Test Circuit Instantiation
 xdut cin phi rst cout sout 0 vdd HA_ACCUM
 
-** Power Supply - NO vgnd LINE!
+** Power Supply
 vvdd vdd 0 DC 1.1
 
 ** Load capacitances on outputs
@@ -111,15 +113,13 @@ Csout sout 0 5f
 
 ** Measurements for propagation delays and rise/fall times
 ** Measure propagation delays (50% to 50%)
-.measure tran tpdr_sout trig v(phi) val=0.55 rise=2 
+.measure tran tpdr_sout trig v(phi) val=0.55 rise=1 
 +                       targ v(sout) val=0.55 rise=1
 .measure tran tpdf_sout trig v(phi) val=0.55 rise=3 
 +                       targ v(sout) val=0.55 fall=1
 
-.measure tran tpdr_cout trig v(phi) val=0.55 rise=4 
+.measure tran tpdr_cout trig v(phi) val=0.55 rise=3 
 +                       targ v(cout) val=0.55 rise=1
-.measure tran tpdf_cout trig v(phi) val=0.55 rise=4 
-+                       targ v(cout) val=0.55 fall=1
 
 ** Measure rise and fall times (20% to 80%)
 .measure tran tr_sout trig v(sout) val=0.22 rise=1 
@@ -129,8 +129,10 @@ Csout sout 0 5f
 
 .measure tran tr_cout trig v(cout) val=0.22 rise=1 
 +                     targ v(cout) val=0.88 rise=1
-.measure tran tf_cout trig v(cout) val=0.88 fall=1 
-+                     targ v(cout) val=0.22 fall=1
+
+** Check actual voltage levels
+.measure tran sout_max max v(sout)
+.measure tran cout_max max v(cout)
 
 ** Print statements for debugging
 .print tran v(phi) v(rst) v(cin) v(sout) v(cout)
