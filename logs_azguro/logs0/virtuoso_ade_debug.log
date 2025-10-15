@@ -1,0 +1,20 @@
+[ADE GUI: 2190594]
+[2025-10-15 10:25:57.625 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - /home/ece558_658_2025/azguro/ece558-labs/.tmp_azguro/.cmddir0/swiftLoggingService0 is starting {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/LoggingService0.log"}
+[2025-10-15 10:25:57.734 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - /home/ece558_658_2025/azguro/ece558-labs/.tmp_azguro/.cmddir0/swiftNetlistService1 is starting {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log"}
+[2025-10-15 10:25:57.735 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - COLLECTION_JOB_ID = '0'
+ {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/LoggingService0.log"}
+[2025-10-15 10:25:57.735 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '2191044' is starting up on host 'vlsicad.ecs.umass.edu' {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/LoggingService0.log"}
+[2025-10-15 10:26:26.844 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - COLLECTION_JOB_ID = '1'
+ {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log"}
+[2025-10-15 10:26:30.302 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Netlist Service '2191061' is starting up on host 'vlsicad.ecs.umass.edu' {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log"}
+[2025-10-15 10:26:45.746 -0400] [WARN] [cadence.virtuoso.ade.gui] - Switching the job control mode from LSCS to ICRP because this test is using a non-Cadence simulator. {"detailed_message": "", "message_id": "EXPLORER-9102"}
+[2025-10-15 10:26:47.756 -0400] [WARN] [cadence.virtuoso.ade.gui] - The ICRP job control mode will be discontinued in a future release. It is recommended to use LSCS instead. {"detailed_message": "", "message_id": "EXPLORER-9160"}
+[2025-10-15 10:26:47.909 -0400] [WARN] [cadence.virtuoso.ade.gui] - Following tests do not have any outputs selected for plotting:
+HA_ACCUM_HA_ACCUM_1
+ {"detailed_message": "", "message_id": "EXPLORER-1617"}
+[2025-10-15 10:26:47.909 -0400] [ERROR] [cadence.virtuoso.ade.gui] - Cannot run simulation because no analysis has been selected. Add an analysis using one of the following ways and rerun the simulation:
+  - Click ' Click to Add an Analysis' text in Setup Assistant
+  - Click the Choose Analysis button on Run toolbar
+  - Choose 'Analyses - Choose' menu option
+  - Right-click a test in Setup assistant and choose 'Add Analysis'. Also, select the corresponding checkbox to enable the analysis. {"detailed_message": "", "message_id": "EXPLORER-9059"}
+[2025-10-15 10:26:48.866 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '2191044' stopped with exit code '0' {"logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/LoggingService0.log"}
