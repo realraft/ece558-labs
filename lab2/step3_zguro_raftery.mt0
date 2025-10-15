@@ -1,0 +1,8 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** half adder accumulator spice netlist with testbench'
+ tpdr_sout        tpdf_sout        tpdr_cout        tpdf_cout       
+ tr_sout          tf_sout          tr_cout          tf_cout         
+ temper           alter#          
+    failed           failed           failed           failed       
+    failed           failed           failed           failed       
+  2.500e+01       1               

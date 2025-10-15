@@ -1,1 +1,31 @@
-use our truth table
+; Half Adder Accumulator Test Vector File - Fixed Reset
+radix 111
+io iii
+vname phi rst cin
+tunit ps
+trise 30
+tfall 30
+period 1000
+idelay 100
+vih 1.1
+vil 0
+; Test vectors with corrected RST (0=normal, 1=reset)
+; Initial state with reset
+010
+; Cycle 0: Release reset, CIN=0
+100
+000
+; Cycle 1: Normal operation, CIN=0
+100
+000
+; Cycle 2: Normal operation, CIN=1
+101
+001
+; Cycle 3: Normal operation, CIN=0
+100
+000
+; Cycle 4: Normal operation, CIN=1
+101
+001
+; Extra cycle
+101
