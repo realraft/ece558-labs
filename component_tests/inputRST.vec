@@ -1,7 +1,7 @@
-; RST-FF test vector
-radix 111
-io iii
-vname phi rst s
+; RST-FF test vector with automated clock
+radix 11
+io ii
+vname rst s
 tunit ps
 trise 30
 tfall 30
@@ -10,18 +10,9 @@ idelay 100
 vih 1.1
 vil 0
 ; Test sequence for D flip-flop with reset
-; Reset test
-110  ; PHI=1, RST=1, S=0 (reset active)
-010  ; PHI=0
-; Normal operation - load 1
-101  ; PHI=1, RST=0, S=1 (load 1)
-001  ; PHI=0
-; Normal operation - load 0
-100  ; PHI=1, RST=0, S=0 (load 0)
-000  ; PHI=0
-; Normal operation - load 1 again
-101  ; PHI=1, RST=0, S=1
-001  ; PHI=0
-; Reset again
-110  ; PHI=1, RST=1, S=0
-010  ; PHI=0
+; Each line is held for one 1000ps clock cycle
+10  ; Cycle 1: Reset is active (RST=1, S=0)
+01  ; Cycle 2: Normal operation, load 1 (RST=0, S=1)
+00  ; Cycle 3: Normal operation, load 0 (RST=0, S=0)
+01  ; Cycle 4: Normal operation, load 1 again
+10  ; Cycle 5: Reset is active again

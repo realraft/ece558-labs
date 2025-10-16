@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "T-2022.06-3 linux64"
 * "format" "HSP"
-* "rundate" "09:32:56 10/16/2025 "
+* "rundate" "12:09:49 10/16/2025 "
 * "netlist" "XOR-netlist.spice "
 * "runtitle" "** xor gate test file"
 * time =  0.000e+00       

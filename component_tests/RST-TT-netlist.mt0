@@ -2,5 +2,5 @@ $DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
 .TITLE '** rst-ff test file'
  sout_max         sout_min         tpd_clk_to_q     temper          
  alter#          
-  1.359e-03       -2.299e-03          failed         2.500e+01      
+  1.103e+00       -4.021e-03        1.031e-09        2.500e+01      
 1               

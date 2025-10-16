@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "T-2022.06-3 linux64"
 * "format" "HSP"
-* "rundate" "09:18:32 10/16/2025 "
+* "rundate" "12:28:16 10/16/2025 "
 * "netlist" "RST-TT-netlist.spice "
 * "runtitle" "** rst-ff test file"
 * time =  0.000e+00       
@@ -10,18 +10,19 @@
 .option 
 + gmindc= 1.000e-12       
 .nodeset
-+ phi = 1.100e+00       
++ phi = 0.000e+00       
 + rst = 1.100e+00       
 + s = 0.000e+00       
-+ sout = 9.673e-05       
++ sout = 3.651e-03       
 + vdd = 1.100e+00       
-+ xdut.net11 = 1.087e+00       
-+ xdut.net14 = 1.078e+00       
-+ xdut.net15 = 1.549e-06       
-+ xdut.net22 = 6.025e-01       
-+ xdut.net4 = 1.021e+00       
++ xdut.net11 = 1.100e+00       
++ xdut.net14 = 9.277e-01       
++ xdut.net15 = 2.205e-05       
++ xdut.net22 = 8.285e-02       
++ xdut.net4 = 2.505e-01       
 + xdut.net5 = 1.100e+00       
-+ xdut.net6 = 6.116e-05       
-+ xdut.net7 = 3.611e-01       
-+ xdut.xi2.net13 = 8.498e-01       
++ xdut.net6 = 1.100e+00       
++ xdut.net7 = 4.328e-05       
++ xdut.rst_n = 5.852e-05       
++ xdut.xi2.net13 = 9.791e-02       
 ***   END: Saved Operating Point ***                     

@@ -8,13 +8,13 @@
 ** Temperature and Options
 .TEMP 25
 .OPTION
-+    ARTIST=2
-+    INGOLD=2
-+    PARHIER=LOCAL
-+    PSF=2
-+    HIER_DELIM=0
-+    POST=1
-+    PROBE=1
++     ARTIST=2
++     INGOLD=2
++     PARHIER=LOCAL
++     PSF=2
++     HIER_DELIM=0
++     POST=1
++     PROBE=1
 
 ** Library name: components
 ** Cell name: INV
@@ -34,7 +34,7 @@ mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9
 mnm0 y a net13 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 .ends NAND
 
-** RST-FF Circuit Under Test
+** CORRECTED RST-FF Circuit Under Test (Final Version)
 .subckt RST_FF phi rst s sout gnd vdd
 mpm3 net14 net6 net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
 mpm2 net11 net7 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
@@ -46,7 +46,9 @@ mnm1 net15 net5 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760
 mnm0 net7 net6 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 xi1 phi gnd vdd net6 INV
 xi0 net14 gnd vdd sout INV
-xi2 rst s gnd vdd net5 NAND
+** -- THE FIX IS HERE -- **
+xi3 rst gnd vdd rst_n INV
+xi2 rst_n s gnd vdd net5 NAND
 .ends RST_FF
 
 ** Test Circuit
@@ -54,6 +56,10 @@ xdut phi rst s sout 0 vdd RST_FF
 
 ** Power Supply
 vvdd vdd 0 DC 1.1
+
+** -- THIS IS THE NEW PART -- **
+** Automated Clock Source (1000ps period, 30ps rise/fall, 100ps initial delay)
+vphi phi 0 PULSE(0 1.1 100p 30p 30p 470p 1000p)
 
 ** Load capacitance
 Csout sout 0 5f
