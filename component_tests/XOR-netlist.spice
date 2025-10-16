@@ -1,0 +1,71 @@
+** XOR Gate Test File
+** test_XOR.sp
+
+** Include GPDK045 transistor models
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+
+** Temperature and Options
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
++    HIER_DELIM=0
++    POST=1
++    PROBE=1
+
+** Library name: components
+** Cell name: INV
+** View name: schematic
+.subckt INV a gnd vdd y
+mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+.ends INV
+
+** Library name: components
+** Cell name: XOR
+** View name: schematic
+.subckt XOR a b gnd vdd y
+mpm3 y a net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net11 net9 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm1 y net5 net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm0 net4 b vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mnm3 net18 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm2 net15 net9 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 y a net18 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y net5 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+xi1 b gnd vdd net9 INV
+xi0 a gnd vdd net5 INV
+.ends XOR
+
+** Test Circuit Instantiation
+xdut a b 0 vdd y XOR
+
+** Power Supply
+vvdd vdd 0 DC 1.1
+
+** Load capacitance
+Cy y 0 5f
+
+** Include test vector file
+.vec 'test_XOR.vec'
+
+** Transient Analysis
+.tran 1p 2.5n
+
+** Measurements
+.measure tran y_max max v(y)
+.measure tran y_min min v(y)
+
+** Propagation delays
+.measure tran tpd_lh_a trig v(a) val=0.55 rise=1 targ v(y) val=0.55 rise=1
+.measure tran tpd_hl_a trig v(a) val=0.55 fall=1 targ v(y) val=0.55 fall=1
+.measure tran tpd_lh_b trig v(b) val=0.55 rise=1 targ v(y) val=0.55 rise=1
+.measure tran tpd_hl_b trig v(b) val=0.55 fall=1 targ v(y) val=0.55 fall=1
+
+** Print key signals
+.print tran v(a) v(b) v(y)
+
+.END

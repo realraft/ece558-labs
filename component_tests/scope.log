@@ -1,0 +1,43 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+8+85
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/component_tests/HA-netlist.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 232x242+768+480
+pf:read PF:1 v(a)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:ArrangeIcons
+pf:read PF:1 v(c)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(b)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(s)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Mdi:FullSize
+wm geometry .sigmgr 376x204+1043+135
+wm geometry .sigmgr._PF:1 232x242+1142+420
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
+Graph:Select Graph0
+wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr 376x204+522+164
+Mdi:ArrangeIcons
+wm geometry .sigmgr 376x204+1043+135
+wm geometry .sigmgr._PF:1 232x242+1142+420
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons

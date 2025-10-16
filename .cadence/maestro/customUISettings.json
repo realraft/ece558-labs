@@ -6,5 +6,114 @@
             }
         },
         "outputsTestFilterMenu": null
+    },
+    "components_HA_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Digits": {
+                "visible": true,
+                "width": 80
+            },
+            "Notation": {
+                "visible": true,
+                "width": 80
+            },
+            "Suffix": {
+                "visible": true,
+                "width": 80
+            },
+            "Units": {
+                "visible": true,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "Formatting Properties": {
+                "visible": false
+            }
+        },
+        "outputsTestFilterMenu": null
+    },
+    "components_RST-FF_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Details": {
+                "visible": true,
+                "width": 138
+            },
+            "Digits": {
+                "visible": false,
+                "width": 80
+            },
+            "Name": {
+                "visible": true,
+                "width": 138
+            },
+            "Notation": {
+                "visible": false,
+                "width": 80
+            },
+            "Plot": {
+                "visible": true,
+                "width": 138
+            },
+            "Plot Target": {
+                "visible": true,
+                "width": 138
+            },
+            "Save": {
+                "visible": true,
+                "width": 125
+            },
+            "Spec": {
+                "visible": true,
+                "width": 125
+            },
+            "Suffix": {
+                "visible": false,
+                "width": 80
+            },
+            "Type": {
+                "visible": true,
+                "width": 138
+            },
+            "Units": {
+                "visible": false,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "Formatting Properties": {
+                "visible": false
+            }
+        },
+        "outputsTestFilterMenu": null
+    },
+    "components_XOR_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Digits": {
+                "visible": true,
+                "width": 80
+            },
+            "Notation": {
+                "visible": true,
+                "width": 80
+            },
+            "Suffix": {
+                "visible": true,
+                "width": 80
+            },
+            "Units": {
+                "visible": true,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "Formatting Properties": {
+                "visible": false
+            }
+        },
+        "outputsTestFilterMenu": null
     }
 }

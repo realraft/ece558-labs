@@ -3,19 +3,22 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+Graph:Select Graph0
+Graph:DSel 0
+Graph:DSel
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab2/step3_zguro_raftery.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 232x242+768+480
-Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+557+416
+wm geometry .sigmgr._PF:1 231x319+528+410
+wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr._PF:1 232x242+522+411
 pf:read PF:1 v(cin)
 # WF:1:1
 Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal0
+Mdi:ArrangeIcons
 pf:read PF:1 v(cout)
 # WF:1:2
 Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
@@ -33,22 +36,58 @@ pf:read PF:1 v(sout)
 Graph addsignal WF:1:5 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal4
 Mdi:FullSize
-wm geometry .sigmgr._PF:1 232x242+1004+306
-wm geometry .sigmgr 376x204+1065+138
-wm geometry .sigmgr._PF:1 232x242+768+480
+Graph:DSel
+Graph:Select Graph0
+wm geometry .sigmgr 376x204+959+165
+wm geometry .sigmgr._PF:1 232x242+1046+442
+Mdi:ArrangeIcons
+wm geometry .sigmgr._PF:1 232x242+522+411
 wm geometry .sigmgr 376x204+522+164
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+557+416
-wm geometry .sigmgr._PF:1 232x242+1004+306
-wm geometry .sigmgr 376x204+1065+138
+wm geometry .sigmgr 376x204+959+165
+wm geometry .sigmgr._PF:1 232x242+1046+442
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
+wm geometry . 900x785+208+81
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+10+44
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+31+77
+Mdi:ArrangeIcons
+wm geometry . 900x785+10+44
+Mdi:ArrangeIcons
+wm geometry . 900x785+31+77
+Mdi:ArrangeIcons
+wm geometry . 900x785+7+64
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+43+31
+Mdi:ArrangeIcons
+wm geometry . 900x785+7+64
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+43+31
+Mdi:ArrangeIcons
+wm geometry . 900x785+43+46
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 wm geometry . 900x785+0+0
 Mdi:ArrangeIcons
-wm geometry . 900x785+8+85
-Mdi:ArrangeIcons
+wm geometry . 900x785+43+46
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 wm geometry . 900x785+0+0

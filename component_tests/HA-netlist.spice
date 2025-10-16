@@ -1,8 +1,9 @@
-** Half Adder Accumulator SPICE Netlist with Testbench
-** step3_zguro_raftery.sp - Corrected to match Spectre netlist
+** Half Adder Test File
+** test_HA.sp
 
-** Parameter for clock period
-.param tclk=1n
+** Include GPDK045 transistor models
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
 
 ** Temperature and Options
 .TEMP 25
@@ -14,10 +15,6 @@
 +    HIER_DELIM=0
 +    POST=1
 +    PROBE=1
-
-** Include GPDK045 transistor models
-.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
-.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
 
 ** Library name: components
 ** Cell name: INV
@@ -64,61 +61,41 @@ xi2 net2 gnd vdd y INV
 ** Library name: components
 ** Cell name: HA
 ** View name: schematic
-.subckt HA a b c gnd s vdd
+.subckt HA a b gnd vdd c s
 xi0 a b gnd vdd s XOR
 xi1 a b gnd vdd c AND
 .ends HA
 
-** Library name: components
-** Cell name: RST-FF - CORRECTED TO MATCH SPECTRE
-** View name: schematic
-.subckt _sub0 gnd phi rst s sout vdd
-** CORRECTED: Source connections now match Spectre netlist
-mpm3 net14 net6 net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm2 net11 net7 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm1 net7 phi net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm0 net4 net5 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mnm3 net22 net7 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-mnm2 net14 phi net22 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-mnm1 net15 net5 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-mnm0 net7 net6 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-xi1 phi gnd vdd net6 INV
-xi0 net14 gnd vdd sout INV
-xi2 rst s gnd vdd net5 NAND
-.ends _sub0
-
-** Main Circuit: HA_ACCUM
-.subckt HA_ACCUM cin phi rst cout sout gnd vdd
-xi0 cin sout cout gnd net3 vdd HA
-xi1 gnd phi rst net3 sout vdd _sub0
-.ends HA_ACCUM
-
 ** Test Circuit Instantiation
-xdut cin phi rst cout sout 0 vdd HA_ACCUM
+xdut a b 0 vdd c s HA
 
 ** Power Supply
 vvdd vdd 0 DC 1.1
 
 ** Load capacitances
-Ccout cout 0 5f
-Csout sout 0 5f
+Cc c 0 5f
+Cs s 0 5f
 
-** Include vector file
-.vec 'step3_zguro_raftery.vec'
+** Include test vector file
+.vec 'test_HA.vec'
 
 ** Transient Analysis
-.tran 1p 6n
+.tran 1p 2.5n
 
 ** Measurements
-.measure tran tpdr_sout trig v(phi) val=0.55 rise=1 targ v(sout) val=0.55 rise=1
-.measure tran tpdf_sout trig v(phi) val=0.55 rise=3 targ v(sout) val=0.55 fall=1
-.measure tran tpdr_cout trig v(phi) val=0.55 rise=3 targ v(cout) val=0.55 rise=1
-.measure tran tr_sout trig v(sout) val=0.22 rise=1 targ v(sout) val=0.88 rise=1
-.measure tran tf_sout trig v(sout) val=0.88 fall=1 targ v(sout) val=0.22 fall=1
-.measure tran tr_cout trig v(cout) val=0.22 rise=1 targ v(cout) val=0.88 rise=1
-.measure tran sout_max max v(sout)
-.measure tran cout_max max v(cout)
+.measure tran s_max max v(s)
+.measure tran s_min min v(s)
+.measure tran c_max max v(c)
+.measure tran c_min min v(c)
 
-.print tran v(phi) v(rst) v(cin) v(sout) v(cout)
+** Propagation delays for sum output
+.measure tran tpd_s_lh trig v(a) val=0.55 rise=1 targ v(s) val=0.55 rise=1
+.measure tran tpd_s_hl trig v(a) val=0.55 rise=2 targ v(s) val=0.55 fall=1
+
+** Propagation delays for carry output  
+.measure tran tpd_c_lh trig v(b) val=0.55 rise=2 targ v(c) val=0.55 rise=1
+
+** Print key signals
+.print tran v(a) v(b) v(s) v(c)
 
 .END

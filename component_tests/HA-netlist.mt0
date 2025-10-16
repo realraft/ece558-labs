@@ -1,0 +1,8 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** half adder test file'
+ s_max            s_min            c_max            c_min           
+ tpd_s_lh         tpd_s_hl         tpd_c_lh         temper          
+ alter#          
+  1.112e+00       -5.007e-03        1.104e+00       -2.668e-03      
+ -4.639e-10          failed         3.016e-11        2.500e+01      
+1               

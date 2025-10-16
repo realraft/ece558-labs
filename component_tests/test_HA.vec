@@ -1,0 +1,21 @@
+; Half Adder Test Vector
+radix 11
+io ii
+vname a b
+tunit ps
+trise 30
+tfall 30
+period 500
+vih 1.1
+vil 0
+; Half Adder Truth table test
+; A B | S C
+; 0 0 | 0 0
+; 0 1 | 1 0
+; 1 0 | 1 0
+; 1 1 | 0 1
+00  ; S=0, C=0
+01  ; S=1, C=0
+10  ; S=1, C=0
+11  ; S=0, C=1
+00  ; Back to initial

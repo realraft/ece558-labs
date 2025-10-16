@@ -1,0 +1,17 @@
+
+; XOR Test Vector
+radix 11
+io ii
+vname a b
+tunit ps
+trise 30
+tfall 30
+period 500
+vih 1.1
+vil 0
+; XOR Truth table test
+00  ; Y should be 0
+01  ; Y should be 1
+10  ; Y should be 1
+11  ; Y should be 0
+00  ; Back to initial

@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** xor gate test file'
+ y_max            y_min            tpd_lh_a         tpd_hl_a        
+ tpd_lh_b         tpd_hl_b         temper           alter#          
+  1.112e+00       -5.011e-03       -4.639e-10       -4.652e-10      
+  3.606e-11        5.348e-10        2.500e+01       1               
