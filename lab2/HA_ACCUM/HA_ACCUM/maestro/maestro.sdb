@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <setupdb version="7">maestro
 	<active>Active Setup
-		<jobcontrolmode>ICRP</jobcontrolmode>
+		<jobcontrolmode>LSCS</jobcontrolmode>
 		<corners>
 			<corner enabled="1">_default</corner>
 		</corners>
@@ -47,39 +47,12 @@
 			<plottingoption>waveformtemplate
 				<value>(None)</value>
 			</plottingoption>
-			<plottingoption>plottingmode
-				<value>Replace</value>
-			</plottingoption>
-			<plottingoption>plottype
-				<value>None</value>
-			</plottingoption>
-			<plottingoption>usewaveformtemplate
-				<value>no</value>
-			</plottingoption>
-			<plottingoption>useMaestroPlottingTemplate
-				<value>yes</value>
-			</plottingoption>
-			<plottingoption>allplottingtemplates
-				<value></value>
-			</plottingoption>
-			<plottingoption>defaultplottingtemplate
-				<value></value>
-			</plottingoption>
-			<plottingoption>distributedplot_enabled
-				<value>no</value>
-			</plottingoption>
 		</plottingoptions>
 		<exploreroptions>
 			<exploreroption>waveformtemplate
 				<value>(None)</value>
 			</exploreroption>
 		</exploreroptions>
-		<incrementalsimsetup>
-			<useincremental>0</useincremental>
-			<reusenetlist>0</reusenetlist>
-			<reusesaverunhist>0</reusesaverunhist>
-			<copyreferenceresults>1</copyreferenceresults>
-		</incrementalsimsetup>
 	</active>
 	<history>History</history>
 </setupdb>

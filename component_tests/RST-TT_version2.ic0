@@ -1,0 +1,27 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "T-2022.06-3 linux64"
+* "format" "HSP"
+* "rundate" "15:33:19 10/16/2025 "
+* "netlist" "RST-TT_version2.spice "
+* "runtitle" "** rst-ff testbench for hspice"
+* time =  0.000e+00       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ phi = 0.000e+00       
++ rst = 1.100e+00       
++ s = 0.000e+00       
++ sout = 3.651e-03       
++ vdd = 1.100e+00       
++ xdut.net2 = 1.100e+00       
++ xdut.net3 = 9.277e-01       
++ xdut.xi_nand.net13 = 8.498e-01       
++ xdut.xi_ff.net17 = 1.100e+00       
++ xdut.xi_ff.net18 = 1.100e+00       
++ xdut.xi_ff.net24 = 4.329e-05       
++ xdut.xi_ff.net25 = 8.285e-02       
++ xdut.xi_ff.net36 = 2.206e-05       
++ xdut.xi_ff.net9 = 2.505e-01       
+***   END: Saved Operating Point ***                     

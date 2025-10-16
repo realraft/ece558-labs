@@ -1,0 +1,15 @@
+; Input vector for FF truth table verification
+radix 1
+io i
+vname d
+tunit ps
+trise 30
+tfall 30
+period 1000
+vih 1.1
+vil 0
+; Test sequence:
+1  ; Cycle 1: Set D=1
+0  ; Cycle 2: Set D=0
+1  ; Cycle 3: Set D=1
+0  ; Cycle 4: Set D=0

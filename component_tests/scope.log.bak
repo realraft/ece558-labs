@@ -5,14 +5,18 @@ wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/component_tests/RST-TT-netlist.tr0 1 openonly
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/component_tests/RST-TT_version2.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 232x242+768+480
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:Select Graph0
+Graph:DSel 0
+Graph:DSel
 pf:read PF:1 v(sout)
 # WF:1:1
 Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal0
-Mdi:ArrangeIcons
 pf:read PF:1 v(s)
 # WF:1:2
 Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
@@ -25,12 +29,26 @@ pf:read PF:1 v(phi)
 # WF:1:4
 Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal3
-Mdi:FullSize
-wm geometry .sigmgr._PF:1 232x242+997+251
-wm geometry .sigmgr._PF:1 232x242+768+480
-Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+997+251
-Mdi:ArrangeIcons
 Graph:DSel
 Graph:Select Graph0
+Mdi:FullSize
+Mdi:Move 110 214
+Mdi:Move 147 316
+Mdi:Move 86 301
+Mdi:NormalSize
+Mdi:FullSize
+wm geometry .sigmgr 376x204+974+159
+Mdi:Move -50 106
+Mdi:NormalSize
+Mdi:FullSize
+Mdi:Move 13 0
+wm geometry .sigmgr._PF:1 232x242+982+435
+Mdi:ArrangeIcons
+Graph:DSel
+wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr 376x204+312+165
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr 376x204+974+159
+wm geometry .sigmgr._PF:1 232x242+982+435
 Mdi:ArrangeIcons

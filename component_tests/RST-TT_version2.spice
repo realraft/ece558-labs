@@ -1,0 +1,98 @@
+** RST-FF Testbench for HSPICE
+** This file simulates the 'RST-FF' circuit with the provided vector file.
+
+** Include GPDK045 Transistor Models
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+
+** Simulation Options and Temperature
+.TEMP 25
+.OPTION
++     ARTIST=2
++     INGOLD=2
++     PARHIER=LOCAL
++     PSF=2
++     HIER_DELIM=0
++     POST=1
++     PROBE=1
+
+************************************************************************
+** Subcircuit Definitions from your Netlist
+** (These are your original, unchanged subcircuits)
+************************************************************************
+
+** Library name: components
+** Cell name: INV
+** View name: schematic
+.subckt INV a gnd vdd y
+mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+.ends INV
+
+** Library name: components
+** Cell name: NAND
+** View name: schematic
+.subckt NAND a b gnd vdd y
+mpm1 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a net13 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+.ends NAND
+
+** Library name: components
+** Cell name: FF
+** View name: schematic
+.subckt FF d gnd phi q vdd
+mnm3 net36 d gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm2 net25 net24 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 q phi net25 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 net24 net18 net36 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm3 q net18 net17 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net17 net24 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm1 net24 phi net9 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm0 net9 d vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+xi1 phi gnd vdd net18 INV
+.ends FF
+
+** Top-Level DUT (Device Under Test) Subcircuit
+.subckt RST_FF rst s phi sout gnd vdd
+* This subcircuit wraps your top-level design for instantiation.
+xi_nand rst s gnd vdd net2 NAND
+xi_ff   net2 gnd phi net3 vdd FF
+xi_inv  net3 gnd vdd sout INV
+.ends RST_FF
+
+************************************************************************
+** Testbench Setup
+************************************************************************
+
+** Instantiate the DUT
+xdut rst s phi sout 0 vdd RST_FF
+
+** Power Supply
+vvdd vdd 0 DC 1.1
+
+** Load Capacitance on the output node
+Csout sout 0 10f
+
+** Clock Generation (HSPICE generates 'phi' from the .vec file's 'period' setting)
+vclk phi 0 pulse(0 1.1 0 30p 30p 470p 1000p)
+
+** Input Stimulus from Vector File
+** NOTE: Your .vec file must be named 'RST-FF.vec' in the same directory.
+.vec 'inputRST.vec'
+
+** Analysis Command
+.tran 1p 5.5n
+
+** Measurements
+.measure tran sout_max max v(sout) from=1n to=5n
+.measure tran sout_min min v(sout) from=1n to=5n
+
+** Propagation delay from the 3rd rising edge of the clock to the output
+.measure tran tpd_clk_to_q trig v(phi) val=0.55 rise=3 targ v(sout) val=0.55 fall=1
+
+** Print key signals to the .lis file
+.print tran v(phi) v(rst) v(s) v(sout)
+
+.END

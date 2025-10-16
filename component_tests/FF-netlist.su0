@@ -1,0 +1,20 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "HSPICE"
+"version" "T-2022.06-3 linux64"
+"rundate" "14:54:08 10/16/2025"
+"runtitle" "** d flip-flop test file                                                                                                "
+"runtype" "Summary Information"
+"temperature" "2.500e+01"
+"op point time" "0.00"
+"op point iterations" "20"
+"transient time" "0.02"
+"transient iterations" "751"
+"total cpu time" "0.06"
+"node value" "invalid"
+"operating point" "invalid"
+"ac analysis" "invalid"
+"dc sweep" "invalid"
+"transient analysis" "complete"
+TRAILER
+END

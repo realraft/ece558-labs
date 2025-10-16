@@ -8,11 +8,11 @@
 		<sharedvarinfo></sharedvarinfo>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>components_RST-FF_1
+			<test>components_FF_1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
-						<value>RST-FF</value>
+						<value>FF</value>
 					</option>
 					<option>lib
 						<value>components</value>
@@ -41,7 +41,7 @@
 		</extensions>
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<checksasserts netlist="0">
-			<test netlist="0" netlistscope="all">components_RST-FF_1</test>
+			<test netlist="0" netlistscope="all">components_FF_1</test>
 		</checksasserts>
 		<plottingoptions>
 			<plottingoption>waveformtemplate

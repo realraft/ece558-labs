@@ -1,0 +1,15 @@
+; Input vector for FF test
+radix 1
+io i
+vname d
+tunit ps
+trise 30
+tfall 30
+period 1000
+vih 1.1
+vil 0
+; Test sequence:
+1  ; Cycle 1: Load a 1
+0  ; Cycle 2: Load a 0
+1  ; Cycle 3: Load a 1 again
+0  ; Cycle 4: Load a 0 again

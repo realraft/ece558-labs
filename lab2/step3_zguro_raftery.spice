@@ -1,10 +1,10 @@
-** Half Adder Accumulator SPICE Netlist with Testbench
-** step3_zguro_raftery.sp - Corrected to match Spectre netlist
+** Generated for: hspiceD
+** Generated on: Oct 16 15:43:22 2025
+** Design library name: HA_ACCUM
+** Design cell name: HA_ACCUM
+** Design view name: schematic
 
-** Parameter for clock period
-.param tclk=1n
 
-** Temperature and Options
 .TEMP 25
 .OPTION
 +    ARTIST=2
@@ -12,12 +12,6 @@
 +    PARHIER=LOCAL
 +    PSF=2
 +    HIER_DELIM=0
-+    POST=1
-+    PROBE=1
-
-** Include GPDK045 transistor models
-.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
-.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
 
 ** Library name: components
 ** Cell name: INV
@@ -26,6 +20,7 @@
 mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
 .ends INV
+** End of subcircuit definition.
 
 ** Library name: components
 ** Cell name: XOR
@@ -42,6 +37,7 @@ mnm0 y net5 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-
 xi1 b gnd vdd net9 INV
 xi0 a gnd vdd net5 INV
 .ends XOR
+** End of subcircuit definition.
 
 ** Library name: components
 ** Cell name: NAND
@@ -52,6 +48,7 @@ mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=
 mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 mnm0 y a net13 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
 .ends NAND
+** End of subcircuit definition.
 
 ** Library name: components
 ** Cell name: AND
@@ -60,6 +57,7 @@ mnm0 y a net13 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 P
 xi0 a b gnd vdd net2 NAND
 xi2 net2 gnd vdd y INV
 .ends AND
+** End of subcircuit definition.
 
 ** Library name: components
 ** Cell name: HA
@@ -68,57 +66,37 @@ xi2 net2 gnd vdd y INV
 xi0 a b gnd vdd s XOR
 xi1 a b gnd vdd c AND
 .ends HA
+** End of subcircuit definition.
 
 ** Library name: components
-** Cell name: RST-FF - CORRECTED TO MATCH SPECTRE
+** Cell name: FF
 ** View name: schematic
-.subckt _sub0 gnd phi rst s sout vdd
-** CORRECTED: Source connections now match Spectre netlist
-mpm3 net14 net6 net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm2 net11 net7 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm1 net7 phi net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mpm0 net4 net5 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
-mnm3 net22 net7 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-mnm2 net14 phi net22 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-mnm1 net15 net5 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-mnm0 net7 net6 net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
-xi1 phi gnd vdd net6 INV
-xi0 net14 gnd vdd sout INV
-xi2 rst s gnd vdd net5 NAND
-.ends _sub0
+.subckt FF d gnd phi q vdd
+mnm3 net36 d gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm2 net25 net24 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 q phi net25 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 net24 net18 net36 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm3 q net18 net17 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net17 net24 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm1 net24 phi net9 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm0 net9 d vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+xi1 phi gnd vdd net18 INV
+.ends FF
+** End of subcircuit definition.
 
-** Main Circuit: HA_ACCUM
-.subckt HA_ACCUM cin phi rst cout sout gnd vdd
+** Library name: components
+** Cell name: RST-FF
+** View name: schematic
+.subckt _sub1 gnd phi rst s sout vdd
+xi4 net2 gnd phi net3 vdd FF
+xi5 rst s gnd vdd net2 NAND
+xi6 net3 gnd vdd sout INV
+.ends _sub1
+** End of subcircuit definition.
+
+** Library name: HA_ACCUM
+** Cell name: HA_ACCUM
+** View name: schematic
 xi0 cin sout cout gnd net3 vdd HA
-xi1 gnd phi rst net3 sout vdd _sub0
-.ends HA_ACCUM
-
-** Test Circuit Instantiation
-xdut cin phi rst cout sout 0 vdd HA_ACCUM
-
-** Power Supply
-vvdd vdd 0 DC 1.1
-
-** Load capacitances
-Ccout cout 0 5f
-Csout sout 0 5f
-
-** Include vector file
-.vec 'step3_zguro_raftery.vec'
-
-** Transient Analysis
-.tran 1p 6n
-
-** Measurements
-.measure tran tpdr_sout trig v(phi) val=0.55 rise=1 targ v(sout) val=0.55 rise=1
-.measure tran tpdf_sout trig v(phi) val=0.55 rise=3 targ v(sout) val=0.55 fall=1
-.measure tran tpdr_cout trig v(phi) val=0.55 rise=3 targ v(cout) val=0.55 rise=1
-.measure tran tr_sout trig v(sout) val=0.22 rise=1 targ v(sout) val=0.88 rise=1
-.measure tran tf_sout trig v(sout) val=0.88 fall=1 targ v(sout) val=0.22 fall=1
-.measure tran tr_cout trig v(cout) val=0.22 rise=1 targ v(cout) val=0.88 rise=1
-.measure tran sout_max max v(sout)
-.measure tran cout_max max v(cout)
-
-.print tran v(phi) v(rst) v(cin) v(sout) v(cout)
-
+xi1 gnd phi rst net3 sout vdd _sub1
 .END
