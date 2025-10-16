@@ -1,0 +1,16 @@
+radix 11
+io ii
+vname rst cin 
+tunit ps 
+trise 30 
+tfall 30 
+period 1000 
+idelay 100 
+vih 1.1
+vil 0
+
+00
+10
+11
+11
+10

@@ -1,9 +1,9 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "T-2022.06-3 linux64"
 * "format" "HSP"
-* "rundate" "18:46:09 10/15/2025 "
+* "rundate" "15:57:29 10/16/2025 "
 * "netlist" "step3_zguro_raftery.spice "
-* "runtitle" "** half adder accumulator spice netlist with testbench"
+* "runtitle" "** half-adder accumulator testbench"
 * time =  0.000e+00       
 * temperature =  2.500e+01       
 *** BEGIN: Saved Operating Point ***                     
@@ -12,26 +12,26 @@
 .nodeset
 + cin = 0.000e+00       
 + cout = 5.468e-05       
-+ phi = 1.100e+00       
++ phi = 0.000e+00       
 + rst = 0.000e+00       
-+ sout = 1.109e-04       
++ sout = 3.665e-03       
 + vdd = 1.100e+00       
 + xdut.net3 = 1.489e-04       
-+ xdut.xi1.net11 = 1.087e+00       
-+ xdut.xi1.net14 = 1.078e+00       
-+ xdut.xi1.net15 = 1.549e-06       
-+ xdut.xi1.net22 = 6.025e-01       
-+ xdut.xi1.net4 = 1.021e+00       
-+ xdut.xi1.net5 = 1.100e+00       
-+ xdut.xi1.net6 = 6.116e-05       
-+ xdut.xi1.net7 = 3.611e-01       
++ xdut.xi1.net2 = 1.100e+00       
++ xdut.xi1.net3 = 9.277e-01       
 + xdut.xi0.xi0.net11 = 2.505e-01       
 + xdut.xi0.xi0.net15 = 7.485e-05       
-+ xdut.xi0.xi0.net18 = 7.422e-05       
++ xdut.xi0.xi0.net18 = 7.056e-05       
 + xdut.xi0.xi0.net4 = 1.100e+00       
 + xdut.xi0.xi0.net5 = 1.100e+00       
 + xdut.xi0.xi0.net9 = 1.100e+00       
 + xdut.xi0.xi1.net2 = 1.100e+00       
-+ xdut.xi1.xi2.net13 = 9.777e-02       
-+ xdut.xi0.xi1.xi0.net13 = 9.780e-02       
++ xdut.xi1.xi4.net17 = 1.100e+00       
++ xdut.xi1.xi4.net18 = 1.100e+00       
++ xdut.xi1.xi4.net24 = 4.328e-05       
++ xdut.xi1.xi4.net25 = 8.285e-02       
++ xdut.xi1.xi4.net36 = 2.205e-05       
++ xdut.xi1.xi4.net9 = 2.505e-01       
++ xdut.xi1.xi5.net13 = 9.777e-02       
++ xdut.xi0.xi1.xi0.net13 = 9.552e-02       
 ***   END: Saved Operating Point ***                     
