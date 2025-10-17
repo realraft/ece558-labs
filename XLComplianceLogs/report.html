@@ -1,0 +1,393 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-type"/>
+        <title>Html Report</title>
+        <script src="report.js"></script>
+        <style> body { background-color : #4b4b4b; color : #ffffff; font-family : monospace; font-size : 125% } h1 { font-size : 2.5em; } h2 { font-size : 1.875em; } h3 { font-size : 1.5em; } h4 { font-size : 1.25em; } table { border: 1px solid black; border-collapse: collapse; background-color : #4b4b4b; } thead { background-color : #5a5a5a; } tfoot { border: 2px solid black; background-color : #5a5a5a; } a { color: #ffffff; } a:hover { color: #6cbeff; } .Red { background-color : #da1e28; color : #ffffff } .Orange { background-color : #ff832b; color : #ffffff } .Yellow { background-color : #f1c21b; color : #000000 } .LightGreen { background-color : #6fdc8c; color : #000000 } .Green { background-color : #24a148; color : #ffffff } td, th { padding : 10px ; border: 1px solid black } th.noTop { border-style: none solid solid solid} th.noBottom { border-style: solid solid none solid} .sort-by { display: inline-block; padding-left: 0.25rem; padding-right: 0.25rem; margin-bottom: 1px; vertical-align: middle;} .sort-by-asc, .sort-by-desc { display: block; width: 0; height: 0; margin: 0; margin-top: 1px; margin-bottom: 1px; border: solid 0.3rem transparent; background: transparent; cursor: pointer} .sort-by-asc { border-bottom: solid 0.5rem dimgray; border-top-width: 0;} .sort-by-desc { border-top: solid 0.5rem dimgray; border-bottom-width: 0;}</style>
+    </head>
+    <body class="page">
+        <h1 id="Top"></h1>
+        <table id="info0">
+            <thead>
+                <tr>
+                    <th class="noBottom">Lib<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col0')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col0')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">Cell<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col1')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col1')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">View<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col2')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col2')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">Leaf<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col3')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col3')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">Ignored<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col4')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col4')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">ConnRef<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col5')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col5')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">%Terminals<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col6')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col6')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">%Instances<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col7')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col7')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">%Nets<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col8')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col8')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">%Compliance<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col9')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col9')"/>
+                        </div>
+                    </th>
+                    <th class="noBottom">Path<div class="sort-by">
+                            <p class="sort-by-asc" onclick="sortAsc('info0', 'col10')"/>
+                            <p class="sort-by-desc" onclick="sortDesc('info0', 'col10')"/>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                    <th class="noTop">
+                        <input type="text" style="width:80%" value="" onkeyup="filter(this)"/>
+                    </th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td data-value="Total">Total</td>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td data-value="2">2</td>
+                    <td data-value="0">0</td>
+                    <td data-value="1">1</td>
+                    <td class="Yellow" data-value="66">66</td>
+                    <td class="Red" data-value="11">11</td>
+                    <td class="Orange" data-value="47">47</td>
+                    <td class="LightGreen" data-value="73">73</td>
+                    <td data-value=""/>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td class="col0" data-value="HA_ACCUM">HA_ACCUM</td>
+                    <td class="col1" data-value="HA_ACCUM">HA_ACCUM</td>
+                    <td class="col2" data-value="layout">
+                        <a href="#HA_ACCUM HA_ACCUM layout">layout</a>
+                    </td>
+                    <td class="col3" data-value="0">0</td>
+                    <td class="col4" data-value="0">0</td>
+                    <td class="col5" data-value="1">1</td>
+                    <td class="Red col6" data-value="0">0</td>
+                    <td class="Red col7" data-value="11">11</td>
+                    <td class="Orange col8" data-value="47">47</td>
+                    <td class="Red col9" data-value="19">19</td>
+                    <td class="col10" data-value=""/>
+                </tr>
+                <tr>
+                    <td class="col0" data-value="gpdk045">gpdk045</td>
+                    <td class="col1" data-value="nmos1v">nmos1v</td>
+                    <td class="col2" data-value="layout">
+                        <a href="#gpdk045 nmos1v layout">layout</a>
+                    </td>
+                    <td class="col3" data-value="1">1</td>
+                    <td class="col4" data-value="0">0</td>
+                    <td class="col5" data-value="0">0</td>
+                    <td class="Green col6" data-value="100">100</td>
+                    <td class="col7" data-value=""/>
+                    <td class="col8" data-value=""/>
+                    <td class="Green col9" data-value="100">100</td>
+                    <td class="col10" data-value="I3(gpdk045.nmos1v:layout)">I3(gpdk045.nmos1v:layout)</td>
+                </tr>
+                <tr>
+                    <td class="col0" data-value="gpdk045">gpdk045</td>
+                    <td class="col1" data-value="pmos1v">pmos1v</td>
+                    <td class="col2" data-value="layout">
+                        <a href="#gpdk045 pmos1v layout">layout</a>
+                    </td>
+                    <td class="col3" data-value="1">1</td>
+                    <td class="col4" data-value="0">0</td>
+                    <td class="col5" data-value="0">0</td>
+                    <td class="Green col6" data-value="100">100</td>
+                    <td class="col7" data-value=""/>
+                    <td class="col8" data-value=""/>
+                    <td class="Green col9" data-value="100">100</td>
+                    <td class="col10" data-value="I0|I0|I0|NM0(gpdk045.pmos1v:layout)">I0|I0|I0|NM0(gpdk045.pmos1v:layout)</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <hr/>
+        <h2 id="INFOS">INFOS</h2>
+        <a href="#Top">Top</a>
+        <table id="info1">
+            <thead>
+                <tr>
+                    <th/>
+                    <th>Short message</th>
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td data-value="Total">Total</td>
+                    <td data-value=""/>
+                    <td data-value="1">1</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td data-value="BND-1105">BND-1105</td>
+                    <td data-value="Terminals unconnected">Terminals unconnected</td>
+                    <td data-value="1">1</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <hr/>
+        <h2 id="WARNINGS">WARNINGS</h2>
+        <a href="#Top">Top</a>
+        <table id="info2">
+            <thead>
+                <tr>
+                    <th/>
+                    <th>Short message</th>
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td data-value="Total">Total</td>
+                    <td data-value=""/>
+                    <td data-value="1">1</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td data-value="BND-2065">BND-2065</td>
+                    <td data-value="Terminal mapping">Terminal mapping</td>
+                    <td data-value="1">1</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <hr/>
+        <h2 id="Parameter difference summary">Parameter difference summary</h2>
+        <a href="#Top">Top</a>
+        <table id="info3">
+            <thead>
+                <tr>
+                    <th>Lib</th>
+                    <th>Cell</th>
+                    <th>Parameter</th>
+                    <th>Differences</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td data-value="Total">Total</td>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td data-value="3">3</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td data-value="gpdk045">gpdk045</td>
+                    <td data-value="nmos1v">nmos1v</td>
+                    <td data-value="w">w</td>
+                    <td data-value="2">2</td>
+                </tr>
+                <tr>
+                    <td data-value="gpdk045">gpdk045</td>
+                    <td data-value="pmos1v">pmos1v</td>
+                    <td data-value="w">w</td>
+                    <td data-value="1">1</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <hr/>
+        <h2 id="HA_ACCUM HA_ACCUM layout">HA_ACCUM HA_ACCUM layout</h2>
+        <a href="#Top">Top</a>
+        <p>
+            <pre>HA_ACCUM HA_ACCUM physConfig<br/>HA_ACCUM HA_ACCUM schematic</pre>
+        </p>
+        <h3>Summary</h3>
+        <table id="info4">
+            <thead>
+                <tr>
+                    <th/>
+                    <th>Bound</th>
+                    <th>Ungenerated</th>
+                    <th>Connectivity Differences</th>
+                    <th>Parameter Differences</th>
+                    <th>Opens</th>
+                    <th>Shorts</th>
+                    <th>%Compliance</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td data-value="Total">Total</td>
+                    <td data-value="12">12</td>
+                    <td data-value="34">34</td>
+                    <td data-value="4">4</td>
+                    <td data-value="3">3</td>
+                    <td data-value="6">6</td>
+                    <td data-value="0">0</td>
+                    <td class="Red" data-value="19">19</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td data-value="Terminals">Terminals</td>
+                    <td data-value="0">0</td>
+                    <td data-value="7">7</td>
+                    <td data-value="0">0</td>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td class="Red" data-value="0">0</td>
+                </tr>
+                <tr>
+                    <td data-value="Instances">Instances</td>
+                    <td data-value="4">4</td>
+                    <td data-value="24">24</td>
+                    <td data-value="4">4</td>
+                    <td data-value="3">3</td>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td class="Red" data-value="11">11</td>
+                </tr>
+                <tr>
+                    <td data-value="Nets">Nets</td>
+                    <td data-value="8">8</td>
+                    <td data-value="3">3</td>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td data-value="6">6</td>
+                    <td data-value="0">0</td>
+                    <td class="Orange" data-value="47">47</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <h3>INFOS:</h3>
+        <p>
+            <pre>INFO (BND-1105): Layout instances with unconnected terminals:<br/>                             connected  unconnected  terminal  examples of unconnected instances<br/>    gpdk045  nmos1v  layout          0            2  D         I2, I3<br/>    gpdk045  nmos1v  layout          1            1  G         I3<br/>    gpdk045  pmos1v  layout          0            2  D         I0|I0|I0|NM0, I0|I1|I0<br/>    gpdk045  pmos1v  layout          0            2  G         I0|I0|I0|NM0, I0|I1|I0<br/>    gpdk045  pmos1v  layout          1            1  S         I0|I1|I0<br/>    Unconnected instance terminals can result in wrong bindings or unbound instances.<br/>    If these instance terminals should be connected, check that the extraction stop level<br/>    is deep enough to extract through route cells and off-pin connections.</pre>
+        </p>
+        <p>
+            <pre>INFO (BND-1107): Cell mapping<br/>                                   instances  permute  component  split   terminals<br/>                                              rule     type       params  mapped<br/>    gpdk045     nmos1v  symbol            12  (p D S)  NMOS       w l     B D G S<br/> -&gt; gpdk045     nmos1v  layout             2  (p D S)  NMOS       w l     B D G S<br/>                                                                          <br/>    components  NAND    schematic          1           PMOS               A B GND VDD Y<br/>    gpdk045     nmos1v  symbol             1  (p D S)  NMOS       w l     B D G S<br/>    gpdk045     pmos1v  symbol            13  (p D S)  PMOS       w l     B D G S<br/> -&gt; gpdk045     pmos1v  layout             2  (p D S)  PMOS       w l     B D G S<br/>                                                                          <br/>Unmapped                                                                  <br/>    components  NAND    schematic          1           PMOS               A B GND VDD Y</pre>
+        </p>
+        <h3>WARNINGS:</h3>
+        <p>
+            <pre>WARNING (BND-2065): Cellview instances with mismatched source and layout terminals found.<br/>    components  NAND  schematic<br/>    To get terminals to match, use 'Configure Physical Hierarchy' and set the terminal attributes<br/>    'Ignore for generation', 'Ignore for check' or 'Name mapping'.<br/>    Layout terminals can be ignored by setting the 'ignore' property on the cellview terminal.</pre>
+        </p>
+        <hr/>
+        <h2 id="gpdk045 nmos1v layout">gpdk045 nmos1v layout</h2>
+        <a href="#Top">Top</a>
+        <h3>Summary</h3>
+        <table id="info5">
+            <thead>
+                <tr>
+                    <th/>
+                    <th>Number</th>
+                    <th>Missing Pins</th>
+                    <th>Shorts</th>
+                    <th>Opens</th>
+                    <th>%Compliance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-value="Terminals">Terminals</td>
+                    <td data-value="4">4</td>
+                    <td data-value="0">0</td>
+                    <td data-value="0">0</td>
+                    <td data-value="0">0</td>
+                    <td class="Green" data-value="100">100</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <hr/>
+        <h2 id="gpdk045 pmos1v layout">gpdk045 pmos1v layout</h2>
+        <a href="#Top">Top</a>
+        <h3>Summary</h3>
+        <table id="info6">
+            <thead>
+                <tr>
+                    <th/>
+                    <th>Number</th>
+                    <th>Missing Pins</th>
+                    <th>Shorts</th>
+                    <th>Opens</th>
+                    <th>%Compliance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-value="Terminals">Terminals</td>
+                    <td data-value="4">4</td>
+                    <td data-value="0">0</td>
+                    <td data-value="0">0</td>
+                    <td data-value="0">0</td>
+                    <td class="Green" data-value="100">100</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+    </body>
+</html>

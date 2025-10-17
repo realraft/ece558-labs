@@ -1,0 +1,10 @@
+[ADE GUI: 2597939]
+[2025-10-17 16:52:56.315 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - /home/ece558_658_2025/oraftery/ece558-labs/.tmp_oraftery/.cmddir0/swiftLoggingService0 is starting {"logfile": "/home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/LoggingService0.log"}
+[2025-10-17 16:52:56.424 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - /home/ece558_658_2025/oraftery/ece558-labs/.tmp_oraftery/.cmddir0/swiftNetlistService1 is starting {"logfile": "/home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/Service1.log"}
+[2025-10-17 16:52:56.424 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - COLLECTION_JOB_ID = '0'
+ {"logfile": "/home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/LoggingService0.log"}
+[2025-10-17 16:52:56.424 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '2612768' is starting up on host 'vlsicad.ecs.umass.edu' {"logfile": "/home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/LoggingService0.log"}
+[2025-10-17 16:53:02.628 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - COLLECTION_JOB_ID = '1'
+ {"logfile": "/home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/Service1.log"}
+[2025-10-17 16:53:03.115 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Netlist Service '2612806' is starting up on host 'vlsicad.ecs.umass.edu' {"logfile": "/home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/Service1.log"}
+[2025-10-17 16:53:37.496 -0400] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '2612768' stopped with exit code '0' {"logfile": "/home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/LoggingService0.log"}
