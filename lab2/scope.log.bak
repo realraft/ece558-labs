@@ -5,57 +5,48 @@ wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab2/step3_zguro_raftery.tr0 1 openonly
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab2/accum.tr0 1 openonly
 # PF:1
 wm geometry .sigmgr._PF:1 232x242+768+480
-wm geometry .sigmgr._PF:1 232x242+643+419
-pf:read PF:1 v(cout)
+wm geometry .sigmgr._PF:1 231x319+555+411
+wm geometry .sigmgr._PF:1 232x242+768+480
+pf:read PF:1 v(cin)
 # WF:1:1
 Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal0
 Mdi:ArrangeIcons
-pf:read PF:1 v(sout)
+pf:read PF:1 v(cout)
 # WF:1:2
 Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal1
-pf:read PF:1 v(rst)
+pf:read PF:1 v(phi)
 # WF:1:3
 Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal2
-pf:read PF:1 v(phi)
+pf:read PF:1 v(rst)
 # WF:1:4
 Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal3
-Mdi:FullSize
-wm geometry .sigmgr._PF:1 232x242+900+396
-wm geometry .sigmgr 376x204+943+115
-pf:read PF:1 v(cin)
+pf:read PF:1 v(sout)
 # WF:1:5
 Graph addsignal WF:1:5 -region new -yview real(y) -xview real(x) -tracehi 2
 # Signal4
+Mdi:FullSize
+wm geometry .sigmgr 376x204+961+170
+wm geometry .sigmgr._PF:1 232x242+1109+430
 Graph:Select Graph0
 Graph:DSel
-Graph itemselect Signal1 add
-# Signal1
-Graph sigconfig {Signal1 Signal0 Signal2 Signal3 Signal4} -regswap {0 1 3 4 5}
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig {Signal0 Signal4} -regswap {4 5}
+Mdi:ArrangeIcons
 Graph:DSel
 Mdi:ArrangeIcons
 Graph:DSel
-Graph itemselect Signal1 add
-# Signal1
-Graph itemselect Signal1 add
-# Signal1
-Graph sigconfig Signal1 -region 4 -rgnindex 1
-Graph itemselect Signal1 add
-# Signal1
-Graph sigconfig {Signal1 Signal4} -regswap {3 4}
-Graph:DSel
-Mdi:ArrangeIcons
-Graph:DSel
-wm geometry .sigmgr._PF:1 232x242+643+419
+wm geometry .sigmgr._PF:1 232x242+768+480
 wm geometry .sigmgr 376x204+522+164
 Mdi:ArrangeIcons
-wm geometry .sigmgr._PF:1 232x242+900+396
-wm geometry .sigmgr 376x204+943+115
+wm geometry .sigmgr 376x204+961+170
+wm geometry .sigmgr._PF:1 232x242+1109+430
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons

@@ -1,15 +1,15 @@
-\# Program start time:     UTC 2025.10.16 18:11:51.842
-\# Local time: EDT (UTC-04:00) 2025.10.16 14:11:51.842
+\# Program start time:     UTC 2025.10.17 13:42:05.554
+\# Local time: EDT (UTC-04:00) 2025.10.17 09:42:05.554
 \o Program:		@(#)$CDS: Virtuoso Studio version IC25.1-64b 08/12/2025 20:24 (cpgbld31) $
 \o Hierarchy:		/opt/cadence/ic251_hotfix/install/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC25.1-64b.ISR1.30  (64-bit addresses)
-\# Command line:	/opt/cadence/ic251_hotfix/install/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost vlsicad.ecs.umass.edu -beanport 11671 -beanbinlog  -beanLogFile /home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/amps_Service1.log -mpssession virtuoso2377985 -mpshost vlsicad.ecs.umass.edu -davinciService DaVinciService_2377985_1760638309 -scopedPid 2377985 -axlSession fnxSession0 -axlServiceIdFlag 1 -uuid 591e04e2-6e8e-4728-ab71-3955ddb7b037 -heartbeat /dev/shm/swift-heartbeat.SgWPTTXJEx -log /home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log -adeBrokerAddress vlsicad.ecs.umass.edu:42723 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D73F9EE65FC06CE2276EB9D5D9828DF2C79A2891D9F67D0227DAAD241CD30C87766E3A12FFC06BC4D0E12BA7AC963D4BC00001E56 -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Command line:	/opt/cadence/ic251_hotfix/install/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost vlsicad.ecs.umass.edu -beanport 11531 -beanbinlog  -beanLogFile /home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/amps_Service1.log -mpssession virtuoso2527060 -mpshost vlsicad.ecs.umass.edu -davinciService DaVinciService_2527060_1760708522 -scopedPid 2527060 -axlSession fnxSession0 -axlServiceIdFlag 1 -uuid 1c31b806-7537-407f-bbef-6fde85ef48eb -heartbeat /dev/shm/swift-heartbeat.2XjacD5AhX -log /home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log -adeBrokerAddress vlsicad.ecs.umass.edu:40535 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D73F9EE65FC06CE2276EB9D5D9828DF2C79A2891D9F67D0227DAAD246CD37C87766E3A12FFC06BC4D0E11C8B4BBADD4BF00001E7E -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
 \# Host name (type):	vlsicad.ecs.umass.edu (x86_64)
 \# Operating system:	Red Hat Enterprise Linux 8.10 (Ootpa)
 \# Kernel:	Linux 4.18.0-553.16.1.el8_10.x86_64 #1 SMP Thu Aug 1 04:16:12 EDT 2024
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:923 (1024x868)
+\# X display name (WxH):	:5515 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -19,11 +19,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        790 MB
-\# Available memory:	    180,488 MB
+\# Initial sbrk value:	        775 MB
+\# Available memory:	    179,603 MB
 \# System memory:	    261,128 MB
-\# Maximum memory size:	    260,528 MB
-\# Max mem available:	    180,678 MB
+\# Maximum memory size:	    260,543 MB
+\# Max mem available:	    179,792 MB
 \# Initial memory used:	        190 MB
 \#        process size:	      1,802 MB
 \# Thread usage limits (effective/default):	maxthreads 1027901/1027901 maxload 64.00/64.00
@@ -31,7 +31,7 @@
 \# Window Manager:	other
 \# User Name:		azguro
 \o Working Directory:	vlsicad.ecs.umass.edu:/home/ece558_658_2025/azguro/ece558-labs
-\# Process Id:		2380300
+\# Process Id:		2527817
 \o 
 \o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
@@ -70,8 +70,8 @@
 \o Loading amps.cxt 
 \o Loading photonics.cxt 
 \o Loading adexlCore.cxt 
-\# Memory report: using         322 MB, process size 2,045 MB at UTC 2025.10.16 18:12:20.161
 \o Loading adexl.cxt 
+\# Memory report: using         340 MB, process size 2,068 MB at UTC 2025.10.17 13:42:34.071
 \o *Info*    Exporting services from client ... 
 \o 
 \o Loading adexlDM.cxt 
@@ -84,10 +84,10 @@
 \o Loading viva.cxt 
 \o Loading diagCenter.cxt 
 \o INFO (ELI-00333) License program mode is LSCS.
-\# [14:11:51.510825] Configured Lic search path (25.01-s002): 5280@vlsicad.ecs.umass.edu
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso2377985, host=vlsicad.ecs.umass.edu). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\# [09:42:05.510881] Configured Lic search path (25.01-s002): 5280@vlsicad.ecs.umass.edu
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso2527060, host=vlsicad.ecs.umass.edu). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 2380300 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 2527817 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 27 seconds.
 \p > 
@@ -100,22 +100,25 @@
 \o Loading hydraVmt.cxt 
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 2380300' to open it when Virtuoso freezes.
+\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 2527817' to open it when Virtuoso freezes.
 \# Virtuoso has launched. For more information, open CIW - Tools - Diagnostic Center - Performance Tab - Check SKILL - Virtuoso Launch.
-\#   Virtuoso initialization  30.58s
-\#   Custom initialization     0.81s
-\#   Total                    31.39s
+\#   Virtuoso initialization  30.35s
+\#   Custom initialization     0.78s
+\#   Total                    31.13s
 \# (PerfDiag): Use backtrace from GLIBC.
 \i _axlRunServices()
+\# [09:42:35.235096] Periodic Lic check successful
+\# [09:42:35.235097] Feature usage summary:
 \o Loading simui.cxt 
-\o [2025-10-16 14:12:21.521 -0400] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"jobid": "1", "hostname": "vlsicad.ecs.umass.edu", "processid": 2380300, "logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log"}
-\# Memory report: using         604 MB, process size 3,738 MB at UTC 2025.10.16 18:12:23.566
-\# Available memory:        180,480 MB at UTC 2025.10.16 18:12:31.579
-\# Memory report: Maximum memory size now 181,092 MB at UTC 2025.10.16 18:12:31.579
-\# Thread usage report: 27 active threads, active load 1.40 at UTC 2025.10.16 18:12:31.579
-\o [2025-10-16 14:16:01.805 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Netlist Service process exits. {"jobid": "1", "hostname": "vlsicad.ecs.umass.edu", "processid": 2380300, "logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log"}
+\o [2025-10-17 09:42:35.256 -0400] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"jobid": "1", "hostname": "vlsicad.ecs.umass.edu", "processid": 2527817, "logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log"}
+\# Memory report: using         604 MB, process size 3,738 MB at UTC 2025.10.17 13:42:37.299
+\# Available memory:        179,585 MB at UTC 2025.10.17 13:42:45.307
+\# Memory report: Maximum memory size now 180,197 MB at UTC 2025.10.17 13:42:45.307
+\# Thread usage report: 27 active threads, active load 1.40 at UTC 2025.10.17 13:42:45.307
+\o [2025-10-17 09:45:19.408 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Netlist Service process exits. {"jobid": "1", "hostname": "vlsicad.ecs.umass.edu", "processid": 2527817, "logfile": "/home/ece558_658_2025/azguro/ece558-labs/logs_azguro/logs0/Service1.log"}
 \o Loading vdsil.cxt 
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+\# Lic Summary:
+\# [09:45:20.438297] Cdslmd servers:5280@vlsicad.ecs.umass.edu
+\# [09:45:20.438307] Feature usage summary:
+\# Memory report: on exit            460 MB, process size 3,658 MB at UTC 2025.10.17 13:45:20.438
+\# Memory report: peak usage         612 MB, process size 3,810 MB

@@ -1,21 +1,17 @@
-; Half Adder Test Vector
-radix 11
-io ii
-vname a b
-tunit ps
-trise 30
-tfall 30
-period 500
-vih 1.1
+; Half-Adder test vector to verify all transitions 
+radix 11 
+io ii 
+vname a b 
+tunit ps 
+trise 30 
+tfall 30 
+period 1000 
+idelay 100 
+vih 1.1 
 vil 0
-; Half Adder Truth table test
-; A B | S C
-; 0 0 | 0 0
-; 0 1 | 1 0
-; 1 0 | 1 0
-; 1 1 | 0 1
-00  ; S=0, C=0
-01  ; S=1, C=0
-10  ; S=1, C=0
-11  ; S=0, C=1
-00  ; Back to initial
+ 
+; Test Sequence 00 ; Cycle 1: Inputs (0,0) -> Sum=0, Carry=0 
+01 ; Cycle 2: Inputs (0,1) -> Sum goes 0->1 (lh) 
+11 ; Cycle 3: Inputs (1,1) -> Sum goes 1->0 (hl), Carry goes 0->1 (lh) 
+10 ; Cycle 4: Inputs (1,0) -> Sum goes 0->1 (lh), Carry goes 1->0 (hl)
+00 ; Cycle 5: Inputs (0,0) -> Sum goes 1->0 (hl)
