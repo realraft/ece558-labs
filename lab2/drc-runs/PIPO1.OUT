@@ -1,9 +1,9 @@
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 ********************************************************************************
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version IC25.1-64b 08/12/2025 20:22 (cpgbld31) $
           : sub-version  IC25.1-64b.ISR1.30 
-Started at: 17-Oct-2025  17:39:17
+Started at: 17-Oct-2025  18:33:44
 User Name : oraftery
 Host Name : vlsicad.ecs.umass.edu
 Directory : /home/ece558_658_2025/oraftery/ece558-labs
@@ -57,21 +57,22 @@ case                                    Preserve
 convertDot                              node
 
 INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
-INFO (XSTRM-223): 1. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_760737157580.
-INFO (XSTRM-223): 2. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_760737157581.
-INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_760737157582.
-INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_760737157583.
-INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_760737157584.
-INFO (XSTRM-223): 6. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_760737157580.
-INFO (XSTRM-223): 7. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_760737157581.
-INFO (XSTRM-223): 8. Translating cellview HA_ACCUM/HA_ACCUM/layout as STRUCTURE HA_ACCUM.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_760740424220.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_760740424221.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_760740424222.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_760740424223.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_760740424224.
+INFO (XSTRM-223): 6. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_760740424220.
+INFO (XSTRM-223): 7. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_760740424221.
+INFO (XSTRM-223): 8. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_760740424222.
+INFO (XSTRM-223): 9. Translating cellview HA_ACCUM/HA_ACCUM/layout as STRUCTURE HA_ACCUM.
 
 Summary of Objects Translated:
-	Scalar Instances:                       4
+	Scalar Instances:                       6
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             63
+	Rectangles:                             78
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -84,13 +85,13 @@ Summary of Objects Translated:
 	Markers:                                0
 	Rows:                                   0
 	Stitch:                                 0
-	Standard Vias                           17
+	Standard Vias                           24
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               12
-	Text:                                   5
+	Pathsegs:                               17
+	Text:                                   6
 	TextDisplay:                            0
-	Cells:                                  8
+	Cells:                                  9
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 33740KB
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 33816KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
