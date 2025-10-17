@@ -1,0 +1,8 @@
+verbose_input
+violation_mode prototype
+trunk_extend_only
+pin_inst_trunk_visible
+channel_mode_skip_side_pin
+pin_trunk_accessing_directions NSEWO
+trunk_extend_to_boundary
+trunk_extend_to_UR_only

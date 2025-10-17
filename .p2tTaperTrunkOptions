@@ -1,0 +1,9 @@
+verbose_input
+violation_mode prototype
+pin_trunk_accessing_directions NSEWO
+taper_trunk_only
+gate_twig_use_pin_width
+nongate_twig_use_pin_width
+taper_trunk_auto_mode
+taper_trunk_auto_reduction
+taper_trunk_style 90
