@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      oraftery
 HostName                       vlsicad.ecs.umass.edu
-ProcessIdentifier              2626136
-ProcessCreationTime_UTC        1760735288
-ProcessCreationTime_Readable   Fri Oct 17 17:08:08 2025 EDT
+ProcessIdentifier              2769259
+ProcessCreationTime_UTC        1760799526
+ProcessCreationTime_Readable   Sat Oct 18 10:58:46 2025 EDT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/ece558_658_2025/oraftery/ece558-labs/components/RST#2dFF/schematic/sch.oa.cdslck.dirlck
-TimeEditLocked                 Fri Oct 17 17:18:33 2025 EDT
+FilePathUsedToEditLock         /home/ece558_658_2025/oraftery/ece558-labs/lab2/HA_ACCUM/HA_ACCUM/layout/layout.oa.cdslck
+TimeEditLocked                 Sat Oct 18 10:59:40 2025 EDT

@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Sat Oct 18 10:58:46 2025 EDT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/ece558_658_2025/oraftery/ece558-labs/lab2/HA_ACCUM/HA_ACCUM/layout/layout.oa.cdslck
-TimeEditLocked                 Sat Oct 18 10:59:40 2025 EDT
+FilePathUsedToEditLock         /home/ece558_658_2025/oraftery/ece558-labs/components/HA/schematic/sch.oa.cdslck
+TimeEditLocked                 Sat Oct 18 12:41:45 2025 EDT
