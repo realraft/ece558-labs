@@ -1,0 +1,28 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : HA_ACCUM.rep
+ERC Summary File         : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/HA_ACCUM.sum
+LVS Comparison Report    : HA_ACCUM.rep.cls
+LVS Softchk Report       : HA_ACCUM.softchk
+Layout Name              : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/HA_ACCUM.gds.gz ("HA_ACCUM")
+User Name                : oraftery
+Creation Time            : Sat Oct 18 15:11:14 2025
+Current directory        : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs
+Pegasus Version          : 24.13-s018 Wed Jun 18 15:36:24 PDT 2025
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)

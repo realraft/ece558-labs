@@ -1,0 +1,10 @@
+CADENCE IHNL11148
+
+components INV schematic cds0
+components XOR schematic cds1
+components NAND schematic cds2
+components AND schematic cds3
+components HA schematic cds4
+components FF schematic cds5
+components RST-FF schematic cds6
+HA_ACCUM HA_ACCUM schematic cds7

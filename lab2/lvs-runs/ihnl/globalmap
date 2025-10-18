@@ -1,0 +1,18 @@
+CADENCE IHNL11140
+$model
+components/HA/schematic HA
+HA_ACCUM/HA_ACCUM/schematic HA_ACCUM
+components/RST-FF/schematic RST-FF
+components/AND/schematic AND
+components/XOR/schematic XOR
+components/FF/schematic FF
+components/NAND/schematic NAND
+components/INV/schematic INV
+$endmodel
+$net
+B! B!
+PHI! PHI!
+A! A!
+$endnet
+$param
+$endparam

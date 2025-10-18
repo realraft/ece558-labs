@@ -1,0 +1,29 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "HA_ACCUM"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "PHI! B! A!"
+  hierDelim "."
+  netlistDir "/home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/"
+ )
+( model
+( "components/XOR/schematic" "XOR" )
+( "HA_ACCUM/HA_ACCUM/schematic" "HA_ACCUM" )
+( "components/RST-FF/schematic" "RST-FF" )
+( "components/FF/schematic" "FF" )
+( "components/AND/schematic" "AND" )
+( "components/INV/schematic" "INV" )
+( "components/NAND/schematic" "NAND" )
+( "components/HA/schematic" "HA" )
+ )
+( "HA_ACCUM" "ihnl/cds7/map" )
+( "XOR" "ihnl/cds1/map" )
+( "HA" "ihnl/cds4/map" )
+( "AND" "ihnl/cds3/map" )
+( "FF" "ihnl/cds5/map" )
+( "RST-FF" "ihnl/cds6/map" )
+( "INV" "ihnl/cds0/map" )
+( "NAND" "ihnl/cds2/map" )
+ )

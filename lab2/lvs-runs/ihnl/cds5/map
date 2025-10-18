@@ -1,0 +1,15 @@
+( ( net
+( "PHI!" "PHI!" )
+ )
+( inst
+( "PM0" "MPM0" )
+( "NM3" "MNM3" )
+( "NM2" "MNM2" )
+( "I1" "XI1" )
+( "NM1" "MNM1" )
+( "PM1" "MPM1" )
+( "PM3" "MPM3" )
+( "NM0" "MNM0" )
+( "PM2" "MPM2" )
+ )
+ )

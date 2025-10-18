@@ -1,0 +1,17 @@
+
+/opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : HA_ACCUM_2788620.db
+ECDB dir        : ./
+Top Cell        : HA_ACCUM
+CDL netlist     : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.net
+Layer map file  : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.ecdbmap
+Text map file   : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.ports
+Dependency map  : HA_ACCUM.lmap.perc
+Lvs file        : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.lvsfile
+Float net file  : .HA_ACCUM.info.softchk
+threads         : 32
+debug           : 0
+Source Library  : HA_ACCUM_2788620

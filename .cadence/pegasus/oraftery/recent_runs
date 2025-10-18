@@ -1,2 +1,3 @@
-1760813994 0 1760813994 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs" "pegasusrv" "" "HA_ACCUM" "" "" "" "" "" "" "" "" "DRC" true
-1760813986 0 1760813986 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs/HA_ACCUM.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1760814760 0 1760814760 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs" "pegasusrv" "" "HA_ACCUM" "" "" "" "" "" "" "" "" "DRC" true
+1760814750 0 1760814750 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs/HA_ACCUM.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1760814687 0 1760814687 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs" "pegasusrv" "" "HA_ACCUM" "" "" "" "" "" "" "" "" "LVS" true
