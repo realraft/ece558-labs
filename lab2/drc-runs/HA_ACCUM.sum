@@ -1,7 +1,7 @@
 **************************************************************************
 *** Pegasus DRC SUMMARY
 ***
-Execute on Date/Time    : 2025-10-18 14:34:37
+Execute on Date/Time    : 2025-10-18 14:59:26
 Pegasus VERSION         : 24.13-s018
 Rule Deck Path          : /home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs/.technology.rul
 Rule Deck Title         :
@@ -42,7 +42,7 @@ LAYER M6Resdum ............................. Total Original Geometry:          0
 LAYER M7Resdum ............................. Total Original Geometry:          0 (         0)
 LAYER M8Resdum ............................. Total Original Geometry:          0 (         0)
 LAYER M9Resdum ............................. Total Original Geometry:          0 (         0)
-LAYER Metal1 ............................... Total Original Geometry:         73 (       247)
+LAYER Metal1 ............................... Total Original Geometry:         84 (       258)
 LAYER Metal10 .............................. Total Original Geometry:          0 (         0)
 LAYER Metal11 .............................. Total Original Geometry:          0 (         0)
 LAYER Metal2 ............................... Total Original Geometry:         55 (       165)
@@ -276,7 +276,7 @@ RULECHECK LATCHUP.1 .................................... Total Result          0
 RULECHECK LATCHUP.2 .................................... Total Result          0 (         0)
 RULECHECK LATCHUP.3 .................................... Total Result          0 (         0)
 RULECHECK LATCHUP.4 .................................... Total Result          0 (         0)
-RULECHECK METAL1.A.1 ................................... Total Result         11 (        11)
+RULECHECK METAL1.A.1 ................................... Total Result          0 (         0)
 RULECHECK METAL1.E.1_METAL1.E.2 ........................ Total Result          0 (         0)
 RULECHECK METAL1.EA.1 .................................. Total Result          0 (         0)
 RULECHECK METAL1.L.1 ................................... Total Result          0 (         0)
@@ -680,6 +680,6 @@ RULECHECK soft_check_9 ................................. Total Result          0
 ---
 Total CPU Time                    : 7(s)
 Total Real Time                   : 18(s)
-Total Original Geometry           : 283 (1156)
+Total Original Geometry           : 294 (1167)
 Total DRC RuleChecks              : 576
-Total DRC Results                 : 11 (11)
+Total DRC Results                 : 0 (0)
