@@ -1,0 +1,14 @@
+
+
+vuipreRcxFormTable = '(
+	runName  "HA_ACCUM"
+	runDir  "./lab2/lvs-runs/svdb"
+	assuraTech  "/ece558_658/pdk/verification/pvtech.lib"
+	tech  "gpdk045"
+	mapFile  ""
+	netProp  5
+	instProp  6
+	devProp  7
+)
+
+

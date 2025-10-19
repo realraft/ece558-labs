@@ -1,0 +1,6 @@
+#!/bin/sh -f
+#--------------------------------------------------------------------------------------
+# THE RUN FILE created by Cadence Extraction Quantus UI Version 24.1.0-p089
+#--------------------------------------------------------------------------------------
+
+quantus  -log_file /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/qrc.HA_ACCUM.log -cmd /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/qrc.HA_ACCUM.ccl 
