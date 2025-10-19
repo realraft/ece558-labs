@@ -94,7 +94,7 @@ Csout sout 0 10f
 Ccout cout 0 10f
 
 ** Clock Generation
-vclk phi 0 pulse(0 1.1 0 30p 30p 470p 1000p)
+vclk phi 0 pulse(0 1.1 1n 30p 30p 470p 1000p)
 
 ** Input Stimulus from Vector File
 .vec 'HA_ACCUM.vec'
