@@ -3,3 +3,120 @@ Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 wm geometry . 1416x744+20+31
 Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/oraftery/ece558-labs/lab2/accum.tr0 1 openonly
+# PF:1
+wm geometry .sigmgr._PF:1 232x242+768+432
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+pf:read PF:1 v(phi)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:FullSize
+Mdi:ArrangeIcons
+ScopeSigMgr:Unload 0 {{(1) accum.tr0}}
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Threshold Graph0 Signal0 .55 either xyrangeDefined
+# M:0
+GrMeas:Threshold Graph0 Signal0 .55 either xyrangeDefined
+# M:1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1416x744+0+0
+Mdi:ArrangeIcons
+wm geometry . 1416x744+20+31
+Mdi:ArrangeIcons
+wm geometry . 1416x744+0+0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1416x744+20+31
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1416x744+0+0
+Mdi:ArrangeIcons
+wm geometry . 1416x744+20+31
+Mdi:ArrangeIcons
+Mdi:NormalSize
+Graph:DSel
+GrMeas:Select Graph0 M:1 1
+Graph delsignal selected
+Graph:DSel
+GrMeas:Select Graph0 M:0 1
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/oraftery/ece558-labs/lab2/accum.tr0 1 append
+# PF:1
+Mdi:ArrangeIcons
+pf:read PF:1 v(cin)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Mdi:ArrangeIcons
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 0 -rgnindex 1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal1 Signal0 either either default default default default 0.5 0.5 xyrangeDefined
+# M:2
+Graph:DSel
+GrMeas:Select Graph0 M:2 6
+Graph delsignal selected
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrMeas:Delay Graph0 Signal1 Signal0 either either default default default default 0.5 0.5 xyrangeAll
+# M:3
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
