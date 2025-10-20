@@ -1,0 +1,61 @@
+** Testbench for Hold Time Analysis (Failing Case - V3)
+** hold_time_fail.sp
+
+************************************************************************
+** Include Files
+************************************************************************
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+.include 'HA_ACCUM-post-layout.sp'
+
+************************************************************************
+** Simulation Options
+************************************************************************
+.TEMP 25
+.OPTION POST=1 PROBE=1
+
+************************************************************************
+** Subcircuit for Inverter
+************************************************************************
+.subckt INV a gnd vdd y
+mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9
+mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9
+.ends INV
+
+************************************************************************
+** Testbench Setup
+************************************************************************
+
+** Power Supply
+vvdd VDD 0 DC 1.1
+
+** Instantiate the DUT
+xdut 0 0 cin cout_out 0 phi phi_bar rst sout_out VDD HA_ACCUM
+
+** Load Capacitance
+Csout sout_out 0 10f
+Ccout cout_out 0 10f
+
+** Clock Generation (Edges at 1ns, 2ns, 3ns...)
+vclk phi 0 pulse(0 1.1 1n 30p 30p 470p 1000p)
+
+** Inverted Clock
+xinv phi 0 VDD phi_bar INV
+
+** Input Stimulus Sources
+vcin cin 0 DC 1.1
+vrst rst 0 pulse(0 1.1 2.1n 30p 30p 1n 10n)
+
+************************************************************************
+** Analysis and Measurement
+************************************************************************
+.tran 1p 5n
+
+.print tran v(phi) v(rst) v(cin) v(sout_out)
+
+** Measure Statements using the 'WHEN' syntax for better compatibility
+.measure tran t_clk_edge WHEN v(phi)=0.55 RISE=2
+.measure tran t_rst_edge WHEN v(rst)=0.55 RISE=1
+.measure tran rst_delay PARAM='t_rst_edge - t_clk_edge'
+
+.END
