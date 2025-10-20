@@ -1,0 +1,60 @@
+** Power Characterization for HA_ACCUM @ 1 GHz
+** test_power_1GHz.sp
+
+************************************************************************
+** Include Files
+************************************************************************
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+.include 'HA_ACCUM-post-layout.sp'
+
+************************************************************************
+** Simulation Options
+************************************************************************
+.TEMP 25
+.OPTION POST=1 PROBE=1
+
+************************************************************************
+** Subcircuit for Inverter (to generate the inverted clock PHI!)
+************************************************************************
+.subckt INV a gnd vdd y
+mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9
+mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9
+.ends INV
+
+************************************************************************
+** Testbench Setup
+************************************************************************
+
+** Power Supply (This is the source we will measure for power)
+vvdd VDD 0 DC 1.1
+
+** Instantiate the DUT from the post-layout netlist
+xdut 0 0 cin cout_out 0 phi phi_bar rst sout_out VDD HA_ACCUM
+
+** Load Capacitance on the output nodes
+Csout sout_out 0 10f
+Ccout cout_out 0 10f
+
+** Clock Generation for 1 GHz (Period = 1000ps)
+vclk phi 0 pulse(0 1.1 1n 30p 30p 470p 1000p)
+
+** Inverted Clock Generation
+xinv phi 0 VDD phi_bar INV
+
+** Input Stimulus from Vector File
+.vec 'HA_ACCUM.vec'
+
+************************************************************************
+** Analysis and Measurement
+************************************************************************
+
+** Transient Analysis (5 cycles * 1ns/cycle = 5ns total time)
+.tran 1p 5n
+
+** Measure Average Power of the VDD source
+** P(vvdd) measures instantaneous power. AVG averages it.
+** FROM 1ns (end of cycle 0) TO 5ns (end of the test sequence)
+.measure tran Pavg AVG P(vvdd) FROM=1n TO=5n
+
+.END

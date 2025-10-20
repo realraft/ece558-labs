@@ -1,0 +1,67 @@
+** Post-Layout Half-Adder Accumulator Testbench
+** test_HA_ACCUM_postlayout.sp
+
+************************************************************************
+** Include Files
+************************************************************************
+** NOTE: Update these paths to match your file locations.
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc'
+.include '/opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc'
+
+** Include the post-layout extracted netlist that contains your .SUBCKT
+.include 'HA_ACCUM-post-layout.sp'
+
+************************************************************************
+** Simulation Options and Temperature
+************************************************************************
+.TEMP 25
+.OPTION
++     ARTIST=2
++     INGOLD=2
++     PARHIER=LOCAL
++     PSF=2
++     HIER_DELIM=0
++     POST=1
++     PROBE=1
+
+************************************************************************
+** Subcircuit for Inverter (to generate the inverted clock PHI!)
+** This is the same inverter from your pre-layout file.
+************************************************************************
+.subckt INV a gnd vdd y
+mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9
+mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9
+.ends INV
+
+************************************************************************
+** Testbench Setup
+************************************************************************
+
+** Power Supply (VDD is the power node, 0 is the global ground)
+vvdd VDD 0 DC 1.1
+
+** Instantiate the DUT from the post-layout netlist
+** Subcircuit Port Order: A! B! CIN COUT GND PHI PHI! RST SOUT VDD
+xdut 0 0 cin cout_out 0 phi phi_bar rst sout_out VDD HA_ACCUM
+
+** Load Capacitance on the output nodes (same as pre-layout)
+Csout sout_out 0 10f
+Ccout cout_out 0 10f
+
+** Clock Generation (same as pre-layout)
+vclk phi 0 pulse(0 1.1 1n 30p 30p 470p 1000p)
+
+** Inverted Clock Generation for the PHI! port
+xinv phi 0 VDD phi_bar INV
+
+** Input Stimulus from Vector File
+** The vector file should define signals 'rst' and 'cin'
+.vec 'HA_ACCUM.vec'
+
+** Analysis Command (same as pre-layout)
+.tran 1p 5n
+
+** Print key signals to the .lis file
+.print tran v(phi) v(rst) v(cin) v(sout_out) v(cout_out)
+
+.END

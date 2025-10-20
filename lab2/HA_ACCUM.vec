@@ -4,7 +4,7 @@ vname rst cin
 tunit ps 
 trise 30 
 tfall 30 
-period 1000 
+period 2000 
 idelay 100 
 vih 1.1
 vil 0

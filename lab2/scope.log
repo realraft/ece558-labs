@@ -1,37 +1,96 @@
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-wm geometry . 1416x744+20+31
+wm geometry . 900x785+8+85
 Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+67+56
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile /home/ece558_658_2025/azguro/ece558-labs/lab2/1GHZpostlayout.tr0 1 openonly
+# PF:4
+# PF:3
+# PF:2
+# PF:1
+wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr._PF:2 232x242+798+510
+wm geometry .sigmgr._PF:1 232x242+573+363
+pf:read PF:1 power(vvdd)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview dbm(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:2 power(vvdd)
+# WF:2:1
+Graph addsignal WF:2:1 -region new -yview dbm(y) -xview real(x) -tracehi 2
+# Signal1
+wm geometry .sigmgr._PF:2 232x242+556+509
+pf:read PF:4 power(vvdd)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview dbm(y) -xview real(x) -tracehi 2
+# Signal2
+wm geometry .sigmgr._PF:4 232x242+598+599
+pf:read PF:3 power(vvdd)
+# WF:3:1
+Graph addsignal WF:3:1 -region new -yview dbm(y) -xview real(x) -tracehi 2
+# Signal3
+Mdi:FullSize
+wm geometry .sigmgr 376x204+1233+181
+wm geometry .sigmgr._PF:1 232x242+1092+217
+wm geometry .sigmgr._PF:2 232x242+1068+352
+wm geometry .sigmgr._PF:4 232x242+1172+541
+wm geometry .sigmgr._PF:3 232x242+1229+432
+Mdi:ArrangeIcons
+wm geometry . 1536x860+0+23
+wm geometry .sigmgr._PF:1 232x242+768+480
+wm geometry .sigmgr._PF:1 232x242+573+363
+wm geometry .sigmgr._PF:2 232x242+798+510
+wm geometry .sigmgr._PF:2 232x242+556+509
+wm geometry .sigmgr._PF:4 232x242+906+614
+wm geometry .sigmgr._PF:4 232x242+598+599
+wm geometry .sigmgr._PF:3 232x242+828+540
+wm geometry .sigmgr 376x204+581+135
+wm geometry .sigmgr 376x204+1233+181
+wm geometry .sigmgr._PF:1 232x242+1092+217
+wm geometry .sigmgr._PF:2 232x242+1068+352
+wm geometry .sigmgr._PF:4 232x242+1172+541
+wm geometry .sigmgr._PF:3 232x242+1229+432
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1536x860+8+31
+Mdi:ArrangeIcons
+wm geometry . 1536x860+0+23
+wm geometry .sigmgr 376x204+1036+912
+wm geometry .sigmgr._PF:1 232x242+685+912
+wm geometry .sigmgr._PF:2 232x242+840+889
+wm geometry .sigmgr._PF:4 232x242+916+912
+wm geometry .sigmgr._PF:3 232x242+928+912
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel
 Graph:Select Graph0
-Graph:DSel 0
+Mdi:ArrangeIcons
 Graph:DSel
 Mdi:ArrangeIcons
+wm geometry . 1536x860+0+0
 Mdi:ArrangeIcons
-ScopeSigMgr:loadpffile /home/ece558_658_2025/oraftery/ece558-labs/lab2/accum.tr0 1 openonly
-# PF:1
-wm geometry .sigmgr._PF:1 232x242+768+432
-pf:read PF:1 v(phi)
-# WF:1:1
-Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
-# Signal0
+wm geometry . 1536x860+8+31
 Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+wm geometry . 1536x860+0+23
+wm geometry .sigmgr 376x204+1233+181
+wm geometry .sigmgr 376x204+1036+912
+wm geometry .sigmgr._PF:1 232x242+1092+217
+wm geometry .sigmgr._PF:1 232x242+685+912
+wm geometry .sigmgr._PF:2 232x242+1068+352
+wm geometry .sigmgr._PF:2 232x242+840+889
+wm geometry .sigmgr._PF:4 232x242+1172+541
+wm geometry .sigmgr._PF:4 232x242+916+912
+wm geometry .sigmgr._PF:3 232x242+1229+432
+wm geometry .sigmgr._PF:3 232x242+928+912
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-GrMeas:Threshold Graph0 Signal0 .55 either xyrangeAll
-# M:0
 Mdi:ArrangeIcons
 Mdi:ArrangeIcons
-GrMeas:Threshold Graph0 Signal0 .55 either xyrangeDefined
-# M:1
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+wm geometry . 1536x860+0+0
