@@ -1,0 +1,55 @@
+****** PrimeSim HSPICE -- T-2022.06-3 linux64 (Aug 04 2022 7739753) ******
+Input File: driver_analysis.sp
+lic:
+lic: FLEXlm: SDK_12.10
+lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu
+lic: HOSTID: 13ac8554             PID:      3736604
+lic: Using FLEXlm license file:
+lic: 27020@vlsicad.ecs.umass.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 09-sep-2027/2025.06
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 5.76E-02
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option post =     1.00
+       option probe =     1.00
+ init: end read circuit files, cpu clock= 6.30E-02 peak memory=     513 mb
+ init: begin check errors, cpu clock= 6.30E-02
+ init: end check errors, cpu clock= 7.56E-02 peak memory=     514 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 7.56E-02
+       establish matrix -- done, cpu clock= 7.64E-02 peak memory=     514 mb
+       re-order matrix -- done, cpu clock= 7.97E-02 peak memory=     515 mb
+ init: end setup matrix, cpu clock= 8.38E-02 peak memory=     515 mb
+ dcop: begin dcop, cpu clock= 8.44E-02
+       establish matrix -- done, cpu clock= 1.58E-01 peak memory=     515 mb
+       re-order matrix -- done, cpu clock= 1.64E-01 peak memory=     516 mb
+ dcop: end dcop, cpu clock= 1.67E-01 peak memory=     516 mb tot_iter=     264
+ output: driver_analysis.mt0
+ sweep: tran tran0    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.67E-01
+ tran: time= 1.1000E-09 tot_iter=      84 conv_iter=      34 cpu clock= 1.93E-01
+ tran: time= 2.1000E-09 tot_iter=     146 conv_iter=      59 cpu clock= 2.12E-01
+ tran: time= 3.1000E-09 tot_iter=     214 conv_iter=      86 cpu clock= 2.32E-01
+ tran: time= 4.1000E-09 tot_iter=     276 conv_iter=     111 cpu clock= 2.50E-01
+ tran: time= 5.1000E-09 tot_iter=     352 conv_iter=     141 cpu clock= 2.76E-01
+ tran: time= 6.1000E-09 tot_iter=     435 conv_iter=     174 cpu clock= 3.01E-01
+ tran: time= 7.0345E-09 tot_iter=     603 conv_iter=     237 cpu clock= 3.53E-01
+ tran: time= 8.1000E-09 tot_iter=     668 conv_iter=     264 cpu clock= 3.72E-01
+ tran: time= 9.1000E-09 tot_iter=     757 conv_iter=     299 cpu clock= 4.03E-01
+ tran: time= 1.0000E-08 tot_iter=     844 conv_iter=     333 cpu clock= 4.29E-01
+ sweep: tran tran0    end, cpu clock= 4.30E-01 peak memory=     516 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

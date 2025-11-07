@@ -1,0 +1,14 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** step 7b: ha driving 97× load - simplified model'
+ t_sout_direct    t_sout_buffered  t_s1             t_s2            
+ t_s3_direct      t_s3_buffered    delay_sout_to_s3_direct_ps
+ delay_sout_to_s3_buffered_ps delay_sout_to_s1_ps delay_s1_to_s2_ps
+ delay_s2_to_s3_ps delay_sout_to_s3_direct_tau
+ delay_sout_to_s3_buffered_tau delay_sout_to_s1_tau delay_s1_to_s2_tau
+ delay_s2_to_s3_tau rise_time_direct rise_time_buffered
+ temper           alter#          
+  6.300e-09        6.158e-09        6.175e-09        6.186e-09      
+  6.331e-09        6.193e-09        3.145e-11        3.516e-11      
+  1.723e-11        1.038e-11        7.561e-12        7.525e-12      
+  8.413e-12        4.121e-12        2.482e-12        1.809e-12      
+ -1.274e-10       -1.070e-11         25.0000        1               

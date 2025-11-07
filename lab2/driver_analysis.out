@@ -1,0 +1,892 @@
+Using: /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/linux64/hspice driver_analysis.sp
+ ****** PrimeSim HSPICE -- T-2022.06-3 linux64 (Aug 04 2022 7739753) ******
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: driver_analysis.sp                                                
+  Command line options: /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/linux64/hspice driver_analysis.sp
+  Start time: Thu Nov  6 18:59:54 2025
+ lic:  
+ lic: FLEXlm: SDK_12.10 
+ lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu 
+ lic: HOSTID: 13ac8554             PID:      3727666 
+ lic: Using FLEXlm license file: 
+ lic: 27020@vlsicad.ecs.umass.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 09-sep-2027/2025.06 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu 
+ lic:   
+  **warning** (HA_ACCUM-post-layout.sp:31) Parameter fw is ignored
+  **warning** (HA_ACCUM-post-layout.sp:22) Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- T-2022.06-3 linux64 (Aug 04 2022 7739753) ******
+ ******  
+ ** step 7b: ha driving 97× load - complete analysis
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xha_direct.                     ha_accum           1.00 
+        2 xload_direct.                   load_inv           1.00 
+        3 xha_buffered.                   ha_accum           1.00 
+        4 xstage1.                        stage1             1.00 
+        5 xstage2.                        stage2             1.00 
+        6 xload_buffered.                 load_inv           1.00 
+        7 xinv.                           inv                1.00 
+ ******  
+ ** step 7b: ha driving 97× load - complete analysis
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: /opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45n1svt.inc
+ Model line:            3
+ Model Name: g45n1svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.14e-09 
+    TOXE = 1.14e-09 
+    TOXP =  1e-09 
+    TOXM = 1.14e-09 
+    DTOX = 1.4e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.1 
+    XJ = 1.98e-08 
+    VSAT = 1.23e+05 
+    A0 =      1 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+04 
+    KETA =   0.04 
+    NSUB =  6e+16 
+    NDEP = 3.4e+18 
+    NSD =  2e+20 
+    NGATE =  3e+20 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =      0 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 =  1e-10 
+    DVTP1 =    0.1 
+    W0 = 2.5e-06 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 =      0 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.5 
+    DSUB =    0.1 
+    VTH0 = 0.4106 
+    EU =   1.67 
+    UA =  6e-10 
+    UA1 = 4.31e-09 
+    UB = 1.2e-18 
+    UB1 = 7.61e-18 
+    UC =      0 
+    UC1 = -5.6e-11 
+    U0 =  0.045 
+    UTE =   -1.5 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+06 
+    DELTA =   0.01 
+    RDSW =    155 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     80 
+    RSW =     80 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 =  0.006 
+    ETAB =      0 
+    PCLM =   0.02 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = -0.005 
+    PSCBE1 = 8.14e+08 
+    PSCBE2 =  1e-07 
+    PVAG =  1e-20 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -2e-08 
+    XLREF = -2e-08 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+09 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC =   0.02 
+    BIGC = 0.0027 
+    CIGC =  0.002 
+    AIGSD =   0.02 
+    BIGSD = 0.0027 
+    CIGSD =  0.002 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =  -0.55 
+    GBMIN =  1e-10 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-10 
+    CGDL = 2.653e-10 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.289e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =  5e-09 
+    DLC = 3.75e-09 
+    DLCIG = 3.75e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 1.1e-10 
+    CGDO = 1.1e-10 
+    CGBO = 2.56e-11 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS =  1e-11 
+    JSWGS =  1e-10 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS =  5e-10 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS =  3e-10 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =  1e-11 
+    JSWGD =  1e-10 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD =  5e-10 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD =  5e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 3.75e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =  5e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+41 
+    NOIB = 3.125e+26 
+    NOIC = 8.75e+09 
+    EM = 4.1e+07 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ Model file: /opt/cadence/gpdk045/gpdk045_v_6_0/models/hspice/g45p1svt.inc
+ Model line:            3
+ Model Name: g45p1svt  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.3e-09 
+    TOXE = 1.26e-09 
+    TOXP =  1e-09 
+    TOXM = 1.26e-09 
+    DTOX = 2.6e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =   2.22 
+    XJ = 1.98e-08 
+    VSAT = 6.2e+04 
+    A0 =      1 
+    AGS =  1e-20 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+04 
+    KETA = -0.047 
+    NSUB =  6e+16 
+    NDEP = 2.44e+18 
+    NSD =  2e+20 
+    NGATE =  2e+20 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =  -0.01 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 =  1e-11 
+    DVTP1 =   0.05 
+    W0 = 2.5e-06 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =   0.56 
+    DSUB =    0.1 
+    VTH0 = -0.3842 
+    EU =      1 
+    UA =  2e-09 
+    UA1 = 4.31e-09 
+    UB =  5e-19 
+    UB1 = 7.61e-18 
+    UC =      0 
+    UC1 = -5.6e-11 
+    U0 =   0.02 
+    UTE =   -1.5 
+    VOFF = -0.126 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+06 
+    DELTA =   0.01 
+    RDSW =    155 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     75 
+    RSW =     75 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0055 
+    ETAB =      0 
+    PCLM =   0.12 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = 3.4e-08 
+    PSCBE1 = 8.14e+08 
+    PSCBE2 = 9.58e-07 
+    PVAG =  1e-20 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -2e-08 
+    XLREF = -2e-08 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+09 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.01069 
+    BIGC = 0.001261 
+    CIGC = 0.0008 
+    AIGSD = 0.01069 
+    BIGSD = 0.001261 
+    CIGSD = 0.0008 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =   0.55 
+    GBMIN =  1e-10 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-10 
+    CGDL = 2.653e-10 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.267e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =  5e-09 
+    DLC = 3.75e-09 
+    DLCIG = 3.75e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 1.1e-10 
+    CGDO = 1.1e-10 
+    CGBO = 2.56e-11 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS =  1e-11 
+    JSWGS =  1e-10 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS =  5e-10 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS =  3e-10 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =  1e-11 
+    JSWGD =  1e-10 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD =  5e-10 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD =  5e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 3.75e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =  5e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.188e+40 
+    NOIB = 1.5e+25 
+    NOIC = 8.75e+09 
+    EM = 4.1e+07 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+  **info** (driver_analysis.sp:52) DC voltage reset to initial transient source value in source 0:vclk. new dc=0.0000D+00
+  **warning** (HA_ACCUM-post-layout.sp:1117) Both nodes of element xha_direct.c685 are connected together; Line ignored.
+  **warning** (g45n1svt:xha_direct.mxi0/xi0/xi0/mnm0 (HA_ACCUM-post-layout.sp:31)) Warning:  Acde = 0.276941 may be too small in BSIM4 model with w=1.2e-07 l=4.5e-08.
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-03  ~  1e-02|8         |1.6807    |
+ |1e-02  ~  1e-01|20        |4.2017    |
+ |1e-01  ~  1e+00|174       |36.5546   |
+ |1e+00  ~  1e+03|274       |57.5630   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-20  ~  1e-19|8         |0.3777    |
+ |1e-19  ~  1e-18|220       |10.3872   |
+ |1e-18  ~  1e-17|1062      |50.1416   |
+ |1e-17  ~  1e-16|812       |38.3381   |
+ |1e-16  ~  1e-15|16        |0.7554    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|476       |
+ |            |          |
+ |Constant Cap|2118      |
+ -------------------------
+              
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=driver_analysis.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+ ******  
+ ** step 7b: ha driving 97× load - complete analysis
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:cin     =   0.      0:cout_buf=  60.8221u 0:cout_dir=  61.0050u
+ +0:phi     =   0.      0:phi_bar =   1.1000  0:rst     =   0.     
+ +0:s1      =   1.1000  0:s2      =  59.1741u 0:s3_buffe=   1.1000 
+ +0:s3_direc=   1.1000  0:sout_buf=   3.9560m 0:sout_dir=   4.3175m
+ +0:vdd     =   1.1000  1:a!#1    =   1.4661u 1:a!#2    = 167.9878n
+ +1:a!#3    = 211.5237n 1:a!#4    = 496.9800u 1:a!#5    =   7.2461m
+ +1:a!#6    = 299.6884u 1:a!#7    = 299.6883u 1:a!#9    = 299.6884u
+ +1:b!#1    =   5.7226n 1:b!#10   = 244.8936u 1:b!#11   =   5.6878n
+ +1:b!#14   =   8.4823n 1:b!#2    =   5.6963n 1:b!#3    = 377.6581n
+ +1:b!#4    = 165.9564n 1:b!#5    = 421.1627u 1:b!#6    =   7.1354m
+ +1:b!#7    = 244.8936u 1:b!#8    = 244.8935u 1:b!#9    =   5.6876n
+ +1:cin#1   = 933.0268n 1:cin#11  =  11.7470n 1:cin#12  =   3.4280n
+ +1:cin#13  =   7.2857n 1:cin#2   = 122.3136n 1:cin#3   = 122.3136n
+ +1:cin#4   = 185.6798n 1:cin#5   =  99.2362n 1:cin#6   = 550.7124n
+ +1:cin#7   = 954.1117n 1:cin#8   = 179.0778n 1:cin#9   = 253.6015n
+ +1:cout#1  =  61.0319u 1:cout#2  =  61.8684u 1:cout#3  =  60.9846u
+ +1:cout#4  =  58.9606u 1:cout#5  =  61.0050u 1:cout#6  =  61.0050u
+ +1:cout#7  =  61.0050u 1:gnd#1   =  30.4256n 1:gnd#10  = 714.9945n
+ +1:gnd#11  =   1.7089u 1:gnd#12  = 855.2551n 1:gnd#13  = 149.8798n
+ +1:gnd#14  = 134.3409n 1:gnd#15  = 989.2340n 1:gnd#16  = 974.7158n
+ +1:gnd#17  = 144.1720u 1:gnd#18  =   3.5656u 1:gnd#19  =   4.3191u
+ +1:gnd#2   =  30.2978n 1:gnd#20  =   2.2654u 1:gnd#21  = 231.2910n
+ +1:gnd#22  = 213.9813n 1:gnd#23  = 255.9054n 1:gnd#24  = 255.9054n
+ +1:gnd#25  = 255.9054n 1:gnd#26  = 255.9054n 1:gnd#27  = 213.5319n
+ +1:gnd#28  = 133.9375n 1:gnd#29  =  63.2487n 1:gnd#3   = 820.0798n
+ +1:gnd#30  =  30.2957n 1:gnd#31  =   1.2409u 1:gnd#32  =   1.2409u
+ +1:gnd#33  =   1.2944u 1:gnd#34  = 974.3407n 1:gnd#35  = 833.2032n
+ +1:gnd#36  = 714.5473n 1:gnd#37  = 461.4612n 1:gnd#38  = 177.3479n
+ +1:gnd#4   = 187.5446n 1:gnd#5   =  63.3685n 1:gnd#56  =   2.2455u
+ +1:gnd#6   =  63.2506n 1:gnd#7   =   1.1712u 1:gnd#8   = 479.3334n
+ +1:gnd#9   = 732.3039n 1:net3    =   1.0999  1:net3#10 =   1.0999 
+ +1:net3#11 =   1.0999  1:net3#13 =   1.0999  1:net3#14 =   1.0999 
+ +1:net3#16 =   1.0999  1:net3#17 =   1.0999  1:net3#18 =   1.0999 
+ +1:net3#2  =   1.0999  1:net3#23 =   1.0999  1:net3#3  =   1.0999 
+ +1:net3#4  =   1.0999  1:net3#6  =   1.0999  1:net3#7  =   1.0999 
+ +1:net3#9  =   1.0999  1:phi!#1  =   1.1000  1:phi!#2  =   1.1000 
+ +1:phi!#3  =   1.1000  1:phi!#4  =   1.1000  1:phi!#5  =   1.1000 
+ +1:phi!#6  =   1.1000  1:phi!#7  =   1.1000  1:phi!#9  =   1.1000 
+ +1:phi#1   = 423.5501n 1:phi#2   =  82.1377n 1:phi#3   = 130.7507n
+ +1:phi#4   =   6.5487n 1:phi#5   =   5.7995n 1:phi#6   =  52.0947n
+ +1:phi#7   =   1.0476n 1:phi#8   =   1.0476n 1:phi#9   = 868.5580p
+ +1:rst#1   = 102.5306n 1:rst#2   =  86.8293n 1:rst#3   =   1.1219u
+ +1:rst#4   = 793.1724p 1:rst#5   = 793.1724p 1:sout#1  =   4.3178m
+ +1:sout#10 =   4.3173m 1:sout#11 =   4.3173m 1:sout#14 =   4.3189m
+ +1:sout#15 =   4.3713m 1:sout#16 =   4.3159m 1:sout#17 =   4.1753m
+ +1:sout#18 =   4.3173m 1:sout#19 =   4.3171m 1:sout#2  =   4.3174m
+ +1:sout#20 =   4.3173m 1:sout#22 =   4.3173m 1:sout#24 =   4.3173m
+ +1:sout#3  =   4.3174m 1:sout#4  =   4.3174m 1:sout#5  =   4.3174m
+ +1:sout#6  =   4.3182m 1:sout#7  =   4.3177m 1:sout#8  =   4.3173m
+ +1:sout#9  =   4.3173m 1:vdd#1   =   1.0930  1:vdd#10  =   1.0999 
+ +1:vdd#11  =   1.0999  1:vdd#12  =   1.0999  1:vdd#13  =   1.1000 
+ +1:vdd#14  =   1.1000  1:vdd#15  =   1.0999  1:vdd#16  =   1.0999 
+ +1:vdd#17  =   1.1000  1:vdd#18  =   1.1000  1:vdd#19  =   1.0999 
+ +1:vdd#2   =   1.0997  1:vdd#20  =   1.0999  1:vdd#21  =   1.0999 
+ +1:vdd#22  =   1.1000  1:vdd#23  =   1.0999  1:vdd#24  =   1.0999 
+ +1:vdd#25  =   1.0999  1:vdd#26  =   1.0999  1:vdd#27  =   1.1000 
+ +1:vdd#28  =   1.1000  1:vdd#29  =   1.1000  1:vdd#3   =   1.1000 
+ +1:vdd#30  =   1.1000  1:vdd#31  =   1.1000  1:vdd#32  =   1.1000 
+ +1:vdd#33  =   1.1000  1:vdd#34  =   1.0999  1:vdd#35  =   1.0999 
+ +1:vdd#36  =   1.0999  1:vdd#37  =   1.0999  1:vdd#38  =   1.0999 
+ +1:vdd#39  =   1.0999  1:vdd#4   =   1.1000  1:vdd#40  =   1.0999 
+ +1:vdd#41  =   1.0999  1:vdd#42  =   1.0999  1:vdd#43  =   1.0999 
+ +1:vdd#44  =   1.1000  1:vdd#48  =   1.0998  1:vdd#5   =   1.0998 
+ +1:vdd#6   =   1.0998  1:vdd#7   =   1.0930  1:vdd#8   =   1.0997 
+ +1:vdd#9   =   1.0999  1:xi0/xi1/=  95.1015m 1:xi0/xi1/=  95.1016m
+ +1:xi0/xi1/=  95.1015m 1:xi0/xi1/=  95.1015m 1:xi0/xi0/=   1.0999 
+ +1:xi0/xi0/=  97.8635m 1:xi0/xi0/=  95.1010m 1:xi0/xi0/=   1.0999 
+ +1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999 
+ +1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999 
+ +1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999 
+ +1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999 
+ +1:xi0/xi1/=   1.0999  1:xi0/xi1/=   1.0999  1:xi1/d   =   1.0998 
+ +1:xi1/d#10=   1.0998  1:xi1/d#11=   1.0998  1:xi1/d#12=   1.0998 
+ +1:xi1/d#14=   1.0998  1:xi1/d#15=   1.0998  1:xi1/d#16=   1.0998 
+ +1:xi1/d#17=   1.0998  1:xi1/d#19=   1.0998  1:xi1/d#2 =   1.0998 
+ +1:xi1/d#20=   1.0998  1:xi1/d#3 =   1.0998  1:xi1/d#4 =   1.0998 
+ +1:xi1/d#5 =   1.0998  1:xi1/d#6 =   1.0998  1:xi1/d#7 =   1.0998 
+ +1:xi1/d#8 =   1.0998  1:xi1/d#9 =   1.0998  1:xi1/q   = 927.7648m
+ +1:xi1/q#11= 927.7649m 1:xi1/q#12= 927.7649m 1:xi1/q#2 = 927.7649m
+ +1:xi1/q#3 = 927.7648m 1:xi1/q#4 = 927.7649m 1:xi1/q#5 = 927.7649m
+ +1:xi1/q#6 = 927.7649m 1:xi1/q#7 = 927.7649m 1:xi1/q#8 = 927.7649m
+ +1:xi1/q#9 = 927.7649m 1:xi1/xi4/=   1.1000  1:xi1/xi4/=  47.6453u
+ +1:xi1/xi4/=  46.2501u 1:xi1/xi4/=  45.9771u 1:xi1/xi4/=  45.9573u
+ +1:xi1/xi4/=  45.9452u 1:xi1/xi4/=  45.9353u 1:xi1/xi4/=  45.9354u
+ +1:xi1/xi4/=  45.9353u 1:xi1/xi4/=  45.1310u 1:xi1/xi4/=  45.9222u
+ +1:xi1/xi4/=  45.9330u 1:xi1/xi4/=  82.8564m 1:xi1/xi4/=  23.8319u
+ +1:xi1/xi4/= 250.5615m 1:xi1/xi5/=  19.0221u 1:xi1/xi5/=  19.6828u
+ +1:xi1/xi5/=  19.6828u 1:xi1/xi5/=  20.3475u 1:xi1/xi5/=  19.6869u
+ +3:a!#1    =   1.4661u 3:a!#2    = 167.9878n 3:a!#3    = 211.5237n
+ +3:a!#4    = 496.9800u 3:a!#5    =   7.2461m 3:a!#6    = 299.6884u
+ +3:a!#7    = 299.6883u 3:a!#9    = 299.6884u 3:b!#1    =   5.7226n
+ +3:b!#10   = 244.9996u 3:b!#11   =   5.6878n 3:b!#14   =   8.4823n
+ +3:b!#2    =   5.6963n 3:b!#3    = 377.6581n 3:b!#4    = 165.9564n
+ +3:b!#5    = 421.3450u 3:b!#6    =   7.1385m 3:b!#7    = 244.9996u
+ +3:b!#8    = 244.9994u 3:b!#9    =   5.6876n 3:cin#1   = 933.0267n
+ +3:cin#11  =  11.7470n 3:cin#12  =   3.4280n 3:cin#13  =   7.2857n
+ +3:cin#2   = 122.3136n 3:cin#3   = 122.3136n 3:cin#4   = 185.6802n
+ +3:cin#5   =  99.2363n 3:cin#6   = 550.7124n 3:cin#7   = 954.1117n
+ +3:cin#8   = 179.0779n 3:cin#9   = 253.6019n 3:cout#1  =  60.8489u
+ +3:cout#2  =  61.6855u 3:cout#3  =  60.8017u 3:cout#4  =  58.7777u
+ +3:cout#5  =  60.8221u 3:cout#6  =  60.8221u 3:cout#7  =  60.8221u
+ +3:gnd#1   =  27.9765n 3:gnd#10  = 657.5710n 3:gnd#11  =   1.6418u
+ +3:gnd#12  = 788.2189n 3:gnd#13  = 139.0519n 3:gnd#14  = 123.5131n
+ +3:gnd#15  = 910.6008n 3:gnd#16  = 896.0828n 3:gnd#17  = 132.1751u
+ +3:gnd#18  =   3.2727u 3:gnd#19  =   4.1361u 3:gnd#2   =  27.8486n
+ +3:gnd#20  =   2.0824u 3:gnd#21  = 213.8585n 3:gnd#22  = 196.7043n
+ +3:gnd#23  = 235.1957n 3:gnd#24  = 235.1957n 3:gnd#25  = 235.1957n
+ +3:gnd#26  = 235.1957n 3:gnd#27  = 196.2590n 3:gnd#28  = 123.1097n
+ +3:gnd#29  =  58.1355n 3:gnd#3   = 805.9374n 3:gnd#30  =  27.8465n
+ +3:gnd#31  =   1.1403u 3:gnd#32  =   1.1403u 3:gnd#33  =   1.1895u
+ +3:gnd#34  = 895.7078n 3:gnd#35  = 766.1670n 3:gnd#36  = 657.1279n
+ +3:gnd#37  = 424.5487n 3:gnd#38  = 163.2052n 3:gnd#4   = 173.4019n
+ +3:gnd#5   =  58.2542n 3:gnd#56  =   2.0625u 3:gnd#6   =  58.1374n
+ +3:gnd#7   =   1.1343u 3:gnd#8   = 442.4209n 3:gnd#9   = 674.7249n
+ +3:net3    =   1.0999  3:net3#10 =   1.0999  3:net3#11 =   1.0999 
+ +3:net3#13 =   1.0999  3:net3#14 =   1.0999  3:net3#16 =   1.0999 
+ +3:net3#17 =   1.0999  3:net3#18 =   1.0999  3:net3#2  =   1.0999 
+ +3:net3#23 =   1.0999  3:net3#3  =   1.0999  3:net3#4  =   1.0999 
+ +3:net3#6  =   1.0999  3:net3#7  =   1.0999  3:net3#9  =   1.0999 
+ +3:phi!#1  =   1.1000  3:phi!#2  =   1.1000  3:phi!#3  =   1.1000 
+ +3:phi!#4  =   1.1000  3:phi!#5  =   1.1000  3:phi!#6  =   1.1000 
+ +3:phi!#7  =   1.1000  3:phi!#9  =   1.1000  3:phi#1   = 423.5501n
+ +3:phi#2   =  82.1377n 3:phi#3   = 130.7506n 3:phi#4   =   6.5479n
+ +3:phi#5   =   5.7986n 3:phi#6   =  52.0852n 3:phi#7   =   1.0476n
+ +3:phi#8   =   1.0476n 3:phi#9   = 868.5496p 3:rst#1   = 102.5306n
+ +3:rst#2   =  86.8292n 3:rst#3   =   1.1219u 3:rst#4   = 793.1723p
+ +3:rst#5   = 793.1723p 3:sout#1  =   3.9565m 3:sout#10 =   3.9560m
+ +3:sout#11 =   3.9560m 3:sout#14 =   3.9578m 3:sout#15 =   4.0103m
+ +3:sout#16 =   3.9548m 3:sout#17 =   3.8259m 3:sout#18 =   3.9559m
+ +3:sout#19 =   3.9559m 3:sout#2  =   3.9561m 3:sout#20 =   3.9560m
+ +3:sout#22 =   3.9560m 3:sout#24 =   3.9560m 3:sout#3  =   3.9561m
+ +3:sout#4  =   3.9560m 3:sout#5  =   3.9560m 3:sout#6  =   3.9568m
+ +3:sout#7  =   3.9563m 3:sout#8  =   3.9560m 3:sout#9  =   3.9560m
+ +3:vdd#1   =   1.0930  3:vdd#10  =   1.0999  3:vdd#11  =   1.0999 
+ +3:vdd#12  =   1.0999  3:vdd#13  =   1.1000  3:vdd#14  =   1.1000 
+ +3:vdd#15  =   1.0999  3:vdd#16  =   1.0999  3:vdd#17  =   1.1000 
+ +3:vdd#18  =   1.1000  3:vdd#19  =   1.0999  3:vdd#2   =   1.0997 
+ +3:vdd#20  =   1.0999  3:vdd#21  =   1.0999  3:vdd#22  =   1.1000 
+ +3:vdd#23  =   1.0999  3:vdd#24  =   1.0999  3:vdd#25  =   1.0999 
+ +3:vdd#26  =   1.0999  3:vdd#27  =   1.1000  3:vdd#28  =   1.1000 
+ +3:vdd#29  =   1.1000  3:vdd#3   =   1.1000  3:vdd#30  =   1.1000 
+ +3:vdd#31  =   1.1000  3:vdd#32  =   1.1000  3:vdd#33  =   1.1000 
+ +3:vdd#34  =   1.0999  3:vdd#35  =   1.0999  3:vdd#36  =   1.0999 
+ +3:vdd#37  =   1.0999  3:vdd#38  =   1.0999  3:vdd#39  =   1.0999 
+ +3:vdd#4   =   1.1000  3:vdd#40  =   1.0999  3:vdd#41  =   1.0999 
+ +3:vdd#42  =   1.0999  3:vdd#43  =   1.0999  3:vdd#44  =   1.1000 
+ +3:vdd#48  =   1.0998  3:vdd#5   =   1.0998  3:vdd#6   =   1.0998 
+ +3:vdd#7   =   1.0930  3:vdd#8   =   1.0997  3:vdd#9   =   1.0999 
+ +3:xi0/xi1/=  95.3326m 3:xi0/xi1/=  95.3326m 3:xi0/xi1/=  95.3326m
+ +3:xi0/xi1/=  95.3326m 3:xi0/xi0/=   1.0999  3:xi0/xi0/=  97.8634m
+ +3:xi0/xi0/=  95.3322m 3:xi0/xi0/=   1.0999  3:xi0/xi1/=   1.0999 
+ +3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999 
+ +3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999 
+ +3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999 
+ +3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999  3:xi0/xi1/=   1.0999 
+ +3:xi0/xi1/=   1.0999  3:xi1/d   =   1.0998  3:xi1/d#10=   1.0998 
+ +3:xi1/d#11=   1.0998  3:xi1/d#12=   1.0998  3:xi1/d#14=   1.0998 
+ +3:xi1/d#15=   1.0998  3:xi1/d#16=   1.0998  3:xi1/d#17=   1.0998 
+ +3:xi1/d#19=   1.0998  3:xi1/d#2 =   1.0998  3:xi1/d#20=   1.0998 
+ +3:xi1/d#3 =   1.0998  3:xi1/d#4 =   1.0998  3:xi1/d#5 =   1.0998 
+ +3:xi1/d#6 =   1.0998  3:xi1/d#7 =   1.0998  3:xi1/d#8 =   1.0998 
+ +3:xi1/d#9 =   1.0998  3:xi1/q   = 927.7229m 3:xi1/q#11= 927.7230m
+ +3:xi1/q#12= 927.7230m 3:xi1/q#2 = 927.7230m 3:xi1/q#3 = 927.7229m
+ +3:xi1/q#4 = 927.7230m 3:xi1/q#5 = 927.7230m 3:xi1/q#6 = 927.7230m
+ +3:xi1/q#7 = 927.7230m 3:xi1/q#8 = 927.7230m 3:xi1/q#9 = 927.7230m
+ +3:xi1/xi4/=   1.1000  3:xi1/xi4/=  47.5783u 3:xi1/xi4/=  46.1831u
+ +3:xi1/xi4/=  45.9101u 3:xi1/xi4/=  45.8903u 3:xi1/xi4/=  45.8782u
+ +3:xi1/xi4/=  45.8683u 3:xi1/xi4/=  45.8683u 3:xi1/xi4/=  45.8683u
+ +3:xi1/xi4/=  45.0639u 3:xi1/xi4/=  45.8552u 3:xi1/xi4/=  45.8660u
+ +3:xi1/xi4/=  82.8527m 3:xi1/xi4/=  23.7649u 3:xi1/xi4/= 250.5615m
+ +3:xi1/xi5/=  18.9853u 3:xi1/xi5/=  19.6459u 3:xi1/xi5/=  19.6459u
+ +3:xi1/xi5/=  20.3107u 3:xi1/xi5/=  19.6500u
+
+ ******
+ ** step 7b: ha driving 97× load - complete analysis
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ t_q_direct=   6.1302n
+ t_q_buffered=   6.1302n
+ t_sout_direct=   6.2998n
+ t_sout_buffered=   6.1659n
+ t_s1=   6.1944n
+ t_s2=   6.2032n
+ t_s3_direct=   6.3311n
+ t_s3_buffered=   6.2101n
+ delay_q_to_sout_direct_ps= 169.5747p
+ delay_q_to_sout_buffered_ps=  35.7449p
+ delay_sout_to_s3_direct_ps=  31.3767p
+ delay_sout_to_s3_buffered_ps=  44.1678p
+ delay_sout_to_s1_ps=  28.4666p
+ delay_s1_to_s2_ps=   8.7872p
+ delay_s2_to_s3_ps=   6.9140p
+ delay_q_to_s3_direct_ps= 200.9515p
+ delay_q_to_s3_buffered_ps=  79.9127p
+ delay_q_to_sout_direct_tau=  40.5681p
+ delay_q_to_sout_buffered_tau=   8.5514p
+ delay_sout_to_s3_direct_tau=   7.5064p
+ delay_sout_to_s3_buffered_tau=  10.5665p
+ delay_sout_to_s1_tau=   6.8102p
+ delay_s1_to_s2_tau=   2.1022p
+ delay_s2_to_s3_tau=   1.6541p
+ delay_q_to_s3_direct_tau=  48.0745p
+ delay_q_to_s3_buffered_tau=  19.1179p
+
+          ***** job concluded
+ ******  
+ ** step 7b: ha driving 97× load - complete analysis
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz
+ cpu MHz	: 3200.000
+ CPU(s)		: 64
+  
+ OS:
+ Linux version 4.18.0-553.16.1.el8_10.x86_64 (mockbuild@x86-64-01.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-22) (GCC)) #1 SMP Thu Aug 1 04:16:12 EDT 2024
+
+ System loadavg : 0.10 0.11 0.16 2/2440 3727669
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    64
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     828 # elements   =    2682
+  # resistors   =     476 # capacitors =    2124 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      78 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       2 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1          34
+  transient          0.26      100001         848         335 rev=        11
+  readin             0.02
+  errchk             0.01
+  setup              0.01
+  output             0.00
+
+
+           peak memory used        515.95 megabytes
+           total cpu time            0.32 seconds
+           total elapsed time        0.37 seconds
+           job started at     18:59:54 11/06/2025
+           job ended   at     18:59:55 11/06/2025
+
+>info:         ***** hspice job concluded
+           job total runtime         0.37 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.04(s)

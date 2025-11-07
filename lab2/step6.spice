@@ -44,7 +44,7 @@ xinv phi 0 VDD phi_bar INV
 
 ** Input Stimulus Sources
 vcin cin 0 DC 1.1
-vrst rst 0 pulse(0 1.1 2.1n 30p 30p 1n 10n)
+vrst rst 0 pulse(0 1.1 1970p 30p 30p 3n 10n)
 
 ************************************************************************
 ** Analysis and Measurement

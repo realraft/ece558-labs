@@ -1,0 +1,17 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "T-2022.06-3 linux64"
+* "format" "HSP"
+* "rundate" "17:58:05 11/06/2025 "
+* "netlist" "tau_measurement.sp "
+* "runtitle" "** measure tau (parasitic delay)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   0.            
++ n1 =   1.1000        
++ out =  54.6951u       
++ vdd =   1.1000        
+***   END: Saved Operating Point ***                     

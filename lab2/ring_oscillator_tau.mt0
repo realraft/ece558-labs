@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** ring oscillator tau measurement'
+ t1               t2               period           tau_ps          
+ frequency        temper           alter#          
+  9.423e-11        1.862e-10        9.201e-11        4.182e-12      
+  1.087e+10         25.0000        1               
