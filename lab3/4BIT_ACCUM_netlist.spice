@@ -1,0 +1,114 @@
+** Generated for: hspiceD
+** Generated on: Nov  7 19:05:01 2025
+** Design library name: 4BIT_ACCUM
+** Design cell name: 4BIT_ACCUM
+** Design view name: schematic
+.GLOBAL phi! b! a!
+
+
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
++    HIER_DELIM=0
+
+** Library name: components
+** Cell name: INV
+** View name: schematic
+.subckt INV a gnd vdd y
+mpm0 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a gnd gnd g45n1svt L=45e-9 W=120e-9 AD=16.8e-15 AS=16.8e-15 PD=520e-9 PS=520e-9 NRD=1.16667 NRS=1.16667 M=1
+.ends INV
+** End of subcircuit definition.
+
+** Library name: components
+** Cell name: XOR
+** View name: schematic
+.subckt XOR a b gnd vdd y
+mpm3 y a net11 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net11 b! vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm1 y a! net4 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm0 net4 b vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mnm3 net18 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm2 net15 b! gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 y a net18 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a! net15 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+xi1 b gnd vdd b! INV
+xi0 a gnd vdd a! INV
+.ends XOR
+** End of subcircuit definition.
+
+** Library name: components
+** Cell name: NAND
+** View name: schematic
+.subckt NAND a b gnd vdd y
+mpm1 y a vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm0 y b vdd vdd g45p1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 net13 b gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 y a net13 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+.ends NAND
+** End of subcircuit definition.
+
+** Library name: components
+** Cell name: AND
+** View name: schematic
+.subckt AND a b gnd vdd y
+xi0 a b gnd vdd net2 NAND
+xi2 net2 gnd vdd y INV
+.ends AND
+** End of subcircuit definition.
+
+** Library name: components
+** Cell name: HA
+** View name: schematic
+.subckt HA a b c gnd s vdd
+xi0 a b gnd vdd s XOR
+xi1 a b gnd vdd c AND
+.ends HA
+** End of subcircuit definition.
+
+** Library name: components
+** Cell name: FF
+** View name: schematic
+.subckt FF d gnd phi q vdd
+mnm2 net25 net24 gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm1 q phi net25 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm0 net24 phi! net36 gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mnm3 net36 d gnd gnd g45n1svt L=45e-9 W=240e-9 AD=33.6e-15 AS=33.6e-15 PD=760e-9 PS=760e-9 NRD=583.333e-3 NRS=583.333e-3 M=1
+mpm0 net9 d vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm2 net17 net24 vdd vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm1 net24 phi net9 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+mpm3 q phi! net17 vdd g45p1svt L=45e-9 W=480e-9 AD=67.2e-15 AS=67.2e-15 PD=1.24e-6 PS=1.24e-6 NRD=291.667e-3 NRS=291.667e-3 M=1
+xi1 phi gnd vdd phi! INV
+.ends FF
+** End of subcircuit definition.
+
+** Library name: components
+** Cell name: RST-FF
+** View name: schematic
+.subckt _sub0 gnd phi rst s sout vdd
+xi4 d gnd phi q vdd FF
+xi5 rst s gnd vdd d NAND
+xi6 q gnd vdd sout INV
+.ends _sub0
+** End of subcircuit definition.
+
+** Library name: HA_ACCUM
+** Cell name: HA_ACCUM
+** View name: schematic
+.subckt HA_ACCUM cin cout gnd phi rst sout vdd
+xi0 cin sout cout gnd net3 vdd HA
+xi1 gnd phi rst net3 sout vdd _sub0
+.ends HA_ACCUM
+** End of subcircuit definition.
+
+** Library name: 4BIT_ACCUM
+** Cell name: 4BIT_ACCUM
+** View name: schematic
+xi1 net7 net14 gnd phi rst sout1 vdd HA_ACCUM
+xi0 cin net7 gnd phi rst sout0 vdd HA_ACCUM
+xi3 net21 cout gnd phi rst sout3 vdd HA_ACCUM
+xi2 net14 net21 gnd phi rst sout2 vdd HA_ACCUM
+.END

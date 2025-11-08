@@ -1,4 +1,59 @@
 {
+    "4BIT_ACCUM_4BIT_ACCUM_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Details": {
+                "visible": true,
+                "width": 134
+            },
+            "Digits": {
+                "visible": true,
+                "width": 80
+            },
+            "Name": {
+                "visible": true,
+                "width": 134
+            },
+            "Notation": {
+                "visible": true,
+                "width": 80
+            },
+            "Plot": {
+                "visible": true,
+                "width": 134
+            },
+            "Plot Target": {
+                "visible": true,
+                "width": 134
+            },
+            "Save": {
+                "visible": true,
+                "width": 134
+            },
+            "Spec": {
+                "visible": true,
+                "width": 134
+            },
+            "Suffix": {
+                "visible": true,
+                "width": 80
+            },
+            "Type": {
+                "visible": true,
+                "width": 134
+            },
+            "Units": {
+                "visible": true,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "Formatting Properties": {
+                "visible": false
+            }
+        },
+        "outputsTestFilterMenu": null
+    },
     "HA_ACCUM_HA_ACCUM_maestro_outputs": {
         "columnOrder": null,
         "columns": {

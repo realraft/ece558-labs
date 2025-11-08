@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      oraftery
+HostName                       vlsicad.ecs.umass.edu
+ProcessIdentifier              3870519
+ProcessCreationTime_UTC        1762558154
+ProcessCreationTime_Readable   Fri Nov  7 18:29:14 2025 EST
+AppIdentifier                  /opt/cadence/ic251_hotfix/install/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Lock file for generating unique number for ICRP command and log file directories.
+FilePathUsedToEditLock         /home/ece558_658_2025/oraftery/ece558-labs/.tmp_oraftery/.unique_number_0_file
+TimeEditLocked                 Fri Nov  7 19:01:57 2025 EST
