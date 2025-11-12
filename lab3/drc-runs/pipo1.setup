@@ -1,0 +1,17 @@
+case	"preserve"
+convertDot	"node"
+convertPin	"geometry"
+hierDepth	32
+labelCase	"preserve"
+labelDepth	32
+library	"4BIT_ACCUM"
+logFile	"/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/PIPO1.LOG"
+maxVertices	2048
+pinAttNum	0
+runDir	"/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs"
+strmFile	"/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz"
+strmVersion	5
+techLib	"gpdk045"
+topCell	"4BIT_ACCUM"
+view	"layout"
+enableColoring

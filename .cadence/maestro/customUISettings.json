@@ -7,7 +7,7 @@
                 "width": 134
             },
             "Digits": {
-                "visible": true,
+                "visible": false,
                 "width": 80
             },
             "Name": {
@@ -15,7 +15,7 @@
                 "width": 134
             },
             "Notation": {
-                "visible": true,
+                "visible": false,
                 "width": 80
             },
             "Plot": {
@@ -35,7 +35,7 @@
                 "width": 134
             },
             "Suffix": {
-                "visible": true,
+                "visible": false,
                 "width": 80
             },
             "Type": {
@@ -43,7 +43,7 @@
                 "width": 134
             },
             "Units": {
-                "visible": true,
+                "visible": false,
                 "width": 80
             }
         },

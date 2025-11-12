@@ -1,0 +1,46 @@
+\# Program start time:     UTC 2025.11.08 00:11:12.700
+\# Local time: EST (UTC-05:00) 2025.11.07 19:11:12.700
+\o Program:		@(#)$CDS: Virtuoso Studio version IC25.1-64b 08/12/2025 20:24 (cpgbld31) $
+\o Hierarchy:		/opt/cadence/ic251_hotfix/install/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC25.1-64b.ISR1.30  (64-bit addresses)
+\# Command line:	/opt/cadence/ic251_hotfix/install/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost vlsicad.ecs.umass.edu -beanport 11736 -beanbinlog  -beanLogFile /home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/amps_Service3.log -mpssession virtuoso3870519 -mpshost vlsicad.ecs.umass.edu -davinciService DaVinciService_3870519_1762560117 -scopedPid 3870519 -axlSession fnxSession1 -axlServiceIdFlag 3 -uuid 7a710b32-b3f1-4e4a-a60c-45aa79b3d3c1 -heartbeat /dev/shm/swift-heartbeat.L0ioL8vh5D -log /home/ece558_658_2025/oraftery/ece558-labs/logs_oraftery/logs0/Service3.log -adeBrokerAddress vlsicad.ecs.umass.edu:44663 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D73E092148E7FC82876EB9D5D9828DF2C79A2891D9F67D0227DAAD241CD30C87766E3A12FFC06BC4D0FED05817698D54300001E01 -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	vlsicad.ecs.umass.edu (x86_64)
+\# Operating system:	Red Hat Enterprise Linux 8.10 (Ootpa)
+\# Kernel:	Linux 4.18.0-553.16.1.el8_10.x86_64 #1 SMP Thu Aug 1 04:16:12 EDT 2024
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:8867 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        798 MB
+\# Available memory:	    182,105 MB
+\# System memory:	    261,128 MB
+\# Maximum memory size:	    260,520 MB
+\# Max mem available:	    182,294 MB
+\# Initial memory used:	        190 MB
+\#        process size:	      1,802 MB
+\# Thread usage limits (effective/default):	maxthreads 1027901/1027901 maxload 64.00/64.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		oraftery
+\o Working Directory:	vlsicad.ecs.umass.edu:/home/ece558_658_2025/oraftery/ece558-labs
+\# Process Id:		3876321
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.

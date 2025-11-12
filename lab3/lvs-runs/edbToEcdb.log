@@ -1,0 +1,17 @@
+
+/opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb Output Summary
+========================================================================
+
+Delete EDB      : N
+EDB Library dir : 4BIT_ACCUM_198066.db
+ECDB dir        : ./
+Top Cell        : 4BIT_ACCUM
+CDL netlist     : /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.net
+Layer map file  : /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ecdbmap
+Text map file   : /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ports
+Dependency map  : 4BIT_ACCUM.lmap.perc
+Lvs file        : /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.lvsfile
+Float net file  : .4BIT_ACCUM.info.softchk
+threads         : 32
+debug           : 0
+Source Library  : 4BIT_ACCUM_198066
