@@ -1,8 +1,8 @@
 Device_Table 2000
-0 0 1 Sat Oct 18 15:11:14 2025
+0 0 1 Tue Nov 11 21:05:27 2025
 2
 Device Entry 0
-0 0 26 Sat Oct 18 15:11:14 2025
+0 0 26 Tue Nov 11 21:05:27 2025
 _nmos1v
 MOS
 M
@@ -30,7 +30,7 @@ scb
 scc
 fw
 Device Entry 1
-0 0 26 Sat Oct 18 15:11:14 2025
+0 0 26 Tue Nov 11 21:05:27 2025
 _pmos1v
 MOS
 M

@@ -1,8 +1,4 @@
-( ( net
-( "B!" "B!" )
-( "A!" "A!" )
- )
-( inst
+( ( inst
 ( "I0" "XI0" )
 ( "PM0" "MPM0" )
 ( "NM3" "MNM3" )

@@ -11,9 +11,6 @@ components/INV/schematic INV
 4BIT_ACCUM/4BIT_ACCUM/schematic 4BIT_ACCUM
 $endmodel
 $net
-B! B!
-PHI! PHI!
-A! A!
 $endnet
 $param
 $endparam

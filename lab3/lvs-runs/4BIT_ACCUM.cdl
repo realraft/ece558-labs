@@ -4,7 +4,7 @@
 * Library Name:  4BIT_ACCUM
 * Top Cell Name: 4BIT_ACCUM
 * View Name:     schematic
-* Netlisted on:  Nov 11 19:40:36 2025
+* Netlisted on:  Nov 11 21:20:17 2025
 ************************************************************************
 
 *.BIPOLAR
@@ -18,13 +18,7 @@
 *.MEGA
 .PARAM
 
-*.GLOBAL PHI!
-+        B!
-+        A!
 
-*.PIN PHI!
-*+    B!
-*+    A!
 
 ************************************************************************
 * Library Name: components
@@ -47,15 +41,15 @@ MNM0 Y A GND GND g45n1svt m=1 l=45n w=120n
 .SUBCKT XOR A B GND VDD Y
 *.PININFO A:I B:I GND:I VDD:I Y:O
 MPM3 Y A net11 VDD g45p1svt m=1 l=45n w=480n
-MPM2 net11 B! VDD VDD g45p1svt m=1 l=45n w=480n
-MPM1 Y A! net4 VDD g45p1svt m=1 l=45n w=480n
+MPM2 net11 BNOT VDD VDD g45p1svt m=1 l=45n w=480n
+MPM1 Y ANOT net4 VDD g45p1svt m=1 l=45n w=480n
 MPM0 net4 B VDD VDD g45p1svt m=1 l=45n w=480n
 MNM3 net18 B GND GND g45n1svt m=1 l=45n w=240n
-MNM2 net15 B! GND GND g45n1svt m=1 l=45n w=240n
+MNM2 net15 BNOT GND GND g45n1svt m=1 l=45n w=240n
 MNM1 Y A net18 GND g45n1svt m=1 l=45n w=240n
-MNM0 Y A! net15 GND g45n1svt m=1 l=45n w=240n
-XI1 B GND VDD B! / INV
-XI0 A GND VDD A! / INV
+MNM0 Y ANOT net15 GND g45n1svt m=1 l=45n w=240n
+XI1 B GND VDD BNOT / INV
+XI0 A GND VDD ANOT / INV
 .ENDS
 
 ************************************************************************
@@ -106,13 +100,13 @@ XI1 A B GND VDD C / AND
 *.PININFO D:I GND:I PHI:I VDD:I Q:O
 MNM2 net25 net24 GND GND g45n1svt m=1 l=45n w=240n
 MNM1 Q PHI net25 GND g45n1svt m=1 l=45n w=240n
-MNM0 net24 PHI! net36 GND g45n1svt m=1 l=45n w=240n
+MNM0 net24 PHINOT net36 GND g45n1svt m=1 l=45n w=240n
 MNM3 net36 D GND GND g45n1svt m=1 l=45n w=240n
 MPM0 net9 D VDD VDD g45p1svt m=1 l=45n w=480n
 MPM2 net17 net24 VDD VDD g45p1svt m=1 l=45n w=480n
 MPM1 net24 PHI net9 VDD g45p1svt m=1 l=45n w=480n
-MPM3 Q PHI! net17 VDD g45p1svt m=1 l=45n w=480n
-XI1 PHI GND VDD PHI! / INV
+MPM3 Q PHINOT net17 VDD g45p1svt m=1 l=45n w=480n
+XI1 PHI GND VDD PHINOT / INV
 .ENDS
 
 ************************************************************************
@@ -136,8 +130,8 @@ XI6 Q GND VDD SOUT / INV
 
 .SUBCKT HA_ACCUM CIN COUT GND PHI RST SOUT VDD
 *.PININFO CIN:I GND:I PHI:I RST:I VDD:I COUT:O SOUT:O
-XI0 CIN SOUT COUT GND net3 VDD / HA
-XI1 GND PHI RST net3 SOUT VDD / RST-FF
+XI0 CIN SOUT COUT GND net1 VDD / HA
+XI1 GND PHI RST net1 SOUT VDD / RST-FF
 .ENDS
 
 ************************************************************************

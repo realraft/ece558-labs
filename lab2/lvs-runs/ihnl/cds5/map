@@ -1,7 +1,4 @@
-( ( net
-( "PHI!" "PHI!" )
- )
-( inst
+( ( inst
 ( "PM0" "MPM0" )
 ( "NM3" "MNM3" )
 ( "NM2" "MNM2" )

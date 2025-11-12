@@ -4,7 +4,6 @@
   blockName "4BIT_ACCUM"
   repList "auCdl schematic"
   stopList "auCdl"
-  globalList "PHI! B! A!"
   hierDelim "."
   netlistDir "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/"
  )

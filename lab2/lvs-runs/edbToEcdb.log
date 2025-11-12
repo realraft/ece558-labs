@@ -3,7 +3,7 @@
 ========================================================================
 
 Delete EDB      : N
-EDB Library dir : HA_ACCUM_2788620.db
+EDB Library dir : HA_ACCUM_211794.db
 ECDB dir        : ./
 Top Cell        : HA_ACCUM
 CDL netlist     : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.net
@@ -14,4 +14,4 @@ Lvs file        : /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/
 Float net file  : .HA_ACCUM.info.softchk
 threads         : 32
 debug           : 0
-Source Library  : HA_ACCUM_2788620
+Source Library  : HA_ACCUM_211794

@@ -1,14 +1,11 @@
 # SVDB: Port Table (ports)
 # SVDB: Layout Primary HA_ACCUM
+PHI 3 PHI 360 15920 metal1_conn
+COUT 15 COUT 11540 3480 metal1_conn
+CIN 1 CIN 400 3480 metal1_conn
 GND 13 GND 380 280 metal1_conn
 GND 13 GND 580 12280 metal1_conn
-CIN 1 CIN 400 3480 metal1_conn
+SOUT 4 SOUT 9060 18980 metal2_conn
+RST 2 RST 480 10740 metal1_conn
 VDD 14 VDD 460 6280 metal1_conn
 VDD 14 VDD 580 18340 metal1_conn
-RST 2 RST 480 10740 metal1_conn
-COUT 15 COUT 11540 3480 metal1_conn
-PHI 3 PHI 360 15920 metal1_conn
-SOUT 4 SOUT 9060 18980 metal2_conn
-PHI! 6 PHI! 2940 15600 metal1_conn
-B! 9 B! 4760 3080 metal1_conn
-A! 10 A! 4500 2680 metal1_conn

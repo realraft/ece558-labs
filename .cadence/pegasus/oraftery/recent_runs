@@ -1,6 +1,6 @@
-1762908054 0 1762908054 "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs" "pegasusrv" "" "4BIT_ACCUM" "" "" "" "" "" "" "" "" "LVS" true
+1762914035 0 1762914035 "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs" "pegasusrv" "" "4BIT_ACCUM" "" "" "" "" "" "" "" "" "LVS" true
+1762913679 0 1762913679 "/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
+1762913140 0 1762913140 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs" "pegasusrv" "" "HA_ACCUM" "" "" "" "" "" "" "" "" "LVS" true
+1762913016 0 1762913016 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs" "pegasusrv" "" "HA_ACCUM" "" "" "" "" "" "" "" "" "DRC" true
+1762913007 0 1762913007 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs/HA_ACCUM.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
 1762908019 0 1762908019 "/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs" "pegasusrv" "" "4BIT_ACCUM" "" "" "" "" "" "" "" "" "DRC" true
-1762908010 0 1762908010 "/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
-1760814760 0 1760814760 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs" "pegasusrv" "" "HA_ACCUM" "" "" "" "" "" "" "" "" "DRC" true
-1760814750 0 1760814750 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/drc-runs/HA_ACCUM.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true
-1760814687 0 1760814687 "/home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs" "pegasusrv" "" "HA_ACCUM" "" "" "" "" "" "" "" "" "LVS" true

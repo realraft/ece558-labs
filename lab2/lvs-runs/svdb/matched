@@ -3,7 +3,7 @@
 #####                                       Pegasus LVS COMPARISON
 #####  
 #####  Version                       :   24.13-s018
-#####  NVN Run Start                 :   Sat Oct 18 15:11:18 2025
+#####  NVN Run Start                 :   Tue Nov 11 21:05:33 2025
 #####  ERC Summary File              :   HA_ACCUM.sum
 #####  Extraction Report File        :   HA_ACCUM.rep
 #####  Comparison Report File        :   HA_ACCUM.rep.cls
@@ -23,11 +23,11 @@
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   31.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
-#####  NVN Peak Memory Usage         :   269.56MB
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   269.25MB
 #####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
-#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   269.56MB
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   269.25MB
 #####  
 ##############################################################################################################
 
