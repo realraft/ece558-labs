@@ -1,0 +1,697 @@
+Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
+  -isPegasus \
+  -mode lvs \
+  -global_log_file /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasusuilvs.log \
+  -control /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasuslvsctl \
+  -df2_version IC25.1.0 \
+  -run_dir /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs \
+  -no_rules_check \
+  -qrc_data \
+  -schLibName 4BIT_ACCUM \
+  -schCellName 4BIT_ACCUM \
+  -schViewName schematic \
+  -simViewList auCdl\ schematic \
+  -simStopList auCdl \
+  -displayPinInfo \
+  -source_cdl /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl \
+  -spice /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.spi \
+  -layLibName 4BIT_ACCUM \
+  -layCellName 4BIT_ACCUM \
+  -layViewName layout \
+  -igds /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz \
+  -layScale 0.0005 \
+  -layTechLib gpdk045 \
+  -convertPin geometry \
+  -replaceBusBitChar nil \
+  -noConvertHalfWidthPath nil \
+  -flattenPcells nil \
+  -layHierDepth 32 \
+  -layMaxVertices 2048 \
+  -enableColoring yes \
+  -rulesFile /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/.technology.rul \
+  -log_dir LOGS
+
+
+
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC25.1-64b 08/12/2025 20:22 (cpgbld31) $
+          : sub-version  IC25.1-64b.ISR1.30 
+Started at: 11-Nov-2025  21:20:17
+User Name : oraftery
+Host Name : vlsicad.ecs.umass.edu
+Directory : /home/ece558_658_2025/oraftery/ece558-labs
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz' already exists. It will be overwritten.
+Loading gpdk045/libInit.il ...
+	Loading gpdk045/loadCxt.ile ... done!
+	Loading context 'gpdk045' from library 'gpdk045' ... done!
+	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+	Loading gpdk045/gpdk045_customFilter.il ... done!
+	Loading gpdk045/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 45nm PDK                       *           
+  *                        (gpdk045)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 6.0 (09-September-2019)
+
+done!
+Loaded gpdk045/libInit.il successfully!
+INFO (XSTRM-217): Reading the layer map file, /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+WARNING (XSTRM-333): The '-enableColoring' option will be ignored during XStream Out. This is because there is no color entry in the layer map and the object map file.
+INFO (XSTRM-427): Based on current hardware configuration, running XStream Out translation in multi-threaded mode with 4 threads.
+INFO (XSTRM-280): The output file will be a compressed file because the file name has extension .gz
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 4BIT_ACCUM
+strmFile                                /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz
+topCell                                 4BIT_ACCUM
+view                                    layout
+runDir                                  /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs
+logFile                                 /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/PIPO1.LOG
+techLib                                 gpdk045
+hierDepth                               32
+maxVertices                             2048
+layerMap                                /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
+userSkillFile                           /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/strmout.il
+labelDepth                              32
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_762914017240.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017241.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017242.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017243.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_762914017244.
+INFO (XSTRM-223): 6. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017245.
+INFO (XSTRM-223): 7. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_762914017246.
+INFO (XSTRM-223): 8. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_762914017247.
+INFO (XSTRM-223): 9. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762914017240.
+INFO (XSTRM-223): 10. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762914017241.
+INFO (XSTRM-223): 11. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017242.
+INFO (XSTRM-223): 12. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017243.
+INFO (XSTRM-223): 13. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017244.
+INFO (XSTRM-223): 14. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762914017245.
+INFO (XSTRM-223): 15. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017246.
+INFO (XSTRM-223): 16. Translating cellview HA_ACCUM/HA_ACCUM/layout as STRUCTURE HA_ACCUM.
+INFO (XSTRM-223): 17. Translating cellview 4BIT_ACCUM/4BIT_ACCUM/layout as STRUCTURE 4BIT_ACCUM.
+
+Summary of Objects Translated:
+	Scalar Instances:                       38
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             163
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Stitch:                                 0
+	Standard Vias                           141
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               137
+	Text:                                   19
+	TextDisplay:                            0
+	Cells:                                  17
+
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 34352KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
+
+Creation of CDL for 4BIT_ACCUM/4BIT_ACCUM/schematic is started
+ si -batch /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/ >/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/SI.OUT 2>/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/SI.LOG 
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+
+Running simulation in directory: "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/".
+
+Loading gpdk045/libInit.il ...
+	Loading gpdk045/loadCxt.ile ... done!
+	Loading context 'gpdk045' from library 'gpdk045' ... done!
+	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+	Loading gpdk045/gpdk045_customFilter.il ... done!
+	Loading gpdk045/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *                    Generic 45nm PDK                       *           
+  *                        (gpdk045)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 6.0 (09-September-2019)
+
+done!
+Loaded gpdk045/libInit.il successfully!
+Loading hnlInit.cxt 
+Running Artist Hierarchical Netlisting ...
+End netlisting Nov 11 21:20:17 2025
+
+Running simin
+
+Running runSim()...
+
+
+Running runsim with simulator: "auCdl"
+Begin simulation:    Nov 11 21:20:17 2025
+
+auCdl netlisting completed
+End simulation:      Nov 11 21:20:17 2025
+INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.
+
+Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-11-11 21:20:20 214385 vlsicad.ecs.umass.edu
+Copyright 2025 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+INFO:    Command Line Options: -lvs -top_cell 4BIT_ACCUM -log_dir LOGS -source_top_cell 4BIT_ACCUM -spice /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.spi -qrc_data -control /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasuslvsctl -ui_data -gdb_data /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/.technology.rul
+INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 45938 MB,  SwapTotal: 4095 MB,  SwapFree: 3093 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 385 MB
+INFO:    Current path: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs
+INFO:    Run directory same as current path
+INFO:    Log directory: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/LOGS
+INFO:    PVL parsing results:
+WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
+It will be accepted for this run but should be changed to a pegasusRuleSet.
+WARNING: TEXT_DEPTH at line 35 in file /ece558_658/pdk/verification/pvs/./pvlLVS.rul is skipped. It is set in control file.
+
+INFO:    See "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/LOGS/pvl.log" for additional details.
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_LVS' version 24.1
+INFO:    License checkout successful ... 2025-11-11 21:20:22
+
+INFO:    Checking out 1 license(s) of feature: 'Pegasus_16nm' version 24.1
+INFO:    License checkout successful ... 2025-11-11 21:20:22
+WARNING: Neither hcell nor -automatch option is specified.
+INFO:    Worker 0 started on host vlsicad.ecs.umass.edu with 1 cpu(s)
+         CPU: Model: , OS: 	Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 0, Physical cores: 0, Cache: 0 KB, CPU Speed: 0 MHz
+         Memory: MemTotal: 257032 MB,  MemFree: 45925 MB,  SwapTotal: 4095 MB,  SwapFree: 3093 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 385 MB
+INFO:    Extraction report file: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.rep 
+INFO:    Extracted layout netlist: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.spi 
+INFO:    Setting LAYOUT_PATH to: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz 
+INFO:    Setting LAYOUT_PRIMARY to: 4BIT_ACCUM 
+INFO:    Setting SCHEMATIC_PATH to: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl 
+INFO:    Setting SCHEMATIC_PRIMARY to: 4BIT_ACCUM 
+
+INFO:    Gdsii input summary
+         File name: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz
+         File size: 3921
+         Version: 5.0
+         Library name: 4BIT_ACCUM
+         Last modified: 2025-11-7 18:37:20
+         Last accessed: 2025-11-11 21:20:17
+         Database unit in user units: 0.0005
+         Database unit in meters: 5e-10
+         Magnification: 1 
+
+INFO:    Cell Summary:
+         ----------------------------------------------------------------------------
+             CELL                          INSTANCE    GEOMETRY      LABELS        HREF        FREF
+         ----------------------------------------------------------------------------
+         M1_PO_CDNS_762914017240                  0           3           0          21          84
+         M2_M1_CDNS_762914017241                  0           3           0          72         288
+         M2_M1_CDNS_762914017242                  0           4           0          34         136
+         M2_M1_CDNS_762914017243                  0           6           0           8          32
+         M1_PO_CDNS_762914017244                  0           3           0           1           4
+         M2_M1_CDNS_762914017245                  0           3           0           1           4
+         M1_NWELL_CDNS_762914017246               0           8           0           2           8
+         M1_PSUB_CDNS_762914017247                0           7           0           2           8
+         pmos1v_CDNS_762914017240                 0          16           0           4          16
+         pmos1v_CDNS_762914017241                 0          16           0           4          16
+         nmos1v_CDNS_762914017242                 0          14           0           5          20
+         nmos1v_CDNS_762914017243                 0          13           0           4          16
+         nmos1v_CDNS_762914017244                 0          13           0           4          16
+         pmos1v_CDNS_762914017245                 0          17           0           9          36
+         nmos1v_CDNS_762914017246                 0          16           0           4          16
+         HA_ACCUM                               175         153           9           4           4
+         4BIT_ACCUM                               4           0          10           1           1
+         ----------------------------------------------------------------------------
+         TOTAL CELL = 17;  INSTANCE = 179;  GEOMETRY = 295;  LABEL = 19
+
+INFO:    Layer Summary:
+         ----------------------------------------------------------------------------
+             LAYER                ID       HPN      HTC        FPN       FTC
+         ----------------------------------------------------------------------------
+         BJTdum                 1000         0         0         0         0
+         Bondpad                1001         0         0         0         0
+         Cap3dum                1002         0         0         0         0
+         CapMetal               1003         0         0         0         0
+         Capdum                 1004         0         0         0         0
+         Cont                   1005        32         0       592         0
+         DIOdummy               1006         0         0         0         0
+         IND2dummy              1007         0         0         0         0
+         INDdummy               1008         0         0         0         0
+         M1Resdum               1009         0         0         0         0
+         M2Resdum               1010         0         0         0         0
+         M3Resdum               1011         0         0         0         0
+         M4Resdum               1012         0         0         0         0
+         M5Resdum               1013         0         0         0         0
+         M6Resdum               1014         0         0         0         0
+         M7Resdum               1015         0         0         0         0
+         M8Resdum               1016         0         0         0         0
+         M9Resdum               1017         0         0         0         0
+         M10Resdum              1018         0         0         0         0
+         M11Resdum              1019         0         0         0         0
+         Metal1                 1020        85         0      1040         0
+         Metal2                 1021        55         0       664         0
+         Metal3                 1022         0         0         0         0
+         Metal4                 1023         0         0         0         0
+         Metal5                 1024         0         0         0         0
+         Metal6                 1025         0         0         0         0
+         Metal7                 1026         0         0         0         0
+         Metal8                 1027         0         0         0         0
+         Metal9                 1028         0         0         0         0
+         Metal10                1029         0         0         0         0
+         Metal11                1030         0         0         0         0
+         NPN2dum                1031         0         0         0         0
+         NPN5dum                1032         0         0         0         0
+         NPN10dum               1033         0         0         0         0
+         NPNdummy               1034         0         0         0         0
+         Nburied                1035         0         0         0         0
+         Nhvt                   1036         0         0         0         0
+         Nimp                   1037         9         0       144         0
+         Nlvt                   1038         0         0         0         0
+         Nwell                  1039         6         0        84         0
+         Nzvt                   1040         0         0         0         0
+         Oxide                  1041        23         0       424         0
+         Oxide_thk              1042         0         0         0         0
+         PNPdummy               1043         0         0         0         0
+         Phvt                   1044         0         0         0         0
+         Pimp                   1045         7         0       144         0
+         Plvt                   1046         0         0         0         0
+         Poly                   1047        70         0       900         0
+         Psub                   1048         0         0         0         0
+         ResWdum                1049         0         0         0         0
+         Resdum                 1050         0         0         0         0
+         SiProt                 1051         0         0         0         0
+         Via1                   1052         8         0       692         0
+         Via2                   1053         0         0         0         0
+         Via3                   1054         0         0         0         0
+         Via4                   1055         0         0         0         0
+         Via5                   1056         0         0         0         0
+         Via6                   1057         0         0         0         0
+         Via7                   1058         0         0         0         0
+         Via8                   1059         0         0         0         0
+         Via9                   1060         0         0         0         0
+         Via10                  1061         0         0         0         0
+         ind10_text             1062         0         0         0         0
+         ind11_text             1063         0         0         0         0
+         metal1_conn_text       1064         0        14         0        38
+         metal2_conn_text       1065         0         5         0         8
+         metal3_conn_text       1066         0         0         0         0
+         metal4_conn_text       1067         0         0         0         0
+         metal5_conn_text       1068         0         0         0         0
+         metal6_conn_text       1069         0         0         0         0
+         metal8_conn_text       1070         0         0         0         0
+         metal9_conn_text       1071         0         0         0         0
+         metal10_conn_text      1072         0         0         0         0
+         metal11_conn_text      1073         0         0         0         0
+         m1_label               1076         0         0         0         0
+         m2_label               1077         0         0         0         0
+         m3_label               1078         0         0         0         0
+         m4_label               1079         0         0         0         0
+         m5_label               1080         0         0         0         0
+         m6_label               1081         0         0         0         0
+         m7_label               1082         0         0         0         0
+         m8_label               1083         0         0         0         0
+         m9_label               1084         0         0         0         0
+         m10_label              1085         0         0         0         0
+         m11_label              1086         0         0         0         0
+         m1_pin                 1087         0         0         0         0
+         m2_pin                 1088         0         0         0         0
+         m3_pin                 1089         0         0         0         0
+         m4_pin                 1090         0         0         0         0
+         m5_pin                 1091         0         0         0         0
+         m6_pin                 1092         0         0         0         0
+         m7_pin                 1093         0         0         0         0
+         m8_pin                 1094         0         0         0         0
+         m9_pin                 1095         0         0         0         0
+         m10_pin                1096         0         0         0         0
+         m11_pin                1097         0         0         0         0
+         text                   1098         0         0         0         0
+         ----------------------------------------------------------------------------
+
+INFO:    CHIP EXTENT: 0 100 48000 19080
+
+
+INFO:    Ports ...
+         ========================================================================
+
+INFO:    Texts For Connectivity ...
+         ========================================================================
+         VDD (1.150, 9.200) 1064 4BIT_ACCUM
+         RST (0.550, 5.400) 1064 4BIT_ACCUM
+         PHI (0.450, 8.000) 1064 4BIT_ACCUM
+         GND (1.750, 0.200) 1064 4BIT_ACCUM
+         COUT (23.300, 1.750) 1064 4BIT_ACCUM
+         CIN (0.500, 1.750) 1064 4BIT_ACCUM
+         SOUT3 (22.500, 9.400) 1065 4BIT_ACCUM
+         SOUT2 (16.550, 9.400) 1065 4BIT_ACCUM
+         SOUT1 (10.500, 9.400) 1065 4BIT_ACCUM
+         SOUT0 (4.550, 9.400) 1065 4BIT_ACCUM
+         VDD (0.290, 9.170) 1064 HA_ACCUM
+         VDD (0.230, 3.140) 1064 HA_ACCUM
+         RST (0.240, 5.370) 1064 HA_ACCUM
+         PHI (0.180, 7.960) 1064 HA_ACCUM
+         GND (0.290, 6.140) 1064 HA_ACCUM
+         GND (0.190, 0.140) 1064 HA_ACCUM
+         COUT (5.770, 1.740) 1064 HA_ACCUM
+         CIN (0.200, 1.740) 1064 HA_ACCUM
+         SOUT (4.530, 9.490) 1065 HA_ACCUM
+
+INFO:    Texts For SELECT -LABEL ...
+         ========================================================================
+
+INFO:    Texts For EXPAND_TEXT_ORIGIN ...
+         ========================================================================
+
+INFO:    Texts For DFM_TEXT ...
+         ========================================================================
+
+INFO:    Texts For Device Text Model Layer ...
+         ========================================================================
+
+INFO:    Texts For Device Text Property Layer ...
+         ========================================================================
+
+INFO:    Layer Summary(Texts For Connectivity):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         metal1_conn_text       1064        14
+         metal2_conn_text       1065         5
+         ----------------------------------------------------------------------------
+
+INFO:    Layer Summary(Texts For SELECT -LABEL):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         ----------------------------------------------------------------------------
+
+INFO:    Layer Summary(Texts For EXPAND_TEXT_ORIGIN):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         ----------------------------------------------------------------------------
+
+INFO:    Layer Summary(Texts For DFM_TEXT):
+         ----------------------------------------------------------------------------
+             LAYER                ID       TEXTS
+         ----------------------------------------------------------------------------
+         ----------------------------------------------------------------------------
+
+INFO:    Expanded Cell Summary
+         M1_PO_CDNS_762914017244 is expanded.
+         M2_M1_CDNS_762914017245 is expanded.
+INFO:    Status: Runset 100% complete as of 2025-11-11 21:20:23   Elapsed: 00:00:01
+         Worker: Active CPUs  Total Mem(MB)  Active Mem(MB)  CPU time(s)
+              0:    1 /   1             30              22            1
+INFO:	 Status: Finishing as of 2025-11-11 21:20:23   Elapsed: 00:00:01   CPU time[s]: 1
+INFO:    Resource usage by worker at exit:
+                  CPU      Elapsed  CPUs       CPU       Peak        Peak engine
+         Worker:  time[s]  time[s]  Allocated  usage[%]  Memory[MB]  Memory[MB]
+              0:        1        1          1     88.69          30           22
+         Worker resource usage  summary: Total CPU[s]: 1  Run duration[s]: 1  Max peak memory[MB]: 30
+         Worker CPU utilization summary: 1 of 1 available CPU seconds (100.00%) with 1 average available CPU(s)
+INFO:    Extraction result: CLEAN (Reporter)
+INFO:    Generating ERC summary in /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.sum
+INFO:    All selected rules completed
+         Total CPU Time                    : 1(s)
+         Total Real Time                   : 1(s)
+         Total Original Geometry           : 295(4684)
+         Total ERC RuleChecks              : 0
+         Total ERC Results                 : 0 (0)
+INFO:    Pegasus extracted connectivity database creation started
+INFO:    CmdLine: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb -kf -edb 4BIT_ACCUM_214385.db -ecdb ./ -topcell 4BIT_ACCUM -netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.net -layermap /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ecdbmap -textmap /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ports -dependmap 4BIT_ACCUM.lmap.perc -kvp ifs:Hz -lvsfile /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.lvsfile -saveFloatingNets .4BIT_ACCUM.info.softchk 
+INFO:    Opening layer file '4BIT_ACCUM_214385.db/__layer'...
+INFO:    Loading layer map file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ecdbmap'...
+INFO:    Loading text map file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ports'...
+INFO:    Loading dependency map file '4BIT_ACCUM.lmap.perc'...
+INFO:    Pre loading edb directory contents...
+INFO:    ECDB file name './/.4BIT_ACCUM.ecdb'...
+INFO:    Loading lvs file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.lvsfile'...
+INFO:    Writing db header information...(0s)
+INFO:    Transfering cdl structures to ecdb structures...
+INFO:    Read Netlist (32 threads)...
+INFO:      DONE - (2s)
+INFO:    Process (32 threads)...
+INFO:    Cell(       5):   6% Done...(2s), M1_PSUB_CDNS_762914017247               
+INFO:    Cell(       0):  13% Done...(2s), M1_PO_CDNS_762914017240                 
+INFO:    Cell(       2):  20% Done...(2s), M2_M1_CDNS_762914017242                 
+INFO:    Cell(       3):  26% Done...(2s), M2_M1_CDNS_762914017243                 
+INFO:    Cell(       1):  33% Done...(2s), M2_M1_CDNS_762914017241                 
+INFO:    Cell(       9):  40% Done...(2s), nmos1v_CDNS_762914017243                
+INFO:    Cell(      12):  46% Done...(2s), nmos1v_CDNS_762914017246                
+INFO:    Cell(       6):  53% Done...(2s), pmos1v_CDNS_762914017240                
+INFO:    Cell(       8):  60% Done...(2s), nmos1v_CDNS_762914017242                
+INFO:    Cell(      14):  66% Done...(2s), 4BIT_ACCUM                              
+INFO:    Cell(       4):  73% Done...(2s), M1_NWELL_CDNS_762914017246              
+INFO:    Cell(      10):  80% Done...(2s), nmos1v_CDNS_762914017244                
+INFO:    Cell(      11):  86% Done...(2s), pmos1v_CDNS_762914017245                
+INFO:    Cell(       7):  93% Done...(2s), pmos1v_CDNS_762914017241                
+INFO:    Cell(      13): 100% Done...(2s), HA_ACCUM                                
+INFO:      DONE - (0s)
+INFO:    Cells creation time: (2s)
+INFO:    Write netlist items...         (2s)
+INFO:    Saving name table to db...
+INFO:    Save device templates to the db...
+INFO:    Save connect rules to the db...
+INFO:    Write calculated header information to the top of file...
+INFO:    Erasing cdl subckts...          (0s)
+
+INFO:    edbToEcdb Header Information:
+  ECDB file version   : 38
+  DevTmpl offset      : 32142
+  Connect offset      : 32242
+  NameTable offset    : 27077
+  Layer Map offset    : 167
+  Cell Start offset   : 26027
+  Cell End offset     : 27077
+  Aux Data offset     : 32546
+  Labels     offset   : 0
+  Layer RW   offset   : 0
+  NVP                 : ifs:0.01 
+  Scale               : 8000
+  GDS Scale           : 2000
+  File size (static)  : 39503
+  File size (dynamic) : 0
+  Cell count          : 15
+  ECDB create time    : 2
+  EDB info            : 10
+  Top Cell            : 4BIT_ACCUM
+  EDB info (Trans)    : WRITTEN_64 W_NOT_NET_ORDER 
+
+INFO:    edbToEcdb Sizes written to disk (MB):
+  NameTbl             :     0.005065
+  Layers              :     0.003558
+  Shapes              :     0.006486
+  XYTree              :     0.004994
+  LookUpTbls          :     0.001236
+  Cells               :     0.001155
+  Insts               :     0.004122
+  Ports               :     0.003468
+  Nets                :     0.001144
+  Pins                :     0.000219
+  Labels              :     0.000532
+  DevTmpl             :     0.000100
+  Connect             :     0.000300
+  Header              :     0.000167
+  AuxData             :     0.006955
+  NvnLabels           :     0.000002
+---------------------------------
+  Total               :     0.039503
+
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 2 Peak memory(MB): 1130.95
+INFO:    Pegasus extracted connectivity database creation completed. 2025-11-11 21:20:25
+
+
+INFO:    Creating annotated GDS ...
+INFO:    Library name: 4BIT_ACCUM_214385
+INFO:    GDSII file name: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.agf
+INFO:    Cells to be written out: 4BIT_ACCUM
+INFO:    Source Library: 4BIT_ACCUM_214385
+INFO:    Status: Task in progress ...
+INFO:    Pegasus creating annotated GDS completed. 2025-11-11 21:20:23
+INFO:    Pegasus REPORTDB creation started...
+INFO:    Processing file 4BIT_ACCUM.rep
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 0.00
+INFO:    Pegasus REPORTDB creation completed. 2025-11-11 21:20:26
+
+
+INFO:    Comparing netlists ...
+INFO:    Setup VLDB (0s)
+INFO:    Init sch rules (0s)
+INFO:    Init lay rules (0s)
+INFO:    Init structures (0s)
+INFO:    Set cells to delete (0s)
+INFO:    Check expand on pin error (0s)
+INFO:    Reading schematic network
+INFO:     inputting cdl netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl...
+WARNING (NVN-13002): *.BIPOLAR is not supported.
+WARNING (NVN-13002): *.RESI is not supported.
+WARNING (NVN-13002): *.RESVAL is not supported.
+WARNING (NVN-13002): *.CAPVAL is not supported.
+WARNING (NVN-13002): *.DIOPERI is not supported.
+WARNING (NVN-13002): *.DIOAREA is not supported.
+WARNING (NVN-13002): *.EQUATION is not supported.
+WARNING (NVN-13003): "*.SCALE" is not supported. Use ".OPTION SCALE" instead or specify  'lvs_cdn_flow_options -cdl_use_scale' in the rule file.
+INFO:     finished loading cdl netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl (0s)
+INFO:     commit cdl netlist(s)...
+INFO:     finished committing cdl netlists (0s)
+INFO:    Post sch netlist rule processing (0s)
+INFO:    Reading layout network
+INFO:     inputting (fast parser) cdl netlist  /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.net...
+INFO:     finished loading cdl netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.net (0s)
+INFO:     commit cdl netlist(s)...
+INFO:     finished committing cdl netlists (0s)
+INFO:    Post lay netlist rule processing (0s)
+INFO:    Processing blackBox rules (0s)
+INFO:    Processing bindings (0s)
+WARNING (NVN-15140): Cell 'pll_vco_indsym1p3' used in rule 'lvs_black_box' cannot be found in the layout. 
+Skipping this rule.
+WARNING (NVN-15140): Cell 'pll_vco_indsym1p3' used in rule 'lvs_black_box' cannot be found in the schematic. 
+Skipping this rule.
+INFO:    Commit sch verilog netlist (0s)
+INFO:    Commit lay verilog netlist (0s)
+INFO:    Erase netlist data (0s)
+INFO:    Set blackbox cells (0s)
+INFO:    Sch put cells in memory (0s)
+INFO:    Sch update netlist rules (0s)
+INFO:    Sch set devices to delete (0s)
+INFO:    Sch adjust device pins (0s)
+INFO:    Sch calc hier order (0s)
+INFO:    Sch process inherited connections (0s)
+INFO:    Sch generate qrc files (0s)
+INFO:    Sch handle global pins (0s)
+INFO:    Sch apply rule actions with processed netlist (0s)
+INFO:    Sch process cell supply (0s)
+INFO:    Lay put cells in memory (0s)
+INFO:    Lay update netlist rules (0s)
+INFO:    Lay set devices to delete (0s)
+INFO:    Lay calc hier order (0s)
+INFO:    Lay process inherited connections (0s)
+INFO:    Lay generate qrc files (0s)
+INFO:    Lay handle global pins (0s)
+INFO:    Lay apply rule actions with processed netlist (0s)
+INFO:    Lay process cell supply (0s)
+INFO:    Check if interposer flow (0s)
+INFO:    Check binding file (0s)
+INFO:    Set topcell global pin indicator (0s)
+INFO:    Calculate preserve parameterized cells (0s)
+INFO:    Check generic device bindings (0s)
+INFO:    Calculate primitive device bindings (0s)
+INFO:    Remove unused device parameters (0s)
+INFO:    Set instances to flatten inside cells (0s)
+INFO:    Calculate parameters (0s)
+INFO:    Start sch normalization (0s)
+INFO:    Start lay normalization (0s)
+INFO:    Calculate primitive device bindings (2nd time) (0s)
+INFO:    Finalize binding (0s)
+INFO:    Sch join nets (0s)
+INFO:    Sch setup hier normalization (0s)
+INFO:    Sch remove feedthroughs and black box cell instances (0s)
+INFO:    Sch remove identical pins (0s)
+INFO:    Sch calc connection counts (0s)
+INFO:    Run genHierCells (0s)
+INFO:    Reset normalization flags (0s)
+INFO:    Lay join nets (0s)
+INFO:    Lay setup hier normalization (0s)
+INFO:    Lay remove feedthroughs and black box cell instances (0s)
+INFO:    Lay remove identical pins (0s)
+INFO:    Lay calc connection counts (0s)
+INFO:    Normalize sch (0s)
+INFO:    Read in color file (0s)
+INFO:    Set scale factor per cell (0s)
+INFO:    Setup property init rules (0s)
+INFO:    Write sch vldb file (0s)
+INFO:    Write lay vldb file (0s)
+INFO:    Apply preserve parameterized cells (0s)
+INFO:    Cleanup after VLDB processing (0s)
+WARNING (NVN-15002): Rule 'lvs_recognize_gates -all' was set, but either
+           the power net or the ground net (or both) was missing as follows.
+               schematic power
+               schematic ground
+               layout power
+               layout ground
+           Rule 'lvs_recognize_gates -all' requires both power and ground nets to operate.
+           These can be identified using rules 'lvs_power_name' and 'lvs_ground_name'.
+           Resetting rule to 'lvs_recognize_gates -simple'
+INFO (NVN-10007): Found ecdb file .4BIT_ACCUM.ecdb, will use during comparison.
+
+INFO:    Cell comparison output format:
+            <Comparing|Top Cell> <Layout Cell> vs <Schematic Cell>
+               <Layout instances> insts vs <Schematic instances> insts  (<Time>)-<Status>
+
+         Top Cell  4BIT_ACCUM vs 4BIT_ACCUM
+            96 insts vs 96 insts . . . . . . . . . . . . . . . . . . . . . . . (0s)-match
+
+INFO:    Generating the LVS report...
+           Report Init (0s)
+           Load common queries (0s)
+           Create report (0s)
+           Cleanup (0s)
+INFO:    Report finished
+
+INFO:    Extraction Run Summary
+         Total CPU Time        : 1(s)
+         Total Real Time       : 1(s)
+         Peak Memory Used      : 31.00(M)
+
+
+INFO:    NVN Run Summary
+         Total CPU Time        : 0(s)
+         Total Real Time       : 0(s)
+         Peak Memory Used      : 271.31(M)
+
+
+INFO:    LVS Summary
+         Total CPU Time        : 1(s)
+         Total Real Time       : 1(s)
+         Peak Memory Used      : 271.31(M)
+
+    ########################################################
+    #                                                      #
+    # Run Result             : MATCH                       #
+    #                                                      #
+    # Run Summary            : [INFO]  ERC Results: Empty  #
+    #                        : [INFO]  Extraction Clean    #
+    #                                                      #
+    # ERC Summary File       : 4BIT_ACCUM.sum              #
+    # Extraction Report File : 4BIT_ACCUM.rep              #
+    # Comparison Report File : 4BIT_ACCUM.rep.cls          #
+    #                                                      #
+    ########################################################
+
+
+INFO:    Creating cross reference database ...
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 91.90
+INFO:    Checking in all SoftShare licenses.
+INFO:    Creating cross reference database completed. Tue Nov 11 21:20:26 2025
+
+
+Pegasus finished normally. 2025-11-11 21:20:26
+
+

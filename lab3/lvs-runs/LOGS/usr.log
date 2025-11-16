@@ -1,0 +1,10 @@
+Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-11-11 21:20:20 214385 vlsicad.ecs.umass.edu
+Copyright 2025 Cadence Design Systems, Inc.
+All rights reserved worldwide.
+
+INFO:    Command Line Options: -lvs -top_cell 4BIT_ACCUM -log_dir LOGS -source_top_cell 4BIT_ACCUM -spice /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.spi -qrc_data -control /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasuslvsctl -ui_data -gdb_data /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/.technology.rul
+INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 45938 MB,  SwapTotal: 4095 MB,  SwapFree: 3093 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 385 MB
+INFO:    Current path: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs
+INFO:    Run directory same as current path
+INFO:    Log directory: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/LOGS

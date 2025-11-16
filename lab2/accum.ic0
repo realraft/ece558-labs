@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "T-2022.06-3 linux64"
 * "format" "HSP"
-* "rundate" "15:31:03 10/19/2025 "
+* "rundate" "10:42:14 11/16/2025 "
 * "netlist" "accum.spice "
 * "runtitle" "** half-adder accumulator testbench"
 * time =  0.000e+00       

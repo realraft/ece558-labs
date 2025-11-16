@@ -3,7 +3,7 @@
 #####                                       Pegasus LVS COMPARISON
 #####  
 #####  Version                       :   24.13-s018
-#####  NVN Run Start                 :   Sat Oct 18 15:11:18 2025
+#####  NVN Run Start                 :   Tue Nov 11 21:05:33 2025
 #####  ERC Summary File              :   HA_ACCUM.sum
 #####  Extraction Report File        :   HA_ACCUM.rep
 #####  Comparison Report File        :   HA_ACCUM.rep.cls
@@ -23,11 +23,11 @@
 #####  Extraction Exec Time          :   0h 0m 1s - (1s)
 #####  Extraction Peak Memory Usage  :   31.00MB
 #####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
-#####  NVN Exec Time                 :   0h 0m 0s - (0s)                 
-#####  NVN Peak Memory Usage         :   269.56MB
+#####  NVN Exec Time                 :   0h 0m 1s - (1s)                 
+#####  NVN Peak Memory Usage         :   269.25MB
 #####  LVS Total CPU Time            :   0h 0m 1s - (1s)                 
-#####  LVS Total Exec Time           :   0h 0m 1s - (1s)                 
-#####  LVS Total Peak Memory Usage   :   269.56MB
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   269.25MB
 #####  
 ##############################################################################################################
 
@@ -64,7 +64,7 @@ Cells that have been blackboxed              |         0
              |     Initial Pins     |     Compare Pins     |            | 
 Cell         |   lay    :    sch    |   lay    :    sch    | Status     | Detail
 -------------+----------+-----------+----------+-----------+------------+-----------
-HA_ACCUM     |      *10 :         7 |       10 :        10 | match      | 
+HA_ACCUM     |        7 :         7 |        7 :         7 | match      | 
 
 
 ##############################################################################################################
@@ -295,8 +295,8 @@ M [4 pins]       |         :         |         :
 -----------------+---------+---------+---------+--------
 Total            |      34 :      34 |      24 :      24
 =================+=========+=========+=========+========
-Pins             |         :         |      10 :      10
-Nets             |         :         |       5 :       5
+Pins             |         :         |       7 :       7
+Nets             |         :         |       8 :       8
 =================+=========+=========+=========+========
 
 +===[HA_ACCUM]================================================================================================
@@ -304,8 +304,8 @@ Nets             |         :         |       5 :       5
 +=============================================================================================================
 
 Type     | Name
----------+---------------------------------------------
-Pin      | A! B! CIN COUT GND PHI PHI! RST SOUT VDD
+---------+----------------------------------
+Pin      | CIN COUT GND PHI RST SOUT VDD
 
 
 ##############################################################################################################

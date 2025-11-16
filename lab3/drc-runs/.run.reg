@@ -1,0 +1,69 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"Run Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs
+"Current Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs
+"Cadence Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/.cadence/
+"Job Signature" internal none IPVS_1762913653_209939
+"Pegasus Job Mode" internal none drc
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/.preset.autosave
+"Technology Name" internal none "gpdk045"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /ece558_658/pdk/verification/pvtech.lib
+"Technology Rule File" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/.technology.rul
+"Pegasus Version" internal none 24.13-s018
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Wed Jun 18 15:36:24 PDT 2025"
+"Pegasus Job Time" internal none 1762913658
+"DFII version" internal none IC25.1.0
+"Run Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs
+"Pegasus Job Mode" internal none drc
+"Rule File" input text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/.technology.rul
+"Cell Tree" output text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/cell_tree.txt
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none gpdk045
+"Layout Library Name" internal none 4BIT_ACCUM
+"Layout Cell Name" internal none 4BIT_ACCUM
+"Layout View Name" internal none layout
+"Layout ConvertPin" internal text geometry
+"Layout HierDepth" internal none 32
+"Layout MaxVertices" internal none 2048
+"Layout Top Cell" internal none 4BIT_ACCUM
+"Layout GDSII" input none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz
+"Intermediate GDSII File" output none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz
+"Intermediate GDSII File creation Errors" internal text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/PIPO1.LOG
+"Intermediate OASIS File creation Errors" internal text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/PIPO1.LOG
+"Enable Coloring" input none yes
+"Layout ReplaceBusBitChar" input none nil
+"Layout NoConvertHalfWidthPath" input none nil
+"Layout FlattenPCells" input none nil
+"Job Signature" internal none IPVS_1762913653_209939
+"Do not check rules files before run" internal none ENABLED
+"Control File" input text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/pegasusdrcctl
+"Pegasus Job Log" log text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/pegasusuidrc.log
+"It is Pegasus flow" internal none ENABLED
+"Pegasus Log Dir" internal none LOGS
+"PIPO Setup File I" internal text  /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/pipo1.setup
+"PIPO Log I" log text  /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/PIPO1.LOG
+"PIPO Output I" internal text  /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/PIPO1.OUT
+"Input Layout" input none OA: 4BIT_ACCUM 4BIT_ACCUM layout
+"Output Layout Cellmap I" internal text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/lay_cellMap.txt
+"Pegasus Version" internal none 24.13-s018
+"Binary Name" internal none pegasusvirt
+"Pegasus Build Date" internal none "Wed Jun 18 15:36:24 PDT 2025"
+"Pegasus Job Time" internal none 1762913659
+"ASCII DRC Report Database" output rdb /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.drc_errors.ascii
+"DRC Summary" output text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.sum
+"Layout GDSII" input none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz
+"Layout Top Cell" internal none 4BIT_ACCUM
+"Pegasus Job Mode" internal none drc
+"Report MaxResults" internal none 1000
+"Rule File" input text /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/.technology.rul
+"Run Directory" internal none /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/
+"Pegasus Mode Info" internal none BCLCGGNODPMICPMLCHKNECIMFDAGFDMN
+"Pegasus Version" internal none 24.13-s018
+"Binary Name" internal none pegasus
+"Pegasus Build Date" internal none "Wed Jun 18 22:37:46 EDT 2025"
+"Pegasus Job Time" internal none 1762913679

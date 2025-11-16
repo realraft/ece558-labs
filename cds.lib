@@ -7,3 +7,4 @@ DEFINE avTech /opt/cadence/assura/tools.lnx86/assura/etc/avtech/avTech
 # DEFINE INV_X1 ./INV_X1
 DEFINE components ~/ece558-labs/components
 DEFINE HA_ACCUM ~/ece558-labs/lab2/HA_ACCUM
+DEFINE 4BIT_ACCUM ~/ece558-labs/lab3/4BIT_ACCUM

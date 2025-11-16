@@ -10,9 +10,6 @@ components/NAND/schematic NAND
 components/INV/schematic INV
 $endmodel
 $net
-B! B!
-PHI! PHI!
-A! A!
 $endnet
 $param
 $endparam

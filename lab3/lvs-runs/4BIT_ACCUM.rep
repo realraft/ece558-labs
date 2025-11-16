@@ -1,0 +1,28 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : 4BIT_ACCUM.rep
+ERC Summary File         : /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.sum
+LVS Comparison Report    : 4BIT_ACCUM.rep.cls
+LVS Softchk Report       : 4BIT_ACCUM.softchk
+Layout Name              : /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz ("4BIT_ACCUM")
+User Name                : oraftery
+Creation Time            : Tue Nov 11 21:20:22 2025
+Current directory        : /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs
+Pegasus Version          : 24.13-s018 Wed Jun 18 15:36:24 PDT 2025
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+    LVS_SOFTCHK psubstrate -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK nwell_conn -TYPE CONTACT   Total Result        0 (       0)
+    LVS_SOFTCHK Nburied -TYPE CONTACT   Total Result        0 (       0)

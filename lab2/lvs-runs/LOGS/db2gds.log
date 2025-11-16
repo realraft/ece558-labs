@@ -7,16 +7,16 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 3.10.0-693.el7.x86_64
 Executed on:     vlsicad.ecs.umass.edu (Linux x86_64 4.18.0-553.16.1.el8_10.x86_64)
-Process Id:      2788771
-Starting Time:   Sat Oct 18 15:11:15 2025 (Sat Oct 18 19:11:15 2025 GMT)
-With parameters: HA_ACCUM_2788620 /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.agf HA_ACCUM -lmap lmapolhLHE -netmap /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.lnn -property_nqrc -gds_scale 2000 -vircolon 
+Process Id:      211942
+Starting Time:   Tue Nov 11 21:05:28 2025 (Wed Nov 12 02:05:28 2025 GMT)
+With parameters: HA_ACCUM_211794 /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.agf HA_ACCUM -lmap lmapdDhkyc -netmap /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.lnn -property_nqrc -gds_scale 2000 -vircolon 
 ********************************************************************************
 
-Library name: HA_ACCUM_2788620
+Library name: HA_ACCUM_211794
 GDSII file name: /home/ece558_658_2025/oraftery/ece558-labs/lab2/lvs-runs/svdb/HA_ACCUM.agf
 Cells to be written out: HA_ACCUM
-Source Library: HA_ACCUM_2788620
-Layer mapping file(GDS <- DMC): lmapolhLHE
+Source Library: HA_ACCUM_211794
+Layer mapping file(GDS <- DMC): lmapdDhkyc
     23 (dt:0 tt:0) <- 23
     24 (dt:0 tt:0) <- 24
     55 (dt:0 tt:0) <- 55
@@ -127,19 +127,19 @@ Option: output object property for new qrc flow
 Cell Name         Box  Polygon     Path   Label Instance Array    Total
 ----------------------------------------------------------------------
 HA_ACCUM          147        4        0       0   173      0       324
-M1_PO_CDNS_760814668500        3        0        0       0     0      0         3
-M2_M1_CDNS_760814668501        3        0        0       0     0      0         3
-M2_M1_CDNS_760814668502        4        0        0       0     0      0         4
-M2_M1_CDNS_760814668503        6        0        0       0     0      0         6
-M1_NWELL_CDNS_760814668506        8        0        0       0     0      0         8
-M1_PSUB_CDNS_760814668507        7        0        0       0     0      0         7
-pmos1v_CDNS_760814668500       10        0        0       0     0      0        10
-pmos1v_CDNS_760814668501       10        0        0       0     0      0        10
-nmos1v_CDNS_760814668502        8        0        0       0     0      0         8
-nmos1v_CDNS_760814668503        7        0        0       0     0      0         7
-nmos1v_CDNS_760814668504        7        0        0       0     0      0         7
-pmos1v_CDNS_760814668505       11        0        0       0     0      0        11
-nmos1v_CDNS_760814668506       10        0        0       0     0      0        10
+M1_PO_CDNS_762913122000        3        0        0       0     0      0         3
+M2_M1_CDNS_762913122001        3        0        0       0     0      0         3
+M2_M1_CDNS_762913122002        4        0        0       0     0      0         4
+M2_M1_CDNS_762913122003        6        0        0       0     0      0         6
+M1_NWELL_CDNS_762913122006        8        0        0       0     0      0         8
+M1_PSUB_CDNS_762913122007        7        0        0       0     0      0         7
+pmos1v_CDNS_762913122000       10        0        0       0     0      0        10
+pmos1v_CDNS_762913122001       10        0        0       0     0      0        10
+nmos1v_CDNS_762913122002        8        0        0       0     0      0         8
+nmos1v_CDNS_762913122003        7        0        0       0     0      0         7
+nmos1v_CDNS_762913122004        7        0        0       0     0      0         7
+pmos1v_CDNS_762913122005       11        0        0       0     0      0        11
+nmos1v_CDNS_762913122006       10        0        0       0     0      0        10
 ----------------------------------------------------------------------
 
 Object Statistics of Layers
