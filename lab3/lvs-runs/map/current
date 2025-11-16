@@ -1,11 +1,11 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "4BIT_ACCUM"
+  blockName "BIT_ACCUM"
   repList "auCdl schematic"
   stopList "auCdl"
   hierDelim "."
-  netlistDir "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/"
+  netlistDir "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/"
  )
 ( model
 ( "components/XOR/schematic" "XOR" )
@@ -14,15 +14,15 @@
 ( "components/FF/schematic" "FF" )
 ( "components/AND/schematic" "AND" )
 ( "components/INV/schematic" "INV" )
-( "4BIT_ACCUM/4BIT_ACCUM/schematic" "4BIT_ACCUM" )
+( "BIT_ACCUM/BIT_ACCUM/schematic" "BIT_ACCUM" )
 ( "components/NAND/schematic" "NAND" )
 ( "components/HA/schematic" "HA" )
  )
 ( "HA_ACCUM" "ihnl/cds7/map" )
 ( "XOR" "ihnl/cds1/map" )
+( "BIT_ACCUM" "ihnl/cds8/map" )
 ( "HA" "ihnl/cds4/map" )
 ( "AND" "ihnl/cds3/map" )
-( "4BIT_ACCUM" "ihnl/cds8/map" )
 ( "FF" "ihnl/cds5/map" )
 ( "RST-FF" "ihnl/cds6/map" )
 ( "INV" "ihnl/cds0/map" )

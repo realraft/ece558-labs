@@ -1,0 +1,8 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** 4-bit accumulator post-layout simulation with parasitics'
+ sout0_2ns        sout0_4ns        sout1_6ns        cout_8ns        
+ tpd_clk_sout0    trise_sout0      tfall_sout0      avg_power       
+ peak_current     temper           alter#          
+  4.709e-05        1.100e+00        1.100e+00        5.728e-05      
+  7.825e-11        1.199e-10        1.660e-10        4.096e-05      
+  1.307e-04        2.500e+01       1               

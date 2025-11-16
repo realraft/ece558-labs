@@ -11,7 +11,7 @@ ENV VAR: PEGASUS_LVS_DEVICE_DFM_LIBRARY = /opt/cadence/pegasus/tools.lnx86/pegas
 
 
 ########################################################################
-Parsing Control File /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasuslvsctl ...
+Parsing Control File /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/pegasuslvsctl ...
 ########################################################################
 TEXT_DEPTH -primary;
 VIRTUAL_CONNECT -colon no;
@@ -25,22 +25,22 @@ LVS_ABORT -softchk no;
 LVS_ABORT -supply_error no;
 LVS_FIND_SHORTS no;
 SCONNECT_UPPER_SHAPE_COUNT no;
-LVS_REPORT_FILE "4BIT_ACCUM.rep";
+LVS_REPORT_FILE "BIT_ACCUM.rep";
 LVS_REPORT_MAX 50 -mismatched_net_limit 100;
 LVS_RUN_ERC_CHECKS yes;
 LVS_REPORT_OPT -none;
-REPORT_SUMMARY -erc "4BIT_ACCUM.sum" -replace;
+REPORT_SUMMARY -erc "BIT_ACCUM.sum" -replace;
 MAX_RESULTS -erc 1000;
-RESULTS_DB -erc "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.erc_errors.ascii" -ascii;
-MASK_SVDB_DIR /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb;
+RESULTS_DB -erc "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.erc_errors.ascii" -ascii;
+MASK_SVDB_DIR /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb;
 SCHEMATIC_FORMAT cdl;
-SCHEMATIC_PATH "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl";
+SCHEMATIC_PATH "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.cdl";
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz";
+LAYOUT_PATH "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.gds.gz";
 
 ########################################################################
-Parsing Rule File /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/.technology.rul ...
+Parsing Rule File /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/.technology.rul ...
 ########################################################################
 TECHNOLOGY gpdk045 -ruleSet default -techLib /ece558_658/pdk/verification/pvtech.lib;
 WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
@@ -3104,6 +3104,6 @@ operation group: 236/236
 Completed execution after parsing the rules, as requested by the "-p" flag or "-get_rules" flag 
 
 
-Netlist extraction finished normally. Tue Nov 11 21:20:22 2025
+Netlist extraction finished normally. Sun Nov 16 18:12:28 2025
 
 

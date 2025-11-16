@@ -2,10 +2,10 @@ radix 11
 io ii
 vname rst cin
 tunit ps
-trise 30
-tfall 30
+trise 50
+tfall 50
 period 2000
-idelay 200
+idelay 90
 vih 1.1
 vil 0
 0 0

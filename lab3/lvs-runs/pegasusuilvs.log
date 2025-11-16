@@ -1,24 +1,24 @@
 Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
   -isPegasus \
   -mode lvs \
-  -global_log_file /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasusuilvs.log \
-  -control /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasuslvsctl \
+  -global_log_file /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/pegasusuilvs.log \
+  -control /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/pegasuslvsctl \
   -df2_version IC25.1.0 \
-  -run_dir /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs \
+  -run_dir /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs \
   -no_rules_check \
   -qrc_data \
-  -schLibName 4BIT_ACCUM \
-  -schCellName 4BIT_ACCUM \
+  -schLibName BIT_ACCUM \
+  -schCellName BIT_ACCUM \
   -schViewName schematic \
   -simViewList auCdl\ schematic \
   -simStopList auCdl \
   -displayPinInfo \
-  -source_cdl /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl \
-  -spice /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.spi \
-  -layLibName 4BIT_ACCUM \
-  -layCellName 4BIT_ACCUM \
+  -source_cdl /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.cdl \
+  -spice /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.spi \
+  -layLibName BIT_ACCUM \
+  -layCellName BIT_ACCUM \
   -layViewName layout \
-  -igds /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz \
+  -igds /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.gds.gz \
   -layScale 0.0005 \
   -layTechLib gpdk045 \
   -convertPin geometry \
@@ -28,7 +28,7 @@ Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
   -layHierDepth 32 \
   -layMaxVertices 2048 \
   -enableColoring yes \
-  -rulesFile /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/.technology.rul \
+  -rulesFile /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/.technology.rul \
   -log_dir LOGS
 
 
@@ -38,15 +38,14 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version IC25.1-64b 08/12/2025 20:22 (cpgbld31) $
           : sub-version  IC25.1-64b.ISR1.30 
-Started at: 11-Nov-2025  21:20:17
-User Name : oraftery
+Started at: 16-Nov-2025  18:12:23
+User Name : azguro
 Host Name : vlsicad.ecs.umass.edu
-Directory : /home/ece558_658_2025/oraftery/ece558-labs
+Directory : /home/ece558_658_2025/azguro/ece558-labs
 CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
-WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz' already exists. It will be overwritten.
 Loading gpdk045/libInit.il ...
 	Loading gpdk045/loadCxt.ile ... done!
 	Loading context 'gpdk045' from library 'gpdk045' ... done!
@@ -76,39 +75,39 @@ INFO (XSTRM-280): The output file will be a compressed file because the file nam
 INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
 
 Summary of Options :
-library                                 4BIT_ACCUM
-strmFile                                /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz
-topCell                                 4BIT_ACCUM
+library                                 BIT_ACCUM
+strmFile                                /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.gds.gz
+topCell                                 BIT_ACCUM
 view                                    layout
-runDir                                  /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs
-logFile                                 /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/PIPO1.LOG
+runDir                                  /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs
+logFile                                 /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/PIPO1.LOG
 techLib                                 gpdk045
 hierDepth                               32
 maxVertices                             2048
 layerMap                                /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
-userSkillFile                           /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/strmout.il
+userSkillFile                           /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/strmout.il
 labelDepth                              32
 case                                    Preserve
 convertDot                              node
 
 INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
-INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_762914017240.
-INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017241.
-INFO (XSTRM-223): 3. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017242.
-INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017243.
-INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_762914017244.
-INFO (XSTRM-223): 6. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762914017245.
-INFO (XSTRM-223): 7. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_762914017246.
-INFO (XSTRM-223): 8. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_762914017247.
-INFO (XSTRM-223): 9. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762914017240.
-INFO (XSTRM-223): 10. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762914017241.
-INFO (XSTRM-223): 11. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017242.
-INFO (XSTRM-223): 12. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017243.
-INFO (XSTRM-223): 13. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017244.
-INFO (XSTRM-223): 14. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762914017245.
-INFO (XSTRM-223): 15. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762914017246.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_763334743940.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763334743941.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763334743942.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763334743943.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_763334743944.
+INFO (XSTRM-223): 6. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763334743945.
+INFO (XSTRM-223): 7. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_763334743946.
+INFO (XSTRM-223): 8. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_763334743947.
+INFO (XSTRM-223): 9. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763334743940.
+INFO (XSTRM-223): 10. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763334743941.
+INFO (XSTRM-223): 11. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763334743942.
+INFO (XSTRM-223): 12. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763334743943.
+INFO (XSTRM-223): 13. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763334743944.
+INFO (XSTRM-223): 14. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763334743945.
+INFO (XSTRM-223): 15. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763334743946.
 INFO (XSTRM-223): 16. Translating cellview HA_ACCUM/HA_ACCUM/layout as STRUCTURE HA_ACCUM.
-INFO (XSTRM-223): 17. Translating cellview 4BIT_ACCUM/4BIT_ACCUM/layout as STRUCTURE 4BIT_ACCUM.
+INFO (XSTRM-223): 17. Translating cellview BIT_ACCUM/BIT_ACCUM/layout as STRUCTURE BIT_ACCUM.
 
 Summary of Objects Translated:
 	Scalar Instances:                       38
@@ -136,14 +135,14 @@ Summary of Objects Translated:
 	TextDisplay:                            0
 	Cells:                                  17
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 34352KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 34348KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
 
-Creation of CDL for 4BIT_ACCUM/4BIT_ACCUM/schematic is started
- si -batch /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/ >/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/SI.OUT 2>/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/SI.LOG 
+Creation of CDL for BIT_ACCUM/BIT_ACCUM/schematic is started
+ si -batch /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/ >/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/SI.OUT 2>/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/SI.LOG 
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 
-Running simulation in directory: "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/".
+Running simulation in directory: "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/".
 
 Loading gpdk045/libInit.il ...
 	Loading gpdk045/loadCxt.ile ... done!
@@ -169,7 +168,7 @@ done!
 Loaded gpdk045/libInit.il successfully!
 Loading hnlInit.cxt 
 Running Artist Hierarchical Netlisting ...
-End netlisting Nov 11 21:20:17 2025
+End netlisting Nov 16 18:12:24 2025
 
 Running simin
 
@@ -177,52 +176,52 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Nov 11 21:20:17 2025
+Begin simulation:    Nov 16 18:12:24 2025
 
 auCdl netlisting completed
-End simulation:      Nov 11 21:20:17 2025
+End simulation:      Nov 16 18:12:24 2025
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.
 
-Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-11-11 21:20:20 214385 vlsicad.ecs.umass.edu
+Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-11-16 18:12:27 1225063 vlsicad.ecs.umass.edu
 Copyright 2025 Cadence Design Systems, Inc.
 All rights reserved worldwide.
 
-INFO:    Command Line Options: -lvs -top_cell 4BIT_ACCUM -log_dir LOGS -source_top_cell 4BIT_ACCUM -spice /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.spi -qrc_data -control /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/pegasuslvsctl -ui_data -gdb_data /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/.technology.rul
+INFO:    Command Line Options: -lvs -top_cell BIT_ACCUM -log_dir LOGS -source_top_cell BIT_ACCUM -spice /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.spi -qrc_data -control /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/pegasuslvsctl -ui_data -gdb_data /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/.technology.rul
 INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
-         Launch host Memory: MemTotal: 257032 MB,  MemFree: 45938 MB,  SwapTotal: 4095 MB,  SwapFree: 3093 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 385 MB
-INFO:    Current path: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 42506 MB,  SwapTotal: 4095 MB,  SwapFree: 3092 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 388 MB
+INFO:    Current path: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs
 INFO:    Run directory same as current path
-INFO:    Log directory: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/LOGS
+INFO:    Log directory: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/LOGS
 INFO:    PVL parsing results:
 WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
 It will be accepted for this run but should be changed to a pegasusRuleSet.
 WARNING: TEXT_DEPTH at line 35 in file /ece558_658/pdk/verification/pvs/./pvlLVS.rul is skipped. It is set in control file.
 
-INFO:    See "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/LOGS/pvl.log" for additional details.
+INFO:    See "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/LOGS/pvl.log" for additional details.
 
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_LVS' version 24.1
-INFO:    License checkout successful ... 2025-11-11 21:20:22
+INFO:    License checkout successful ... 2025-11-16 18:12:29
 
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_16nm' version 24.1
-INFO:    License checkout successful ... 2025-11-11 21:20:22
+INFO:    License checkout successful ... 2025-11-16 18:12:29
 WARNING: Neither hcell nor -automatch option is specified.
 INFO:    Worker 0 started on host vlsicad.ecs.umass.edu with 1 cpu(s)
          CPU: Model: , OS: 	Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 0, Physical cores: 0, Cache: 0 KB, CPU Speed: 0 MHz
-         Memory: MemTotal: 257032 MB,  MemFree: 45925 MB,  SwapTotal: 4095 MB,  SwapFree: 3093 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 385 MB
-INFO:    Extraction report file: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.rep 
-INFO:    Extracted layout netlist: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.spi 
-INFO:    Setting LAYOUT_PATH to: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz 
-INFO:    Setting LAYOUT_PRIMARY to: 4BIT_ACCUM 
-INFO:    Setting SCHEMATIC_PATH to: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl 
-INFO:    Setting SCHEMATIC_PRIMARY to: 4BIT_ACCUM 
+         Memory: MemTotal: 257032 MB,  MemFree: 42498 MB,  SwapTotal: 4095 MB,  SwapFree: 3092 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 388 MB
+INFO:    Extraction report file: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.rep 
+INFO:    Extracted layout netlist: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.spi 
+INFO:    Setting LAYOUT_PATH to: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.gds.gz 
+INFO:    Setting LAYOUT_PRIMARY to: BIT_ACCUM 
+INFO:    Setting SCHEMATIC_PATH to: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.cdl 
+INFO:    Setting SCHEMATIC_PRIMARY to: BIT_ACCUM 
 
 INFO:    Gdsii input summary
-         File name: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.gds.gz
-         File size: 3921
+         File name: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.gds.gz
+         File size: 3917
          Version: 5.0
-         Library name: 4BIT_ACCUM
-         Last modified: 2025-11-7 18:37:20
-         Last accessed: 2025-11-11 21:20:17
+         Library name: BIT_ACCUM
+         Last modified: 2025-11-16 17:46:40
+         Last accessed: 2025-11-16 18:12:23
          Database unit in user units: 0.0005
          Database unit in meters: 5e-10
          Magnification: 1 
@@ -231,23 +230,23 @@ INFO:    Cell Summary:
          ----------------------------------------------------------------------------
              CELL                          INSTANCE    GEOMETRY      LABELS        HREF        FREF
          ----------------------------------------------------------------------------
-         M1_PO_CDNS_762914017240                  0           3           0          21          84
-         M2_M1_CDNS_762914017241                  0           3           0          72         288
-         M2_M1_CDNS_762914017242                  0           4           0          34         136
-         M2_M1_CDNS_762914017243                  0           6           0           8          32
-         M1_PO_CDNS_762914017244                  0           3           0           1           4
-         M2_M1_CDNS_762914017245                  0           3           0           1           4
-         M1_NWELL_CDNS_762914017246               0           8           0           2           8
-         M1_PSUB_CDNS_762914017247                0           7           0           2           8
-         pmos1v_CDNS_762914017240                 0          16           0           4          16
-         pmos1v_CDNS_762914017241                 0          16           0           4          16
-         nmos1v_CDNS_762914017242                 0          14           0           5          20
-         nmos1v_CDNS_762914017243                 0          13           0           4          16
-         nmos1v_CDNS_762914017244                 0          13           0           4          16
-         pmos1v_CDNS_762914017245                 0          17           0           9          36
-         nmos1v_CDNS_762914017246                 0          16           0           4          16
+         M1_PO_CDNS_763334743940                  0           3           0          21          84
+         M2_M1_CDNS_763334743941                  0           3           0          72         288
+         M2_M1_CDNS_763334743942                  0           4           0          34         136
+         M2_M1_CDNS_763334743943                  0           6           0           8          32
+         M1_PO_CDNS_763334743944                  0           3           0           1           4
+         M2_M1_CDNS_763334743945                  0           3           0           1           4
+         M1_NWELL_CDNS_763334743946               0           8           0           2           8
+         M1_PSUB_CDNS_763334743947                0           7           0           2           8
+         pmos1v_CDNS_763334743940                 0          16           0           4          16
+         pmos1v_CDNS_763334743941                 0          16           0           4          16
+         nmos1v_CDNS_763334743942                 0          14           0           5          20
+         nmos1v_CDNS_763334743943                 0          13           0           4          16
+         nmos1v_CDNS_763334743944                 0          13           0           4          16
+         pmos1v_CDNS_763334743945                 0          17           0           9          36
+         nmos1v_CDNS_763334743946                 0          16           0           4          16
          HA_ACCUM                               175         153           9           4           4
-         4BIT_ACCUM                               4           0          10           1           1
+         BIT_ACCUM                                4           0          10           1           1
          ----------------------------------------------------------------------------
          TOTAL CELL = 17;  INSTANCE = 179;  GEOMETRY = 295;  LABEL = 19
 
@@ -362,16 +361,16 @@ INFO:    Ports ...
 
 INFO:    Texts For Connectivity ...
          ========================================================================
-         VDD (1.150, 9.200) 1064 4BIT_ACCUM
-         RST (0.550, 5.400) 1064 4BIT_ACCUM
-         PHI (0.450, 8.000) 1064 4BIT_ACCUM
-         GND (1.750, 0.200) 1064 4BIT_ACCUM
-         COUT (23.300, 1.750) 1064 4BIT_ACCUM
-         CIN (0.500, 1.750) 1064 4BIT_ACCUM
-         SOUT3 (22.500, 9.400) 1065 4BIT_ACCUM
-         SOUT2 (16.550, 9.400) 1065 4BIT_ACCUM
-         SOUT1 (10.500, 9.400) 1065 4BIT_ACCUM
-         SOUT0 (4.550, 9.400) 1065 4BIT_ACCUM
+         VDD (1.150, 9.200) 1064 BIT_ACCUM
+         RST (0.550, 5.400) 1064 BIT_ACCUM
+         PHI (0.450, 8.000) 1064 BIT_ACCUM
+         GND (1.750, 0.200) 1064 BIT_ACCUM
+         COUT (23.300, 1.750) 1064 BIT_ACCUM
+         CIN (0.500, 1.750) 1064 BIT_ACCUM
+         SOUT3 (22.500, 9.400) 1065 BIT_ACCUM
+         SOUT2 (16.550, 9.400) 1065 BIT_ACCUM
+         SOUT1 (10.500, 9.400) 1065 BIT_ACCUM
+         SOUT0 (4.550, 9.400) 1065 BIT_ACCUM
          VDD (0.290, 9.170) 1064 HA_ACCUM
          VDD (0.230, 3.140) 1064 HA_ACCUM
          RST (0.240, 5.370) 1064 HA_ACCUM
@@ -424,20 +423,20 @@ INFO:    Layer Summary(Texts For DFM_TEXT):
          ----------------------------------------------------------------------------
 
 INFO:    Expanded Cell Summary
-         M1_PO_CDNS_762914017244 is expanded.
-         M2_M1_CDNS_762914017245 is expanded.
-INFO:    Status: Runset 100% complete as of 2025-11-11 21:20:23   Elapsed: 00:00:01
+         M1_PO_CDNS_763334743944 is expanded.
+         M2_M1_CDNS_763334743945 is expanded.
+INFO:    Status: Runset 100% complete as of 2025-11-16 18:12:30   Elapsed: 00:00:01
          Worker: Active CPUs  Total Mem(MB)  Active Mem(MB)  CPU time(s)
               0:    1 /   1             30              22            1
-INFO:	 Status: Finishing as of 2025-11-11 21:20:23   Elapsed: 00:00:01   CPU time[s]: 1
+INFO:	 Status: Finishing as of 2025-11-16 18:12:30   Elapsed: 00:00:01   CPU time[s]: 1
 INFO:    Resource usage by worker at exit:
                   CPU      Elapsed  CPUs       CPU       Peak        Peak engine
          Worker:  time[s]  time[s]  Allocated  usage[%]  Memory[MB]  Memory[MB]
-              0:        1        1          1     88.69          30           22
+              0:        1        1          1     89.21          30           22
          Worker resource usage  summary: Total CPU[s]: 1  Run duration[s]: 1  Max peak memory[MB]: 30
          Worker CPU utilization summary: 1 of 1 available CPU seconds (100.00%) with 1 average available CPU(s)
 INFO:    Extraction result: CLEAN (Reporter)
-INFO:    Generating ERC summary in /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.sum
+INFO:    Generating ERC summary in /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.sum
 INFO:    All selected rules completed
          Total CPU Time                    : 1(s)
          Total Real Time                   : 1(s)
@@ -445,37 +444,37 @@ INFO:    All selected rules completed
          Total ERC RuleChecks              : 0
          Total ERC Results                 : 0 (0)
 INFO:    Pegasus extracted connectivity database creation started
-INFO:    CmdLine: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb -kf -edb 4BIT_ACCUM_214385.db -ecdb ./ -topcell 4BIT_ACCUM -netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.net -layermap /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ecdbmap -textmap /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ports -dependmap 4BIT_ACCUM.lmap.perc -kvp ifs:Hz -lvsfile /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.lvsfile -saveFloatingNets .4BIT_ACCUM.info.softchk 
-INFO:    Opening layer file '4BIT_ACCUM_214385.db/__layer'...
-INFO:    Loading layer map file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ecdbmap'...
-INFO:    Loading text map file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.ports'...
-INFO:    Loading dependency map file '4BIT_ACCUM.lmap.perc'...
+INFO:    CmdLine: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/edbToEcdb -kf -edb BIT_ACCUM_1225063.db -ecdb ./ -topcell BIT_ACCUM -netlist /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.net -layermap /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.ecdbmap -textmap /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.ports -dependmap BIT_ACCUM.lmap.perc -kvp ifs:Dz -lvsfile /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.lvsfile -saveFloatingNets .BIT_ACCUM.info.softchk 
+INFO:    Opening layer file 'BIT_ACCUM_1225063.db/__layer'...
+INFO:    Loading layer map file '/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.ecdbmap'...
+INFO:    Loading text map file '/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.ports'...
+INFO:    Loading dependency map file 'BIT_ACCUM.lmap.perc'...
 INFO:    Pre loading edb directory contents...
-INFO:    ECDB file name './/.4BIT_ACCUM.ecdb'...
-INFO:    Loading lvs file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.lvsfile'...
+INFO:    ECDB file name './/.BIT_ACCUM.ecdb'...
+INFO:    Loading lvs file '/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.lvsfile'...
 INFO:    Writing db header information...(0s)
 INFO:    Transfering cdl structures to ecdb structures...
 INFO:    Read Netlist (32 threads)...
 INFO:      DONE - (2s)
 INFO:    Process (32 threads)...
-INFO:    Cell(       5):   6% Done...(2s), M1_PSUB_CDNS_762914017247               
-INFO:    Cell(       0):  13% Done...(2s), M1_PO_CDNS_762914017240                 
-INFO:    Cell(       2):  20% Done...(2s), M2_M1_CDNS_762914017242                 
-INFO:    Cell(       3):  26% Done...(2s), M2_M1_CDNS_762914017243                 
-INFO:    Cell(       1):  33% Done...(2s), M2_M1_CDNS_762914017241                 
-INFO:    Cell(       9):  40% Done...(2s), nmos1v_CDNS_762914017243                
-INFO:    Cell(      12):  46% Done...(2s), nmos1v_CDNS_762914017246                
-INFO:    Cell(       6):  53% Done...(2s), pmos1v_CDNS_762914017240                
-INFO:    Cell(       8):  60% Done...(2s), nmos1v_CDNS_762914017242                
-INFO:    Cell(      14):  66% Done...(2s), 4BIT_ACCUM                              
-INFO:    Cell(       4):  73% Done...(2s), M1_NWELL_CDNS_762914017246              
-INFO:    Cell(      10):  80% Done...(2s), nmos1v_CDNS_762914017244                
-INFO:    Cell(      11):  86% Done...(2s), pmos1v_CDNS_762914017245                
-INFO:    Cell(       7):  93% Done...(2s), pmos1v_CDNS_762914017241                
-INFO:    Cell(      13): 100% Done...(2s), HA_ACCUM                                
-INFO:      DONE - (0s)
-INFO:    Cells creation time: (2s)
-INFO:    Write netlist items...         (2s)
+INFO:    Cell(       0):   6% Done...(2s), M1_PO_CDNS_763334743940                 
+INFO:    Cell(       1):  13% Done...(2s), M2_M1_CDNS_763334743941                 
+INFO:    Cell(       5):  20% Done...(2s), M1_PSUB_CDNS_763334743947               
+INFO:    Cell(       3):  26% Done...(2s), M2_M1_CDNS_763334743943                 
+INFO:    Cell(       2):  33% Done...(2s), M2_M1_CDNS_763334743942                 
+INFO:    Cell(       7):  40% Done...(2s), pmos1v_CDNS_763334743941                
+INFO:    Cell(       8):  46% Done...(2s), nmos1v_CDNS_763334743942                
+INFO:    Cell(      14):  53% Done...(2s), BIT_ACCUM                               
+INFO:    Cell(      12):  60% Done...(2s), nmos1v_CDNS_763334743946                
+INFO:    Cell(      10):  66% Done...(2s), nmos1v_CDNS_763334743944                
+INFO:    Cell(       4):  73% Done...(2s), M1_NWELL_CDNS_763334743946              
+INFO:    Cell(       9):  80% Done...(2s), nmos1v_CDNS_763334743943                
+INFO:    Cell(      11):  86% Done...(2s), pmos1v_CDNS_763334743945                
+INFO:    Cell(      13):  93% Done...(2s), HA_ACCUM                                
+INFO:    Cell(       6): 100% Done...(3s), pmos1v_CDNS_763334743940                
+INFO:      DONE - (1s)
+INFO:    Cells creation time: (3s)
+INFO:    Write netlist items...         (3s)
 INFO:    Saving name table to db...
 INFO:    Save device templates to the db...
 INFO:    Save connect rules to the db...
@@ -484,28 +483,28 @@ INFO:    Erasing cdl subckts...          (0s)
 
 INFO:    edbToEcdb Header Information:
   ECDB file version   : 38
-  DevTmpl offset      : 32142
-  Connect offset      : 32242
+  DevTmpl offset      : 32141
+  Connect offset      : 32241
   NameTable offset    : 27077
   Layer Map offset    : 167
   Cell Start offset   : 26027
   Cell End offset     : 27077
-  Aux Data offset     : 32546
+  Aux Data offset     : 32545
   Labels     offset   : 0
   Layer RW   offset   : 0
   NVP                 : ifs:0.01 
   Scale               : 8000
   GDS Scale           : 2000
-  File size (static)  : 39503
+  File size (static)  : 39502
   File size (dynamic) : 0
   Cell count          : 15
-  ECDB create time    : 2
+  ECDB create time    : 3
   EDB info            : 10
-  Top Cell            : 4BIT_ACCUM
+  Top Cell            : BIT_ACCUM
   EDB info (Trans)    : WRITTEN_64 W_NOT_NET_ORDER 
 
 INFO:    edbToEcdb Sizes written to disk (MB):
-  NameTbl             :     0.005065
+  NameTbl             :     0.005064
   Layers              :     0.003558
   Shapes              :     0.006486
   XYTree              :     0.004994
@@ -522,23 +521,23 @@ INFO:    edbToEcdb Sizes written to disk (MB):
   AuxData             :     0.006955
   NvnLabels           :     0.000002
 ---------------------------------
-  Total               :     0.039503
+  Total               :     0.039502
 
-INFO:    Manager summary: CPU(s): 0 Elapsed(s): 2 Peak memory(MB): 1130.95
-INFO:    Pegasus extracted connectivity database creation completed. 2025-11-11 21:20:25
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 3 Peak memory(MB): 1129.01
+INFO:    Pegasus extracted connectivity database creation completed. 2025-11-16 18:12:33
 
 
 INFO:    Creating annotated GDS ...
-INFO:    Library name: 4BIT_ACCUM_214385
-INFO:    GDSII file name: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.agf
-INFO:    Cells to be written out: 4BIT_ACCUM
-INFO:    Source Library: 4BIT_ACCUM_214385
+INFO:    Library name: BIT_ACCUM_1225063
+INFO:    GDSII file name: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.agf
+INFO:    Cells to be written out: BIT_ACCUM
+INFO:    Source Library: BIT_ACCUM_1225063
 INFO:    Status: Task in progress ...
-INFO:    Pegasus creating annotated GDS completed. 2025-11-11 21:20:23
+INFO:    Pegasus creating annotated GDS completed. 2025-11-16 18:12:30
 INFO:    Pegasus REPORTDB creation started...
-INFO:    Processing file 4BIT_ACCUM.rep
+INFO:    Processing file BIT_ACCUM.rep
 INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 0.00
-INFO:    Pegasus REPORTDB creation completed. 2025-11-11 21:20:26
+INFO:    Pegasus REPORTDB creation completed. 2025-11-16 18:12:33
 
 
 INFO:    Comparing netlists ...
@@ -549,7 +548,7 @@ INFO:    Init structures (0s)
 INFO:    Set cells to delete (0s)
 INFO:    Check expand on pin error (0s)
 INFO:    Reading schematic network
-INFO:     inputting cdl netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl...
+INFO:     inputting cdl netlist /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.cdl...
 WARNING (NVN-13002): *.BIPOLAR is not supported.
 WARNING (NVN-13002): *.RESI is not supported.
 WARNING (NVN-13002): *.RESVAL is not supported.
@@ -558,13 +557,13 @@ WARNING (NVN-13002): *.DIOPERI is not supported.
 WARNING (NVN-13002): *.DIOAREA is not supported.
 WARNING (NVN-13002): *.EQUATION is not supported.
 WARNING (NVN-13003): "*.SCALE" is not supported. Use ".OPTION SCALE" instead or specify  'lvs_cdn_flow_options -cdl_use_scale' in the rule file.
-INFO:     finished loading cdl netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/4BIT_ACCUM.cdl (0s)
+INFO:     finished loading cdl netlist /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/BIT_ACCUM.cdl (0s)
 INFO:     commit cdl netlist(s)...
 INFO:     finished committing cdl netlists (0s)
 INFO:    Post sch netlist rule processing (0s)
 INFO:    Reading layout network
-INFO:     inputting (fast parser) cdl netlist  /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.net...
-INFO:     finished loading cdl netlist /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.net (0s)
+INFO:     inputting (fast parser) cdl netlist  /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.net...
+INFO:     finished loading cdl netlist /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.net (0s)
 INFO:     commit cdl netlist(s)...
 INFO:     finished committing cdl netlists (0s)
 INFO:    Post lay netlist rule processing (0s)
@@ -639,13 +638,13 @@ WARNING (NVN-15002): Rule 'lvs_recognize_gates -all' was set, but either
            Rule 'lvs_recognize_gates -all' requires both power and ground nets to operate.
            These can be identified using rules 'lvs_power_name' and 'lvs_ground_name'.
            Resetting rule to 'lvs_recognize_gates -simple'
-INFO (NVN-10007): Found ecdb file .4BIT_ACCUM.ecdb, will use during comparison.
+INFO (NVN-10007): Found ecdb file .BIT_ACCUM.ecdb, will use during comparison.
 
 INFO:    Cell comparison output format:
             <Comparing|Top Cell> <Layout Cell> vs <Schematic Cell>
                <Layout instances> insts vs <Schematic instances> insts  (<Time>)-<Status>
 
-         Top Cell  4BIT_ACCUM vs 4BIT_ACCUM
+         Top Cell  BIT_ACCUM vs BIT_ACCUM
             96 insts vs 96 insts . . . . . . . . . . . . . . . . . . . . . . . (0s)-match
 
 INFO:    Generating the LVS report...
@@ -663,14 +662,14 @@ INFO:    Extraction Run Summary
 
 INFO:    NVN Run Summary
          Total CPU Time        : 0(s)
-         Total Real Time       : 0(s)
-         Peak Memory Used      : 271.31(M)
+         Total Real Time       : 1(s)
+         Peak Memory Used      : 270.56(M)
 
 
 INFO:    LVS Summary
          Total CPU Time        : 1(s)
-         Total Real Time       : 1(s)
-         Peak Memory Used      : 271.31(M)
+         Total Real Time       : 2(s)
+         Peak Memory Used      : 270.56(M)
 
     ########################################################
     #                                                      #
@@ -679,19 +678,19 @@ INFO:    LVS Summary
     # Run Summary            : [INFO]  ERC Results: Empty  #
     #                        : [INFO]  Extraction Clean    #
     #                                                      #
-    # ERC Summary File       : 4BIT_ACCUM.sum              #
-    # Extraction Report File : 4BIT_ACCUM.rep              #
-    # Comparison Report File : 4BIT_ACCUM.rep.cls          #
+    # ERC Summary File       : BIT_ACCUM.sum               #
+    # Extraction Report File : BIT_ACCUM.rep               #
+    # Comparison Report File : BIT_ACCUM.rep.cls           #
     #                                                      #
     ########################################################
 
 
 INFO:    Creating cross reference database ...
-INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 91.90
+INFO:    Manager summary: CPU(s): 0 Elapsed(s): 0 Peak memory(MB): 91.46
 INFO:    Checking in all SoftShare licenses.
-INFO:    Creating cross reference database completed. Tue Nov 11 21:20:26 2025
+INFO:    Creating cross reference database completed. Sun Nov 16 18:12:34 2025
 
 
-Pegasus finished normally. 2025-11-11 21:20:26
+Pegasus finished normally. 2025-11-16 18:12:34
 
 

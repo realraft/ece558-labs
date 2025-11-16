@@ -1,0 +1,12 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary BIT_ACCUM
+CIN 3 CIN 1000 3500 metal1_conn
+SOUT0 6 SOUT0 9100 18800 metal2_conn
+SOUT3 12 SOUT3 45000 18800 metal2_conn
+PHI 4 PHI 900 16000 metal1_conn
+SOUT2 10 SOUT2 33100 18800 metal2_conn
+GND 1 GND 3500 400 metal1_conn
+COUT 13 COUT 46600 3500 metal1_conn
+RST 5 RST 1100 10800 metal1_conn
+SOUT1 8 SOUT1 21000 18800 metal2_conn
+VDD 2 VDD 2300 18400 metal1_conn

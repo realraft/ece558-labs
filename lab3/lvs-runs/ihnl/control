@@ -79,9 +79,9 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "components" "1759936031" )
-                   ( "HA_ACCUM" "1762558360" )
-                   ( "4BIT_ACCUM" "1762558276" )
+                    ( "components" "1759935019" )
+                   ( "HA_ACCUM" "1763129241" )
+                   ( "BIT_ACCUM" "1763333200" )
                   )
 hnlLastSimStopList = '(
                       "auCdl"

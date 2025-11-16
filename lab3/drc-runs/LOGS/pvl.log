@@ -11,22 +11,22 @@ ENV VAR: PEGASUS_LVS_DEVICE_DFM_LIBRARY = /opt/cadence/pegasus/tools.lnx86/pegas
 
 
 ########################################################################
-Parsing Control File /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/pegasusdrcctl ...
+Parsing Control File /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/pegasusdrcctl ...
 ########################################################################
 TEXT_DEPTH -primary;
 VIRTUAL_CONNECT -colon no;
 VIRTUAL_CONNECT -semicolon_as_colon yes;
 VIRTUAL_CONNECT -report no;
 VIRTUAL_CONNECT -depth -primary;
-REPORT_SUMMARY -drc "4BIT_ACCUM.sum" -replace;
+REPORT_SUMMARY -drc "BIT_ACCUM.sum" -replace;
 MAX_RESULTS -drc 1000;
-RESULTS_DB -drc "/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.drc_errors.ascii" -ascii;
+RESULTS_DB -drc "/home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.drc_errors.ascii" -ascii;
 ABORT_ON_LAYOUT_ERROR yes;
 LAYOUT_FORMAT gdsii;
-LAYOUT_PATH "/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz";
+LAYOUT_PATH "/home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.gds.gz";
 
 ########################################################################
-Parsing Rule File /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/.technology.rul ...
+Parsing Rule File /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/.technology.rul ...
 ########################################################################
 TECHNOLOGY gpdk045 -ruleSet default -techLib /ece558_658/pdk/verification/pvtech.lib;
 WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
@@ -36,7 +36,7 @@ It will be accepted for this run but should be changed to a pegasusRuleSet.
 LAYOUT_PATH "CELLNAME.gds" gdsii;
 [WARN]: LAYOUT_PATH at line 20 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
 LAYOUT_PRIMARY "CELLNAME";
-[WARN] Cmd-line override: LAYOUT_PRIMARY "4BIT_ACCUM";
+[WARN] Cmd-line override: LAYOUT_PRIMARY "BIT_ACCUM";
 RESULTS_DB -drc "CELLNAME.db" -ascii;
 [WARN]: RESULTS_DB -ascii at line 22 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
 INPUT_SCALE 2000;
@@ -16164,5 +16164,5 @@ operation group: 2257/2258
 operation group: 2258/2258
     _EPTMPL264463 = DISCONNECT
 ========================================================================
-Time: cpu=0.31/0.31  real=0.31/0.31  Memory: 0.00/0.00/0.00  peak=0.00
+Time: cpu=0.28/0.28  real=0.28/0.28  Memory: 0.00/0.00/0.00  peak=0.00
 

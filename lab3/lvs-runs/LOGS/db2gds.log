@@ -7,16 +7,16 @@ All rights reserved worldwide.
 
 Build O/S:       Linux x86_64 3.10.0-693.el7.x86_64
 Executed on:     vlsicad.ecs.umass.edu (Linux x86_64 4.18.0-553.16.1.el8_10.x86_64)
-Process Id:      214533
-Starting Time:   Tue Nov 11 21:20:23 2025 (Wed Nov 12 02:20:23 2025 GMT)
-With parameters: 4BIT_ACCUM_214385 /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.agf 4BIT_ACCUM -lmap lmapAM5fKh -netmap /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.lnn -property_nqrc -gds_scale 2000 -vircolon 
+Process Id:      1225214
+Starting Time:   Sun Nov 16 18:12:30 2025 (Sun Nov 16 23:12:30 2025 GMT)
+With parameters: BIT_ACCUM_1225063 /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.agf BIT_ACCUM -lmap lmapGXxfD0 -netmap /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.lnn -property_nqrc -gds_scale 2000 -vircolon 
 ********************************************************************************
 
-Library name: 4BIT_ACCUM_214385
-GDSII file name: /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/4BIT_ACCUM.agf
-Cells to be written out: 4BIT_ACCUM
-Source Library: 4BIT_ACCUM_214385
-Layer mapping file(GDS <- DMC): lmapAM5fKh
+Library name: BIT_ACCUM_1225063
+GDSII file name: /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/BIT_ACCUM.agf
+Cells to be written out: BIT_ACCUM
+Source Library: BIT_ACCUM_1225063
+Layer mapping file(GDS <- DMC): lmapGXxfD0
     23 (dt:0 tt:0) <- 23
     24 (dt:0 tt:0) <- 24
     55 (dt:0 tt:0) <- 55
@@ -126,21 +126,21 @@ Option: output object property for new qrc flow
                 Object Statistics of Cells                            
 Cell Name         Box  Polygon     Path   Label Instance Array    Total
 ----------------------------------------------------------------------
-4BIT_ACCUM         25        4        0       0     4      0        33
+BIT_ACCUM          25        4        0       0     4      0        33
 HA_ACCUM          141        4        0       0   173      0       318
-M1_PO_CDNS_762914017240        3        0        0       0     0      0         3
-M2_M1_CDNS_762914017241        3        0        0       0     0      0         3
-M2_M1_CDNS_762914017242        4        0        0       0     0      0         4
-M2_M1_CDNS_762914017243        6        0        0       0     0      0         6
-M1_NWELL_CDNS_762914017246        8        0        0       0     0      0         8
-M1_PSUB_CDNS_762914017247        7        0        0       0     0      0         7
-pmos1v_CDNS_762914017240       10        0        0       0     0      0        10
-pmos1v_CDNS_762914017241       10        0        0       0     0      0        10
-nmos1v_CDNS_762914017242        8        0        0       0     0      0         8
-nmos1v_CDNS_762914017243        7        0        0       0     0      0         7
-nmos1v_CDNS_762914017244        7        0        0       0     0      0         7
-pmos1v_CDNS_762914017245       11        0        0       0     0      0        11
-nmos1v_CDNS_762914017246       10        0        0       0     0      0        10
+M1_PO_CDNS_763334743940        3        0        0       0     0      0         3
+M2_M1_CDNS_763334743941        3        0        0       0     0      0         3
+M2_M1_CDNS_763334743942        4        0        0       0     0      0         4
+M2_M1_CDNS_763334743943        6        0        0       0     0      0         6
+M1_NWELL_CDNS_763334743946        8        0        0       0     0      0         8
+M1_PSUB_CDNS_763334743947        7        0        0       0     0      0         7
+pmos1v_CDNS_763334743940       10        0        0       0     0      0        10
+pmos1v_CDNS_763334743941       10        0        0       0     0      0        10
+nmos1v_CDNS_763334743942        8        0        0       0     0      0         8
+nmos1v_CDNS_763334743943        7        0        0       0     0      0         7
+nmos1v_CDNS_763334743944        7        0        0       0     0      0         7
+pmos1v_CDNS_763334743945       11        0        0       0     0      0        11
+nmos1v_CDNS_763334743946       10        0        0       0     0      0        10
 ----------------------------------------------------------------------
 
 Object Statistics of Layers

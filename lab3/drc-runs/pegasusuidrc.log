@@ -1,13 +1,13 @@
 Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
   -isPegasus \
   -mode drc \
-  -global_log_file /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/pegasusuidrc.log \
-  -control /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/pegasusdrcctl \
-  -cell_tree /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/cell_tree.txt \
-  -layLibName 4BIT_ACCUM \
-  -layCellName 4BIT_ACCUM \
+  -global_log_file /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/pegasusuidrc.log \
+  -control /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/pegasusdrcctl \
+  -cell_tree /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/cell_tree.txt \
+  -layLibName BIT_ACCUM \
+  -layCellName BIT_ACCUM \
   -layViewName layout \
-  -igds /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz \
+  -igds /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.gds.gz \
   -layScale 0.0005 \
   -layTechLib gpdk045 \
   -convertPin geometry \
@@ -17,11 +17,11 @@ Running: /opt/cadence/pegasus/tools.lnx86/Pegasus/bin/64bit/pegasusvirt \
   -layHierDepth 32 \
   -layMaxVertices 2048 \
   -enableColoring yes \
-  -rulesFile /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/.technology.rul \
+  -rulesFile /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/.technology.rul \
   -log_dir LOGS \
   -df2_version IC25.1.0 \
-  -sign IPVS_1762913653_209939 \
-  -run_dir /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs \
+  -sign IPVS_1763333347_1216726 \
+  -run_dir /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs \
   -no_rules_check
 
 
@@ -31,15 +31,14 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version IC25.1-64b 08/12/2025 20:22 (cpgbld31) $
           : sub-version  IC25.1-64b.ISR1.30 
-Started at: 11-Nov-2025  21:14:18
-User Name : oraftery
+Started at: 16-Nov-2025  17:49:13
+User Name : azguro
 Host Name : vlsicad.ecs.umass.edu
-Directory : /home/ece558_658_2025/oraftery/ece558-labs
+Directory : /home/ece558_658_2025/azguro/ece558-labs
 CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
-WARNING (XSTRM-20): Output Stream file '/home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz' already exists. It will be overwritten.
 Loading gpdk045/libInit.il ...
 	Loading gpdk045/loadCxt.ile ... done!
 	Loading context 'gpdk045' from library 'gpdk045' ... done!
@@ -69,39 +68,39 @@ INFO (XSTRM-280): The output file will be a compressed file because the file nam
 INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
 
 Summary of Options :
-library                                 4BIT_ACCUM
-strmFile                                /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz
-topCell                                 4BIT_ACCUM
+library                                 BIT_ACCUM
+strmFile                                /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.gds.gz
+topCell                                 BIT_ACCUM
 view                                    layout
-runDir                                  /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs
-logFile                                 /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/PIPO1.LOG
+runDir                                  /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs
+logFile                                 /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/PIPO1.LOG
 techLib                                 gpdk045
 hierDepth                               32
 maxVertices                             2048
 layerMap                                /opt/cadence/gpdk045/gpdk045_v_6_0/gpdk045/gpdk045.layermap
-userSkillFile                           /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/strmout.il
+userSkillFile                           /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/strmout.il
 labelDepth                              32
 case                                    Preserve
 convertDot                              node
 
 INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
-INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_762913658850.
-INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762913658851.
-INFO (XSTRM-223): 3. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762913658852.
-INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762913658853.
-INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_762913658854.
-INFO (XSTRM-223): 6. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_762913658855.
-INFO (XSTRM-223): 7. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_762913658856.
-INFO (XSTRM-223): 8. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_762913658857.
-INFO (XSTRM-223): 9. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762913658850.
-INFO (XSTRM-223): 10. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762913658851.
-INFO (XSTRM-223): 11. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762913658852.
-INFO (XSTRM-223): 12. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762913658853.
-INFO (XSTRM-223): 13. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762913658854.
-INFO (XSTRM-223): 14. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_762913658855.
-INFO (XSTRM-223): 15. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_762913658856.
+INFO (XSTRM-223): 1. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_763333353130.
+INFO (XSTRM-223): 2. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763333353131.
+INFO (XSTRM-223): 3. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763333353132.
+INFO (XSTRM-223): 4. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763333353133.
+INFO (XSTRM-223): 5. Translating stdVia gpdk045/M1_PO/layout as STRUCTURE M1_PO_CDNS_763333353134.
+INFO (XSTRM-223): 6. Translating stdVia gpdk045/M2_M1/layout as STRUCTURE M2_M1_CDNS_763333353135.
+INFO (XSTRM-223): 7. Translating stdVia gpdk045/M1_NWELL/layout as STRUCTURE M1_NWELL_CDNS_763333353136.
+INFO (XSTRM-223): 8. Translating stdVia gpdk045/M1_PSUB/layout as STRUCTURE M1_PSUB_CDNS_763333353137.
+INFO (XSTRM-223): 9. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763333353130.
+INFO (XSTRM-223): 10. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763333353131.
+INFO (XSTRM-223): 11. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763333353132.
+INFO (XSTRM-223): 12. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763333353133.
+INFO (XSTRM-223): 13. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763333353134.
+INFO (XSTRM-223): 14. Translating cellview gpdk045/pmos1v/layout as STRUCTURE pmos1v_CDNS_763333353135.
+INFO (XSTRM-223): 15. Translating cellview gpdk045/nmos1v/layout as STRUCTURE nmos1v_CDNS_763333353136.
 INFO (XSTRM-223): 16. Translating cellview HA_ACCUM/HA_ACCUM/layout as STRUCTURE HA_ACCUM.
-INFO (XSTRM-223): 17. Translating cellview 4BIT_ACCUM/4BIT_ACCUM/layout as STRUCTURE 4BIT_ACCUM.
+INFO (XSTRM-223): 17. Translating cellview BIT_ACCUM/BIT_ACCUM/layout as STRUCTURE BIT_ACCUM.
 
 Summary of Objects Translated:
 	Scalar Instances:                       38
@@ -130,29 +129,29 @@ Summary of Objects Translated:
 	Cells:                                  17
 
 Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 34348KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
 
 
-Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-11-11 21:14:19 213275 vlsicad.ecs.umass.edu
+Pegasus 24.13-s018 8ymShbAi1LEWJtFLxgceYA 2025-11-16 17:49:13 1218581 vlsicad.ecs.umass.edu
 Copyright 2025 Cadence Design Systems, Inc.
 All rights reserved worldwide.
 
-INFO:    Command Line Options: --log_dir LOGS -top_cell 4BIT_ACCUM -ui_data --control /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/pegasusdrcctl /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/.technology.rul
-INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 2969.92 MHz
-         Launch host Memory: MemTotal: 257032 MB,  MemFree: 43092 MB,  SwapTotal: 4095 MB,  SwapFree: 3093 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 385 MB
-INFO:    Current path: /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs
+INFO:    Command Line Options: --log_dir LOGS -top_cell BIT_ACCUM -ui_data --control /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/pegasusdrcctl /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/.technology.rul
+INFO:    Launch host CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
+         Launch host Memory: MemTotal: 257032 MB,  MemFree: 41571 MB,  SwapTotal: 4095 MB,  SwapFree: 3092 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 392 MB
+INFO:    Current path: /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs
 INFO:    Run directory same as current path
-INFO:    Log directory: /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/LOGS
-INFO:    Setting LAYOUT_PATH to /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz
-INFO:    Setting LAYOUT_PRIMARY to 4BIT_ACCUM
+INFO:    Log directory: /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/LOGS
+INFO:    Setting LAYOUT_PATH to /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.gds.gz
+INFO:    Setting LAYOUT_PRIMARY to BIT_ACCUM
 INFO:    PVL parsing results:
 INFO:    WARNING: In technology 'gpdk045', the rule set 'default' is not a Pegasus rule set.
 INFO:    It will be accepted for this run but should be changed to a pegasusRuleSet.
 WARNING: LAYOUT_PATH at line 20 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
-WARNING: Cmd-line override: LAYOUT_PRIMARY "4BIT_ACCUM";
+WARNING: Cmd-line override: LAYOUT_PRIMARY "BIT_ACCUM";
 WARNING: RESULTS_DB -ascii at line 22 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
 WARNING: TEXT_DEPTH at line 27 in file /ece558_658/pdk/verification/pvs/./pvlDRC.rul is skipped. It is set in control file.
-INFO:    See /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/LOGS/pvl.log for additional details
+INFO:    See /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/LOGS/pvl.log for additional details
 WARNING: -para only is set since -project with constraint is only supported with -para only. ('METAL1.SP.1.2:L92336')
 WARNING: -para only is set since -project with constraint is only supported with -para only. ('METAL2.SP.1.2:L44095')
 WARNING: -para only is set since -project with constraint is only supported with -para only. ('METAL3.SP.1.2:L85233')
@@ -207,19 +206,19 @@ WARNING: -para only is set since -project with constraint is only supported with
 WARNING: -para only is set since -project with constraint is only supported with -para only. ('METAL10.SP.1.5:L62458')
 WARNING: -para only is set since -project with constraint is only supported with -para only. ('METAL11.SP.1.5:L35557')
 INFO:    Worker 1 started on host vlsicad.ecs.umass.edu with 4 threads
-         CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3134.11 MHz
-         Memory: MemTotal: 257032 MB,  MemFree: 42907 MB,  SwapTotal: 4095 MB,  SwapFree: 3093 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 385 MB
+         CPU: Model: Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz, OS: Red Hat Enterprise Linux release 8.10 (Ootpa), Logical cores: 64, Physical cores: 32, Cache: 22528 KB, CPU Speed: 3200 MHz
+         Memory: MemTotal: 257032 MB,  MemFree: 41387 MB,  SwapTotal: 4095 MB,  SwapFree: 3092 MB,  VmallocTotal: 33554431 MB,  VmallocUsed: 392 MB
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_DRC' version 24.1
-INFO:    License checkout successful ... 2025-11-11 21:14:20 (0s) (License)
+INFO:    License checkout successful ... 2025-11-16 17:49:14 (0s) (License)
 INFO:    Checking out 1 license(s) of feature: 'Pegasus_16nm' version 24.1
-INFO:    License checkout successful ... 2025-11-11 21:14:20 (0s) (License)
+INFO:    License checkout successful ... 2025-11-16 17:49:14 (0s) (License)
 INFO:    Gdsii input summary
-         File name: /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.gds.gz
-         File size: 3920
+         File name: /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.gds.gz
+         File size: 3909
          Version: 5.0
-         Library name: 4BIT_ACCUM
-         Last modified: 2025-11-07 18:37:20
-         Last accessed: 2025-11-11 21:14:18
+         Library name: BIT_ACCUM
+         Last modified: 2025-11-16 17:46:40
+         Last accessed: 2025-11-16 17:49:13
          Database unit in user units: 0.0005
          Database unit in meters: 5e-10
          Magnification: 1
@@ -662,161 +661,161 @@ INFO:    Rule VIA10.E.1 completed with no violations, 435/576
 INFO:    Rule BONDPAD.SP.6_8 completed with no violations, 436/576
 INFO:    Rule BONDPAD.B.1B_10 completed with no violations, 437/576
 INFO:    Rule VIA10.E.2 completed with no violations, 438/576
-INFO:    Rule METAL1.L.1 completed with no violations, 439/576
-INFO:    Rule METAL2.L.1 completed with no violations, 440/576
-INFO:    Rule CONT.SE.4 completed with no violations, 441/576
-INFO:    Rule NZVT.L.1 completed with no violations, 442/576
-INFO:    Rule NZVT.W.2 completed with no violations, 443/576
-INFO:    Rule OXIDE.W.2.1.2 completed with no violations, 444/576
-INFO:    Rule OXIDE.W.2.2.2 completed with no violations, 445/576
-INFO:    Rule POLY.W.3 completed with no violations, 446/576
-INFO:    Rule POLY.W.4 completed with no violations, 447/576
-INFO:    Rule POLY.SP.4 completed with no violations, 448/576
-INFO:    Rule POLY.SP.1 completed with no violations, 449/576
-INFO:    Rule LATCHUP.3 completed with no violations, 450/576
-INFO:    Rule CONT.E.4 completed with no violations, 451/576
-INFO:    Rule METAL1.SP.2 completed with no violations, 452/576
-INFO:    Rule METAL1.W.3 completed with no violations, 453/576
-INFO:    Rule METAL2.W.3 completed with no violations, 454/576
-INFO:    Rule METAL2.SP.2 completed with no violations, 455/576
-INFO:    Rule OXIDE.W.3 completed with no violations, 456/576
-INFO:    Rule OXIDE.SP.4 completed with no violations, 457/576
-INFO:    Rule POLY.SP.5 completed with no violations, 458/576
-INFO:    Rule POLY.W.6 completed with no violations, 459/576
-INFO:    Rule NIMP.SE.3 completed with no violations, 460/576
-INFO:    Rule NIMP.E.3 completed with no violations, 461/576
-INFO:    Rule NW.W.1 completed with no violations, 462/576
-INFO:    Rule POLY.W.5 completed with no violations, 463/576
-INFO:    Rule POLY.SP.2 completed with no violations, 464/576
-INFO:    Rule POLY.SP.3 completed with no violations, 465/576
-INFO:    Rule POLY.E.3 completed with no violations, 466/576
-INFO:    Rule OXIDE.W.1 completed with no violations, 467/576
-INFO:    Rule NIMP.W.1 completed with no violations, 468/576
-INFO:    Rule NIMP.SP.1 completed with no violations, 469/576
-INFO:    Rule OXIDE.W.2.1.1 completed with no violations, 470/576
-INFO:    Rule OXIDE.W.2.2.1 completed with no violations, 471/576
-INFO:    Rule OXIDE.SP.1 completed with no violations, 472/576
-INFO:    Rule OXIDE.SP.2 completed with no violations, 473/576
-INFO:    Rule POLY.W.1 completed with no violations, 474/576
-INFO:    Rule POLY.W.2 completed with no violations, 475/576
-INFO:    Rule NIMP.E.1 completed with no violations, 476/576
-INFO:    Rule POLY.SE.1_POLY.SE.2 completed with no violations, 477/576
-INFO:    Rule PIMP.SE.3 completed with no violations, 478/576
-INFO:    Rule PIMP.E.3 completed with no violations, 479/576
-INFO:    Rule CONT.E.4_2 completed with no violations, 480/576
-INFO:    Rule OXIDE.SP.3 completed with no violations, 481/576
-INFO:    Rule PIMP.W.1 completed with no violations, 482/576
-INFO:    Rule NIMP.O.1 completed with no violations, 483/576
-INFO:    Rule PIMP.SP.1 completed with no violations, 484/576
-INFO:    Rule NIMP.E.2 completed with no violations, 485/576
-INFO:    Rule PIMP.E.1 completed with no violations, 486/576
-INFO:    Rule PIMP.E.2 completed with no violations, 487/576
-INFO:    Rule CONT.SP.1 completed with no violations, 488/576
-INFO:    Rule CONT.SP.2 completed with no violations, 489/576
-INFO:    Rule PIMP.O.1 completed with no violations, 490/576
-INFO:    Rule METAL2.W.1 completed with no violations, 491/576
-INFO:    Rule METAL1.SP.1.1 completed with no violations, 492/576
-INFO:    Rule METAL2.SP.1.1 completed with no violations, 493/576
-INFO:    Rule VIA1.SP.1 completed with no violations, 494/576
-INFO:    Rule VIA1.E.1 completed with no violations, 495/576
-INFO:    Rule METAL1.W.1 completed with no violations, 496/576
-INFO:    Rule CONT.E.1 completed with no violations, 497/576
-INFO:    Rule CONT.W.1 completed with no violations, 498/576
-INFO:    Rule CONT.X.2 completed with no violations, 499/576
-INFO:    Rule CONT.X.2_2 completed with no violations, 500/576
-INFO:    Rule CONT.E.2 completed with no violations, 501/576
-INFO:    Rule CONT.X.1 completed with no violations, 502/576
-INFO:    Rule CONT.SE.1 completed with no violations, 503/576
-INFO:    Rule CONT.SE.3 completed with no violations, 504/576
-INFO:    Rule CONT.X.3 completed with no violations, 505/576
-INFO:    Rule METAL1.A.1 completed with no violations, 506/576
-INFO:    Rule METAL1.EA.1 completed with no violations, 507/576
-INFO:    Rule LATCHUP.1 completed with no violations, 508/576
-INFO:    Rule METAL1.SP.1.3 completed with no violations, 509/576
-INFO:    Rule METAL1.SP.1.4 completed with no violations, 510/576
-INFO:    Rule METAL1.SP.1.5 completed with no violations, 511/576
-INFO:    Rule METAL1.SP.1.6 completed with no violations, 512/576
-INFO:    Rule METAL2.A.1 completed with no violations, 513/576
-INFO:    Rule CONT.E.3 completed with no violations, 514/576
-INFO:    Rule METAL1.E.1_METAL1.E.2 completed with no violations, 515/576
-INFO:    Rule LATCHUP.2 completed with no violations, 516/576
-INFO:    Rule METAL2.EA.1 completed with no violations, 517/576
-INFO:    Rule METAL2.SP.1.2 completed with no violations, 518/576
-INFO:    Rule METAL2.SP.1.3 completed with no violations, 519/576
-INFO:    Rule METAL2.SP.1.4 completed with no violations, 520/576
-INFO:    Rule METAL1.SP.1.2 completed with no violations, 521/576
-INFO:    Rule METAL2.SP.1.5 completed with no violations, 522/576
-INFO:    Rule METAL2.SP.1.6 completed with no violations, 523/576
-INFO:    Rule METAL1.W.2 completed with no violations, 524/576
-INFO:    Rule METAL2.E.1_METAL2.E.2 completed with no violations, 525/576
-INFO:    Rule METAL2.W.2 completed with no violations, 526/576
-INFO:    Rule NIMP.A.1 completed with no violations, 527/576
-INFO:    Rule METAL2.SP.3 completed with no violations, 528/576
-INFO:    Rule NIMP.EA.1 completed with no violations, 529/576
-INFO:    Rule NIMP.E.4 completed with no violations, 530/576
-INFO:    Rule NW.A.1 completed with no violations, 531/576
-INFO:    Rule NIMP.X.1 completed with no violations, 532/576
-INFO:    Rule NIMP.SE.1 completed with no violations, 533/576
-INFO:    Rule NW.E.1 completed with no violations, 534/576
-INFO:    Rule NW.SE.1 completed with no violations, 535/576
-INFO:    Rule NW.SE.2 completed with no violations, 536/576
-INFO:    Rule NW.E.2 completed with no violations, 537/576
-INFO:    Rule NW.EA.1 completed with no violations, 538/576
+INFO:    Rule acute_check completed with no violations, 439/576
+INFO:    Rule offgrid_check completed with no violations, 440/576
+INFO:    Rule ortho_45_check completed with no violations, 441/576
+INFO:    Rule POLY.X.2 completed with no violations, 442/576
+INFO:    Rule METAL1.L.1 completed with no violations, 443/576
+INFO:    Rule METAL2.L.1 completed with no violations, 444/576
+INFO:    Rule CONT.SE.4 completed with no violations, 445/576
+INFO:    Rule NZVT.L.1 completed with no violations, 446/576
+INFO:    Rule NZVT.W.2 completed with no violations, 447/576
+INFO:    Rule OXIDE.W.2.1.2 completed with no violations, 448/576
+INFO:    Rule OXIDE.W.2.2.2 completed with no violations, 449/576
+INFO:    Rule POLY.W.3 completed with no violations, 450/576
+INFO:    Rule POLY.W.4 completed with no violations, 451/576
+INFO:    Rule POLY.SP.4 completed with no violations, 452/576
+INFO:    Rule POLY.SP.1 completed with no violations, 453/576
+INFO:    Rule LATCHUP.3 completed with no violations, 454/576
+INFO:    Rule NW.A.1 completed with no violations, 455/576
+INFO:    Rule CONT.E.4 completed with no violations, 456/576
+INFO:    Rule METAL1.SP.2 completed with no violations, 457/576
+INFO:    Rule METAL2.SP.2 completed with no violations, 458/576
+INFO:    Rule METAL1.W.3 completed with no violations, 459/576
+INFO:    Rule METAL2.W.3 completed with no violations, 460/576
+INFO:    Rule OXIDE.W.3 completed with no violations, 461/576
+INFO:    Rule OXIDE.SP.4 completed with no violations, 462/576
+INFO:    Rule POLY.SP.5 completed with no violations, 463/576
+INFO:    Rule POLY.W.6 completed with no violations, 464/576
+INFO:    Rule NIMP.SE.3 completed with no violations, 465/576
+INFO:    Rule NIMP.E.3 completed with no violations, 466/576
+INFO:    Rule NW.W.1 completed with no violations, 467/576
+INFO:    Rule POLY.W.5 completed with no violations, 468/576
+INFO:    Rule POLY.SP.2 completed with no violations, 469/576
+INFO:    Rule POLY.SP.3 completed with no violations, 470/576
+INFO:    Rule POLY.E.3 completed with no violations, 471/576
+INFO:    Rule NIMP.W.1 completed with no violations, 472/576
+INFO:    Rule OXIDE.W.1 completed with no violations, 473/576
+INFO:    Rule OXIDE.W.2.1.1 completed with no violations, 474/576
+INFO:    Rule OXIDE.W.2.2.1 completed with no violations, 475/576
+INFO:    Rule OXIDE.SP.1 completed with no violations, 476/576
+INFO:    Rule OXIDE.SP.2 completed with no violations, 477/576
+INFO:    Rule POLY.W.1 completed with no violations, 478/576
+INFO:    Rule POLY.W.2 completed with no violations, 479/576
+INFO:    Rule NIMP.SP.1 completed with no violations, 480/576
+INFO:    Rule POLY.SE.1_POLY.SE.2 completed with no violations, 481/576
+INFO:    Rule NIMP.E.1 completed with no violations, 482/576
+INFO:    Rule PIMP.SE.3 completed with no violations, 483/576
+INFO:    Rule PIMP.E.3 completed with no violations, 484/576
+INFO:    Rule CONT.E.4_2 completed with no violations, 485/576
+INFO:    Rule OXIDE.SP.3 completed with no violations, 486/576
+INFO:    Rule PIMP.W.1 completed with no violations, 487/576
+INFO:    Rule PIMP.SP.1 completed with no violations, 488/576
+INFO:    Rule PIMP.E.2 completed with no violations, 489/576
+INFO:    Rule NIMP.O.1 completed with no violations, 490/576
+INFO:    Rule NIMP.E.2 completed with no violations, 491/576
+INFO:    Rule PIMP.E.1 completed with no violations, 492/576
+INFO:    Rule CONT.SP.1 completed with no violations, 493/576
+INFO:    Rule CONT.SP.2 completed with no violations, 494/576
+INFO:    Rule PIMP.O.1 completed with no violations, 495/576
+INFO:    Rule METAL2.W.1 completed with no violations, 496/576
+INFO:    Rule METAL1.SP.1.1 completed with no violations, 497/576
+INFO:    Rule METAL2.SP.1.1 completed with no violations, 498/576
+INFO:    Rule VIA1.SP.1 completed with no violations, 499/576
+INFO:    Rule VIA1.E.1 completed with no violations, 500/576
+INFO:    Rule METAL1.W.1 completed with no violations, 501/576
+INFO:    Rule CONT.E.1 completed with no violations, 502/576
+INFO:    Rule CONT.W.1 completed with no violations, 503/576
+INFO:    Rule CONT.X.2 completed with no violations, 504/576
+INFO:    Rule CONT.E.2 completed with no violations, 505/576
+INFO:    Rule CONT.X.2_2 completed with no violations, 506/576
+INFO:    Rule CONT.X.1 completed with no violations, 507/576
+INFO:    Rule CONT.SE.1 completed with no violations, 508/576
+INFO:    Rule CONT.SE.3 completed with no violations, 509/576
+INFO:    Rule CONT.X.3 completed with no violations, 510/576
+INFO:    Rule METAL1.A.1 completed with no violations, 511/576
+INFO:    Rule METAL1.EA.1 completed with no violations, 512/576
+INFO:    Rule METAL1.SP.1.3 completed with no violations, 513/576
+INFO:    Rule METAL1.SP.1.4 completed with no violations, 514/576
+INFO:    Rule LATCHUP.1 completed with no violations, 515/576
+INFO:    Rule METAL1.SP.1.5 completed with no violations, 516/576
+INFO:    Rule METAL1.SP.1.6 completed with no violations, 517/576
+INFO:    Rule CONT.E.3 completed with no violations, 518/576
+INFO:    Rule METAL1.E.1_METAL1.E.2 completed with no violations, 519/576
+INFO:    Rule LATCHUP.2 completed with no violations, 520/576
+INFO:    Rule METAL2.A.1 completed with no violations, 521/576
+INFO:    Rule METAL1.SP.1.2 completed with no violations, 522/576
+INFO:    Rule METAL2.EA.1 completed with no violations, 523/576
+INFO:    Rule METAL2.SP.1.2 completed with no violations, 524/576
+INFO:    Rule METAL2.SP.1.3 completed with no violations, 525/576
+INFO:    Rule METAL2.SP.1.4 completed with no violations, 526/576
+INFO:    Rule METAL2.SP.1.5 completed with no violations, 527/576
+INFO:    Rule METAL2.SP.1.6 completed with no violations, 528/576
+INFO:    Rule METAL2.E.1_METAL2.E.2 completed with no violations, 529/576
+INFO:    Rule METAL1.W.2 completed with no violations, 530/576
+INFO:    Rule NIMP.A.1 completed with no violations, 531/576
+INFO:    Rule NIMP.E.4 completed with no violations, 532/576
+INFO:    Rule METAL2.W.2 completed with no violations, 533/576
+INFO:    Rule NIMP.EA.1 completed with no violations, 534/576
+INFO:    Rule METAL2.SP.3 completed with no violations, 535/576
+INFO:    Rule NIMP.X.1 completed with no violations, 536/576
+INFO:    Rule NW.EA.1 completed with no violations, 537/576
+INFO:    Rule NIMP.SE.1 completed with no violations, 538/576
 INFO:    Rule NIMP.SE.2 completed with no violations, 539/576
-INFO:    Rule OXIDE.A.1 completed with no violations, 540/576
-INFO:    Rule OXIDE.EA.1 completed with no violations, 541/576
-INFO:    Rule PIMP.A.1 completed with no violations, 542/576
-INFO:    Rule PIMP.EA.1 completed with no violations, 543/576
-INFO:    Rule OXIDE.L.1_OXIDE.L.2 completed with no violations, 544/576
-INFO:    Rule PIMP.E.4 completed with no violations, 545/576
-INFO:    Rule POLY.A.1 completed with no violations, 546/576
-INFO:    Rule OXIDE.X.1 completed with no violations, 547/576
-INFO:    Rule PIMP.SE.1 completed with no violations, 548/576
-INFO:    Rule POLY.EA.1 completed with no violations, 549/576
-INFO:    Rule POLY.X.2 completed with no violations, 550/576
-INFO:    Rule PIMP.SE.2 completed with no violations, 551/576
-INFO:    Rule POLY.SE.3 completed with no violations, 552/576
-INFO:    Rule VIA1.W.1 completed with no violations, 553/576
-INFO:    Rule POLY.E.1 completed with no violations, 554/576
-INFO:    Rule POLY.E.2 completed with no violations, 555/576
-INFO:    Rule VIA1.E.3 completed with no violations, 556/576
-INFO:    Rule VIA1.X.1 completed with no violations, 557/576
-INFO:    Rule acute_check completed with no violations, 558/576
-INFO:    Rule offgrid_check completed with no violations, 559/576
-INFO:    Rule ortho_45_check completed with no violations, 560/576
+INFO:    Rule NW.E.1 completed with no violations, 540/576
+INFO:    Rule NW.SE.1 completed with no violations, 541/576
+INFO:    Rule NW.E.2 completed with no violations, 542/576
+INFO:    Rule NW.SE.2 completed with no violations, 543/576
+INFO:    Rule OXIDE.A.1 completed with no violations, 544/576
+INFO:    Rule OXIDE.EA.1 completed with no violations, 545/576
+INFO:    Rule PIMP.A.1 completed with no violations, 546/576
+INFO:    Rule PIMP.EA.1 completed with no violations, 547/576
+INFO:    Rule POLY.A.1 completed with no violations, 548/576
+INFO:    Rule OXIDE.L.1_OXIDE.L.2 completed with no violations, 549/576
+INFO:    Rule PIMP.E.4 completed with no violations, 550/576
+INFO:    Rule OXIDE.X.1 completed with no violations, 551/576
+INFO:    Rule PIMP.SE.1 completed with no violations, 552/576
+INFO:    Rule PIMP.SE.2 completed with no violations, 553/576
+INFO:    Rule POLY.EA.1 completed with no violations, 554/576
+INFO:    Rule VIA1.W.1 completed with no violations, 555/576
+INFO:    Rule VIA1.X.1 completed with no violations, 556/576
+INFO:    Rule POLY.E.1 completed with no violations, 557/576
+INFO:    Rule POLY.E.2 completed with no violations, 558/576
+INFO:    Rule POLY.SE.3 completed with no violations, 559/576
+INFO:    Rule VIA1.E.3 completed with no violations, 560/576
 INFO:    Rule VIA1.X.2 completed with no violations, 561/576
-INFO:    Rule POLY.X.1 completed with no violations, 562/576
-INFO:    Rule soft_check_12 completed with no violations, 563/576
+INFO:    Rule soft_check_12 completed with no violations, 562/576
+INFO:    Rule POLY.X.1 completed with no violations, 563/576
 INFO:    Rule soft_check_6 completed with no violations, 564/576
 INFO:    Rule METAL1.SP.3 completed with no violations, 565/576
 INFO:    Rule VIA1.E.2 completed with no violations, 566/576, remaining rules: NW.SP.1 NW.SP.2_3 soft_check_1 soft_check_10 soft_check_11 soft_check_2 soft_check_4 soft_check_5 soft_check_7 soft_check_8
 INFO:    Rule soft_check_8 completed with no violations, 567/576, remaining rules: NW.SP.1 NW.SP.2_3 soft_check_1 soft_check_10 soft_check_11 soft_check_2 soft_check_4 soft_check_5 soft_check_7
 INFO:    Rule soft_check_2 completed with no violations, 568/576, remaining rules: NW.SP.1 NW.SP.2_3 soft_check_1 soft_check_10 soft_check_11 soft_check_4 soft_check_5 soft_check_7
-INFO:    Rule soft_check_5 completed with no violations, 569/576, remaining rules: NW.SP.1 NW.SP.2_3 soft_check_1 soft_check_10 soft_check_11 soft_check_4 soft_check_7
-INFO:    Rule soft_check_11 completed with no violations, 570/576, remaining rules: NW.SP.1 NW.SP.2_3 soft_check_1 soft_check_10 soft_check_4 soft_check_7
-INFO:    Rule NW.SP.1 completed with no violations, 571/576, remaining rules: NW.SP.2_3 soft_check_1 soft_check_10 soft_check_4 soft_check_7
+INFO:    Rule NW.SP.1 completed with no violations, 569/576, remaining rules: NW.SP.2_3 soft_check_1 soft_check_10 soft_check_11 soft_check_4 soft_check_5 soft_check_7
+INFO:    Rule soft_check_5 completed with no violations, 570/576, remaining rules: NW.SP.2_3 soft_check_1 soft_check_10 soft_check_11 soft_check_4 soft_check_7
+INFO:    Rule soft_check_11 completed with no violations, 571/576, remaining rules: NW.SP.2_3 soft_check_1 soft_check_10 soft_check_4 soft_check_7
 INFO:    Rule soft_check_1 completed with no violations, 572/576, remaining rules: NW.SP.2_3 soft_check_10 soft_check_4 soft_check_7
 INFO:    Rule soft_check_10 completed with no violations, 573/576, remaining rules: NW.SP.2_3 soft_check_4 soft_check_7
-INFO:    Rule soft_check_4 completed with no violations, 574/576, remaining rules: NW.SP.2_3 soft_check_7
-INFO:    Rule soft_check_7 completed with no violations, 575/576, remaining rules: NW.SP.2_3
-INFO:    Rule NW.SP.2_3 completed with no violations, 576/576
-INFO:    Status: Runset Finished as of 2025-11-11 21:14:39   Elapsed: 00:00:20   CPU time[s]: 8
+INFO:    Rule NW.SP.2_3 completed with no violations, 574/576, remaining rules: soft_check_4 soft_check_7
+INFO:    Rule soft_check_4 completed with no violations, 575/576, remaining rules: soft_check_7
+INFO:    Rule soft_check_7 completed with no violations, 576/576
+INFO:    Status: Runset Finished as of 2025-11-16 17:49:35   Elapsed: 00:00:22   CPU time[s]: 8
 INFO:    Resource usage by worker at exit:
                   CPU      Elapsed  Threads    CPU       Peak Total  Peak Active
          Worker:  time[s]  time[s]  Allocated  usage[%]  Memory[MB]  Memory[MB]
-              1:        8       19          4     10.53         679           38
-         Worker resource usage  summary: Total CPU[s]: 8  Run duration[s]: 19  Max peak memory[MB]: 679
-         Worker CPU utilization summary: 8 of 76 available CPU seconds (10.53%) with 4 average available CPUs
-INFO:    Generating summary in /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.sum
+              1:        8       20          4     10.00         679           38
+         Worker resource usage  summary: Total CPU[s]: 8  Run duration[s]: 20  Max peak memory[MB]: 679
+         Worker CPU utilization summary: 8 of 80 available CPU seconds (10.00%) with 4 average available CPUs
+INFO:    Generating summary in /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.sum
 INFO:    All selected rules completed
          Total CPU Time                    : 8(s)
-         Total Real Time                   : 19(s)
+         Total Real Time                   : 20(s)
          Total Original Geometry           : 295 (4684)
          Total DRC RuleChecks              : 576
          Total DRC Results                 : 0 (0)
-         ASCII report database is /home/ece558_658_2025/oraftery/ece558-labs/lab3/drc-runs/4BIT_ACCUM.drc_errors.ascii
+         ASCII report database is /home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.drc_errors.ascii
 INFO:    Checking in all SoftShare licenses.
 
-Pegasus finished normally. 2025-11-11 21:14:39
+Pegasus finished normally. 2025-11-16 17:49:35
 
 

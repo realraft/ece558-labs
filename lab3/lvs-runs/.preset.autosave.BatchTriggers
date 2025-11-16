@@ -2,7 +2,7 @@
 # Do not edit it unless you 100% sure what you do!
 
 # Pegasus Version 24.13-s018
-#ProjectDir "/home/ece558_658_2025/oraftery/ece558-labs"
+#ProjectDir "/home/ece558_658_2025/azguro/ece558-labs"
 
 [ virtuoso6.BatchTriggers.RunLVS ]
 BatchPostTrigger ""

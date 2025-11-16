@@ -1,0 +1,60 @@
+****** PrimeSim HSPICE -- T-2022.06-3 linux64 (Aug 04 2022 7739753) ******
+Input File: step5_postlayout_final.sp
+lic:
+lic: FLEXlm: SDK_12.10
+lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu
+lic: HOSTID: 13ac8554             PID:      1227320
+lic: Using FLEXlm license file:
+lic: 27020@vlsicad.ecs.umass.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 09-sep-2027/2025.06
+lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 8.13E-02
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/burr_brn
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/comlinear
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/dio
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/fet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/lin_tech
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/pci
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/signet
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ti
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/tline
+       option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/xilinx
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+       option hier_delim =     0.00
+       option post =     1.00
+       option probe =     1.00
+ init: end read circuit files, cpu clock= 9.93E-02 peak memory=     519 mb
+ init: begin check errors, cpu clock= 9.93E-02
+ init: end check errors, cpu clock= 1.19E-01 peak memory=     519 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.19E-01
+       establish matrix -- done, cpu clock= 1.20E-01 peak memory=     519 mb
+       re-order matrix -- done, cpu clock= 1.91E-01 peak memory=     527 mb
+ init: end setup matrix, cpu clock= 1.97E-01 peak memory=     527 mb
+ dcop: begin dcop, cpu clock= 1.99E-01
+       establish matrix -- done, cpu clock= 2.20E-01 peak memory=     527 mb
+       re-order matrix -- done, cpu clock= 2.62E-01 peak memory=     530 mb
+ dcop: end dcop, cpu clock= 2.67E-01 peak memory=     530 mb tot_iter=      43
+ output: step5_postlayout_final.mt0
+ sweep: tran tran0    begin, stop_t=  2.00E-08 #sweeps=**** cpu clock= 2.67E-01
+ tran: time= 2.0000E-09 tot_iter=      67 conv_iter=      27 cpu clock= 3.04E-01
+ tran: time= 4.0000E-09 tot_iter=     327 conv_iter=     112 cpu clock= 4.47E-01
+ tran: time= 6.0000E-09 tot_iter=     565 conv_iter=     189 cpu clock= 5.82E-01
+ tran: time= 8.0000E-09 tot_iter=     760 conv_iter=     252 cpu clock= 6.91E-01
+ tran: time= 1.0000E-08 tot_iter=    1015 conv_iter=     336 cpu clock= 8.33E-01
+ tran: time= 1.2000E-08 tot_iter=    1108 conv_iter=     372 cpu clock= 8.85E-01
+ tran: time= 1.4000E-08 tot_iter=    1435 conv_iter=     476 cpu clock= 1.08E+00
+ tran: time= 1.6025E-08 tot_iter=    1611 conv_iter=     534 cpu clock= 1.18E+00
+ tran: time= 1.8000E-08 tot_iter=    1870 conv_iter=     615 cpu clock= 1.33E+00
+ tran: time= 2.0000E-08 tot_iter=    2071 conv_iter=     683 cpu clock= 1.44E+00
+ sweep: tran tran0    end, cpu clock= 1.44E+00 peak memory=     530 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
