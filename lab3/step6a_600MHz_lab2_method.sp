@@ -28,12 +28,12 @@
 ** Instantiate the post-layout 4-bit accumulator
 xdut CIN COUT GND PHI RST SOUT0 SOUT1 SOUT2 SOUT3 VDD BIT_ACCUM
 
-** Power Supply at 1.1V
-VVDD VDD 0 DC 1.1
+** Power Supply at 0.09V
+VVDD VDD 0 DC 0.9
 VGND GND 0 DC 0
 
 ** Clock Generation for 600MHz (Period = 1.667ns)
-VCLK PHI 0 pulse(0 1.1 0 30p 30p 803.5p 1667p)
+VCLK PHI 0 pulse(0 0.9 0 30p 30p 803.5p 1667p)
 
 ** Load Capacitances (matching Lab 2)
 Csout0 SOUT0 0 10f

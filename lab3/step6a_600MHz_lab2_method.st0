@@ -3,15 +3,15 @@ Input File: step6a_600MHz_lab2_method.sp
 lic:
 lic: FLEXlm: SDK_12.10
 lic: USER:   azguro               HOSTNAME: vlsicad.ecs.umass.edu
-lic: HOSTID: 13ac8554             PID:      1477710
+lic: HOSTID: 13ac8554             PID:      1497220
 lic: Using FLEXlm license file:
 lic: 27020@vlsicad.ecs.umass.edu
 lic: Checkout 1 hspice
 lic: License/Maintenance for hspice will expire on 09-sep-2027/2025.06
-lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
+lic: 2(in_use)/50(total) FLOATING license(s) on SERVER 27020@vlsicad.ecs.umass.edu
 lic:
 
- init: begin read circuit files, cpu clock= 9.45E-02
+ init: begin read circuit files, cpu clock= 8.09E-02
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/ad
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/behave
        option search = /opt/synopsys/hspice/hspice/T-2022.06-3/hspice/parts/bjt
@@ -32,29 +32,29 @@ lic:
        option hier_delim =     0.00
        option post =     1.00
        option probe =     1.00
- init: end read circuit files, cpu clock= 1.13E-01 peak memory=     519 mb
- init: begin check errors, cpu clock= 1.13E-01
- init: end check errors, cpu clock= 1.33E-01 peak memory=     519 mb
- init: begin setup matrix, pivot=     0 cpu clock= 1.33E-01
-       establish matrix -- done, cpu clock= 1.35E-01 peak memory=     519 mb
-       re-order matrix -- done, cpu clock= 2.20E-01 peak memory=     527 mb
- init: end setup matrix, cpu clock= 2.27E-01 peak memory=     527 mb
- dcop: begin dcop, cpu clock= 2.29E-01
-       establish matrix -- done, cpu clock= 2.52E-01 peak memory=     527 mb
-       re-order matrix -- done, cpu clock= 2.98E-01 peak memory=     530 mb
- dcop: end dcop, cpu clock= 3.04E-01 peak memory=     530 mb tot_iter=      43
+ init: end read circuit files, cpu clock= 9.81E-02 peak memory=     519 mb
+ init: begin check errors, cpu clock= 9.81E-02
+ init: end check errors, cpu clock= 1.17E-01 peak memory=     519 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.17E-01
+       establish matrix -- done, cpu clock= 1.19E-01 peak memory=     519 mb
+       re-order matrix -- done, cpu clock= 2.05E-01 peak memory=     527 mb
+ init: end setup matrix, cpu clock= 2.12E-01 peak memory=     527 mb
+ dcop: begin dcop, cpu clock= 2.13E-01
+       establish matrix -- done, cpu clock= 2.47E-01 peak memory=     527 mb
+       re-order matrix -- done, cpu clock= 2.90E-01 peak memory=     530 mb
+ dcop: end dcop, cpu clock= 2.95E-01 peak memory=     530 mb tot_iter=      68
  output: step6a_600MHz_lab2_method.mt0
- sweep: tran tran0    begin, stop_t=  1.70E-08 #sweeps=**** cpu clock= 3.04E-01
- tran: time= 1.7020E-09 tot_iter=     127 conv_iter=      47 cpu clock= 3.84E-01
- tran: time= 3.4046E-09 tot_iter=     343 conv_iter=     122 cpu clock= 5.14E-01
- tran: time= 5.1031E-09 tot_iter=     555 conv_iter=     191 cpu clock= 6.38E-01
- tran: time= 6.8014E-09 tot_iter=     801 conv_iter=     271 cpu clock= 7.86E-01
- tran: time= 8.5081E-09 tot_iter=     943 conv_iter=     324 cpu clock= 8.71E-01
- tran: time= 1.0202E-08 tot_iter=    1116 conv_iter=     384 cpu clock= 9.73E-01
- tran: time= 1.1901E-08 tot_iter=    1372 conv_iter=     466 cpu clock= 1.14E+00
- tran: time= 1.3629E-08 tot_iter=    1605 conv_iter=     542 cpu clock= 1.27E+00
- tran: time= 1.5308E-08 tot_iter=    1853 conv_iter=     621 cpu clock= 1.43E+00
- tran: time= 1.7000E-08 tot_iter=    1996 conv_iter=     673 cpu clock= 1.51E+00
- sweep: tran tran0    end, cpu clock= 1.51E+00 peak memory=     530 mb
+ sweep: tran tran0    begin, stop_t=  1.70E-08 #sweeps=**** cpu clock= 2.95E-01
+ tran: time= 1.7010E-09 tot_iter=     132 conv_iter=      50 cpu clock= 3.72E-01
+ tran: time= 3.4081E-09 tot_iter=     342 conv_iter=     122 cpu clock= 5.01E-01
+ tran: time= 5.1077E-09 tot_iter=     561 conv_iter=     195 cpu clock= 6.42E-01
+ tran: time= 6.8080E-09 tot_iter=     811 conv_iter=     277 cpu clock= 7.84E-01
+ tran: time= 8.5639E-09 tot_iter=     955 conv_iter=     331 cpu clock= 8.63E-01
+ tran: time= 1.0204E-08 tot_iter=    1096 conv_iter=     382 cpu clock= 9.42E-01
+ tran: time= 1.1900E-08 tot_iter=    1335 conv_iter=     458 cpu clock= 1.08E+00
+ tran: time= 1.3610E-08 tot_iter=    1572 conv_iter=     536 cpu clock= 1.22E+00
+ tran: time= 1.5306E-08 tot_iter=    1826 conv_iter=     618 cpu clock= 1.36E+00
+ tran: time= 1.7000E-08 tot_iter=    1961 conv_iter=     668 cpu clock= 1.44E+00
+ sweep: tran tran0    end, cpu clock= 1.44E+00 peak memory=     530 mb
 >info:         ***** hspice job concluded
  lic: Release hspice token(s)

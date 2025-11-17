@@ -1,0 +1,8 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='T-2022.06-3 linux64' PARAM_COUNT=0
+.TITLE '** 4-bit accumulator timing analysis - step 7'
+ sout0_final      sout1_final      sout2_final      sout3_final     
+ cout_final       check_cycle8     check_cycle15    temper          
+ alter#          
+  9.566e-05        8.269e-05        8.184e-05        8.119e-05      
+  6.201e-05        1.100e+00        2.200e+00        2.500e+01      
+1               
