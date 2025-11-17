@@ -1,8 +1,8 @@
 
 
 vuipreRcxFormTable = '(
-	runName  "4BIT_ACCUM"
-	runDir  "/home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb"
+	runName  "BIT_ACCUM"
+	runDir  "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb"
 	assuraTech  "/ece558_658/pdk/verification/pvtech.lib"
 	tech  "gpdk045"
 	mapFile  ""

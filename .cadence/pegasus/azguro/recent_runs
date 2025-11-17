@@ -1,0 +1,3 @@
+1763334762 0 1763334762 "/home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs" "pegasusrv" "" "BIT_ACCUM" "" "" "" "" "" "" "" "" "LVS" true
+1763333384 0 1763333384 "/home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs" "pegasusrv" "" "BIT_ACCUM" "" "" "" "" "" "" "" "" "DRC" true
+1763333375 0 1763333375 "/home/ece558_658_2025/azguro/ece558-labs/lab3/drc-runs/BIT_ACCUM.drc_errors.ascii" "pvsdrcrv" "" "" "" "" "" "" "" "" "" "" "" true

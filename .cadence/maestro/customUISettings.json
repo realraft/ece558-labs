@@ -54,6 +54,33 @@
         },
         "outputsTestFilterMenu": null
     },
+    "BIT_ACCUM_BIT_ACCUM_maestro_outputs": {
+        "columnOrder": null,
+        "columns": {
+            "Digits": {
+                "visible": true,
+                "width": 80
+            },
+            "Notation": {
+                "visible": true,
+                "width": 80
+            },
+            "Suffix": {
+                "visible": true,
+                "width": 80
+            },
+            "Units": {
+                "visible": true,
+                "width": 80
+            }
+        },
+        "outputsMenu": {
+            "Formatting Properties": {
+                "visible": false
+            }
+        },
+        "outputsTestFilterMenu": null
+    },
     "HA_ACCUM_HA_ACCUM_maestro_outputs": {
         "columnOrder": null,
         "columns": {

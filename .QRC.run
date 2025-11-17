@@ -3,4 +3,4 @@
 # THE RUN FILE created by Cadence Extraction Quantus UI Version 24.1.0-p089
 #--------------------------------------------------------------------------------------
 
-quantus  -log_file /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/qrc.4BIT_ACCUM.log -cmd /home/ece558_658_2025/oraftery/ece558-labs/lab3/lvs-runs/svdb/qrc.4BIT_ACCUM.ccl 
+quantus  -log_file /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/qrc.BIT_ACCUM.log -cmd /home/ece558_658_2025/azguro/ece558-labs/lab3/lvs-runs/svdb/qrc.BIT_ACCUM.ccl 
